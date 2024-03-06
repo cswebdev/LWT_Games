@@ -35,3 +35,9 @@ a {
     color: #fff;
     cursor: pointer;
 }
+
+a:hover,
+a:active,
+a::after {
+    color: #e11774;
+}

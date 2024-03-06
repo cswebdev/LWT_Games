@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.left-panel,
+.right-panel {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-panel {
+    background-color: #fefefe;
+    color: rgb(0, 0, 0);
+
+}
+
+.left-panel {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.logo {
+    background-color: rgb(88, 88, 88);
+    height: 8%;
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1rem; */
+    padding: 1%;
+    position: absolute;
+    color: #fff;
+}

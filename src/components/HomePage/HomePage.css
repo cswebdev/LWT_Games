@@ -30,15 +30,39 @@
     color: white;
 }
 
-.logo {
+.homepage-logo {
     background-color: rgb(88, 88, 88);
-    height: 8%;
-    width: 8%;
+    height: 10%;
+    /* min-height: 80px; */
+    width: 10%;
+    /* min-width: 100px; */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 1rem; */
     padding: 1%;
     position: absolute;
     color: #fff;
+}
+
+
+@media(max-width: 769px) {
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .right-panel {
+        width: 100%;
+
+    }
+
+    .left-panel {
+        width: 100%;
+    }
+
+    .homepage-logo {
+        width: 10em;
+    }
 }

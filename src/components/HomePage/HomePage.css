@@ -9,10 +9,11 @@
     overflow: hidden;
 }
 
-.left-panel,
-.right-panel {
-    width: 50%;
-    height: 91.8vh;
+.right-panel,
+.middle-panel,
+.left-panel {
+    width: 33.3%;
+    height: 89.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,29 +21,21 @@
 }
 
 .right-panel {
-    background-color: #fefefe;
-    color: rgb(0, 0, 0);
+    background-color: rgb(220, 220, 220);
+}
 
+.middle-panel {
+    padding: 1rem;
 }
 
 .left-panel {
-    background-color: #1e1e1e;
-    color: white;
+    background-color: antiquewhite;
 }
 
-.homepage-logo {
-    background-color: rgb(88, 88, 88);
-    height: 10%;
-    /* min-height: 80px; */
-    width: 10%;
-    /* min-width: 100px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1%;
-    position: absolute;
-    color: #fff;
+section {
+    width: 100%;
 }
+
 
 
 @media(max-width: 769px) {

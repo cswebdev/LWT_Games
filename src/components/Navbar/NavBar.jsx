@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import MobileNav from "./MobileNav/MobileNav";
-
+import logo from "../../assets/4bf039f30053f26e59dae7a848b99ce2.png";
 const NavBar = () => {
    const [openMenu, setOpenMenu] = useState(false);
 
@@ -14,27 +14,29 @@ const NavBar = () => {
          <div className="nav-wrapper">
             <div className="nav-content">
                <div className="logo-wrapper">
-                  <div className="logo">LWT GAMES</div>
+                  <div className="logo">
+                     <img src={logo} />
+                  </div>
                </div>
                <ul>
                   <li>
                      <a href="#" className="menu-item">
-                        Games
+                        Play Bingo
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" className="menu-item">
+                        About
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" className="menu-item">
+                        FAQ
                      </a>
                   </li>
                   <li>
                      <a href="#" className="menu-item">
                         LWT
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#" className="menu-item">
-                        About Us
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#" className="menu-item">
-                        Get Involved
                      </a>
                   </li>
                </ul>

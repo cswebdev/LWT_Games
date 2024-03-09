@@ -1,7 +1,7 @@
 .nav-wrapper {
     width: 100%;
-    background-color: black;
-    padding: 0.1rem 0;
+    background-color: rgb(255, 255, 255);
+    /* max-height: 6rem; */
     position: sticky;
     top: 0;
     z-index: 30;
@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .5rem 0;
+    padding: 0 0;
     margin: 0 auto;
     max-width: 1300px !important;
 }
@@ -20,7 +20,23 @@
 .logo-wrapper {
     position: relative;
     display: flex;
-    padding: 0 1rem;
+    padding: 0rem 1rem;
+
+}
+
+.logo {
+    max-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.logo img {
+    height: 5em;
+    width: 5em;
+    padding: 0;
+    margin: 0;
+
 }
 
 .nav-content ul {
@@ -28,22 +44,19 @@
     align-items: center;
     gap: 0.5rem;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-
-a {
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-}
 
 
 
 .menu-item {
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
-    color: #fff;
+    margin: 0 1rem;
+    color: #8d8d8d;
     position: relative;
     cursor: pointer;
 }

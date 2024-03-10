@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import MobileNav from "./MobileNav/MobileNav";
-import logo from "../../assets/4bf039f30053f26e59dae7a848b99ce2.png";
+import logo from "../../assets/LWT_logo.png";
 const NavBar = () => {
    const [openMenu, setOpenMenu] = useState(false);
 
@@ -15,7 +15,7 @@ const NavBar = () => {
             <div className="nav-content">
                <div className="logo-wrapper">
                   <div className="logo">
-                     <img src={logo} />
+                     <img src={logo} alt="LWT logo" />
                   </div>
                </div>
                <ul>

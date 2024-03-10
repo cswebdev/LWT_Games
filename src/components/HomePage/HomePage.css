@@ -1,4 +1,4 @@
-.container {
+.Container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -9,10 +9,10 @@
     overflow: hidden;
 }
 
-.right-panel,
-.middle-panel,
-.left-panel {
-    width: 33.3%;
+div.right-panel,
+div.middle-panel,
+div.left-panel {
+    width: 33.3vw;
     height: 89.5vh;
     display: flex;
     justify-content: center;
@@ -26,36 +26,60 @@
 
 .middle-panel {
     padding: 1rem;
+    /* flex-direction: column; */
+    flex-direction: column;
+    background-color: rgb(149, 149, 149);
 }
 
 .left-panel {
     background-color: antiquewhite;
 }
 
-section {
+
+.section {
     width: 100%;
 }
 
+.btn-primary {
+    background-color: rgb(128, 0, 128);
+    width: 60%;
+    padding: 2%;
+    outline: none;
+    border: 0;
+    font-size: 1.3em;
 
+}
+
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:focus-visible {
+    background-color: rgb(113, 0, 113);
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: rgb(100, 0, 100);
+}
 
 @media(max-width: 769px) {
 
-    .container {
+    .Container {
         flex-direction: column;
         width: 100%;
-
+        padding: 0;
+        margin: 0;
     }
 
-    .right-panel {
+    div.left-panel,
+    div.middle-panel,
+    div.right-panel,
+    .section {
         width: 100%;
-
     }
 
-    .left-panel {
-        width: 100%;
-    }
 
-    .homepage-logo {
-        width: 10em;
-    }
+
 }

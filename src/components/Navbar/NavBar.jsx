@@ -15,7 +15,9 @@ const NavBar = () => {
             <div className="nav-content">
                <div className="logo-wrapper">
                   <div className="logo">
-                     <img src={logo} alt="LWT logo" />
+                     <a href="/home">
+                        <img src={logo} alt="LWT logo" />
+                     </a>
                   </div>
                </div>
                <ul>

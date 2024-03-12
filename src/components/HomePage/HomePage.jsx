@@ -23,17 +23,22 @@ const HomePage = () => {
          </div>
          <section className="container-body">
             <div className="row">
-               <h2>Why Bingo?</h2>
-               <h3>Keeping you engaged & building community</h3>
-               <p>
-                  Bingo game offers a refreshing break from traditional online
-                  activities, providing a light-hearted way to stay engaged and
-                  connected, all while fostering a sense of community. See you
-                  there!
-               </p>
-               <button type="button" className="btn btn-dark">
-                  See more
-               </button>
+               <div className="col-md-6">
+                  <h2>Why Bingo?</h2>
+                  <h3>Keeping you engaged & building community</h3>
+                  <p>
+                     Bingo game offers a refreshing break from traditional
+                     online activities, providing a light-hearted way to stay
+                     engaged and connected, all while fostering a sense of
+                     community. See you there!
+                  </p>
+                  <button type="button" className="btn btn-dark">
+                     See more
+                  </button>
+               </div>
+               <div className="col-md-6">
+                  <div>image goes here</div>
+               </div>
             </div>
          </section>
       </>

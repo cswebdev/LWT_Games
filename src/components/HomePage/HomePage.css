@@ -78,11 +78,12 @@ div.left-panel {
 
 .row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
 }
 
 .btn-dark {
-    max-width: 200px;
+    width: 200px;
     border-radius: 0;
 }
 

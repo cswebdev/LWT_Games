@@ -37,8 +37,9 @@ div.left-panel {
 }
 
 .middle-panel {
-    padding: 1rem;
     flex-direction: column;
+    padding: 1em;
+    margin: auto;
     background-color: rgb(149, 149, 149);
 }
 
@@ -73,6 +74,16 @@ div.left-panel {
 .btn:first-child:active,
 :not(.btn-check)+.btn:active {
     background-color: rgb(100, 0, 100);
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-dark {
+    max-width: 200px;
+    border-radius: 0;
 }
 
 @media(max-width: 769px) {

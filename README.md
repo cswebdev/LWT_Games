@@ -1,70 +1,181 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h1 align="center">Official LWT Games Website</h1>
 
-## Available Scripts
+  <p align="center">
+    Home of the Unofficial Lesbians Who Tech Conference Bingo Game
+    <br />
+    <br />
+    <!-- <a href="https://" target="_blank">Demo</a> -->
+    </p>
+</div>
+<div align="center">
 
-In the project directory, you can run:
+![Top Languages](https://img.shields.io/github/languages/top/cswebdev/LWT_Games)
+![GitHub repo size](https://img.shields.io/github/repo-size/cswebdev/LWT_Games)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/cswebdev/LWT_Games)
+![GitHub last commit](https://img.shields.io/github/last-commit/cswebdev/LWT_Games)
+<!-- ![GitHub](https://img.shields.io/github/license/cswebdev/LWT_Games) -->
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+         <!-- <li><a href="#screenshots">Screenshots</a></li> -->
+        <!-- <li><a href="#key-features">Key Features</a></li> -->
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <!-- <li><a href="#license">License</a></li> -->
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- ABOUT THE PROJECT -->
 
-### `npm test`
+## About The Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This website is the online location of the Unofficial LWT Bingo Game. Now in it's
+second year, the LWT Games team is iterating on last year's game.
 
-### `npm run build`
+Volunteers on the team are designing and building this website where conference
+attendees can play the bingo game, learn more about the team, and find out how to
+get involved.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- ### Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>
+  <img src="static/images/screenshots/profile.png" alt="User Profile Page">
+  <br>
+  <em>User Profile Page</em>
+</p>
 
-### `npm run eject`
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- ### Key Features
+ -->
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Built With
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project began in March 2024 and uses the following technologies:
 
-## Learn More
+- ![Javascript][Javascript]
+- ![React][React]
+- ![Bootstrap][Bootstrap]
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For a full list of dependencies, see the [package.json](https://github.com/cswebdev/LWT_Games/package.json).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Code Splitting
+<!-- GETTING STARTED -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Getting Started
 
-### Analyzing the Bundle Size
+To set up this repo on your local machine, follow these instructions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Prerequisites
 
-### Making a Progressive Web App
+* npm
+  ```sh
+  npm install npm@latest -g
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Installation
 
-### Advanced Configuration
+1. Clone the repo
+   ```sh
+   git clone https://github.com/cswebdev/LWT_Games
+   ```
+2. Install dependencies
+   ```sh
+   npm install
+   ```
+3. Start a local development server
+    ```sh
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Deployment
+<!-- ROADMAP -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Roadmap
 
-### `npm run build` fails to minify
+- [ ] Complete base sitemap pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+<!-- LICENSE -->
+
+
+<!-- CONTACT -->
+
+## Contact
+
+The frontend engineers and primary contributors to this website are:
+
+- [Chelsea Snider](https://github.com/cswebdev) -- [LinkedIn](https://www.linkedin.com/in/chelsea-snider/)
+- [Juliane Cassidy](https://julianecassidy.com) -- [LinkedIn](https://www.linkedin.com/in/julianemcassidy/)
+
+The UI/UX designers for the website are:
+
+- [Liz Baranowicz]()
+- [Olivia Servaes]()
+- [Lynds Lesh]()
+
+- [Project Repo](https://github.com/cswebdev/LWT_Games)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- VERSION HISTORY -->
+
+## Version History
+- 1.0.0 (in production)
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+Thanks to the entire LWTGames team:
+- Tegan Barron
+- Lane Hamilton
+- Liz Baranowicz
+- Olivia Servaes
+- Jimena Cuadros
+- Lynds Lesh
+- Olivia McCartney
+- Becca Jonas
+- Wei Yun Lim
+
+
+Additional thanks to:
+- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+- [Img Shields](https://shields.io)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- TECHNOLOGY BADGES -->
+
+
+[Javascript]: https://img.shields.io/badge/Javascript-f7df1e?logo=javascript&logoColor=black
+[React]: https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white
+[Bootstrap]: https://img.shields.io/badge/Bootstrap-732ff9?logo=bootstrap&logoColor=white

@@ -1,23 +1,35 @@
 .Container {
     display: flex;
+    flex-direction: row;
+    width: 100% !important;
+
+}
+
+.container-header {
+    display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100%;
+    width: 100% !important;
     max-height: 100vh;
     overflow: hidden;
+}
+
+.container-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 div.right-panel,
 div.middle-panel,
 div.left-panel {
-    width: 33.3vw;
+    min-width: 33.3%;
     height: 89.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .right-panel {
@@ -26,15 +38,13 @@ div.left-panel {
 
 .middle-panel {
     padding: 1rem;
-    /* flex-direction: column; */
     flex-direction: column;
     background-color: rgb(149, 149, 149);
 }
 
 .left-panel {
-    background-color: antiquewhite;
+    background-color: rgb(213, 213, 213);
 }
-
 
 .section {
     width: 100%;
@@ -47,13 +57,14 @@ div.left-panel {
     outline: none;
     border: 0;
     font-size: 1.3em;
-
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .btn-primary:active,
 .btn-primary:hover,
 .btn-primary:focus-visible {
     background-color: rgb(113, 0, 113);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .btn-check:checked+.btn,
@@ -65,8 +76,7 @@ div.left-panel {
 }
 
 @media(max-width: 769px) {
-
-    .Container {
+    .container-header {
         flex-direction: column;
         width: 100%;
         padding: 0;
@@ -79,7 +89,4 @@ div.left-panel {
     .section {
         width: 100%;
     }
-
-
-
 }

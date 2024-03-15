@@ -1,5 +1,5 @@
 import BioCard from "./BioCard";
-// import { BIOS } from "./bios";
+import { BIOS } from "./bios";
 
 /** Component for BioList
  *
@@ -12,10 +12,12 @@ import BioCard from "./BioCard";
  * AboutPage -> BioList -> BioCard
  */
 const BioList = () => {
-    console.debug("BioList");
+    console.debug("BioList", BIOS);
 
     return (
-        <BioCard />
+        <div className="BioList">
+            {BIOS.map((bio, idx) => <BioCard key={idx} bio={bio} />)}
+        </div>
     )
 
 }

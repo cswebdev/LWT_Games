@@ -14,7 +14,7 @@ const HomePage = () => {
                      impedit illo quo voluptatem, placeat officia, ex
                      perspiciatis quos iste quis praesentium ipsum iure.
                   </p>
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" className="btn btn-primary">
                      Play Bingo
                   </button>
                </div>

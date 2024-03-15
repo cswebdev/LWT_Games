@@ -28,7 +28,7 @@ const AboutPage = () => {
             aliquip ex ea commodo consequat.
           </p>
           <button type="button" className="btn btn-primary">
-            <a href="/bingo">Play Bingo</a>
+            <a href="https://laneecho.github.io/LWT-bingo/">Play Bingo</a>
         </button>
       </div>
       <BioList />

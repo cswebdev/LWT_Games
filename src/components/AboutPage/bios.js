@@ -1,6 +1,7 @@
 import defaultImage from "../../assets/LWT_logo.png";
 
-// Team bios: { name, pronouns, role, bio, photo, gitHub, linkedIn, profile }
+// Team bios: { name, pronouns, role, photo, drawing, portfolio, linkedIn,
+// emoji, reasonForJoining, gainedFromLWT }
 class Bio {
   constructor (
     name,
@@ -8,18 +9,24 @@ class Bio {
     role="LWT Team Member",
     bio="Bio coming soon.",
     photo=defaultImage,
-    gitHub,
+    drawing,
+    portfolio,
     linkedIn,
-    profile,
+    emoji,
+    reasonForJoining,
+    gainedFromLWT
   ) {
     this.name = name;
     this.pronouns = pronouns;
     this.role = role;
     this.bio = bio;
     this.photo = photo;
-    this.gitHub = gitHub;
+    this.drawing = drawing;
+    this.portfolio = portfolio;
     this.linkedIn = linkedIn;
-    this.profile = profile;
+    this.emoji = emoji;
+    this.reasonForJoining = reasonForJoining;
+    this.gainedFromLWT = gainedFromLWT;
   }
 }
 

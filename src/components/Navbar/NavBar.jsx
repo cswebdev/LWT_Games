@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./NavBar.css";
 import MobileNav from "./MobileNav/MobileNav";
 import logo from "../../assets/LWT_logo.png";
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
    const [openMenu, setOpenMenu] = useState(false);
 
@@ -20,19 +22,22 @@ const NavBar = () => {
                </div>
                <ul>
                   <li>
-                     <a href="#" className="menu-item">
+                     <a
+                        href="https://laneecho.github.io/LWT-bingo/"
+                        className="menu-item"
+                     >
                         Play Bingo
                      </a>
                   </li>
                   <li>
-                     <a href="/about" className="menu-item">
+                     <Link to="/about" className="menu-item">
                         About
-                     </a>
+                     </Link>
                   </li>
                   <li>
-                     <a href="#" className="menu-item">
+                     <Link to="/FAQ" className="menu-item">
                         FAQ
-                     </a>
+                     </Link>
                   </li>
                   <li>
                      <a

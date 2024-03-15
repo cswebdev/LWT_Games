@@ -29,7 +29,7 @@ const HomePage = () => {
          <section className="container-body">
             <div className="row">
                <div className="col-md-6">
-                  <h2>Engaging with the Tech Pride Summit</h2>
+                  <h2>Engaging with Lesbians Who Tech Pride Summit</h2>
                   <p>
                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                      Repellat accusamus, pariatur ducimus, inventore nemo illum

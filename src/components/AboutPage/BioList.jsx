@@ -1,5 +1,5 @@
 import BioCard from "./BioCard";
-import { BIOS } from "./bios";
+// import { BIOS } from "./bios";
 
 /** Component for BioList
  *

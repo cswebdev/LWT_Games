@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import BioList from "./BioList";
 import logo from "../../assets/LWT_logo.png";
 

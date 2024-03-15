@@ -37,7 +37,10 @@ const NavBar = () => {
                      </a>
                   </li>
                   <li>
-                     <a href="#" className="menu-item">
+                     <a
+                        href="https://lesbianswhotech.org/about/"
+                        className="menu-item"
+                     >
                         LWT
                      </a>
                   </li>

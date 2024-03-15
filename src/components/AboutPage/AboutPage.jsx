@@ -19,7 +19,10 @@ const AboutPage = () => {
   return (
     <div className="AboutPage">
       <div className="AboutPage-lwtgames">
-        <img src={logo} alt="Unofficial LWT Games logo"></img>
+        <img
+          src={"https://picsum.photos/300/200"}
+          alt="Placeholder image">
+        </img>
           <h2>Why LWT Games?</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

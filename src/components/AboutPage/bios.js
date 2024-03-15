@@ -1,6 +1,6 @@
 import defaultImage from "../../assets/LWT_logo.png";
 
-// Team bios: { name, pronouns, role, photo, drawing, portfolio, linkedIn,
+// Team bios: { name, pronouns, role, bio, photo, drawing, portfolio, linkedIn,
 // emoji, reasonForJoining, gainedFromLWT }
 class Bio {
   constructor (

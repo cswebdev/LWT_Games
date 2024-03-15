@@ -48,9 +48,13 @@ const CHELSEA = new Bio(
     aliquam! Architecto eaque animi ab quisquam unde impedit illo quo
     voluptatem, placeat officia, ex perspiciatis quos iste quis
     praesentium ipsum iure.`,
-    "https://github.com/julianecassidy",
-    "https://www.linkedin.com/in/julianemcassidy/",
+    undefined,
+    undefined,
     "https://julianecassidy.com/",
+    "https://www.linkedin.com/in/julianemcassidy/",
+    undefined,
+    "Collaborate on a project and take on more front end projects.",
+    "Met a group of really cool folks."
     )
 
 export const BIOS = [CHELSEA, JULIANE];

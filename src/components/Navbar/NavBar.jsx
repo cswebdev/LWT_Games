@@ -22,7 +22,7 @@ const NavBar = () => {
                </div>
                <ul>
                   <li>
-                     <a href="#" className="menu-item">
+                     <a href="https://laneecho.github.io/LWT-bingo/" className="menu-item">
                         Play Bingo
                      </a>
                   </li>
@@ -32,7 +32,7 @@ const NavBar = () => {
                      </a>
                   </li>
                   <li>
-                     <a href="#" className="menu-item">
+                     <a href="/FAQ" className="menu-item">
                         FAQ
                      </a>
                   </li>

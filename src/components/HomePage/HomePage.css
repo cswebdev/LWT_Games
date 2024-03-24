@@ -1,3 +1,4 @@
+/* container styling */
 .Container {
     display: flex;
     flex-direction: row;
@@ -22,20 +23,33 @@
     justify-content: center;
 }
 
+/* end container styling */
+
+/* panel styling */
 div.right-panel,
-div.middle-panel,
 div.left-panel {
-    min-width: 30%;
+    min-width: 40%;
     height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+div.middle-panel {
+
+    min-width: 20%;
+    height: 92vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+
+}
+
 .right-panel {
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(255, 255, 255);
     object-fit: contain;
-    overflow: hidden;
 
 }
 
@@ -44,20 +58,35 @@ div.left-panel {
     padding: 1em;
     text-align: center;
     margin: auto;
-    background-color: rgb(149, 149, 149);
+    background-color: transparent;
 }
 
 .left-panel {
-    background-color: rgb(213, 213, 213);
+    background-color: rgb(255, 255, 255);
     object-fit: contain;
-    overflow: hidden;
 }
+
+.right-panel img,
+.left-panel img {
+    object-fit: contain;
+    max-width: 110%;
+    max-height: 110%;
+}
+
+
+/* end panel styling */
 
 .section {
     width: 100%;
 }
 
-
+.placeholder {
+    height: 50vh;
+    width: 100%;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
 
 /* row styling */
 
@@ -68,6 +97,9 @@ div.left-panel {
     width: 100%;
     border: 1px solid purple;
     height: 50vh;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
 }
 
 .row:nth-child(even) {
@@ -95,6 +127,7 @@ div.left-panel {
         width: 100%;
         padding: 0;
         margin: 0;
+        height: fit-content;
     }
 
     div.left-panel,
@@ -102,5 +135,17 @@ div.left-panel {
     div.right-panel,
     .section {
         width: 100%;
+
+    }
+
+    .right-panel img,
+    .left-panel img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    div.middle-panel {
+        position: relative;
     }
 }

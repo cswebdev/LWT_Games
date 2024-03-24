@@ -53,15 +53,29 @@ const HomePage = () => {
                      Bingo game offers a refreshing break from traditional
                      online activities, providing a light-hearted way to stay
                      engaged and connected, all while fostering a sense of
-                     community. See you there!
+                     community.
                   </p>
                   <button type="button" className="btn btn-info">
-                     See more
+                     Play Bingo
                   </button>
                </div>
-               <div className="col-md-6">
-                  <div>image goes here</div>
+               <div className="col-md-6 m-0 p-0">
+                  <div class="placeholder"></div>
                </div>
+            </div>
+            <div className="row d-flex text-center justify-content-center">
+               <h2>
+                  We're a group of _____ individuals coming together to better
+                  our community
+               </h2>
+               <div className="images d-flex align-content-center justify-content-evenly">
+                  <div className="smallPlaceholder"></div>
+                  <div className="smallPlaceholder"></div>
+                  <div className="smallPlaceholder"></div>
+               </div>
+               <button type="button" className="btn btn-info team-button">
+                  Meet the Team
+               </button>
             </div>
          </section>
       </>

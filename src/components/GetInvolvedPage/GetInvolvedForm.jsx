@@ -13,21 +13,21 @@ const GetInvolvedForm = () => {
 
     return (
         <form className="GetInvolvedForm form-group" id="GetInvolvedForm-app">
-            <h3>Personal Information</h3>
             <div className="row">
-                <div className="col">
+            <h3>Personal Information</h3>
+                <div className="col-md-6">
                     <label htmlFor="first-name">First Name:</label>
                     <input type="text" name="first-name" placeholder="First Name" required></input>
                 </div>
-                <div className="col">
+                <div className="col-md-6">
                     <label htmlFor="last-name">Last Name:</label>
                     <input type="text" name="last-name" placeholder="Last Name" required></input>
                 </div>
-                <div className="form-group">
+                <div className="col-md-6">
                     <label htmlFor="pref-name">Preferred Name:</label>
                     <input type="text" name="pref-name" placeholder="Preferred Name"></input>
                 </div>
-                <div className="form-group">
+                <div className="col-md-6">
                     <label htmlFor="pronouns">Pronouns:</label>
                     <select className="form-control" name="pronouns" id="pronouns" form="GetInvolvedForm-app" required>
                         <option value="she">She / Her</option>
@@ -173,7 +173,9 @@ const GetInvolvedForm = () => {
                     <label htmlFor="goals">Anything else we should know about you or that you'd like to tell us? </label>
                     <textarea name="goals"></textarea>
                 </div>
-            </div>
+                <button type="submit" className="btn btn-primary btn-sm">Submit</button>
+                </div>
+
         </form>
     );
 };

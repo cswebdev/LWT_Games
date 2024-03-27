@@ -1,5 +1,7 @@
 import React from "react";
 import "./HomePage.css";
+import homepageRightImg from "../../assets/right_mainpage_image.png";
+import homepageLeftImg from "../../assets/left_mainpage_image.png";
 
 const HomePage = () => {
    return (
@@ -7,29 +9,27 @@ const HomePage = () => {
          <div className="Container">
             <section className="container-header">
                <div className="right-panel">
-                  {/* <img src={homepageRightImg}></img> */}
+                  <img src={homepageRightImg} alt="homepage right"></img>
                </div>
                <div className="middle-panel">
-                  <h1>LWT GAMES</h1>
+                  <h1>#LWT GAMES</h1>
                   <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Minima, aliquam! Architecto eaque animi ab quisquam unde
-                     impedit illo quo voluptatem, placeat officia, ex
-                     perspiciatis quos iste quis praesentium ipsum iure.
+                     Connect with Lesbian's Who Tech <br></br>Pride Summit in a
+                     whole new way.
                   </p>
                   <button type="button" className="btn btn-primary">
                      Play Bingo
                   </button>
                </div>
                <div className="left-panel">
-                  {/* <img src={homepageLeftImg}></img> */}
+                  <img src={homepageLeftImg} alt="homepage left"></img>
                </div>
             </section>
          </div>
          <section className="container-body">
             <div className="row">
                <div className="col-md-6">
-                  <h2>Engaging with the Tech Pride Summit</h2>
+                  <h2>Engaging with Lesbians Who Tech Pride Summit</h2>
                   <p>
                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                      Repellat accusamus, pariatur ducimus, inventore nemo illum
@@ -41,7 +41,9 @@ const HomePage = () => {
                      Join Summit?
                   </button>
                </div>
-               <div className="col-md-6"></div>
+               <div className="col-md-6 m-0 p-0">
+                  <div class="placeholder"></div>
+               </div>
             </div>
             <div className="row">
                <div className="col-md-6">
@@ -51,15 +53,29 @@ const HomePage = () => {
                      Bingo game offers a refreshing break from traditional
                      online activities, providing a light-hearted way to stay
                      engaged and connected, all while fostering a sense of
-                     community. See you there!
+                     community.
                   </p>
                   <button type="button" className="btn btn-info">
-                     See more
+                     Play Bingo
                   </button>
                </div>
-               <div className="col-md-6">
-                  <div>image goes here</div>
+               <div className="col-md-6 m-0 p-0">
+                  <div class="placeholder"></div>
                </div>
+            </div>
+            <div className="row d-flex text-center justify-content-center">
+               <h2>
+                  We're a group of _____ individuals coming together to better
+                  our community
+               </h2>
+               <div className="images d-flex align-content-center justify-content-evenly">
+                  <div className="smallPlaceholder"></div>
+                  <div className="smallPlaceholder"></div>
+                  <div className="smallPlaceholder"></div>
+               </div>
+               <button type="button" className="btn btn-info team-button">
+                  Meet the Team
+               </button>
             </div>
          </section>
       </>

@@ -137,9 +137,9 @@ The frontend engineers and primary contributors to this website are:
 
 The UI/UX designers for the website are:
 
-- [Liz Baranowicz]()
-- [Olivia Servaes]()
-- [Lynds Lesh]()
+- [Liz Baranowicz](https://www.linkedin.com/in/liz-baranowicz/)
+- [Olivia Servaes](https://www.linkedin.com/in/oliviaservaes/)
+- [Lynds Lesh](https://www.linkedin.com/in/lyndsey-lesh/)
 
 - [Project Repo](https://github.com/cswebdev/LWT_Games)
 

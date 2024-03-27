@@ -8,3 +8,82 @@ body {
   box-sizing: border-box;
   font-family: 'OpenSans', sans-serif;
 }
+
+
+/* button styling */
+/* primary button */
+.btn-primary {
+  background-color: rgb(128, 0, 128);
+  width: 60%;
+  padding: 2%;
+  outline: none;
+  border: 0;
+  font-size: 1.3em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background-color: rgb(113, 0, 113);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  background-color: rgb(100, 0, 100);
+}
+
+/* info button solid */
+
+.btn-info {
+  background-color: #E11774;
+  border-color: #E11774;
+  color: #ffff;
+}
+
+.btn-info:active,
+.btn-info:hover,
+.btn-info:focus-visible {
+  background-color: #E11774;
+  color: #ffff;
+  border: 1px solid #E11774;
+}
+
+.btn-info-check:checked+.btn,
+.btn-info.active,
+.btn-info.show,
+.btn-info:first-child:active,
+:not(.btn-info-check)+.btn-info:active {
+  background-color: #c00e61;
+  color: #fff;
+  border: 1px solid #c00e61;
+}
+
+/* info button outline */
+
+.btn-outline-info {
+  border-color: #E11774;
+  color: #E11774;
+}
+
+.btn-outline-info:active,
+.btn-outline-info:hover,
+.btn-outline-info:focus-visible {
+  background-color: #E11774;
+  color: #ffff;
+  border: 1px solid #E11774;
+}
+
+.btn-outline-info-check:checked+.btn,
+.btn-outline-info.active,
+.btn-outline-info.show,
+.btn-outline-info:first-child:active,
+:not(.btn-outline-info-check)+.btn-outline-info:active {
+  background-color: #c00e61;
+  color: #fff;
+  border: 1px solid #c00e61;
+}

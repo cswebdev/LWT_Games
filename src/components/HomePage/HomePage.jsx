@@ -17,7 +17,7 @@ const HomePage = () => {
                      Connect with Lesbian's Who Tech <br></br>Pride Summit in a
                      whole new way.
                   </p>
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" className="btn btn-primary">
                      Play Bingo
                   </button>
                </div>

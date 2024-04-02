@@ -1,35 +1,89 @@
+import { useState } from "react";
+
+const FORM_SUBMIT_THANKS = `Thank you for your submission. Our team will look
+over your details and get back to you shortly!`
+
 /** Component for GetInvolvedForm
  *
  * Props:
  * - none
  *
  * State:
- * - none
+ * - formData: {firstName, lastName, prefName, pronouns, dob, city, state,
+ * timezone, gender, sexualOrientation, email, linkedIn, github, portfolio,
+ * skills, goals, otherComments}
+ * - message: null or thank you message
  *
  * GetInvolevdPage -> GetInvolvedForm
  */
 const GetInvolvedForm = () => {
-    console.debug("GetInvolvedForm");
+    const initialFormData = {
+        firstName: "",
+        lastName: "",
+        prefName: "",
+        pronouns: "she",
+        dob: "",
+        city: "",
+        state: "AL",
+        timezone: "",
+        gender: "agender",
+        sexualOrientation: "lesbian",
+        phone: "",
+        email: "",
+        linkedIn: "",
+        github: "",
+        portfolio: "",
+        skills: "",
+        goals: "",
+        otherComments: "",
+    }
+
+    const [formData, setFormData] = useState(initialFormData);
+    const [message, setMessage] = useState(null);
+
+    // console.debug("GetInvolvedForm", formData);
+
+    /** Update form input. */
+    function handleChange(evt) {
+        const fieldName = evt.target.name;
+        const value = evt.target.value;
+
+        setFormData((currData) => {
+            currData[fieldName] = value;
+            return { ...currData };
+        });
+    }
+
+    /** Redirect on form submit. */
+    function handleSubmit(evt) {
+        evt.preventDefault();
+        setMessage(FORM_SUBMIT_THANKS);
+    }
 
     return (
-        <form className="GetInvolvedForm form-group" id="GetInvolvedForm-app" data-netlify="true">
+        <form
+          className="GetInvolvedForm form-group"
+          id="GetInvolvedForm-app"
+          data-netlify="true"
+          onSubmit={handleSubmit}
+        >
             <div className="row">
                 <h3>Personal Information</h3>
                 <div className="col-md-6 my-3">
-                    <label htmlFor="first-name" className="form-label">First Name:</label>
-                    <input type="text" name="first-name" className="form-control" placeholder="First Name" required></input>
+                    <label htmlFor="firstName" className="form-label">First Name:*</label>
+                    <input type="text" name="firstName" className="form-control" value={formData.firstName} required onChange={handleChange}></input>
                 </div>
                 <div className="col-md-6 my-3">
-                    <label htmlFor="last-name">Last Name:</label>
-                    <input type="text" name="last-name" className="form-control" placeholder="Last Name" required></input>
+                    <label htmlFor="lastName">Last Name:*</label>
+                    <input type="text" name="lastName" className="form-control" value={formData.lastName} required onChange={handleChange}></input>
                 </div>
                 <div className="col-md-6 my-3">
-                    <label htmlFor="pref-name">Preferred Name:</label>
-                    <input type="text" name="pref-name" className="form-control" placeholder="Preferred Name"></input>
+                    <label htmlFor="prefName">Preferred Name:</label>
+                    <input type="text" name="prefName" className="form-control" value={formData.prefName} onChange={handleChange}></input>
                 </div>
                 <div className="col-md-6 my-3">
-                    <label htmlFor="pronouns">Pronouns:</label>
-                    <select className="form-control" name="pronouns" id="pronouns" form="GetInvolvedForm-app" required>
+                    <label htmlFor="pronouns">Pronouns:*</label>
+                    <select className="form-control" name="pronouns" id="pronouns" form="GetInvolvedForm-app" required onChange={handleChange}>
                         <option value="she">She / Her</option>
                         <option value="he">He / Him</option>
                         <option value="they">They / Them</option>
@@ -43,16 +97,16 @@ const GetInvolvedForm = () => {
                     </select>
                 </div>
                 <div className="form-group my-3">
-                    <label htmlFor="birthdate">Date of Birth:</label>
-                    <input type="date" name="date" className="form-control" placeholder="mm/dd/yyyy" required></input>
+                    <label htmlFor="dob">Date of Birth:*</label>
+                    <input type="date" name="dob" className="form-control" value={formData.dob} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group col-md-6 my-3">
-                    <label htmlFor="city">City:</label>
-                    <input type="text" name="city" className="form-control" placeholder="City" required></input>
+                    <label htmlFor="city">City:*</label>
+                    <input type="text" name="city" className="form-control" value={formData.city} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group col-md-6 my-3">
-                    <label htmlFor="state">State:</label>
-                    <select className="form-control" name="state" id="state" form="GetInvolvedForm-app" required>
+                    <label htmlFor="state">State:*</label>
+                    <select className="form-control" name="state" id="state" form="GetInvolvedForm-app" required onChange={handleChange}>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -108,11 +162,11 @@ const GetInvolvedForm = () => {
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="timezone">Timezone:</label>
-                    <input type="text" name="timezone" className="form-control" placeholder="PST"></input>
+                    <input type="text" name="timezone" className="form-control" value={formData.timezone} onChange={handleChange}></input>
                 </div>
                 <div className="form-group col-md-6 mt-3 mb-5">
                     <label htmlFor="gender">Gender Identity:</label>
-                    <select className="form-control" name="gender" id="gender" form="GetInvolvedForm-app">
+                    <select className="form-control" name="gender" id="gender" form="GetInvolvedForm-app" onChange={handleChange}>
                         <option value="agender">Agender</option>
                         <option value="bigender">Bigender</option>
                         <option value="cisgender">Cisgender</option>
@@ -127,8 +181,8 @@ const GetInvolvedForm = () => {
                     </select>
                 </div>
                 <div className="form-group col-md-6 mt-3 mb-5">
-                    <label htmlFor="sexual-orientation">Sexual Orientation:</label>
-                    <select className="form-control" name="sexual-orientation" id="sexual-orientation" form="GetInvolvedForm-app">
+                    <label htmlFor="sexualOrientation">Sexual Orientation:</label>
+                    <select className="form-control" name="sexualOrientation" id="sexualOrientation" form="GetInvolvedForm-app" onChange={handleChange}>
                         <option value="lesbian">Lesbian</option>
                         <option value="gay">Gay</option>
                         <option value="bisexual">Bisexual</option>
@@ -142,41 +196,43 @@ const GetInvolvedForm = () => {
                 </div>
                 <h3>Contact Information</h3>
                 <div className="form-group my-3">
-                    <label htmlFor="phone">Phone:</label>
-                    <input type="tel" name="phone" className="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" required></input>
+                    <label htmlFor="phone">Phone:*</label>
+                    <input type="tel" name="phone" className="form-control" value={formData.phone} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" name="email" className="form-control" placeholder="hello@website.com"></input>
+                    <label htmlFor="email">Email:*</label>
+                    <input type="email" name="email" className="form-control" value={formData.email} required  onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="linkedIn">LinkedIn:</label>
-                    <input type="url" name="linkedIn" className="form-control" placeholder="LinkedIn"></input>
+                    <input type="url" name="linkedIn" className="form-control" value={formData.linkedIn} onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="github">GitHub:</label>
-                    <input type="url" name="github" className="form-control" placeholder="Github"></input>
+                    <input type="url" name="github" className="form-control" value={formData.github} onChange={handleChange}></input>
                 </div>
                 <div className="form-group mt-3 mb-5">
                     <label htmlFor="portfolio">Portfolio:</label>
-                    <input type="url" name="portfolio" className="form-control" placeholder="Portfolio"></input>
+                    <input type="url" name="portfolio" className="form-control" value={formData.portfolio} onChange={handleChange}></input>
                 </div>
                 <h3>Additional Information</h3>
                 <div className="form-group my-3">
                     <label htmlFor="skills">What skills are you most interested in learning about / want to develop to achieve your career goals? </label>
-                    <textarea name="skills" className="form-control"></textarea>
+                    <textarea name="skills" className="form-control" value={formData.skills} onChange={handleChange}></textarea>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="goals">What are your professional goals for the next 1-3 years? </label>
-                    <textarea name="goals" className="form-control"></textarea>
+                    <textarea name="goals" className="form-control" value={formData.goals} onChange={handleChange}></textarea>
                 </div>
                 <div className="form-group my-3">
-                    <label htmlFor="goals">Anything else we should know about you or that you'd like to tell us? </label>
-                    <textarea name="goals" className="form-control"></textarea>
+                    <label htmlFor="otherCmments">Anything else we should know about you or that you'd like to tell us? </label>
+                    <textarea name="otherComments" className="form-control" value={formData.otherComments} onChange={handleChange}></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary btn-sm">Submit</button>
             </div>
-
+            {message && <div className="alert alert-success" role="alert">
+                <p>{message}</p>
+            </div>}
         </form>
     );
 };

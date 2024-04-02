@@ -62,11 +62,13 @@ const GetInvolvedForm = () => {
 
     return (
         <form
+          name="GetInvolvedForm"
           className="GetInvolvedForm form-group"
           id="GetInvolvedForm-app"
-          data-netlify="true"
+          method="POST"
           onSubmit={handleSubmit}
         >
+            <input type="hidden" name="form-name" value="GetInvolvedForm" />
             <div className="row">
                 <h3>Personal Information</h3>
                 <div className="col-md-6 my-3">

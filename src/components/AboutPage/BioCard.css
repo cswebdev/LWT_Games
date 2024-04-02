@@ -1,0 +1,36 @@
+.BioCard {
+  text-align: left;
+}
+
+@media screen and (min-width: 800px) {
+  .BioCard {
+    max-width: 30%;
+  }
+}
+
+.BioCard-pronouns, .BioCard-role {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.BioCard img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: 100% 0;
+  aspect-ratio: 1/1;
+}
+
+.BioCard-links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.BioCard-links a {
+  color: black;
+  text-decoration: none;
+}
+
+.BioCard-links a:hover {
+  color: #46A4DF;
+}
+

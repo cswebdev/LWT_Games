@@ -1,0 +1,21 @@
+.BioList {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.BioList-header {
+  width: 100%;
+  text-align: center;
+}
+
+.BioList-bios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}

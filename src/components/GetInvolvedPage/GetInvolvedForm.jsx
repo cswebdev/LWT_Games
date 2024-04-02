@@ -54,10 +54,16 @@ const GetInvolvedForm = () => {
         });
     }
 
-    /** Redirect on form submit. */
+    /** Send form data on form submit and show outcome message. */
     function handleSubmit(evt) {
         evt.preventDefault();
-        setMessage(FORM_SUBMIT_THANKS);
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "GetInvolvedForm", ...formData })
+          })
+            .then(() => setMessage(FORM_SUBMIT_THANKS))
+            .catch(error => alert(error));
     }
 
     return (
@@ -65,7 +71,6 @@ const GetInvolvedForm = () => {
           name="GetInvolvedForm"
           className="GetInvolvedForm form-group"
           id="GetInvolvedForm-app"
-          method="POST"
           onSubmit={handleSubmit}
         >
             <input type="hidden" name="form-name" value="GetInvolvedForm" />

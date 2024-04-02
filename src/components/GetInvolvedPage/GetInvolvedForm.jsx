@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const FORM_SUBMIT_THANKS = `Thank you for your submission. Our team will look
-over your details and get back to you shortly!`
+over your details and get back to you shortly!`;
 
 /** Component for GetInvolvedForm
  *
@@ -36,7 +36,7 @@ const GetInvolvedForm = () => {
         skills: "",
         goals: "",
         otherComments: "",
-    }
+    };
 
     const [formData, setFormData] = useState(initialFormData);
     const [message, setMessage] = useState(null);
@@ -58,7 +58,7 @@ const GetInvolvedForm = () => {
         return Object.keys(data)
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
             .join("&");
-      }
+    };
 
     /** Send form data on form submit and show outcome message. */
     function handleSubmit(evt) {
@@ -67,19 +67,18 @@ const GetInvolvedForm = () => {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "GetInvolvedForm", ...formData })
-          })
+        })
             .then(() => setMessage(FORM_SUBMIT_THANKS))
             .catch(error => alert(error));
     }
 
     return (
         <form
-          name="GetInvolvedForm"
-          className="GetInvolvedForm form-group"
-          id="GetInvolvedForm-app"
-          onSubmit={handleSubmit}
+            name="GetInvolvedForm"
+            className="GetInvolvedForm form-group"
+            id="GetInvolvedForm-app"
+            onSubmit={handleSubmit}
         >
-            <input type="hidden" name="form-name" value="GetInvolvedForm" />
             <div className="row">
                 <h3>Personal Information</h3>
                 <div className="col-md-6 my-3">
@@ -214,7 +213,7 @@ const GetInvolvedForm = () => {
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="email">Email:*</label>
-                    <input type="email" name="email" className="form-control" value={formData.email} required  onChange={handleChange}></input>
+                    <input type="email" name="email" className="form-control" value={formData.email} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="linkedIn">LinkedIn:</label>
@@ -241,11 +240,12 @@ const GetInvolvedForm = () => {
                     <label htmlFor="otherCmments">Anything else we should know about you or that you'd like to tell us? </label>
                     <textarea name="otherComments" className="form-control" value={formData.otherComments} onChange={handleChange}></textarea>
                 </div>
+                <input type="hidden" name="form-name" value="GetInvolvedForm" />
+                {message && <div className="alert alert-success" role="alert">
+                    <p>{message}</p>
+                </div>}
                 <button type="submit" className="btn btn-primary btn-sm">Submit</button>
             </div>
-            {message && <div className="alert alert-success" role="alert">
-                <p>{message}</p>
-            </div>}
         </form>
     );
 };

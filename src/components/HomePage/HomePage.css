@@ -1,3 +1,4 @@
+/* container styling */
 .Container {
     display: flex;
     flex-direction: row;
@@ -22,20 +23,32 @@
     justify-content: center;
 }
 
+/* end container styling */
+
+/* panel styling */
 div.right-panel,
-div.middle-panel,
 div.left-panel {
-    min-width: 30%;
+    min-width: 40%;
     height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+div.middle-panel {
+
+    min-width: 20%;
+    height: 92vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .right-panel {
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(255, 255, 255);
     object-fit: contain;
-    overflow: hidden;
 
 }
 
@@ -44,95 +57,34 @@ div.left-panel {
     padding: 1em;
     text-align: center;
     margin: auto;
-    background-color: rgb(149, 149, 149);
+    background-color: transparent;
 }
 
 .left-panel {
-    background-color: rgb(213, 213, 213);
+    background-color: rgb(255, 255, 255);
     object-fit: contain;
-    overflow: hidden;
 }
+
+.right-panel img,
+.left-panel img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* end panel styling */
 
 .section {
     width: 100%;
 }
 
-/* button styling */
-/* primary button */
-.btn-primary {
-    background-color: rgb(128, 0, 128);
-    width: 60%;
-    padding: 2%;
-    outline: none;
-    border: 0;
-    font-size: 1.3em;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-
-.btn-primary:active,
-.btn-primary:hover,
-.btn-primary:focus-visible {
-    background-color: rgb(113, 0, 113);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-
-.btn-check:checked+.btn,
-.btn.active,
-.btn.show,
-.btn:first-child:active,
-:not(.btn-check)+.btn:active {
-    background-color: rgb(100, 0, 100);
-}
-
-/* info button solid */
-
-.btn-info {
-    background-color: #E11774;
-    border-color: #E11774;
-    color: #ffff;
-}
-
-.btn-info:active,
-.btn-info:hover,
-.btn-info:focus-visible {
-    background-color: #E11774;
-    color: #ffff;
-    border: 1px solid #E11774;
-}
-
-.btn-info-check:checked+.btn,
-.btn-info.active,
-.btn-info.show,
-.btn-info:first-child:active,
-:not(.btn-info-check)+.btn-info:active {
-    background-color: #c00e61;
-    color: #fff;
-    border: 1px solid #c00e61;
-}
-
-/* info button outline */
-
-.btn-outline-info {
-    border-color: #E11774;
-    color: #E11774;
-}
-
-.btn-outline-info:active,
-.btn-outline-info:hover,
-.btn-outline-info:focus-visible {
-    background-color: #E11774;
-    color: #ffff;
-    border: 1px solid #E11774;
-}
-
-.btn-outline-info-check:checked+.btn,
-.btn-outline-info.active,
-.btn-outline-info.show,
-.btn-outline-info:first-child:active,
-:not(.btn-outline-info-check)+.btn-outline-info:active {
-    background-color: #c00e61;
-    color: #fff;
-    border: 1px solid #c00e61;
+.placeholder {
+    height: 60vh;
+    width: 100%;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
 }
 
 /* row styling */
@@ -142,8 +94,11 @@ div.left-panel {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    border: 1px solid purple;
-    height: 50vh;
+    /* border: 1px solid purple; */
+    /* height: 60vh; */
+    padding: 0;
+    margin: 3vh 0px;
+    font-size: 25px;
 }
 
 .row:nth-child(even) {
@@ -151,13 +106,13 @@ div.left-panel {
     flex-direction: row-reverse;
     align-items: center;
     width: 100%;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 
 
-.col-md-6 {
+/* .col-md-6 {
     border: 1px solid grey;
-}
+} */
 
 
 .btn-dark {
@@ -165,12 +120,25 @@ div.left-panel {
     border-radius: 0;
 }
 
+
+.smallPlaceholder {
+    height: 34vh;
+    width: 18vw;
+    background-color: lightgray;
+}
+
+.team-button {
+    width: fit-content;
+}
+
+
 @media(max-width: 769px) {
     .container-header {
         flex-direction: column;
         width: 100%;
         padding: 0;
         margin: 0;
+        height: fit-content;
     }
 
     div.left-panel,
@@ -178,5 +146,18 @@ div.left-panel {
     div.right-panel,
     .section {
         width: 100%;
+        height: auto;
+
+    }
+
+    .right-panel img,
+    .left-panel img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    div.middle-panel {
+        position: relative;
     }
 }

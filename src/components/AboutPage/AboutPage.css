@@ -1,0 +1,58 @@
+.AboutPage-header {
+  height: 408px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #D9D9D9;
+}
+
+.AboutPage-header h1 {
+  text-align: center;
+  padding-top: 5%;
+}
+
+@media screen and (min-width: 600px) {
+  .AboutPage-header h1 {
+    text-align: center;
+    padding-top: 10%;
+  }
+}
+
+.AboutPage-mission {
+  text-align: center;
+  min-width: 90%;
+  margin-top: -40%;
+}
+
+@media screen and (min-width: 600px) {
+  .AboutPage-mission {
+    text-align: center;
+    min-width: 90%;
+    margin-top: -10%;
+  }
+}
+
+.AboutPage-our-story {
+  margin-bottom: 15%;
+}
+
+@media screen and (min-width: 600px) {
+  .AboutPage-our-story {
+    margin-bottom: 5%;
+  }
+}
+
+.AboutPage-our-story img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  .AboutPage-our-story img {
+    max-width: 400px;
+    margin: auto;
+    display: block;
+  }
+}

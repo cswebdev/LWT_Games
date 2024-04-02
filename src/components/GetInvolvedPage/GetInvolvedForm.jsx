@@ -54,6 +54,12 @@ const GetInvolvedForm = () => {
         });
     }
 
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+      }
+
     /** Send form data on form submit and show outcome message. */
     function handleSubmit(evt) {
         evt.preventDefault();

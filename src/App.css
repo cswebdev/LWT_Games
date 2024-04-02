@@ -11,7 +11,7 @@ body {
   font-family: 'OpenSans', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Lalezar', sans-serif;
   font-weight: 400;
 }
@@ -26,7 +26,7 @@ h2 {
   line-height: 62.68px;
 }
 
-p {
+p, li {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 400;

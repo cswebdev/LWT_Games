@@ -12,22 +12,22 @@ const GetInvolvedForm = () => {
     console.debug("GetInvolvedForm");
 
     return (
-        <form className="GetInvolvedForm form-group" id="GetInvolvedForm-app">
+        <form className="GetInvolvedForm form-group" id="GetInvolvedForm-app" data-netlify="true">
             <div className="row">
-            <h3>Personal Information</h3>
-                <div className="col-md-6">
-                    <label htmlFor="first-name">First Name:</label>
-                    <input type="text" name="first-name" placeholder="First Name" required></input>
+                <h3>Personal Information</h3>
+                <div className="col-md-6 my-3">
+                    <label htmlFor="first-name" className="form-label">First Name:</label>
+                    <input type="text" name="first-name" className="form-control" placeholder="First Name" required></input>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 my-3">
                     <label htmlFor="last-name">Last Name:</label>
-                    <input type="text" name="last-name" placeholder="Last Name" required></input>
+                    <input type="text" name="last-name" className="form-control" placeholder="Last Name" required></input>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 my-3">
                     <label htmlFor="pref-name">Preferred Name:</label>
-                    <input type="text" name="pref-name" placeholder="Preferred Name"></input>
+                    <input type="text" name="pref-name" className="form-control" placeholder="Preferred Name"></input>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 my-3">
                     <label htmlFor="pronouns">Pronouns:</label>
                     <select className="form-control" name="pronouns" id="pronouns" form="GetInvolvedForm-app" required>
                         <option value="she">She / Her</option>
@@ -42,15 +42,15 @@ const GetInvolvedForm = () => {
                         <option value="none">I choose not to disclose.</option>
                     </select>
                 </div>
-                <div className="form-group">
+                <div className="form-group my-3">
                     <label htmlFor="birthdate">Date of Birth:</label>
-                    <input type="date" placeholder="mm/dd/yyyy" required></input>
+                    <input type="date" name="date" className="form-control" placeholder="mm/dd/yyyy" required></input>
                 </div>
-                <div className="form-group">
+                <div className="form-group col-md-6 my-3">
                     <label htmlFor="city">City:</label>
-                    <input type="text" name="city" placeholder="City" required></input>
+                    <input type="text" name="city" className="form-control" placeholder="City" required></input>
                 </div>
-                <div className="form-group">
+                <div className="form-group col-md-6 my-3">
                     <label htmlFor="state">State:</label>
                     <select className="form-control" name="state" id="state" form="GetInvolvedForm-app" required>
                         <option value="AL">Alabama</option>
@@ -106,11 +106,11 @@ const GetInvolvedForm = () => {
                         <option value="WY">Wyoming</option>
                     </select>
                 </div>
-                <div className="form-group">
+                <div className="form-group my-3">
                     <label htmlFor="timezone">Timezone:</label>
-                    <input type="text" name="timezone" placeholder="PST"></input>
+                    <input type="text" name="timezone" className="form-control" placeholder="PST"></input>
                 </div>
-                <div className="form-group">
+                <div className="form-group col-md-6 mt-3 mb-5">
                     <label htmlFor="gender">Gender Identity:</label>
                     <select className="form-control" name="gender" id="gender" form="GetInvolvedForm-app">
                         <option value="agender">Agender</option>
@@ -126,7 +126,7 @@ const GetInvolvedForm = () => {
                         <option value="none">I choose not to disclose.</option>
                     </select>
                 </div>
-                <div className="form-group">
+                <div className="form-group col-md-6 mt-3 mb-5">
                     <label htmlFor="sexual-orientation">Sexual Orientation:</label>
                     <select className="form-control" name="sexual-orientation" id="sexual-orientation" form="GetInvolvedForm-app">
                         <option value="lesbian">Lesbian</option>
@@ -141,40 +141,41 @@ const GetInvolvedForm = () => {
                     </select>
                 </div>
                 <h3>Contact Information</h3>
-                <div className="form-group">
+                <div className="form-group my-3">
                     <label htmlFor="phone">Phone:</label>
-                    <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" required></input>
+                    <input type="tel" name="phone" className="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" required></input>
                 </div>
-                <div className="form-group">
+                <div className="form-group my-3">
                     <label htmlFor="email">Email:</label>
-                    <input type="email" name="email" placeholder="hello@website.com"></input>
+                    <input type="email" name="email" className="form-control" placeholder="hello@website.com"></input>
                 </div>
-                <div className="form-group">
+                <div className="form-group my-3">
                     <label htmlFor="linkedIn">LinkedIn:</label>
-                    <input type="url" name="linkedIn" placeholder="LinkedIn"></input>
+                    <input type="url" name="linkedIn" className="form-control" placeholder="LinkedIn"></input>
                 </div>
-                <div className="form-group">
+                <div className="form-group my-3">
                     <label htmlFor="github">GitHub:</label>
-                    <input type="url" name="github" placeholder="Github"></input>
+                    <input type="url" name="github" className="form-control" placeholder="Github"></input>
                 </div>
-                <div className="form-group">
+                <div className="form-group mt-3 mb-5">
                     <label htmlFor="portfolio">Portfolio:</label>
-                    <input type="url" name="portfolio" placeholder="Portfolio"></input>
+                    <input type="url" name="portfolio" className="form-control" placeholder="Portfolio"></input>
                 </div>
-                <div className="form-group">
+                <h3>Additional Information</h3>
+                <div className="form-group my-3">
                     <label htmlFor="skills">What skills are you most interested in learning about / want to develop to achieve your career goals? </label>
-                    <textarea name="skills"></textarea>
+                    <textarea name="skills" className="form-control"></textarea>
                 </div>
-                <div className="form-group">
+                <div className="form-group my-3">
                     <label htmlFor="goals">What are your professional goals for the next 1-3 years? </label>
-                    <textarea name="goals"></textarea>
+                    <textarea name="goals" className="form-control"></textarea>
                 </div>
-                <div className="form-group">
+                <div className="form-group my-3">
                     <label htmlFor="goals">Anything else we should know about you or that you'd like to tell us? </label>
-                    <textarea name="goals"></textarea>
+                    <textarea name="goals" className="form-control"></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary btn-sm">Submit</button>
-                </div>
+            </div>
 
         </form>
     );

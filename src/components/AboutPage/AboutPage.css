@@ -1,9 +1,5 @@
 .AboutPage-header {
   height: 408px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   background-color: #D9D9D9;
 }
 
@@ -15,22 +11,13 @@
 @media screen and (min-width: 600px) {
   .AboutPage-header h1 {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 8%;
   }
 }
 
 .AboutPage-mission {
   text-align: center;
   min-width: 90%;
-  margin-top: -40%;
-}
-
-@media screen and (min-width: 600px) {
-  .AboutPage-mission {
-    text-align: center;
-    min-width: 90%;
-    margin-top: -10%;
-  }
 }
 
 .AboutPage-our-story {

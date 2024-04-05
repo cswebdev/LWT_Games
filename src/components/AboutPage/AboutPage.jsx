@@ -14,7 +14,7 @@ import "./AboutPage.css";
  * Linked at /about
  */
 const AboutPage = () => {
-  console.debug("AboutPage");
+  // console.debug("AboutPage");
 
   return (
     <div className="AboutPage">

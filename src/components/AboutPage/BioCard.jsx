@@ -22,12 +22,17 @@ const BioCard = ({ bio }) => {
 
     return (
         <div className="BioCard col-md-5 col-lg-4">
-            <img src={bio.photo} alt={bio.name} />
+            <img
+              className="BioCard-headshot"
+              src={bio.photo}
+              alt={bio.name}
+            />
+            {bio.drawing &&
             <img
               className="BioCard-drawing"
               src={bio.drawing}
-              alt={`${bio.name} sketch`}
-            />
+              alt={bio.name}
+            />}
             <h2 className="BioCard-name">{bio.name}</h2>
             <div className="BioCard-pronouns">
                 Pronouns: {bio.pronouns}

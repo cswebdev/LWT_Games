@@ -18,21 +18,21 @@
   padding: 0px 10px 10px 10px;
 }
 
-.BioCard img {
+.BioCard-headshot {
   max-width: 100%;
   object-fit: cover;
   object-position: 100% 0;
 }
 
 .BioCard-drawing {
-  margin-top: -477px;
-  visibility: hidden;
-  transition: ease-in;
+  margin-top: -478px;
+  opacity: 0;
   transition-duration: 300ms;
+  transition-timing-function: ease-in;
 }
 
 .BioCard-drawing:hover {
-  visibility: visible;
+  opacity: 1;
 }
 
 .BioCard-bio {

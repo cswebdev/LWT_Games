@@ -1,4 +1,4 @@
-/* container styling */
+/* Container styling */
 .Container {
     display: flex;
     flex-direction: row;
@@ -6,7 +6,7 @@
 
 }
 
-.container-header {
+.Container-header {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -17,17 +17,17 @@
     overflow: hidden;
 }
 
-.container-body {
+.Container-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* end container styling */
+/* end Container styling */
 
 /* panel styling */
-div.right-panel,
-div.left-panel {
+div.Right-panel,
+div.Left-panel {
     min-width: 40%;
     height: 92vh;
     display: flex;
@@ -35,7 +35,7 @@ div.left-panel {
     align-items: center;
 }
 
-div.middle-panel {
+div.Middle-panel {
 
     min-width: 20%;
     height: 92vh;
@@ -46,13 +46,13 @@ div.middle-panel {
 
 }
 
-.right-panel {
+.Right-panel {
     background-color: rgb(255, 255, 255);
     object-fit: contain;
 
 }
 
-.middle-panel {
+.Middle-panel {
     flex-direction: column;
     padding: 1em;
     text-align: center;
@@ -60,13 +60,13 @@ div.middle-panel {
     background-color: transparent;
 }
 
-.left-panel {
+.Left-panel {
     background-color: rgb(255, 255, 255);
     object-fit: contain;
 }
 
-.right-panel img,
-.left-panel img {
+.Right-panel img,
+.Left-panel img {
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
@@ -133,7 +133,7 @@ div.middle-panel {
 
 
 @media(max-width: 769px) {
-    .container-header {
+    .Container-header {
         flex-direction: column;
         width: 100%;
         padding: 0;
@@ -141,23 +141,23 @@ div.middle-panel {
         height: fit-content;
     }
 
-    div.left-panel,
-    div.middle-panel,
-    div.right-panel,
+    div.Left-panel,
+    div.Middle-panel,
+    div.Right-panel,
     .section {
         width: 100%;
         height: auto;
 
     }
 
-    .right-panel img,
-    .left-panel img {
+    .Right-panel img,
+    .Left-panel img {
         width: 100%;
         height: auto;
         object-fit: cover;
     }
 
-    div.middle-panel {
+    div.Middle-panel {
         position: relative;
     }
 }

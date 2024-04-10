@@ -11,7 +11,9 @@ body {
   font-family: 'OpenSans', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Lalezar', sans-serif;
   font-weight: 400;
 }
@@ -26,7 +28,8 @@ h2 {
   line-height: 62.68px;
 }
 
-p, li {
+p,
+li {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -36,13 +39,14 @@ p, li {
 /* button styling */
 /* primary button */
 .btn-primary {
-  background-color: rgb(128, 0, 128);
-  width: 60%;
-  padding: 2%;
+  background-color: #7030A0;
+  /* width: 0%; */
+  padding: 5% 15%;
   outline: none;
   border: 0;
-  font-size: 1.3em;
+  font-size: 1em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 30px;
 }
 
 .btn-primary:active,

@@ -23,12 +23,15 @@ const AboutPage = () => {
     <div className="AboutPage">
       <div className="AboutPage-container">
         <section className="AboutPage-header">
-          <div className="AboutPage-drawings">
-            {drawings.map(drawing => (
-              <img src={drawing} />
-            ))}
+          {/* <div className="AboutPage-overlay"></div> */}
+            <div className="AboutPage-drawings">
+              {drawings.map(drawing => (
+                <img src={drawing} />
+              ))}
+            </div>
+          {/* <div className="AboutPage-title">
+            <h1>#LWT Games</h1>
           </div>
-          {/* <h1>#LWT Games</h1>
           <div className="AboutPage-mission">
             <p>Mission statement</p>
           </div> */}

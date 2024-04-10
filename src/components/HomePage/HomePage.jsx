@@ -9,11 +9,11 @@ const HomePage = () => {
    return (
       <>
          <div className="Container">
-            <section className="container-header">
-               <div className="right-panel">
-                  <img src={homepageRightImg} alt="homepage right"></img>
+            <section className="Container-header">
+               <div className="Right-panel">
+                  <img src={homepageRightImg} alt="homepage Right"></img>
                </div>
-               <div className="middle-panel">
+               <div className="Middle-panel">
                   <h1>#LWT GAMES</h1>
                   <p>
                      Connect with Lesbian's Who Tech <br></br>Pride Summit in a
@@ -23,12 +23,12 @@ const HomePage = () => {
                      Play Bingo
                   </button>
                </div>
-               <div className="left-panel">
-                  <img src={homepageLeftImg} alt="homepage left"></img>
+               <div className="Left-panel">
+                  <img src={homepageLeftImg} alt="homepage Left"></img>
                </div>
             </section>
          </div>
-         <section className="container-body">
+         <section className="Container-body">
             <div className="row">
                <div className="col-md-6">
                   <h2>Engaging with Lesbians Who Tech Pride Summit</h2>
@@ -70,11 +70,17 @@ const HomePage = () => {
                   We're a group of _____ individuals coming together to better
                   our community
                </h2>
+
                <div className="images d-flex align-content-center justify-content-evenly">
                   <div className="smallPlaceholder"></div>
                   <div className="smallPlaceholder"></div>
                   <div className="smallPlaceholder"></div>
                </div>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  A scelerisque purus semper eget duis at tellus at urna.
+               </p>
                <button type="button" className="btn btn-info team-button">
                   Meet the Team
                </button>

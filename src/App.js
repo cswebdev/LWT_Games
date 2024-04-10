@@ -5,8 +5,8 @@ import NavBar from "./components/Navbar/NavBar";
 import AboutPage from "./components/AboutPage/AboutPage";
 import FAQ from "./components/FAQ/FAQ";
 import GetInvolvedPage from "./components/GetInvolvedPage/GetInvolvedPage";
-import Footer from "./components/Footer/Footer";
-
+import Footer
+ from "./components/Footer/Footer";
 function App() {
    return (
       <div className="App">

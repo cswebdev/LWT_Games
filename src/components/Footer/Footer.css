@@ -25,12 +25,12 @@
 
 
 .col-2 li {
-    padding-left: 20%;
+    padding-left: 22.2%;
 
 }
 
 .col-follow li {
-    padding-left: 24%;
+    padding-left: 25.8%;
 }
 
 
@@ -72,14 +72,14 @@ ul {
 
 .Loading-progress {
     height: 250px;
-    width: 5px;
+    width: 8px;
     border-radius: 3px;
     background: linear-gradient(0deg, red 0%, yellow 15%, lime 30%, cyan 50%, blue 65%, magenta 80%, red 100%);
     background-size: 200% 200%;
-    animation: moveGradient 5s linear infinite;
+    animation: moveGradient 15s linear infinite;
     filter: blur(.7px);
-    
 }
+
 
 @keyframes moveGradient {
     0% {

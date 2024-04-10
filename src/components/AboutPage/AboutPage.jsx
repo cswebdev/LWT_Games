@@ -14,12 +14,15 @@ import "./AboutPage.css";
  * Linked at /about
  */
 const AboutPage = () => {
-  console.debug("AboutPage");
+  // console.debug("AboutPage");
 
   return (
     <div className="AboutPage">
       <div className="AboutPage-container">
         <section className="AboutPage-header">
+          <div className="AboutPage-header-images">
+            {}
+          </div>
           <h1>#LWT Games</h1>
           <div className="AboutPage-mission">
             <p>Mission statement</p>

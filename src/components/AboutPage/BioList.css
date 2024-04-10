@@ -1,6 +1,7 @@
 .BioList {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   margin-top: 5%;
   justify-content: center;
@@ -10,6 +11,7 @@
 .BioList-header {
   width: 100%;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .BioList-bios {
@@ -17,5 +19,5 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 55px;
 }

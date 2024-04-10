@@ -1,5 +1,6 @@
 import BioList from "./BioList";
 import "./AboutPage.css";
+import { BIOS } from "./bios";
 
 /** Component for AboutPage
  *
@@ -16,14 +17,21 @@ import "./AboutPage.css";
 const AboutPage = () => {
   // console.debug("AboutPage");
 
+  const drawings = BIOS.map(bio => bio.drawing);
+
   return (
     <div className="AboutPage">
       <div className="AboutPage-container">
         <section className="AboutPage-header">
-          <h1>#LWT Games</h1>
+          <div className="AboutPage-drawings">
+            {drawings.map(drawing => (
+              <img src={drawing} />
+            ))}
+          </div>
+          {/* <h1>#LWT Games</h1>
           <div className="AboutPage-mission">
             <p>Mission statement</p>
-          </div>
+          </div> */}
         </section>
         <section className="AboutPage-container-body">
           <div className="row AboutPage-our-story">

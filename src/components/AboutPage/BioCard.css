@@ -4,25 +4,45 @@
 
 @media screen and (min-width: 800px) {
   .BioCard {
-    max-width: 30%;
+    max-width: 454px;
   }
+}
+
+.BioCard-name {
+  padding: 10px 10px 10px 3px;
 }
 
 .BioCard-pronouns, .BioCard-role {
   font-size: 32px;
   line-height: 48px;
+  padding: 0px 10px 10px 10px;
 }
 
-.BioCard img {
+.BioCard-headshot {
   max-width: 100%;
   object-fit: cover;
   object-position: 100% 0;
-  aspect-ratio: 1/1;
+}
+
+.BioCard-drawing {
+  margin-top: -478px;
+  opacity: 0;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
+.BioCard-drawing:hover {
+  opacity: 1;
+}
+
+.BioCard-bio {
+  padding: 0px 10px 0px 10px;
 }
 
 .BioCard-links {
   list-style-type: none;
   padding-left: 0;
+  line-height: 48px;
 }
 
 .BioCard-links a {

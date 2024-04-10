@@ -1,8 +1,8 @@
 .Footer {
     display: flex;
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: #161616;
     color: white;
     height: 35vh;
@@ -11,16 +11,33 @@
 .footer-row {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    max-width: 75%;
+}
+
+
+
+.col-2 li {
+    padding-left: 20%;
 
 }
+
+.col-follow li {
+    padding-left: 24%;
+}
+
 
 .logo-placeholder {
     height: 101px;
     width: 135px;
     background-color: grey;
+
+}
+
+.logo-placeholder p {
+    line-height: -4rem;
 }
 
 ul {
@@ -39,6 +56,31 @@ ul {
     justify-content: center;
     align-items: center;
     justify-content: center;
-    background-color: rgb(78, 79, 79);
 
+}
+
+.Loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Loading-progress {
+    width: 5px;
+    height: 250px;
+    border-radius: 3px;
+    background: linear-gradient(0deg, red 0%, yellow 15%, lime 30%, cyan 50%, blue 65%, magenta 80%, red 100%);
+    background-size: 100%;
+    animation: moveGradient 5s horizontal infinite;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
 }

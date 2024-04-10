@@ -7,7 +7,10 @@ const Footer = () => {
          <div className="row footer-row">
             <div className="col-3 col-logo">
                <div className="logo-placeholder"></div>
-               <p>Tegan's House 39 LWT Games Drive Portland, Oregon, USA, ZIP </p>
+               <p>
+                  Tegan's House 39 LWT Games <br /> Drive Portland, Oregon, USA,
+                  ZIP
+               </p>
             </div>
             <div className="col-1">
                <div class="Loading">
@@ -36,8 +39,8 @@ const Footer = () => {
                </ul>
             </div>
             <div className="col-1">
-               <div class="Loading">
-                  <div class="Loading-progress"></div>
+               <div className="Loading">
+                  <div className="Loading-progress"></div>
                </div>
             </div>
             <div className="col-2">

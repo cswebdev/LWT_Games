@@ -1,5 +1,6 @@
 import BioList from "./BioList";
 import "./AboutPage.css";
+import { BIOS } from "./bios";
 
 /** Component for AboutPage
  *
@@ -20,6 +21,9 @@ const AboutPage = () => {
     <div className="AboutPage">
       <div className="AboutPage-container">
         <section className="AboutPage-header">
+          <div className="AboutPage-header-images">
+            {}
+          </div>
           <h1>#LWT Games</h1>
           <div className="AboutPage-mission">
             <p>Mission statement</p>

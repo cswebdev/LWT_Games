@@ -177,7 +177,7 @@ const JULIANE = new Bio(
   undefined,
   undefined,
   "I joined LWT Games to take on more front end projects, collaborate with a team, and build my community.",
-  "Met a group of really cool folks."
+  "I've gotten to work with a really cool group of folks."
 );
 
 const CHELSEA = new Bio(
@@ -186,8 +186,8 @@ const CHELSEA = new Bio(
   "Frontend Engineer",
   `Full Stack Developer | React | AngularJS | Python | Django | Java | Spring
   Boot | Greenville, SC`,
-  undefined,
-  undefined,
+  "/headshots/chelsea_headshot.png",
+  "/drawings/chelsea_drawing.png",
   "https://chelseasnider.netlify.app/",
   "https://www.linkedin.com/in/chelsea-snider/",
   undefined,

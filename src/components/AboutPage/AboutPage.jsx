@@ -1,6 +1,5 @@
 import BioList from "./BioList";
 import "./AboutPage.css";
-import { BIOS } from "./bios";
 
 /** Component for AboutPage
  *

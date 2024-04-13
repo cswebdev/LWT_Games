@@ -9,7 +9,7 @@
 .Container-header {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     width: 100% !important;
@@ -26,50 +26,44 @@
 /* end Container styling */
 
 /* panel styling */
-div.Right-panel,
-div.Left-panel {
+div.Right-panel {
     min-width: 40%;
     height: 92vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
-div.Middle-panel {
 
-    min-width: 20%;
-    height: 92vh;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
 
-}
 
 .Right-panel {
     background-color: rgb(255, 255, 255);
     object-fit: contain;
-
+    align-items: flex-end;
+    height: auto;
 }
 
-.Middle-panel {
-    flex-direction: column;
-    padding: 1em;
-    text-align: center;
-    margin: auto;
-    background-color: transparent;
-}
+
 
 .Left-panel {
     background-color: rgb(255, 255, 255);
-    object-fit: contain;
+    padding-left: 2em;
+
 }
 
-.Right-panel img,
-.Left-panel img {
-    object-fit: contain;
+.Right-panel img {
+    object-fit: cover;
+    height: auto;
     max-width: 100%;
     max-height: 100%;
+    object-position: 11em 0%;
+}
+
+
+
+.Left-panel img {
+    border: 1px solid pink;
 }
 
 

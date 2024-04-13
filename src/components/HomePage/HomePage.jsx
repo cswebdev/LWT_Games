@@ -9,20 +9,17 @@ const HomePage = () => {
          <div className="Container">
             <section className="Container-header">
                <div className="Right-panel">
-                  <img src={homepageRightImg} alt="homepage Right"></img>
+                  <img src={homepageLeftImg} alt="homepage Left"></img>
                </div>
-               <div className="Middle-panel">
+
+               <div className="Left-panel">
                   <h1>#LWT GAMES</h1>
                   <p>
-                     Connect with Lesbian's Who Tech <br></br>Pride Summit in a
-                     whole new way.
+                     Playing Bingo to connect <br></br> and create community
                   </p>
                   <button type="button" className="btn btn-primary">
                      Play Bingo
                   </button>
-               </div>
-               <div className="Left-panel">
-                  <img src={homepageLeftImg} alt="homepage Left"></img>
                </div>
             </section>
          </div>

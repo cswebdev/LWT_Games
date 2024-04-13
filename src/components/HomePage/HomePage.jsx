@@ -13,7 +13,7 @@ const HomePage = () => {
                </div>
 
                <div className="Left-panel">
-                  <h1>#LWT GAMES</h1>
+                  <h1>#LWTGAMES</h1>
                   <p>
                      Playing Bingo to connect <br></br> and create community
                   </p>

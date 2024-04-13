@@ -8,7 +8,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'OpenSans', sans-serif;
 }
 
 h1,
@@ -19,8 +18,8 @@ h3 {
 }
 
 h1 {
-  font-size: 60px;
-  line-height: 94.02px;
+  font-size: 70px;
+  line-height: 109.69px;
 }
 
 h2 {
@@ -41,7 +40,7 @@ li {
 .btn-primary {
   background-color: #7030A0;
   /* width: 0%; */
-  padding: 5% 15%;
+  padding: 2% 10%;
   outline: none;
   border: 0;
   font-size: 1em;

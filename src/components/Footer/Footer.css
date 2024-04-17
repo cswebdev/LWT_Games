@@ -20,19 +20,14 @@
 .col-1 {
     margin: 0;
     padding: 0;
+    max-width: 2%;
 
 }
 
-
-.col-2 li {
-    padding-left: 18%;
-
+.col-2 {
+    min-width: max-content;
+    margin: 0% 2% 0% 2%;
 }
-
-.col-follow li {
-    padding-left: 22.8%;
-}
-
 
 .logo-placeholder {
     height: 101px;

@@ -14,7 +14,7 @@ const HomePage = () => {
 
                <div className="Left-panel">
                   <h1>We Are InCo.</h1>
-                  <p>
+                  <p className="Header-text">
                      Let's connect & create<br></br> community with bingo!
                   </p>
                   <button type="button" className="btn btn-primary">
@@ -25,20 +25,21 @@ const HomePage = () => {
          </div>
          <div className="row d-flex text-center justify-content-center who-are-we">
             <h2>Who Are We?</h2>
-            <p className="we-are">We are Interconnected Collective</p>
-            <p>
+            <p className="we-are-subtitle">We are Interconnected Collective</p>
+            <p className="we-are-text">
                a group of gamers determined to breakthrough digital walls
                through the power of fun!
             </p>
 
-            <div className="images d-flex align-content-center justify-content-evenly">
+            <div className="images d-flex align-content-center justify-content-center">
                <div className="smallPlaceholder"></div>
                <div className="smallPlaceholder"></div>
                <div className="smallPlaceholder"></div>
             </div>
 
             <button type="button" className="btn btn-info team-button">
-               Meet the Team
+               Meet the Team{" "}
+               <span class="material-symbols-outlined">chevron_right</span>
             </button>
          </div>
          <section className="Container-body">
@@ -56,7 +57,7 @@ const HomePage = () => {
                      Join Summit?
                   </button>
                </div>
-               <div className="col-md-6 m-0 p-0">
+               <div className="col-md-6 m-0 p-0 d-flex">
                   <div class="placeholder"></div>
                </div>
             </div>

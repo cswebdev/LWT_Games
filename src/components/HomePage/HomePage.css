@@ -110,7 +110,7 @@ div.Right-panel {
     background-color: lightgray;
     margin: 1em 0;
     padding: 0;
-    
+
 }
 
 /* row styling */
@@ -119,9 +119,8 @@ div.Right-panel {
     display: flex;
     flex-direction: row;
     width: 100%;
-  
     padding: 0;
-    margin: 3vh 0px;
+    margin: 5vh 0px;
     font-size: 25px;
 }
 
@@ -163,19 +162,25 @@ div.Right-panel {
 
 }
 
-.team-button {
+.team-button,
+.summit-button {
     width: fit-content;
     margin-top: 2em;
-    padding: .5% 1%;
+    padding: .5% 1.2%;
     font-size: 32px;
     display: flex;
     align-items: center;
     justify-self: center;
 }
 
-.team-button span {
+
+
+
+.team-button span,
+.summit-button span {
     padding-top: .2em;
 }
+
 
 @media(max-width: 769px) {
     .Container-header {

@@ -84,9 +84,9 @@ li {
 .btn-info.show,
 .btn-info:first-child:active,
 :not(.btn-info-check)+.btn-info:active {
-  background-color: #c00e61;
+  background-color: #ca1468;
   color: #fff;
-  border: 1px solid #c00e61;
+  border: 1px solid #ca1468;
 }
 
 /* info button outline */
@@ -109,7 +109,7 @@ li {
 .btn-outline-info.show,
 .btn-outline-info:first-child:active,
 :not(.btn-outline-info-check)+.btn-outline-info:active {
-  background-color: #c00e61;
+  background-color: #ca1468;
   color: #fff;
-  border: 1px solid #c00e61;
+  border: 1px solid #ca1468;
 }

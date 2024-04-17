@@ -53,8 +53,14 @@ const HomePage = () => {
                      aperiam veritatis sequi. Reiciendis numquam laudantium ex
                      totam.
                   </p>
-                  <button type="button" className="btn btn-outline-info">
-                     Join Summit?
+                  <button
+                     type="button"
+                     className="btn btn-outline-info summit-button"
+                  >
+                     Join The Summit{" "}
+                     <span class="material-symbols-outlined ">
+                        chevron_right
+                     </span>
                   </button>
                </div>
                <div className="col-md-6 m-0 p-0 d-flex">

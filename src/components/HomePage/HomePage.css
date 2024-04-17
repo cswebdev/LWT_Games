@@ -67,7 +67,7 @@ div.Right-panel {
     min-width: 40%;
     max-height: 100%;
     min-height: 40%;
-    object-position: 11em 0%;
+    object-position: 10em 0%;
 }
 
 
@@ -124,15 +124,30 @@ div.Right-panel {
     border-radius: 0;
 }
 
+/* who are we row */
+
+.who-are-we h2 {
+    font-size: 60px;
+}
+
+.we-are {
+    font-weight: normal;
+    font-size: 40px;
+}
+
+
 
 .smallPlaceholder {
     height: 34vh;
     width: 18vw;
     background-color: lightgray;
+    border: 2px solid purple;
+    border-radius: 5%;
 }
 
 .team-button {
     width: fit-content;
+    margin-top: 3em;
 }
 
 

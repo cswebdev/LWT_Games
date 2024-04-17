@@ -13,15 +13,33 @@ const HomePage = () => {
                </div>
 
                <div className="Left-panel">
-                  <h1>#LWTGAMES</h1>
+                  <h1>We Are InCo.</h1>
                   <p>
-                     Playing Bingo to connect <br></br> and create community
+                     Let's connect & create<br></br> community with bingo!
                   </p>
                   <button type="button" className="btn btn-primary">
                      Play Bingo
                   </button>
                </div>
             </section>
+         </div>
+         <div className="row d-flex text-center justify-content-center who-are-we">
+            <h2>Who Are We?</h2>
+            <p className="we-are">We are Interconnected Collective</p>
+            <p>
+               a group of gamers determined to breakthrough digital walls
+               through the power of fun!
+            </p>
+
+            <div className="images d-flex align-content-center justify-content-evenly">
+               <div className="smallPlaceholder"></div>
+               <div className="smallPlaceholder"></div>
+               <div className="smallPlaceholder"></div>
+            </div>
+
+            <button type="button" className="btn btn-info team-button">
+               Meet the Team
+            </button>
          </div>
          <section className="Container-body">
             <div className="row">
@@ -59,26 +77,6 @@ const HomePage = () => {
                <div className="col-md-6 m-0 p-0">
                   <div class="placeholder"></div>
                </div>
-            </div>
-            <div className="row d-flex text-center justify-content-center">
-               <h2>
-                  We're a group of _____ individuals coming together to better
-                  our community
-               </h2>
-
-               <div className="images d-flex align-content-center justify-content-evenly">
-                  <div className="smallPlaceholder"></div>
-                  <div className="smallPlaceholder"></div>
-                  <div className="smallPlaceholder"></div>
-               </div>
-               <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  A scelerisque purus semper eget duis at tellus at urna.
-               </p>
-               <button type="button" className="btn btn-info team-button">
-                  Meet the Team
-               </button>
             </div>
          </section>
       </>

@@ -22,7 +22,7 @@
 
 .AboutPage-our-story {
   margin-bottom: 15%;
-  margin-left: 40px;
+  margin-left: 80px;
 }
 
 @media screen and (min-width: 600px) {
@@ -44,4 +44,10 @@
     margin: auto;
     display: block;
   }
+}
+
+.AboutPage-our-hope {
+  font-weight: 700;
+  font-size: 34px;
+  padding-top: 3%;
 }

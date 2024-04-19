@@ -19,7 +19,9 @@ const BioList = () => {
         <div className="BioList">
             <div className="BioList-header">
                 <h2>Contributors</h2>
-                <p>Our awesome group of techies blah blah</p>
+                <p>
+                    Our one-of-a-kind group of techies who left an impression on InCo.
+                </p>
             </div>
             <div className="BioList-bios">
                 {BIOS.map((bio, idx) => <BioCard key={idx} bio={bio} />)}

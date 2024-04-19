@@ -44,7 +44,7 @@ const AboutPage = () => {
               collaboration) to engage attendees at the Lesbians Who Tech &
               Allies conference.
               </p>
-              <p class="AboutPage-our-hope">
+              <p className="AboutPage-our-hope">
               Our hope remains the same
               </p>
               <p>
@@ -59,9 +59,7 @@ const AboutPage = () => {
               </img>
             </div>
           </div>
-          <div className="row">
-            <BioList />
-          </div>
+          <BioList />
         </section>
       </div>
     </div>

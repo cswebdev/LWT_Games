@@ -1,21 +1,11 @@
 .BioCard {
-  text-align: left;
+  text-align: center;
 }
 
 @media screen and (min-width: 800px) {
   .BioCard {
     max-width: 454px;
   }
-}
-
-.BioCard-name {
-  padding: 10px 10px 10px 3px;
-}
-
-.BioCard-pronouns, .BioCard-role {
-  font-size: 32px;
-  line-height: 48px;
-  padding: 0px 10px 10px 10px;
 }
 
 .BioCard-headshot {
@@ -26,7 +16,8 @@
 }
 
 .BioCard-drawing {
-  margin-top: -478px;
+  margin-top: -340px;
+  height: 290px;
   opacity: 0;
   transition-duration: 300ms;
   transition-timing-function: ease-in;
@@ -35,23 +26,3 @@
 .BioCard-drawing:hover {
   opacity: 1;
 }
-
-.BioCard-bio {
-  padding: 0px 10px 0px 10px;
-}
-
-.BioCard-links {
-  list-style-type: none;
-  padding-left: 0;
-  line-height: 48px;
-}
-
-.BioCard-links a {
-  color: black;
-  text-decoration: none;
-}
-
-.BioCard-links a:hover {
-  color: #46A4DF;
-}
-

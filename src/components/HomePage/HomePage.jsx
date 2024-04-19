@@ -1,9 +1,8 @@
 import React from "react";
 import "./HomePage.css";
-// import homepageRightImg from "../../assets/right_mainpage_image.png";
-// import homepageLeftImg from "../../assets/left_mainpage_image.png";
-// import homepageRightImg from "../../assets/right_mainpage_image.png";
+//import homepageRightImg from "../../assets/right_mainpage_image.png";
 import homepageLeftImg from "../../assets/left_mainpage_image.png";
+import imageAssets from "../../utils/Utils";
 
 const HomePage = () => {
    return (
@@ -34,9 +33,27 @@ const HomePage = () => {
             </p>
 
             <div className="images d-flex align-content-center justify-content-center">
-               <div className="smallPlaceholder"></div>
-               <div className="smallPlaceholder"></div>
-               <div className="smallPlaceholder"></div>
+               <div className="whoWeAreFrame">
+                  <img
+                     className="oliviaPortrait"
+                     src={imageAssets.oliviaPortrait}
+                     alt="Olivia Portrait"
+                  />
+               </div>
+               <div className="whoWeAreFrame">
+                  <img
+                     className="laneDrawing"
+                     src={imageAssets.laneDrawing}
+                     alt="Drawing of Lane"
+                  />
+               </div>
+               <div className="whoWeAreFrame">
+                  <img
+                     className="vestDrawing"
+                     src={imageAssets.vestDrawing}
+                     alt="Drawing of a vest"
+                  />
+               </div>
             </div>
 
             <button type="button" className="btn btn-info team-button">

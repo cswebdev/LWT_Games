@@ -2,7 +2,7 @@ import React from "react";
 import "./HomePage.css";
 // import homepageRightImg from "../../assets/right_mainpage_image.png";
 // import homepageLeftImg from "../../assets/left_mainpage_image.png";
-import homepageRightImg from "../../assets/right_mainpage_image.png";
+// import homepageRightImg from "../../assets/right_mainpage_image.png";
 import homepageLeftImg from "../../assets/left_mainpage_image.png";
 
 const HomePage = () => {

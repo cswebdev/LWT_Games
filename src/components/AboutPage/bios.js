@@ -187,7 +187,7 @@ const CHELSEA = new Bio(
   `Full Stack Developer | React | AngularJS | Python | Django | Java | Spring
   Boot | Greenville, SC`,
   undefined,
-  undefined,
+  "/drawings/chelsea_drawing.png",
   "https://chelseasnider.netlify.app/",
   "https://www.linkedin.com/in/chelsea-snider/",
   undefined,

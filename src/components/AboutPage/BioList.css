@@ -3,3 +3,13 @@
   text-align: center;
   margin-bottom: 30px;
 }
+
+.BioList-bios {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 77px;
+  margin-right: 77px;
+  column-gap: 3%;
+  row-gap: 56px;
+}

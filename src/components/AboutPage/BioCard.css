@@ -1,28 +1,43 @@
 .BioCard {
+  position: relative;
   text-align: center;
-}
-
-@media screen and (min-width: 800px) {
-  .BioCard {
-    max-width: 454px;
-  }
+  margin-top: 50px;
+  margin-bottom: 28px;
+  width: 20%;
 }
 
 .BioCard-headshot {
-  height: 290px;
-  max-width: 100%;
+  position: relative;
   object-fit: cover;
   object-position: 100% 0;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 55px;
 }
 
 .BioCard-drawing {
-  margin-top: -340px;
-  height: 290px;
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
   transition-duration: 300ms;
   transition-timing-function: ease-in;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 55px;
 }
 
 .BioCard-drawing:hover {
   opacity: 1;
+  cursor: pointer;
+}
+
+.BioCard-name {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: 700;
+}
+
+.BioCard-pronouns {
+
 }

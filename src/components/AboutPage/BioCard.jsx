@@ -21,19 +21,21 @@ const BioCard = ({ bio }) => {
     // console.debug("BioCard", bio);
 
     return (
-        <div className="BioCard col-6 col-md-3">
+        <div className="BioCard">
             <img
-              className="BioCard-headshot"
+              className="BioCard-headshot img-fluid"
+              style={{borderColor: "#7030A0"}}
               src={bio.photo}
               alt={bio.name}
             />
             {bio.drawing &&
             <img
-              className="BioCard-drawing"
+              className="BioCard-drawing img-fluid"
+              style={{borderColor: "#7030A0"}}
               src={bio.drawing}
               alt={bio.name}
             />}
-            <h3 className="BioCard-name">{bio.name}</h3>
+            <div className="BioCard-name">{bio.name}</div>
             <div className="BioCard-pronouns">
                 {bio.pronouns}
             </div>

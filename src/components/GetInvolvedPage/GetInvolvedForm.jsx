@@ -83,19 +83,19 @@ const GetInvolvedForm = () => {
                 <h3>Personal Information</h3>
                 <div className="col-md-6 my-3">
                     <label htmlFor="firstName" className="form-label">First Name:*</label>
-                    <input type="text" name="firstName" className="form-control" value={formData.firstName} required onChange={handleChange}></input>
+                    <input type="text" name="firstName" className="form-control" placeholder="First Name" value={formData.firstName} required onChange={handleChange}></input>
                 </div>
                 <div className="col-md-6 my-3">
                     <label htmlFor="lastName">Last Name:*</label>
-                    <input type="text" name="lastName" className="form-control" value={formData.lastName} required onChange={handleChange}></input>
+                    <input type="text" name="lastName" className="form-control" placeholder="Last Name" value={formData.lastName} required onChange={handleChange}></input>
                 </div>
                 <div className="col-md-6 my-3">
                     <label htmlFor="prefName">Preferred Name:</label>
-                    <input type="text" name="prefName" className="form-control" value={formData.prefName} onChange={handleChange}></input>
+                    <input type="text" name="prefName" className="form-control" placeholder="What should we call you?" value={formData.prefName} onChange={handleChange}></input>
                 </div>
                 <div className="col-md-6 my-3">
                     <label htmlFor="pronouns">Pronouns:*</label>
-                    <select className="form-control" name="pronouns" id="pronouns" form="GetInvolvedForm-app" required onChange={handleChange}>
+                    <select className="form-select" name="pronouns" id="pronouns" form="GetInvolvedForm-app" required onChange={handleChange}>
                         <option value="she">She / Her</option>
                         <option value="he">He / Him</option>
                         <option value="they">They / Them</option>
@@ -114,11 +114,11 @@ const GetInvolvedForm = () => {
                 </div>
                 <div className="form-group col-md-6 my-3">
                     <label htmlFor="city">City:*</label>
-                    <input type="text" name="city" className="form-control" value={formData.city} required onChange={handleChange}></input>
+                    <input type="text" name="city" className="form-control" placeholder="City" value={formData.city} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group col-md-6 my-3">
                     <label htmlFor="state">State:*</label>
-                    <select className="form-control" name="state" id="state" form="GetInvolvedForm-app" required onChange={handleChange}>
+                    <select className="form-select" name="state" id="state" form="GetInvolvedForm-app" required onChange={handleChange}>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -174,11 +174,11 @@ const GetInvolvedForm = () => {
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="timezone">Timezone:</label>
-                    <input type="text" name="timezone" className="form-control" value={formData.timezone} onChange={handleChange}></input>
+                    <input type="text" name="timezone" className="form-control" placeholder="UTC" value={formData.timezone} onChange={handleChange}></input>
                 </div>
                 <div className="form-group col-md-6 mt-3 mb-5">
                     <label htmlFor="gender">Gender Identity:</label>
-                    <select className="form-control" name="gender" id="gender" form="GetInvolvedForm-app" onChange={handleChange}>
+                    <select className="form-select" name="gender" id="gender" form="GetInvolvedForm-app" onChange={handleChange}>
                         <option value="agender">Agender</option>
                         <option value="bigender">Bigender</option>
                         <option value="cisgender">Cisgender</option>
@@ -194,7 +194,7 @@ const GetInvolvedForm = () => {
                 </div>
                 <div className="form-group col-md-6 mt-3 mb-5">
                     <label htmlFor="sexualOrientation">Sexual Orientation:</label>
-                    <select className="form-control" name="sexualOrientation" id="sexualOrientation" form="GetInvolvedForm-app" onChange={handleChange}>
+                    <select className="form-select" name="sexualOrientation" id="sexualOrientation" form="GetInvolvedForm-app" onChange={handleChange}>
                         <option value="lesbian">Lesbian</option>
                         <option value="gay">Gay</option>
                         <option value="bisexual">Bisexual</option>
@@ -209,23 +209,23 @@ const GetInvolvedForm = () => {
                 <h3>Contact Information</h3>
                 <div className="form-group my-3">
                     <label htmlFor="phone">Phone:*</label>
-                    <input type="tel" name="phone" className="form-control" value={formData.phone} required onChange={handleChange}></input>
+                    <input type="tel" name="phone" className="form-control" placeholder="555-555-5555" value={formData.phone} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="email">Email:*</label>
-                    <input type="email" name="email" className="form-control" value={formData.email} required onChange={handleChange}></input>
+                    <input type="email" name="email" className="form-control" placeholder="hello@email.com" value={formData.email} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="linkedIn">LinkedIn:</label>
-                    <input type="url" name="linkedIn" className="form-control" value={formData.linkedIn} onChange={handleChange}></input>
+                    <input type="url" name="linkedIn" className="form-control" placeholder="Share your LinkedIn" value={formData.linkedIn} onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="github">GitHub:</label>
-                    <input type="url" name="github" className="form-control" value={formData.github} onChange={handleChange}></input>
+                    <input type="url" name="github" className="form-control" placeholder="Share your GitHub" value={formData.github} onChange={handleChange}></input>
                 </div>
                 <div className="form-group mt-3 mb-5">
                     <label htmlFor="portfolio">Portfolio:</label>
-                    <input type="url" name="portfolio" className="form-control" value={formData.portfolio} onChange={handleChange}></input>
+                    <input type="url" name="portfolio" className="form-control" placeholder="Any other portfolio links?" value={formData.portfolio} onChange={handleChange}></input>
                 </div>
                 <h3>Additional Information</h3>
                 <div className="form-group my-3">

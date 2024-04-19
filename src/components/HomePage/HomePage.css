@@ -1,4 +1,4 @@
-/* container styling */
+/* Container styling */
 .Container {
     display: flex;
     flex-direction: row;
@@ -6,70 +6,95 @@
 
 }
 
-.container-header {
+.Container-header {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    /* justify-content: space-between; */
     align-items: center;
     position: relative;
     width: 100% !important;
-    max-height: 100vh;
-    overflow: hidden;
+    max-height: min(200vh);
+    margin-bottom: 3em;
+
 }
 
-.container-body {
+h2 {
+    font-size: 70px;
+    line-height: 1.2em;
+}
+
+.Container-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* end container styling */
+.Container-header .btn-primary {
+    margin-top: 2em;
+    -webkit-box-shadow: 1px 7px 5px 0px rgba(228, 204, 255, 1);
+    -moz-box-shadow: 1px 7px 5px 0px rgba(228, 204, 255, 1);
+    box-shadow: 1px 7px 5px 0px rgba(228, 204, 255, 1);
+}
+
+.Left-panel .Header-text {
+    font-size: 3.375rem;
+    line-height: 1em;
+    word-spacing: .1em;
+    font-weight: 300;
+    margin-bottom: .6em;
+}
+
+/* end Container styling */
 
 /* panel styling */
-div.right-panel,
-div.left-panel {
+div.Right-panel {
     min-width: 40%;
     height: 92vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-div.middle-panel {
-
-    min-width: 20%;
-    height: 92vh;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.right-panel {
-    background-color: rgb(255, 255, 255);
-    object-fit: contain;
-
-}
-
-.middle-panel {
     flex-direction: column;
-    padding: 1em;
-    text-align: center;
-    margin: auto;
-    background-color: transparent;
 }
 
-.left-panel {
+
+
+
+.Right-panel {
     background-color: rgb(255, 255, 255);
     object-fit: contain;
+    align-items: flex-end;
+    height: auto;
 }
 
-.right-panel img,
-.left-panel img {
-    object-fit: contain;
+
+
+.Left-panel {
+    background-color: rgb(255, 255, 255);
+    padding-left: 5em;
+
+}
+
+.Left-panel p {
+    font-size: 3.375rem;
+    line-height: 1em;
+    word-spacing: .1em;
+    font-weight: 300;
+    margin-bottom: .6em;
+}
+
+.Right-panel img {
+    object-fit: cover;
+    height: auto;
     max-width: 100%;
+    min-width: 40%;
     max-height: 100%;
+    min-height: 40%;
+    object-position: 10em 0%;
+}
+
+
+
+.Left-panel img {
+    border: 1px solid pink;
 }
 
 
@@ -80,11 +105,12 @@ div.middle-panel {
 }
 
 .placeholder {
-    height: 60vh;
+    height: 20em;
     width: 100%;
     background-color: lightgray;
-    margin: 0;
+    margin: 1em 0;
     padding: 0;
+
 }
 
 /* row styling */
@@ -92,72 +118,108 @@ div.middle-panel {
 .row {
     display: flex;
     flex-direction: row;
-    align-items: center;
     width: 100%;
-    /* border: 1px solid purple; */
-    /* height: 60vh; */
     padding: 0;
-    margin: 3vh 0px;
+    margin: 5vh 0px;
     font-size: 25px;
 }
 
 .row:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     width: 100%;
-    /* border: 1px solid purple; */
 }
-
-
-/* .col-md-6 {
-    border: 1px solid grey;
-} */
-
 
 .btn-dark {
     width: 200px;
     border-radius: 0;
 }
 
+/* who are we row */
 
-.smallPlaceholder {
-    height: 34vh;
-    width: 18vw;
-    background-color: lightgray;
+.body-content h2 {
+    border: 1px solid red;
+    margin-bottom: 1.2em;
 }
 
-.team-button {
+.who-are-we h2 {
+    font-size: 60px;
+}
+
+.we-are-subtitle {
+    font-weight: normal;
+    font-size: 40px;
+    margin: .2em 0 1.3em 0;
+}
+
+.we-are-text {
+    font-size: 30px;
+}
+
+.smallPlaceholder {
+    height: 11em;
+    width: 11em;
+    background-color: lightgray;
+    border: 2px solid purple;
+    border-radius: 5%;
+    margin: 2em 3em 0em 3em;
+
+
+}
+
+.team-button,
+.summit-button {
     width: fit-content;
+    margin-top: 2em;
+    padding: .5% 1.2%;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+
+
+
+.team-button span,
+.summit-button span {
+    padding-top: .2em;
 }
 
 
 @media(max-width: 769px) {
-    .container-header {
+    .Container-header {
         flex-direction: column;
         width: 100%;
         padding: 0;
-        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: fit-content;
     }
 
-    div.left-panel,
-    div.middle-panel,
-    div.right-panel,
+    div.Left-panel,
+    div.Right-panel,
     .section {
         width: 100%;
         height: auto;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
-    .right-panel img,
-    .left-panel img {
+
+    .Right-panel img {
         width: 100%;
         height: auto;
         object-fit: cover;
+        object-position: 5em 0%;
+
     }
 
-    div.middle-panel {
+    div.Middle-panel {
         position: relative;
     }
 }

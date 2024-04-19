@@ -49,6 +49,11 @@ const NavBar = () => {
                         LWT
                      </a>
                   </li>
+                  <li>
+                     <Link to="/get-involved" className="menu-item">
+                        Get Involved
+                     </Link>
+                  </li>
                </ul>
                <button className="menu-btn" onClick={toggleMenu}>
                   <span

@@ -8,25 +8,27 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'OpenSans', sans-serif;
 }
 
-h1, h2 {
+h1,
+h2,
+h3 {
   font-family: 'Lalezar', sans-serif;
   font-weight: 400;
 }
 
 h1 {
-  font-size: 60px;
-  line-height: 94.02px;
+  font-size: 4.375rem;
+  line-height: 6.856rem;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 1.5rem;
   line-height: 62.68px;
 }
 
-p {
+p,
+li {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -36,13 +38,14 @@ p {
 /* button styling */
 /* primary button */
 .btn-primary {
-  background-color: rgb(128, 0, 128);
-  width: 60%;
-  padding: 2%;
+  background-color: #7030A0;
+  /* width: 0%; */
+  padding: 2% 10%;
   outline: none;
   border: 0;
-  font-size: 1.3em;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  font-size: 1em;
+  border-radius: 30px;
+  font-size: 30px;
 }
 
 .btn-primary:active,
@@ -81,9 +84,9 @@ p {
 .btn-info.show,
 .btn-info:first-child:active,
 :not(.btn-info-check)+.btn-info:active {
-  background-color: #c00e61;
+  background-color: #ca1468;
   color: #fff;
-  border: 1px solid #c00e61;
+  border: 1px solid #ca1468;
 }
 
 /* info button outline */
@@ -106,7 +109,7 @@ p {
 .btn-outline-info.show,
 .btn-outline-info:first-child:active,
 :not(.btn-outline-info-check)+.btn-outline-info:active {
-  background-color: #c00e61;
+  background-color: #ca1468;
   color: #fff;
-  border: 1px solid #c00e61;
+  border: 1px solid #ca1468;
 }

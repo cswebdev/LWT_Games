@@ -5,7 +5,7 @@
     align-items: center;
     background-color: #161616;
     color: white;
-    height: 35vh;
+    height: 40vh;
 }
 
 .footer-row {
@@ -20,19 +20,14 @@
 .col-1 {
     margin: 0;
     padding: 0;
+    max-width: 2%;
 
 }
 
-
-.col-2 li {
-    padding-left: 22.2%;
-
+.col-2 {
+    min-width: max-content;
+    margin: 0% 2% 0% 2%;
 }
-
-.col-follow li {
-    padding-left: 25.8%;
-}
-
 
 .logo-placeholder {
     height: 101px;

@@ -43,15 +43,15 @@ const HomePage = () => {
             </button>
          </div>
          <section className="Container-body">
-            <div className="row">
+            <div className="row body-content">
                <div className="col-md-6">
                   <h2>Engaging with Lesbians Who Tech Pride Summit</h2>
                   <p>
-                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                     Repellat accusamus, pariatur ducimus, inventore nemo illum
-                     repudiandae dolore quos deleniti nulla cupiditate itaque
-                     aperiam veritatis sequi. Reiciendis numquam laudantium ex
-                     totam.
+                     Every single member of Interconnected Collective came
+                     together because of this Summit! Lesbians Who Tech is such
+                     an inspiring organization that continues striving for
+                     women, women of color, and nonbinary leaders. We hope to
+                     see you there!
                   </p>
                   <button
                      type="button"
@@ -67,10 +67,9 @@ const HomePage = () => {
                   <div class="placeholder"></div>
                </div>
             </div>
-            <div className="row">
+            <div className="row body-content">
                <div className="col-md-6">
                   <h2>Why Bingo?</h2>
-                  <h3>Keeping you engaged & building community</h3>
                   <p>
                      Bingo game offers a refreshing break from traditional
                      online activities, providing a light-hearted way to stay

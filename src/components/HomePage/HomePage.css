@@ -137,6 +137,11 @@ div.Right-panel {
 
 /* who are we row */
 
+.body-content h2 {
+    border: 1px solid red;
+    margin-bottom: 1.2em;
+}
+
 .who-are-we h2 {
     font-size: 60px;
 }

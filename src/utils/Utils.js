@@ -6,6 +6,7 @@ const imageAssets = {
    oliviaPortrait: require("../assets/oliviam_headshot.jpg"),
    vestDrawing: require("../assets/vest.png"),
    laneDrawing: require("../assets/Lane.png"),
+   
 };
 
 export default imageAssets;

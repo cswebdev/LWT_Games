@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.css";
-//import homepageRightImg from "../../assets/right_mainpage_image.png";
-import homepageLeftImg from "../../assets/left_mainpage_image.png";
+import homepageGraphicOne from "../../assets/left_mainpage_image.png";
+import homepageGraphicTwo from "../../assets/right_mainpage_image.png";
 import imageAssets from "../../utils/Utils";
 
 const HomePage = () => {
@@ -10,7 +10,11 @@ const HomePage = () => {
          <div className="Container">
             <section className="Container-header">
                <div className="Right-panel">
-                  <img src={homepageLeftImg} alt="homepage Left"></img>
+                  <img
+                     src={homepageGraphicOne}
+                     loading="lazy"
+                     alt="homepage Left"
+                  ></img>
                </div>
 
                <div className="Left-panel">
@@ -32,10 +36,11 @@ const HomePage = () => {
                through the power of fun!
             </p>
 
-            <div className="images d-flex align-content-center justify-content-center">
+            <div className="d-flex align-content-center justify-content-center">
                <div className="whoWeAreFrame">
                   <img
                      className="oliviaPortrait"
+                     loading="lazy"
                      src={imageAssets.oliviaPortrait}
                      alt="Olivia Portrait"
                   />
@@ -43,6 +48,7 @@ const HomePage = () => {
                <div className="whoWeAreFrame">
                   <img
                      className="laneDrawing"
+                     loading="lazy"
                      src={imageAssets.laneDrawing}
                      alt="Drawing of Lane"
                   />
@@ -50,6 +56,7 @@ const HomePage = () => {
                <div className="whoWeAreFrame">
                   <img
                      className="vestDrawing"
+                     loading="lazy"
                      src={imageAssets.vestDrawing}
                      alt="Drawing of a vest"
                   />
@@ -83,7 +90,9 @@ const HomePage = () => {
                   </button>
                </div>
                <div className="col-md-6 m-0 p-0 d-flex">
-                  <div class="placeholder"></div>
+                  <div class="placeholder">
+                     <img src={homepageGraphicTwo} className="homepageGraphicTwo" loading="lazy" alt="Image graphic of" />
+                  </div>
                </div>
             </div>
             <div className="row body-content">
@@ -95,7 +104,7 @@ const HomePage = () => {
                      engaged and connected, all while fostering a sense of
                      community.
                   </p>
-                  <button type="button" className="btn btn-info">
+                  <button type="button" className="btn btn-primary">
                      Play Bingo
                   </button>
                </div>

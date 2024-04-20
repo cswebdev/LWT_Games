@@ -4,12 +4,14 @@
     flex-direction: row;
     width: 100% !important;
 
+
 }
+
 
 .Container-header {
     display: flex;
     flex-direction: row-reverse;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     position: relative;
     width: 100% !important;
@@ -27,6 +29,8 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0% 5%;
+    margin-top: 11em;
 }
 
 .Container-header .btn-primary {
@@ -36,13 +40,17 @@ h2 {
     box-shadow: 1px 7px 5px 0px rgba(228, 204, 255, 1);
 }
 
+
 .Left-panel .Header-text {
     font-size: 3.375rem;
     line-height: 1em;
     word-spacing: .1em;
     font-weight: 300;
     margin-bottom: .6em;
+
 }
+
+
 
 /* end Container styling */
 
@@ -68,8 +76,7 @@ div.Right-panel {
 
 
 .Left-panel {
-    background-color: rgb(255, 255, 255);
-    padding-left: 5em;
+    margin-left: 5%;
 
 }
 
@@ -100,21 +107,35 @@ div.Right-panel {
 
 .Container-header .btn-primary {
     width: 25vw;
+    height: 8vh;
 }
 
 /* end panel styling */
 
 .section {
     width: 100%;
+
 }
 
 .placeholder {
     height: 20em;
     width: 100%;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background-color: white;
     margin: 1em 0;
     padding: 0;
+    object-fit: cover;
+    display: flex;
+    /* justify-content: center; */
+    align-items: end;
 
+}
+
+.homepageGraphicTwo {
+    object-fit: cover;
+    max-height: 25em;
+    max-width: 25em;
+    filter: saturate(28);
 }
 
 /* row styling */
@@ -213,14 +234,17 @@ div.Right-panel {
     justify-self: center;
 }
 
-
-
-
 .team-button span,
 .summit-button span {
     padding-top: .2em;
 }
 
+
+/* why bingo row */
+
+.body-content .btn-primary {
+    width: 12vw;
+}
 
 @media(max-width: 769px) {
     .Container-header {

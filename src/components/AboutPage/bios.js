@@ -39,7 +39,7 @@ class Bio {
 const TEGAN = new Bio(
   "Tegan Barron",
   "She/They",
-  "Fearless Leader",
+  "Founder",
   `Tegan Barron has over ten years in Tech, is the Founder of LWT Games. As a
   Change Management & future Director | Six Sigma | Lean | Leading global Change
   Management with Optimization, Modernization, Training, Documentation, and
@@ -59,7 +59,7 @@ const TEGAN = new Bio(
 const LIZ = new Bio(
   "Liz Baranowicz",
   "She/Her",
-  "UX/UI Bingo Game",
+  "Lead UX Designer",
   `UXer with strengths in research, interaction design, and strategy // Lifelong dabbler and lowbrow artist // Unexpected corporate techie​`,
   undefined,
   "/drawings/liz_drawing.png",
@@ -76,7 +76,7 @@ const LIZ = new Bio(
 const LANE = new Bio(
   "Lane Hamilton",
   "She/They",
-  "Software Engineer",
+  "Front End",
   `I'm a Los Angeles based frontend Software Engineer with experience in
   developing JavaScript applications using React/ Next.js. Passionate about apps
   having an aesthetically pleasing design.​`,
@@ -95,7 +95,7 @@ const LANE = new Bio(
 const OLIVIAS = new Bio(
   "Olivia Servaes​",
   "She/Her",
-  "Design, UX/UI",
+  "Lead UI Designer",
   "Dynamic Digital Designer specializing in storytelling to elevate your brand ",
   undefined,
   "/drawings/olivias_drawing.png",
@@ -112,7 +112,7 @@ const OLIVIAS = new Bio(
 const JIMENA = new Bio(
   "Jimena Cuadros",
   "She/Her",
-  "Software Engineer",
+  "Senior Software Eng.",
   "Senior Software Engineer at Signal Advisors | React Expert with a Passion for UI/UX Design | DEIB Advocate | Advocate for Environmental Sustainability | Comp Sci Graduate from Western Michigan University",
   undefined,
   "/drawings/jimena_drawing.png",
@@ -129,7 +129,7 @@ const JIMENA = new Bio(
 const LYNDS = new Bio(
   "Lynds Lesh",
   "They/They",
-  "Graphic Design, UX/UI",
+  "Illustrator & Lead Visual",
   "I'm a future NYC-based design generalist (previous Chicago) and illustrator emphasizing visual craft and navigating compelling problems. I also love finding what makes users get excited about a product. ",
   undefined,
   "/drawings/lynds_drawing.png",
@@ -145,8 +145,8 @@ const LYNDS = new Bio(
 
 const OLIVIAM = new Bio(
   "Olivia McCartney",
-  "",
-  "Marketing",
+  "-",
+  "Dynamo Marketing",
   "Dynamic marketing professional with proven expertise in driving audience engagement with diverse marketing tools and creative storytelling. ",
   undefined,
   "/drawings/oliviam_drawing.png",
@@ -183,7 +183,7 @@ const JULIANE = new Bio(
 const CHELSEA = new Bio(
   "Chelsea Snider",
   "She/They",
-  "Frontend Engineer",
+  "Fullstack Developer",
   `Full Stack Developer | React | AngularJS | Python | Django | Java | Spring
   Boot | Greenville, SC`,
   "/headshots/chelsea_headshot.png",
@@ -201,7 +201,7 @@ const CHELSEA = new Bio(
 const WEI = new Bio(
   "Wei Yun Lim",
   "They/She",
-  "Project Manager",
+  "Operations",
   "Production/Operations Director based in NorCal. ",
   undefined,
   "/drawings/wei_drawing.png",
@@ -218,7 +218,7 @@ const WEI = new Bio(
 const AMY = new Bio(
   "Amy Ashmore",
   "She/Her",
-  "Marketing",
+  "Dynamo Marketing",
   "Marketing Creator and UX Researcher: Driven by Data, Dedicated to User-Centric Strategies​ Houston, TX",
   undefined,
   "/drawings/amy_drawing.png",
@@ -235,7 +235,7 @@ const AMY = new Bio(
 const KD = new Bio(
   "K.D. Hubbard",
   "She/Her",
-  "New Bingo Boards Creation",
+  "Fullstack Developer",
   `I'm a fullstack developer and an avid outdoor sports enthusiast.​`,
   undefined,
   "/drawings/kd_drawing.png",
@@ -252,7 +252,7 @@ const KD = new Bio(
 const ALEX = new Bio(
   "Alex Sharp",
   "She/Her",
-  "Software Engineer",
+  "CX Engineer",
   "I'm a customer success engineer with ten years of experience supporting healthcare software. I have a strong interest in developing tools to improve user productivity for my teams.",
   undefined,
   undefined,
@@ -268,8 +268,8 @@ const ALEX = new Bio(
 
 const JULIE = new Bio(
   "Julie Nguyen",
-  "She/Her/None",
-  "UX/UI Bingo Game",
+  "She/Her",
+  "UX Designer",
   "UX Designer | UX Researcher | Product Designer | Houston, TX",
   undefined,
   undefined,
@@ -295,7 +295,11 @@ export const BIOS = [
   OLIVIAM,
   JIMENA,
   CHELSEA,
-  AMY,
   ALEX,
+  {image: "/headshots/free_space.png", alt: "free space"},
   JULIE,
+  {image: "/headshots/surprise.png", alt: "suprise"},
+  AMY,
 ];
+
+export { Bio };

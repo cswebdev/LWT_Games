@@ -1,5 +1,7 @@
 import BioList from "./BioList";
 import "./AboutPage.css";
+import logo from "../../assets/incologo.png";
+import headerBackground from "../../assets/alltogether.png";
 
 /** Component for AboutPage
  *
@@ -20,17 +22,11 @@ const AboutPage = () => {
     <div className="AboutPage">
       <div className="AboutPage-container">
         <section className="AboutPage-header">
-          <div className="AboutPage-header-images">
-            { }
-          </div>
-          <h1>#LWT Games</h1>
-          <div className="AboutPage-mission">
-            <p>Mission statement</p>
-          </div>
+          <img src={headerBackground} alt="There InCo members on an orange background" />
         </section>
         <section className="AboutPage-container-body">
           <div className="row AboutPage-our-story">
-            <div className="col-md-6">
+            <div className="col-10 col-md-6">
               <h2>Our Story</h2>
               <p>
               Founder Tegan Barron combined their love of gaming and digital
@@ -54,8 +50,8 @@ const AboutPage = () => {
             </div>
             <div className="col-md-6">
               <img
-                src={"https://picsum.photos/400/400"}
-                alt="Placeholder">
+                src={logo}
+                alt="InCo logo">
               </img>
             </div>
           </div>

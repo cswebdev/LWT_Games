@@ -1,4 +1,4 @@
-.BioCard {
+.BioCard-purple, .BioCard-orange {
   position: relative;
   z-index: 10;
   text-align: center;
@@ -8,29 +8,41 @@
   transition-timing-function: ease-in;
 }
 
-.BioCard-graphics-purple {
+.BioCard-graphics {
   position: relative;
   z-index: 40;
 }
 
-.BioCard:hover {
+.BioCard-purple:hover {
   background-color: #7030A0;
   border-radius: 55px;
   color: white;
 }
 
-.BioCard-graphics-purple:hover .BioCard-drawing {
+.BioCard-orange:hover {
+  background-color: #FFA629;
+  border-radius: 55px;
+  color: black;
+}
+
+.BioCard-graphics:hover .BioCard-drawing {
   opacity: 1;
   cursor: pointer;
 }
 
-.BioCard-graphics-purple:hover .BioCard-arrow-purple {
+.BioCard-graphics:hover .BioCard-arrow-purple {
   cursor: pointer;
   background-color: #7030A0;
   color: white;
 }
 
-.BioCard-graphics-purple:hover svg {
+.BioCard-graphics:hover .BioCard-arrow-orange {
+  cursor: pointer;
+  background-color: #FFA629;
+  color: white;
+}
+
+.BioCard-graphics:hover svg {
   fill: white;
 }
 
@@ -66,6 +78,22 @@
   width: 44px;
   background-color: white;
   color: #7030A0;
+  border: solid;
+  border-width: 4px;
+  border-radius: 50px;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
+.BioCard-arrow-orange {
+  position: absolute;
+  z-index: 30;
+  right: 0px;
+  bottom: 0px;
+  height: 44px;
+  width: 44px;
+  background-color: white;
+  color: #FFA629;
   border: solid;
   border-width: 4px;
   border-radius: 50px;

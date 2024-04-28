@@ -58,7 +58,7 @@ const HomePage = () => {
 
             <button type="button" className="btn btn-info team-button">
                Meet the Team{" "}
-               <span class="material-symbols-outlined">chevron_right</span>
+               <span className="material-symbols-outlined">chevron_right</span>
             </button>
          </div>
          <section className="Container-body">
@@ -77,13 +77,13 @@ const HomePage = () => {
                      className="btn btn-outline-info summit-button"
                   >
                      Join The Summit{" "}
-                     <span class="material-symbols-outlined ">
+                     <span className="material-symbols-outlined ">
                         chevron_right
                      </span>
                   </button>
                </div>
                <div className="col-md-6 m-0 p-0 d-flex">
-                  <div class="placeholder"></div>
+                  <div className="placeholder"></div>
                </div>
             </div>
             <div className="row body-content">
@@ -100,7 +100,7 @@ const HomePage = () => {
                   </button>
                </div>
                <div className="col-md-6 m-0 p-0">
-                  <div class="placeholder"></div>
+                  <div className="placeholder"></div>
                </div>
             </div>
          </section>

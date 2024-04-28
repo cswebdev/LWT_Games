@@ -8,7 +8,7 @@
     position: absolute;
     right: 0px;
     top: -60px;
-    width: 80%;
+    width: 78%;
     height: auto;
     z-index: 30;
   }
@@ -17,7 +17,7 @@
 .AboutPage-our-story {
   position: relative;
   z-index: 40;
-  margin-top: 35%;
+  margin-top: 33%;
   margin-bottom: 15%;
   margin-left: 80px;
   margin-right: 80px;
@@ -32,13 +32,17 @@
 
 .AboutPage-our-story img {
   max-width: 95%;
-  margin-top: 7%;
+  margin-top: 8%;
   display: block;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1400px) {
+  .AboutPage-our-story {
+    margin-top: 38%;
+  }
   .AboutPage-our-story img {
-    max-width: 400px;
+    max-width: 70%;
+    margin-top: 6%;
     margin-left: auto;
     margin-right: auto;
   }

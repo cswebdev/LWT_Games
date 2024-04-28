@@ -22,12 +22,12 @@ const AboutPage = () => {
     <div className="AboutPage">
       <div className="AboutPage-container">
         <section className="AboutPage-header">
-          <img src={headerBackground} alt="There InCo members on an orange background" />
+          <img src={headerBackground} alt="Three InCo members on an orange background" />
         </section>
         <section className="AboutPage-container-body">
           <div className="row AboutPage-our-story">
-            <div className="col-10 col-md-6">
-              <h2>Our Story</h2>
+            <div className="col-10 col-md-7">
+              <h2 style={{marginBottom: ".5rem"}}>Our Story</h2>
               <p>
               Founder Tegan Barron combined their love of gaming and digital
               inclusive integration, bringing to life a collective of dynamic
@@ -48,7 +48,7 @@ const AboutPage = () => {
               interconnected and might even bridge new communities.
               </p>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-5">
               <img
                 src={logo}
                 alt="InCo logo">

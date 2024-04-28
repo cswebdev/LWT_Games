@@ -26,7 +26,8 @@ const BioCard = ({ bio }) => {
                                 borderColor: bio.color === "purple"
                                 ? "#7030A0"
                                 : "#FFA629"
-                            }}                            src={bio.photo}
+                            }}
+                            src={bio.photo}
                             alt={bio.name}
                         />
                         {bio.drawing &&

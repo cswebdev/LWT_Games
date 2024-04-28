@@ -1,56 +1,113 @@
-.BioCard {
-  text-align: left;
-}
-
-@media screen and (min-width: 800px) {
-  .BioCard {
-    max-width: 454px;
-  }
-}
-
-.BioCard-name {
-  padding: 10px 10px 10px 3px;
-}
-
-.BioCard-pronouns, .BioCard-role {
-  font-size: 32px;
-  line-height: 48px;
-  padding: 0px 10px 10px 10px;
-}
-
-.BioCard-headshot {
-  max-width: 100%;
-  object-fit: cover;
-  object-position: 100% 0;
-}
-
-.BioCard-drawing {
-  margin-top: -478px;
-  opacity: 0;
+.BioCard-purple, .BioCard-orange {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding-bottom: 8px;
+  width: 20%;
   transition-duration: 300ms;
   transition-timing-function: ease-in;
 }
 
-.BioCard-drawing:hover {
-  opacity: 1;
+.BioCard-graphics {
+  position: relative;
+  z-index: 40;
 }
 
-.BioCard-bio {
-  padding: 0px 10px 0px 10px;
+.BioCard-purple:hover {
+  background-color: #7030A0;
+  border-radius: 55px;
+  color: white;
 }
 
-.BioCard-links {
-  list-style-type: none;
-  padding-left: 0;
-  line-height: 48px;
-}
-
-.BioCard-links a {
+.BioCard-orange:hover {
+  background-color: #FFA629;
+  border-radius: 55px;
   color: black;
-  text-decoration: none;
 }
 
-.BioCard-links a:hover {
-  color: #46A4DF;
+.BioCard-graphics:hover .BioCard-drawing {
+  opacity: 1;
+  cursor: pointer;
 }
 
+.BioCard-graphics:hover .BioCard-arrow-purple {
+  cursor: pointer;
+  background-color: #7030A0;
+  color: white;
+}
+
+.BioCard-graphics:hover .BioCard-arrow-orange {
+  cursor: pointer;
+  background-color: #FFA629;
+  color: white;
+}
+
+.BioCard-graphics:hover svg {
+  fill: white;
+}
+
+.BioCard-headshot {
+  position: relative;
+  z-index: 0;
+  object-fit: cover;
+  object-position: 100% 0;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 55px;
+}
+
+.BioCard-drawing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 55px;
+}
+
+.BioCard-arrow-purple {
+  position: absolute;
+  z-index: 30;
+  right: 0px;
+  bottom: 0px;
+  height: 44px;
+  width: 44px;
+  background-color: white;
+  color: #7030A0;
+  border: solid;
+  border-width: 4px;
+  border-radius: 50px;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
+.BioCard-arrow-orange {
+  position: absolute;
+  z-index: 30;
+  right: 0px;
+  bottom: 0px;
+  height: 44px;
+  width: 44px;
+  background-color: white;
+  color: #FFA629;
+  border: solid;
+  border-width: 4px;
+  border-radius: 50px;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
+.BioCard-name {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: 700;
+}
+
+.BioCard-blanks {
+  width: 20%;
+  height: auto;
+}

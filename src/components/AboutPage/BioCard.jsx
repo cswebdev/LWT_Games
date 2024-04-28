@@ -1,11 +1,6 @@
-import {
-    Linkedin,
-    PersonFill,
-    Behance,
-    Github,
-    ShareFill
-} from "react-bootstrap-icons";
+import { ArrowRightShort } from "react-bootstrap-icons";
 import "./BioCard.css";
+import { Bio } from "./bios";
 /** Component for BioCard
  *
  * Props:
@@ -21,45 +16,47 @@ const BioCard = ({ bio }) => {
     // console.debug("BioCard", bio);
 
     return (
-        <div className="BioCard col-md-5 col-lg-4">
-            <img
-              className="BioCard-headshot"
-              src={bio.photo}
-              alt={bio.name}
-            />
-            {bio.drawing &&
-            <img
-              className="BioCard-drawing"
-              src={bio.drawing}
-              alt={bio.name}
-            />}
-            <h2 className="BioCard-name">{bio.name}</h2>
-            <div className="BioCard-pronouns">
-                Pronouns: {bio.pronouns}
-            </div>
-            <div className="BioCard-role">
-                {bio.role}
-            </div>
-            <p className="BioCard-bio">{bio.bio}</p>
-            {/* {bio.reasonForJoining &&
-                <p>
-                    <b>Why did you join #LWTGames:</b> {bio.reasonForJoining}
-                </p>
+        <>
+            {bio instanceof Bio
+                ? <div className={`BioCard-${bio.color}`}>
+                    <div className="BioCard-graphics">
+                        <img
+                            className="BioCard-headshot img-fluid"
+                            style={{
+                                borderColor: bio.color === "purple"
+                                ? "#7030A0"
+                                : "#FFA629"
+                            }}                            src={bio.photo}
+                            alt={bio.name}
+                        />
+                        {bio.drawing &&
+                            <img
+                                className="BioCard-drawing img-fluid"
+                                style={{
+                                    borderColor: bio.color === "purple"
+                                    ? "#7030A0"
+                                    : "#FFA629"
+                                }}
+                                src={bio.drawing}
+                                alt={bio.name}
+                            />}
+                        <div className={`BioCard-arrow-${bio.color}`}>
+                            <ArrowRightShort size={36} />
+                        </div>
+                    </div>
+
+                    <div className="BioCard-name">{bio.name}</div>
+                    <div className="BioCard-role">
+                        {bio.role}
+                    </div>
+                    <div className="BioCard-pronouns">
+                        {bio.pronouns}
+                    </div>
+                </div>
+            : <img className="BioCard-blanks" src={bio.image} alt={bio.alt} />
             }
-            {bio.gainedFromLWT &&
-                <p>
-                    <b>What have you gained from #LWTGames:</b> {bio.gainedFromLWT}
-                </p>
-            } */}
-            <ul className="BioCard-links">
-                {bio.linkedIn && <li><a href={bio.linkedIn}><Linkedin size={26} /> &nbsp; LinkedIn</a></li>}
-                {bio.portfolio && <li><a href={bio.portfolio}><PersonFill size={26} /> &nbsp; Portfolio</a></li>}
-                {bio.behance && <li><a href={bio.behance}><Behance size={26} /> &nbsp; Behance</a></li>}
-                {bio.github && <li><a href={bio.github}><Github size={26} /> &nbsp; Github</a></li>}
-                {bio.otherSoceal && <li><a href={bio.otherSocial}><ShareFill size={26} /></a> &nbsp; Social</li>}
-            </ul>
-        </div>
-    )
-}
+        </>
+    );
+};
 
 export default BioCard;

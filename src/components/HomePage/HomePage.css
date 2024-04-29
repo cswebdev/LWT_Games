@@ -127,7 +127,7 @@ div.Right-panel {
     object-fit: cover;
     display: flex;
     /* justify-content: center; */
-    align-items: end;
+    align-items: flex-end;
 
 }
 

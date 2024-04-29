@@ -91,26 +91,46 @@ const HomePage = () => {
                </div>
                <div className="col-md-6 m-0 p-0 d-flex">
                   <div class="placeholder">
-                     <img src={homepageGraphicTwo} className="homepageGraphicTwo" loading="lazy" alt="Image graphic of" />
+                     <img
+                        src={homepageGraphicTwo}
+                        className="homepageGraphicTwo"
+                        loading="lazy"
+                        alt="Image graphic of"
+                     />
                   </div>
                </div>
             </div>
-            <div className="row body-content">
-               <div className="col-md-6">
-                  <h2>Why Bingo?</h2>
-                  <p>
-                     Bingo game offers a refreshing break from traditional
-                     online activities, providing a light-hearted way to stay
-                     engaged and connected, all while fostering a sense of
-                     community.
-                  </p>
-                  <button type="button" className="btn btn-primary">
-                     Play Bingo
-                  </button>
-               </div>
-               <div className="col-md-6 m-0 p-0">
-                  <div class="placeholder"></div>
-               </div>
+            <div className="row body-content position-relative m-0 p-0">
+               <section className="svg-container position-relative d-flex flex-row-reverse align-items-center z-1 m-0 p-0 ">
+                  <div className="col-md-6 z-1 bg-transparent">
+                     <h2>Why Bingo?</h2>
+                     <p>
+                        Bingo game offers a refreshing break from traditional
+                        online activities, providing a light-hearted way to stay
+                        engaged and connected, all while fostering a sense of
+                        community.
+                     </p>
+                     <button type="button" className="btn btn-primary">
+                        Play Bingo
+                     </button>{" "}
+                  </div>{" "}
+                  <div className="wave-container z-0">
+                     <img
+                        className="wave-graphic z-0"
+                        src={imageAssets.homepageWave}
+                        alt="wave graphic"
+                     />
+                  </div>
+                  <div className="col-md-6 m-0 p-0">
+                     <div class="placeholder z-1">
+                        <img
+                           src={imageAssets.rainbowGraphic}
+                           className="rainbowGraphic z-1"
+                           alt="rainbow graphic"
+                        />
+                     </div>
+                  </div>
+               </section>
             </div>
          </section>
       </>

@@ -1,0 +1,24 @@
+.BioModal {
+  display: flex;
+  display: nowrap;
+  gap: 30px;
+}
+
+.BioModal-left {
+  width: 30%;
+}
+
+.BioModal-name {
+  font-size: 2.5rem;
+  font-family: "Lalezar";
+}
+
+.BioModel-right {
+  width: 60%;
+}
+
+.BioModal-qanda {
+  border: solid;
+  border-width: 1px;
+  border-radius: 8px;
+}

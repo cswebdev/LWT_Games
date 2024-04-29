@@ -17,7 +17,7 @@ class Bio {
     otherSocial,
     emoji,
     reasonForJoining,
-    gainedFromLWT,
+    gainedFromInCo,
     color="purple", // purple is the default color for borders and hover effects
   ) {
     this.name = name;
@@ -33,7 +33,7 @@ class Bio {
     this.otherSocial = otherSocial;
     this.emoji = emoji;
     this.reasonForJoining = reasonForJoining;
-    this.gainedFromLWT = gainedFromLWT;
+    this.gainedFromInCo = gainedFromInCo;
     this.color = color;
   }
 }

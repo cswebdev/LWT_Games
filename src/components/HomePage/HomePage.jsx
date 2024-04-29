@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.css";
 import homepageGraphicOne from "../../assets/left_mainpage_image.png";
-import homepageGraphicTwo from "../../assets/right_mainpage_image.png";
+//import homepageGraphicTwo from "../../assets/right_mainpage_image.png";
 import imageAssets from "../../utils/Utils";
 
 const HomePage = () => {

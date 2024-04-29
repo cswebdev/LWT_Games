@@ -13,8 +13,8 @@ const Footer = () => {
                </p>
             </div>
             <div className="col-1">
-               <div class="Loading">
-                  <div class="Loading-progress"></div>
+               <div className="Loading">
+                  <div className="Loading-progress"></div>
                </div>
             </div>
             <div className="col-2 col-about">
@@ -26,8 +26,8 @@ const Footer = () => {
                </ul>
             </div>
             <div className="col-1">
-               <div class="Loading">
-                  <div class="Loading-progress"></div>
+               <div className="Loading">
+                  <div className="Loading-progress"></div>
                </div>
             </div>
             <div className="col-2 col-follow">
@@ -42,9 +42,6 @@ const Footer = () => {
                <div className="Loading">
                   <div className="Loading-progress"></div>
                </div>
-            </div>
-            <div className="col-2">
-               <button className="btn btn-primary">Play Bingo</button>
             </div>
          </div>
       </div>

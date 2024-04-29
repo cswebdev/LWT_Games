@@ -1,46 +1,51 @@
-.AboutPage-header {
-  height: 408px;
-  background-color: #D9D9D9;
-}
-
-.AboutPage-header h1 {
-  text-align: center;
-  padding-top: 5%;
+.AboutPage-header img {
+  display: none;
 }
 
 @media screen and (min-width: 600px) {
-  .AboutPage-header h1 {
-    text-align: center;
-    padding-top: 8%;
+  .AboutPage-header img {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: -60px;
+    width: 80%;
+    height: auto;
+    z-index: 30;
   }
 }
 
-.AboutPage-mission {
-  text-align: center;
-  min-width: 90%;
-}
-
 .AboutPage-our-story {
+  position: relative;
+  z-index: 40;
+  margin-top: 35%;
   margin-bottom: 15%;
-  margin-left: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 @media screen and (min-width: 600px) {
   .AboutPage-our-story {
+    max-width: 95%;
     margin-bottom: 5%;
   }
 }
 
 .AboutPage-our-story img {
-  max-width: 100%;
-  margin: auto;
+  max-width: 95%;
+  margin-top: 7%;
   display: block;
 }
 
 @media screen and (min-width: 800px) {
   .AboutPage-our-story img {
     max-width: 400px;
-    margin: auto;
-    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+.AboutPage-our-hope {
+  font-weight: 700;
+  font-size: 34px;
+  padding-top: 3%;
 }

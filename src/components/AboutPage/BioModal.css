@@ -1,24 +1,109 @@
 .BioModal {
   display: flex;
-  display: nowrap;
+  flex-wrap: nowrap;
   gap: 30px;
 }
 
+.modal-dialog {
+  max-width: 80%;
+}
+
+.modal-body {
+  padding: 30px 40px;
+}
+
+.modal {
+  --bs-modal-border-radius: 30px;
+}
+
+.modal-backdrop {
+  background-color: #7030A0;
+  --bs-backdrop-opacity: 0.65;
+}
+
 .BioModal-left {
-  width: 30%;
+  width: 36%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 29px;
+}
+
+.BioModal-left img {
+  border-radius: 18px;
+}
+
+.BioModal-social-button {
+  width: 93%;
+  height: 70px;
+  margin: auto;
+  background-color: #7030A0;
+  border-radius: 30px;
+}
+
+.BioModal-social-button a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+
+.BioModal-social-button:hover {
+  background-color: white;
+}
+
+.BioModal-right {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.BioModal-bio {
+  width: 80%;
 }
 
 .BioModal-name {
   font-size: 2.5rem;
-  font-family: "Lalezar";
+  padding: 0px;
 }
 
-.BioModel-right {
-  width: 60%;
+.BioModal-pronouns {
+  display: inline;
+  font-size: 1rem;
+  padding-left: 15px;
+}
+
+.BioModal-role {
+  font-size: 24px;
+  width: 100%;
+  margin: 4px 0px;
+}
+
+.BioModal-close {
+  width: 53px;
+  height: 53px;
+  border-radius: 100px;
+  background-color: #7030A0;
+  color: white;
+  text-align: center;
+  font-size: 30px;
 }
 
 .BioModal-qanda {
+  width: 100%;
   border: solid;
   border-width: 1px;
   border-radius: 8px;
+  margin-top: 14px;
+  padding: 20px 24px;
+}
+
+.BioModal-a {
+  color: #7030A0;
+}
+
+.BioModal-reasonForJoining {
+  margin-bottom: 30px;
+}
+
+.BioModal-gainedFromInCO {
+  margin-top: 30px;
 }

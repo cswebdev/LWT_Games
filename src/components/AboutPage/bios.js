@@ -130,7 +130,7 @@ const JIMENA = new Bio(
 
 const LYNDS = new Bio(
   "Lynds Lesh",
-  "They/They",
+  "They/Them",
   "Illustrator & Lead Visual",
   "I'm a future NYC-based design generalist (previous Chicago) and illustrator emphasizing visual craft and navigating compelling problems. I also love finding what makes users get excited about a product. ",
   "/headshots/lynds_headshot.jpg",

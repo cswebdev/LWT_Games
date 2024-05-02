@@ -25,35 +25,30 @@ const AboutPage = () => {
           <img src={headerBackground} alt="Three InCo members on an orange background" />
         </section>
         <section className="AboutPage-container-body">
-          <div className="row AboutPage-our-story">
-            <div className="col-10 col-md-7">
-              <h2 style={{marginBottom: ".5rem"}}>Our Story</h2>
+          <div className="AboutPage-our-story">
+            <div className="AboutPage-content">
+              <h2 style={{ marginBottom: ".5rem" }}>Our Story</h2>
               <p>
-              Founder Tegan Barron combined their love of gaming and digital
-              inclusive integration, bringing to life a collective of dynamic
-              engineers, content writers, and designers for the sole purpose of
-              breaking through digital barriers at tech conferences.
+                Founder Tegan Barron combined their love of gaming and digital
+                inclusive integration, bringing to life a collective of dynamic
+                engineers, content writers, and designers. In its debut,
+                Interconnected Collective has interpreted an immersive bingo
+                game (for the fun of it!) to engage attendees at the Lesbians
+                Who Tech & Allies conference, 2024.
               </p>
               <p>
-              In its first iteration debut, Interconnected Collective has
-              interpreted an immersive bingo game (for the fun of gaming and
-              collaboration) to engage attendees at the Lesbians Who Tech &
-              Allies conference.
-              </p>
-              <p className="AboutPage-our-hope">
-              Our hope remains the same
-              </p>
-              <p>
-              to create unique visual experiences that keep viewers
-              interconnected and might even bridge new communities.
+                At InCo., we harness community training methodologies and
+                creative collaboration to elevate our talents. Inspired by the
+                neuroscience principle that "neurons that fire together wire
+                together," we've curated a suite of tools and techniques
+                designed to build something bigger than ourselves…an online
+                bingo board that can be played around the world!
               </p>
             </div>
-            <div className="col-md-5">
-              <img
-                src={logo}
-                alt="InCo logo">
-              </img>
-            </div>
+            <img
+              src={logo}
+              alt="InCo logo">
+            </img>
           </div>
           <BioList />
         </section>

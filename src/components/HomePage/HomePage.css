@@ -138,11 +138,16 @@ div.Right-panel {
     filter: saturate(28);
 }
 
+
+
 .rainbowGraphic {
     object-fit: cover;
     max-height: 15em;
     max-width: 15em;
     margin-left: 5em;
+    border: 1px solid red;
+    /* background-color: white; */
+
 }
 
 /* row styling */

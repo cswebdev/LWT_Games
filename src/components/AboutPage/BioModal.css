@@ -8,12 +8,6 @@
   max-width: 80%;
 }
 
-@media screen and (min-width: 1400px) {
-  .modal-dialog {
-    max-width: 50%;
-  }
-}
-
 .modal-body {
   padding: 30px 40px;
 }
@@ -36,6 +30,8 @@
 
 .BioModal-left img {
   border-radius: 18px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .BioModal-social-button {
@@ -60,6 +56,11 @@
   width: 60%;
   display: flex;
   flex-wrap: wrap;
+}
+
+.BioModal-right-top {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .BioModal-info {
@@ -129,4 +130,14 @@
 .BioModal-gainedFromInCO {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+
+@media screen and (min-width: 1400px) {
+  .modal-dialog {
+    max-width: 50%;
+  }
+  .BioModal-info {
+    width: 88%;
+  }
 }

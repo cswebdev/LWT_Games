@@ -49,12 +49,13 @@
 }
 
 @media screen and (min-width: 1400px) {
-  .AboutPage-our-story {
-    margin-top: 38%;
+  .AboutPage-container {
+    margin-left: 160px;
+    margin-right: 160px;
   }
   .AboutPage-our-story img {
-    max-width: 40%;
-    height: 40%;
+    max-width: 20%;
+    height: 20%;
     margin-top: 6%;
     margin-left: auto;
     margin-right: auto;

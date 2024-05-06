@@ -1,5 +1,6 @@
 import Modal from 'react-bootstrap/Modal';
 import "./BioModal.css";
+import { X } from "react-bootstrap-icons";
 
 const BioModal = ({ bio, ...props }) => {
   return (
@@ -20,29 +21,29 @@ const BioModal = ({ bio, ...props }) => {
             {bio.otherSocial && <div className="btn btn-primary BioModal-social-button"><a href={bio.otherSocial}>Social Media</a></div>}
           </div>
           <div class="BioModal-right">
-            <div className="BioModal-close" onClick={props.onHide}>x</div>
-            <div className="BioModal-bio">
+            <div className="BioModal-info">
               <div className="BioModal-name">
                 {bio.name}
                 <div className="BioModal-pronouns">
-                  {bio.pronouns}
+                  ({bio.pronouns})
                 </div>
               </div>
               <div className="BioModal-role">
                 {bio.role}
               </div>
+              <div className="BioModal-bio">
+                {bio.bio}
+              </div>
             </div>
-            <div className="BioModal-bio">
-              {bio.bio}
-            </div>
+            <div className="BioModal-close" onClick={props.onHide}><X size={36} /></div>
             <div className="BioModal-qanda">
               <div className="BioModal-reasonForJoining">
-                <p>Q. Why did you join the group?</p>
-                <p><span className="BioModal-a">A:</span> {bio.reasonForJoining}</p>
+                <span>Q. Why did you join the group?</span><br></br>
+                <span><span className="BioModal-a">A:</span> {bio.reasonForJoining}</span>
               </div>
               <div className="BioModal-gainedFromInCo">
-                <p>Q. What have you gained from InCo?</p>
-                <p><span className="BioModal-a">A:</span> {bio.gainedFromInCo}</p>
+                <span>Q. What have you gained from InCo?</span><br></br>
+                <span><span className="BioModal-a">A:</span> {bio.gainedFromInCo}</span>
               </div>
             </div>
           </div>

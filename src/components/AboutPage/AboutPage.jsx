@@ -23,8 +23,7 @@ const AboutPage = () => {
       <div className="AboutPage-container">
         <section className="AboutPage-header">
           <img src={headerBackground} alt="Three InCo members on an orange background" />
-        </section>
-        <section className="AboutPage-container-body">
+        </section >
           <div className="AboutPage-our-story">
             <div className="AboutPage-content">
               <h2 style={{ marginBottom: ".5rem" }}>Our Story</h2>
@@ -51,7 +50,6 @@ const AboutPage = () => {
             </img>
           </div>
           <BioList />
-        </section>
       </div>
     </div>
   );

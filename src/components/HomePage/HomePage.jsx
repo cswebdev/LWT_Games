@@ -17,10 +17,14 @@ const HomePage = () => {
                   ></img>
                </div>
 
-               <div className="Left-panel " style={{ border: "1px solid red" }}>
+               <div className="Left-panel" style={{ border: "1px solid red" }}>
                   <h1>We Are InCo.</h1>
                   <p className="Header-text">
-                     Let's connect & create<br></br> community with bingo!
+                     <span className="att-text">
+                        [ Innerconnected Colective ]
+                     </span>
+                     <br /> community and building <br />connections with
+                     bingo!
                   </p>
                   <button type="button" className="btn btn-primary">
                      Play Bingo

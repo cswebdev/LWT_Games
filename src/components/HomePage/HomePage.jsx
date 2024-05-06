@@ -1,10 +1,6 @@
 import React from "react";
 import "./HomePage.css";
 import homepageGraphicOne from "../../assets/left_mainpage_image.png";
-<<<<<<< HEAD
-=======
-//import homepageGraphicTwo from "../../assets/right_mainpage_image.png";
->>>>>>> netlify
 import imageAssets from "../../utils/Utils";
 // import { Border } from "react-bootstrap-icons";
 

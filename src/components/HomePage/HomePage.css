@@ -152,12 +152,7 @@ div.Right-panel {
     object-fit: cover;
     display: flex;
     /* justify-content: center; */
-<<<<<<< HEAD
-    align-items: end;
-    border: 3px solid red;
-=======
     align-items: flex-end;
->>>>>>> netlify
 
 }
 

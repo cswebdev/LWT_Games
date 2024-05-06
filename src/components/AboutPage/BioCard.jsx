@@ -19,7 +19,6 @@ const BioCard = ({ bio }) => {
     // console.debug("BioCard", bio);
     const [modalShow, setModalShow] = useState(false);
 
-    const handleClose = () => setModalShow(false);
     const handleShow = () => setModalShow(true);
 
     return (

@@ -68,17 +68,17 @@ li {
 /* info button solid */
 
 .btn-info {
-  background-color: #E11774;
-  border-color: #E11774;
+  background-color: #E21674;
+  border-color: #E21674;
   color: #ffff;
 }
 
 .btn-info:active,
 .btn-info:hover,
 .btn-info:focus-visible {
-  background-color: #E11774;
+  background-color: #E21674;
   color: #ffff;
-  border: 1px solid #E11774;
+  border: 1px solid #E21674;
 }
 
 .btn-info-check:checked+.btn,
@@ -94,16 +94,16 @@ li {
 /* info button outline */
 
 .btn-outline-info {
-  border-color: #E11774;
-  color: #E11774;
+  border-color: #E21674;
+  color: #E21674;
 }
 
 .btn-outline-info:active,
 .btn-outline-info:hover,
 .btn-outline-info:focus-visible {
-  background-color: #E11774;
+  background-color: #E21674;
   color: #ffff;
-  border: 1px solid #E11774;
+  border: 1px solid #E21674;
 }
 
 .btn-outline-info-check:checked+.btn,

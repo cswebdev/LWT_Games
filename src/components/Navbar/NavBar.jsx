@@ -24,36 +24,23 @@ const NavBar = () => {
                </div>
                <ul>
                   <li>
-                     <a
-                        href="https://laneecho.github.io/LWT-bingo/"
-                        className="menu-item"
-                     >
-                        Play Bingo
+                     <a href="" className="menu-item">
+                        ABOUT US
                      </a>
                   </li>
                   <li>
-                     <Link to="/about" className="menu-item">
-                        About
-                     </Link>
-                  </li>
-                  <li>
-                     <Link to="/FAQ" className="menu-item">
+                     <Link to="/faq" className="menu-item">
                         FAQ
                      </Link>
                   </li>
                   <li>
-                     <a
-                        href="https://lesbianswhotech.org/about/"
-                        className="menu-item"
-                     >
-                        LWT
-                     </a>
-                  </li>
-                  <li>
-                     <Link to="/get-involved" className="menu-item">
-                        Get Involved
+                     <Link to="/GET INVOLVED" className="menu-item">
+                        GET INVOLVED
                      </Link>
                   </li>
+                  <button type="button" className="btn-info">
+                     Play Bingo
+                  </button>
                </ul>
                <button className="menu-btn" onClick={toggleMenu}>
                   <span

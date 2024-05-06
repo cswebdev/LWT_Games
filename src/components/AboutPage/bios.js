@@ -17,7 +17,7 @@ class Bio {
     otherSocial,
     emoji,
     reasonForJoining,
-    gainedFromLWT,
+    gainedFromInCo,
     color="purple", // purple is the default color for borders and hover effects
   ) {
     this.name = name;
@@ -33,7 +33,7 @@ class Bio {
     this.otherSocial = otherSocial;
     this.emoji = emoji;
     this.reasonForJoining = reasonForJoining;
-    this.gainedFromLWT = gainedFromLWT;
+    this.gainedFromInCo = gainedFromInCo;
     this.color = color;
   }
 }
@@ -130,7 +130,7 @@ const JIMENA = new Bio(
 
 const LYNDS = new Bio(
   "Lynds Lesh",
-  "They/They",
+  "They/Them",
   "Illustrator & Lead Visual",
   "I'm a future NYC-based design generalist (previous Chicago) and illustrator emphasizing visual craft and navigating compelling problems. I also love finding what makes users get excited about a product. ",
   "/headshots/lynds_headshot.jpg",
@@ -257,7 +257,7 @@ const ALEX = new Bio(
   "CX Engineer",
   "I'm a customer success engineer with ten years of experience supporting healthcare software. I have a strong interest in developing tools to improve user productivity for my teams.",
   "/headshots/alex_headshot.jpg",
-  undefined,
+  "/drawings/alex_drawing.png",
   undefined,
   "www.linkedin.com/in/alex-nicole-sharp",
   undefined,
@@ -274,7 +274,7 @@ const JULIE = new Bio(
   "UX Designer",
   "UX Designer | UX Researcher | Product Designer | Houston, TX",
   "/headshots/julie_headshot.png",
-  undefined,
+  "/drawings/julie_drawing.png",
   "https://julienguyen.framer.website/",
   "https://www.linkedin.com/in/julie-nguyen7",
   undefined,
@@ -306,9 +306,9 @@ export const BIOS = [
   JIMENA,
   CHELSEA,
   ALEX,
-  {image: "/headshots/free_space.png", alt: "free space"},
+  {image: "/headshots/free_space.svg", hover: "/drawings/free_space.png", alt: "free space"},
   JULIE,
-  {image: "/headshots/surprise.png", alt: "suprise"},
+  {image: "/headshots/suprise.svg", alt: "suprise"},
   AMY,
 ];
 

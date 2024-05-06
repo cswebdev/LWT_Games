@@ -5,47 +5,59 @@
 @media screen and (min-width: 600px) {
   .AboutPage-header img {
     display: block;
-    position: absolute;
-    right: 0px;
-    top: -60px;
-    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0px;
+    top: 51px;
+    width: 78%;
     height: auto;
-    z-index: 30;
+    z-index: 10;
   }
 }
 
 .AboutPage-our-story {
   position: relative;
-  z-index: 40;
-  margin-top: 35%;
+  z-index: 20;
+  margin-top: 0%;
   margin-bottom: 15%;
   margin-left: 80px;
   margin-right: 80px;
-}
-
-@media screen and (min-width: 600px) {
-  .AboutPage-our-story {
-    max-width: 95%;
-    margin-bottom: 5%;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 149px;
 }
 
 .AboutPage-our-story img {
-  max-width: 95%;
-  margin-top: 7%;
-  display: block;
+  max-width: 80%;
+  height: auto;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 800px) {
+  .AboutPage-our-story {
+    flex-wrap: nowrap;
+    margin-top: -10%;
+    margin-bottom: 5%;
+  }
+
   .AboutPage-our-story img {
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 30%;
+    height: 30%;
   }
 }
 
-.AboutPage-our-hope {
-  font-weight: 700;
-  font-size: 34px;
-  padding-top: 3%;
+@media screen and (min-width: 1400px) {
+  .AboutPage-container {
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+  .AboutPage-our-story img {
+    max-width: 20%;
+    height: 20%;
+    margin-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

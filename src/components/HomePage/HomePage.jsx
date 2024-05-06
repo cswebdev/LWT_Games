@@ -1,8 +1,8 @@
 import React from "react";
 import "./HomePage.css";
-//import homepageRightImg from "../../assets/right_mainpage_image.png";
-import homepageLeftImg from "../../assets/left_mainpage_image.png";
+import homepageGraphicOne from "../../assets/left_mainpage_image.png";
 import imageAssets from "../../utils/Utils";
+// import { Border } from "react-bootstrap-icons";
 
 const HomePage = () => {
    return (
@@ -10,10 +10,14 @@ const HomePage = () => {
          <div className="Container">
             <section className="Container-header">
                <div className="Right-panel">
-                  <img src={homepageLeftImg} alt="homepage Left"></img>
+                  <img
+                     src={homepageGraphicOne}
+                     loading="lazy"
+                     alt="homepage Left"
+                  ></img>
                </div>
 
-               <div className="Left-panel">
+               <div className="Left-panel " style={{ border: "1px solid red" }}>
                   <h1>We Are InCo.</h1>
                   <p className="Header-text">
                      Let's connect & create<br></br> community with bingo!
@@ -32,10 +36,11 @@ const HomePage = () => {
                through the power of fun!
             </p>
 
-            <div className="images d-flex align-content-center justify-content-center">
+            <div className="d-flex align-content-center justify-content-center">
                <div className="whoWeAreFrame">
                   <img
                      className="oliviaPortrait"
+                     loading="lazy"
                      src={imageAssets.oliviaPortrait}
                      alt="Olivia Portrait"
                   />
@@ -43,6 +48,7 @@ const HomePage = () => {
                <div className="whoWeAreFrame">
                   <img
                      className="laneDrawing"
+                     loading="lazy"
                      src={imageAssets.laneDrawing}
                      alt="Drawing of Lane"
                   />
@@ -50,6 +56,7 @@ const HomePage = () => {
                <div className="whoWeAreFrame">
                   <img
                      className="vestDrawing"
+                     loading="lazy"
                      src={imageAssets.vestDrawing}
                      alt="Drawing of a vest"
                   />
@@ -58,7 +65,6 @@ const HomePage = () => {
 
             <button type="button" className="btn btn-info team-button">
                Meet the Team{" "}
-               <span className="material-symbols-outlined">chevron_right</span>
             </button>
          </div>
          <section className="Container-body">
@@ -83,25 +89,47 @@ const HomePage = () => {
                   </button>
                </div>
                <div className="col-md-6 m-0 p-0 d-flex">
-                  <div className="placeholder"></div>
+                  <div class="graphicFrame">
+                     <img
+                        src={imageAssets.homepageGraphicLane}
+                        className="homepageGraphicTwo"
+                        loading="lazy"
+                        alt="Image graphic of"
+                     />
+                  </div>
                </div>
             </div>
-            <div className="row body-content">
-               <div className="col-md-6">
-                  <h2>Why Bingo?</h2>
-                  <p>
-                     Bingo game offers a refreshing break from traditional
-                     online activities, providing a light-hearted way to stay
-                     engaged and connected, all while fostering a sense of
-                     community.
-                  </p>
-                  <button type="button" className="btn btn-info">
-                     Play Bingo
-                  </button>
-               </div>
-               <div className="col-md-6 m-0 p-0">
-                  <div className="placeholder"></div>
-               </div>
+            <div className="row body-content position-relative m-0 p-0">
+               <section className="svg-container position-relative d-flex flex-row-reverse align-items-center z-1 m-0 p-0 ">
+                  <div className="col-md-6 z-1 bg-transparent">
+                     <h2>Why Bingo?</h2>
+                     <p>
+                        Bingo game offers a refreshing break from traditional
+                        online activities, providing a light-hearted way to stay
+                        engaged and connected, all while fostering a sense of
+                        community.
+                     </p>
+                     <button type="button" className="btn btn-primary">
+                        Play Bingo
+                     </button>{" "}
+                  </div>{" "}
+                  <div className="wave-container z-0">
+                     <img
+                        className="wave-graphic z-0"
+                        src={imageAssets.homepageWave}
+                        alt="wave graphic"
+                     />
+                  </div>
+                  <section className="col-md-6 m-0 p-0">
+                     <div class="graphicFrame z-1">
+                        <img
+                           src={imageAssets.bubbleGumGraphic}
+                           className="rainbowGraphic z-1"
+                           alt="rainbow graphic"
+                        />
+                     </div>
+                  </section>
+               </section>
             </div>
          </section>
       </>

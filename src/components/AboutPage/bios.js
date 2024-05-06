@@ -306,7 +306,7 @@ export const BIOS = [
   JIMENA,
   CHELSEA,
   ALEX,
-  {image: "/headshots/free_space.svg", alt: "free space"},
+  {image: "/headshots/free_space.svg", hover: "/drawings/free_space.png", alt: "free space"},
   JULIE,
   {image: "/headshots/suprise.svg", alt: "suprise"},
   AMY,

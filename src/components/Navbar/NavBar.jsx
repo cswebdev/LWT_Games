@@ -24,22 +24,22 @@ const NavBar = () => {
                </div>
                <ul>
                   <li>
-                     <a href="" className="menu-item">
+                     <a href="" className="menu-item nav-link">
                         ABOUT US
                      </a>
                   </li>
                   <li>
-                     <Link to="/faq" className="menu-item">
+                     <Link to="/faq" className="menu-item nav-link">
                         FAQ
                      </Link>
                   </li>
                   <li>
-                     <Link to="/GET INVOLVED" className="menu-item">
+                     <Link to="/GET INVOLVED" className="menu-item nav-link">
                         GET INVOLVED
                      </Link>
                   </li>
                   <button type="button" className="btn-info nav-play-btn">
-                     Play Bingo
+                     PLAY BINGO
                   </button>
                </ul>
                <button className="menu-btn" onClick={toggleMenu}>

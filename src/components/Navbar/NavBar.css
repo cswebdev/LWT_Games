@@ -14,8 +14,9 @@
     justify-content: space-between;
     padding: 0 0;
     margin: 0 auto;
-    max-width: 84.5% !important;
-    border: 1px solid red;
+    max-width: 70% !important;
+
+
 }
 
 .logo-wrapper {
@@ -52,17 +53,38 @@
 .nav-content ul {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 85px;
     list-style: none;
     margin: 0;
     padding: 0;
+
 }
 
-
-.btn-info>.nav-play-btn {
-    width: 131px;
-    height: 36px;
+.menu-item {
+    font-weight: 300px;
 }
+
+li .nav-link {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    color: #000;
+
+}
+
+.nav-play-btn {
+    width: 264px;
+    height: 70px;
+    border-radius: 30px;
+    border: 0px solid transparent;
+    font-weight: 800;
+    font-size: 1.5em;
+    line-height: 36px;
+    letter-spacing: .15em;
+    font-variant: normal;
+
+}
+
 
 
 

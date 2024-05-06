@@ -17,17 +17,22 @@ const HomePage = () => {
                   ></img>
                </div>
 
-               <div className="Left-panel" style={{ border: "1px solid red" }}>
+               <div className="Left-panel">
                   <h1>We Are InCo.</h1>
-                  <p className="Header-text">
-                     <span className="att-text">
-                        [ Innerconnected Colective ]
-                     </span>
-                     <br /> community and building <br />connections with
-                     bingo!
-                  </p>
-                  <button type="button" className="btn btn-primary">
-                     Play Bingo
+                  <div className="Header-text">
+                     <p>
+                        <span className="attn-text">
+                           [ Innerconnected Colective ]
+                        </span>
+                     </p>
+                     <p>Creating community and building </p>
+                     <p>connections with bingo!</p>
+                  </div>
+                  <button
+                     type="button"
+                     className="btn btn-primary btn-play-bingo"
+                  >
+                     PLAY BINGO
                   </button>
                </div>
             </section>

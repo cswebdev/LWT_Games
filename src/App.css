@@ -54,14 +54,16 @@ Button {
   font-size: 1em;
   border-radius: 30px;
   font-size: 30px;
-  padding-left: 1%;
+  font-family: 'Hiragaino Kaku Gothic ProN', sans-serif;
+  src: url('../src/assets/Hiragino\ Kaku\ Gothic\ ProN.ttf') format('tff');
+  /* padding-left: 1%; */
 }
 
 .btn-primary,
 .btn-primary:active,
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  background-color: rgb(113, 0, 113);
+  background-color: #7030AD;
 }
 
 .btn-check:checked+.btn,

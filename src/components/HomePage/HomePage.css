@@ -14,17 +14,31 @@
     align-items: center;
     position: relative;
     /* width: 100% !important; */
-    width: 84.188em;
+    width: 82.188em;
     max-height: min(200vh);
     margin: 0em 4em 3em 4em;
     /* margin-bottom: 3em; */
-    border: 2px solid red;
 
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: .05em;
+    word-spacing: .05em;
 }
 
 h2 {
     font-size: 70px;
     line-height: 1.2em;
+}
+
+.attn-text {
+    font-size: 1.87rem;
+    font-weight: 500;
+    line-height: 70px;
+    letter-spacing: .03em;
 }
 
 .Container-body {
@@ -43,12 +57,13 @@ h2 {
 }
 
 
-.Left-panel .Header-text {
-    font-size: 3.375rem;
+.Left-panel .Header-text P {
+    font-size: 1.5rem;
     line-height: 1em;
     word-spacing: .1em;
     font-weight: 300;
     margin-bottom: .6em;
+    letter-spacing: .036em;
 
 }
 
@@ -73,7 +88,7 @@ div.Right-panel {
     object-fit: contain;
     align-items: flex-end;
     height: auto;
-    margin: 0 10% 0 0;
+    margin: 0 4% 0 0;
 }
 
 
@@ -83,7 +98,6 @@ div.Right-panel {
 .Left-panel p {
     font-size: 3.375rem;
     line-height: 1em;
-    word-spacing: .1em;
     font-weight: 300;
     margin-bottom: .6em;
 }
@@ -93,12 +107,7 @@ div.Right-panel {
     height: auto;
     width: 45.25em;
     height: 45.875em;
-    /* max-width: 79.873em;
-    min-width: 40%;
-    max-height: 100%;
-    min-height: 40%; */
     object-position: 8em 0%;
-    border: 1px solid red;
     filter: brightness(1.025);
 
 }
@@ -111,8 +120,18 @@ div.Right-panel {
 
 
 .Container-header .btn-primary {
-    width: 25vw;
-    height: 8vh;
+    width: 25rem;
+    /* height: 8vh; */
+}
+
+.btn-play-bingo {
+    width: 31.25em;
+    height: 4.375rem;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: .2em;
+
 }
 
 /* end panel styling */

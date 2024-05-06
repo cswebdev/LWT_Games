@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { ArrowRightShort } from "react-bootstrap-icons";
 import "./BioCard.css";
 import { Bio } from "./bios";
+import BioModal from "./BioModal";
+
 /** Component for BioCard
  *
  * Props:
@@ -8,25 +11,29 @@ import { Bio } from "./bios";
  *   behance, github, otherSocial, emoji, reasonForJoining, gainedFromLWT }
  *
  * State:
- * - none
+ * - show: boolean for showing modal
  *
  * BioList -> BioCard
  */
 const BioCard = ({ bio }) => {
     // console.debug("BioCard", bio);
+    const [modalShow, setModalShow] = useState(false);
+
+    const handleShow = () => setModalShow(true);
 
     return (
         <>
             {bio instanceof Bio
-                ? <div className={`BioCard-${bio.color}`}>
+                ? <div className={`BioCard-${bio.color}`} onClick={handleShow}>
                     <div className="BioCard-graphics">
                         <img
                             className="BioCard-headshot img-fluid"
                             style={{
                                 borderColor: bio.color === "purple"
-                                ? "#7030A0"
-                                : "#FFA629"
-                            }}                            src={bio.photo}
+                                    ? "#7030A0"
+                                    : "#FFA629"
+                            }}
+                            src={bio.photo}
                             alt={bio.name}
                         />
                         {bio.drawing &&
@@ -34,8 +41,8 @@ const BioCard = ({ bio }) => {
                                 className="BioCard-drawing img-fluid"
                                 style={{
                                     borderColor: bio.color === "purple"
-                                    ? "#7030A0"
-                                    : "#FFA629"
+                                        ? "#7030A0"
+                                        : "#FFA629"
                                 }}
                                 src={bio.drawing}
                                 alt={bio.name}
@@ -53,9 +60,15 @@ const BioCard = ({ bio }) => {
                         {bio.pronouns}
                     </div>
                 </div>
-            : <img className="BioCard-blanks" src={bio.image} alt={bio.alt} />
+                : <img className="BioCard-blanks" src={bio.image} alt={bio.alt} />
             }
+            <BioModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                bio={bio}
+            />
         </>
+
     );
 };
 

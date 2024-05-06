@@ -4,10 +4,11 @@
 
 const imageAssets = {
    oliviaPortrait: require("../assets/oliviam_headshot.jpg"),
-   vestDrawing: require("../assets/vest.png"),
+   vestDrawing: require("../assets/vest_noborder.png"),
    laneDrawing: require("../assets/Lane.png"),
-   rainbowGraphic: require("../assets/b8067c939cb3b8d5503e7ce7b3d98e26.png"),
+   bubbleGumGraphic: require("../assets/bubblegum.png"),
    homepageWave: require("../assets/homepage-wave.png"),
+   homepageGraphicLane: require("../assets/right_mainpage_image.png"),
 };
 
 export default imageAssets;

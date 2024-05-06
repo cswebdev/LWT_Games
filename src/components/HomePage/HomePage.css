@@ -16,7 +16,8 @@
     position: relative;
     width: 100% !important;
     max-height: min(200vh);
-    margin-bottom: 3em;
+    margin: 0em 4em 3em 4em;
+    /* margin-bottom: 3em; */
 
 }
 
@@ -117,17 +118,19 @@ div.Right-panel {
 
 }
 
-.placeholder {
+.graphicFrame {
     height: 20em;
-    width: 100%;
+    width: 30em;
     /* background-color: lightgray; */
     background-color: transparent;
-    margin: 1em 0;
+    /* margin: 1em 0; */
     padding: 0;
+    margin: 0;
     object-fit: cover;
     display: flex;
     /* justify-content: center; */
     align-items: end;
+    border: 3px solid red;
 
 }
 
@@ -155,9 +158,13 @@ div.Right-panel {
 .row {
     display: flex;
     flex-direction: row;
+    /* Changed width to 95vw */
+    /* fixes width issue but worried responsiveness will be an issue */
+    width: 95vw;
     width: 100%;
+    /* issue end */
     padding: 0;
-    margin: 5vh 4%;
+    /* margin: 5vh 4%; */
     font-size: 25px;
     align-items: center;
 }
@@ -169,12 +176,13 @@ div.Right-panel {
     z-index: 1;
 }
 
-/* .body-content {
-    height: 65vh;
+.body-content {
+    /* height: 65vh; */
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+
+}
 
 
 
@@ -186,7 +194,9 @@ div.Right-panel {
 
 
 /* who are we row */
-
+.who-are-we {
+    max-width: 100%;
+}
 
 
 .who-are-we h2,
@@ -209,12 +219,13 @@ div.Right-panel {
 .whoWeAreFrame {
     height: 12em;
     width: 12em;
-    background-color: lightgray;
+    /* background-color: lightgray; */
     border: 3px solid rgb(65, 233, 65);
     border-radius: 5%;
     margin: 2em 3em 0em 3em;
     object-fit: contain;
     overflow: hidden;
+    padding: 0;
 
 }
 
@@ -236,6 +247,7 @@ div.Right-panel {
     object-fit: contain;
     max-height: 12em;
     max-width: 12em;
+
 }
 
 .whoWeAreFrame:nth-of-type(2) {
@@ -243,7 +255,10 @@ div.Right-panel {
 }
 
 .whoWeAreFrame:nth-of-type(3) {
-    border: none;
+    border-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

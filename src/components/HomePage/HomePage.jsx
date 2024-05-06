@@ -94,7 +94,7 @@ const HomePage = () => {
                         src={imageAssets.homepageGraphicLane}
                         className="homepageGraphicTwo"
                         loading="lazy"
-                        alt="Image graphic of"
+                        alt="graphic of"
                      />
                   </div>
                </div>

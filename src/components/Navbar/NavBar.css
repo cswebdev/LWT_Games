@@ -59,6 +59,11 @@
 }
 
 
+.btn-info>.nav-play-btn {
+    width: 131px;
+    height: 36px;
+}
+
 
 
 .menu-item {

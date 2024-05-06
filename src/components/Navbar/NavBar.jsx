@@ -38,7 +38,7 @@ const NavBar = () => {
                         GET INVOLVED
                      </Link>
                   </li>
-                  <button type="button" className="btn-info">
+                  <button type="button" className="btn-info nav-play-btn">
                      Play Bingo
                   </button>
                </ul>

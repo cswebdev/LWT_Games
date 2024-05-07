@@ -78,7 +78,9 @@ const HomePage = () => {
          <section className="Container-body">
             <div className="row body-content d-flex align-content-center justify-content-center">
                <div className="col-md-5 m-0 p-0">
-                  <h2 className="row-h2">Engaging with Lesbians Who Tech Pride Summit</h2>
+                  <h2 className="row-h2">
+                     Engaging with Lesbians Who Tech Pride Summit
+                  </h2>
                   <p>
                      Every single member of Interconnected Collective came
                      together because of this Summit! Lesbians Who Tech is such
@@ -87,7 +89,7 @@ const HomePage = () => {
                      see you there!
                   </p>
                   <button type="button" className="btn btn-info summit-button">
-                     Join The Summit{" "}
+                     JOIN THE SUMMIT
                   </button>
                </div>
                <div className="col-md-4 m-0 p-0">

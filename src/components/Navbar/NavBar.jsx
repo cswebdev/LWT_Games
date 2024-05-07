@@ -39,7 +39,7 @@ const NavBar = () => {
                      </Link>
                   </li>
                   <button type="button" className="btn-info nav-play-btn">
-                     PLAY BINGO
+                     <a href="">PLAY BINGO</a>
                   </button>
                </ul>
                <button className="menu-btn" onClick={toggleMenu}>

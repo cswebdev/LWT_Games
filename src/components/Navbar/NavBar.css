@@ -15,6 +15,7 @@
     padding: 0 0;
     margin: 0 auto;
     max-width: 70% !important;
+    gap: 25px;
 
 
 }
@@ -50,13 +51,16 @@
     width: 100%;
 }
 
+
+
 .nav-content ul {
     display: flex;
     align-items: center;
-    gap: 85px;
+    gap: 50px;
     list-style: none;
     margin: 0;
     padding: 0;
+    width: fit-content;
 
 }
 
@@ -77,15 +81,18 @@ li .nav-link {
     height: 70px;
     border-radius: 30px;
     border: 0px solid transparent;
+
+}
+
+.nav-play-btn a {
     font-weight: 800;
     font-size: 1.5em;
     line-height: 36px;
     letter-spacing: .15em;
     font-variant: normal;
-
+    color: #fff;
+    text-decoration: none;
 }
-
-
 
 
 .menu-item {

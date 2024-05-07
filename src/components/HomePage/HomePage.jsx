@@ -1,7 +1,6 @@
 import React from "react";
 import "./HomePage.css";
 import homepageGraphicOne from "../../assets/left_mainpage_image.png";
-//import homepageGraphicTwo from "../../assets/right_mainpage_image.png";
 import imageAssets from "../../utils/Utils";
 // import { Border } from "react-bootstrap-icons";
 
@@ -18,23 +17,31 @@ const HomePage = () => {
                   ></img>
                </div>
 
-               <div className="Left-panel " style={{ border: "1px solid red" }}>
+               <div className="Left-panel">
                   <h1>We Are InCo.</h1>
-                  <p className="Header-text">
-                     Let's connect & create<br></br> community with bingo!
-                  </p>
-                  <button type="button" className="btn btn-primary">
-                     Play Bingo
+                  <div className="Header-text">
+                     <p>
+                        <span className="attn-text">
+                           [ Innerconnected Colective ]
+                        </span>
+                     </p>
+                     <p>Creating community and building </p>
+                     <p>connections with bingo!</p>
+                  </div>
+                  <button
+                     type="button"
+                     className="btn btn-primary btn-play-bingo"
+                  >
+                     PLAY BINGO
                   </button>
                </div>
             </section>
          </div>
          <div className="row d-flex text-center justify-content-center who-are-we">
-            <h2>Who Are We?</h2>
-            <p className="we-are-subtitle">We are Interconnected Collective</p>
-            <p className="we-are-text">
-               a group of gamers determined to breakthrough digital walls
-               through the power of fun!
+            <h2>What's InCo?</h2>
+            <p className="we-are-subtitle">
+               Breaking through digital with the power of fun and the <br />
+               passion for people [or gamers]
             </p>
 
             <div className="d-flex align-content-center justify-content-center">
@@ -65,11 +72,11 @@ const HomePage = () => {
             </div>
 
             <button type="button" className="btn btn-info team-button">
-               Meet the Team{" "}
+               MEET THE TEAM{" "}
             </button>
          </div>
          <section className="Container-body">
-            <div className="row body-content">
+            <div className="row body-content d-flex align-content-center justify-content-center">
                <div className="col-md-6">
                   <h2>Engaging with Lesbians Who Tech Pride Summit</h2>
                   <p>
@@ -81,15 +88,13 @@ const HomePage = () => {
                   </p>
                   <button
                      type="button"
-                     className="btn btn-outline-info summit-button"
+                     className="btn btn-info summit-button"
                   >
                      Join The Summit{" "}
-                     <span className="material-symbols-outlined ">
-                        chevron_right
-                     </span>
+                   
                   </button>
                </div>
-               <div className="col-md-6 m-0 p-0 d-flex">
+               <div className="col-md-4 m-0 p-0">
                   <div class="graphicFrame">
                      <img
                         src={imageAssets.homepageGraphicLane}
@@ -103,15 +108,12 @@ const HomePage = () => {
             <div className="row body-content position-relative m-0 p-0">
                <section className="svg-container position-relative d-flex flex-row-reverse align-items-center z-1 m-0 p-0 ">
                   <div className="col-md-6 z-1 bg-transparent">
-                     <h2>Why Bingo?</h2>
+                     <h2>Not your Grandma's Bingo!</h2>
                      <p>
-                        Bingo game offers a refreshing break from traditional
-                        online activities, providing a light-hearted way to stay
-                        engaged and connected, all while fostering a sense of
-                        community.
+                        We created a light hearted game to stay engaged and <br />connect, all while learning and interacting with <br />attendees throughout the summit. 
                      </p>
-                     <button type="button" className="btn btn-primary">
-                        Play Bingo
+                     <button type="button" className="btn btn-primary btn-play-bingo">
+                        PLAY BINGO
                      </button>{" "}
                   </div>{" "}
                   <div className="wave-container z-0">

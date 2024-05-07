@@ -3,8 +3,7 @@
     display: flex;
     flex-direction: row;
     width: 100% !important;
-
-
+    justify-content: center;
 }
 
 
@@ -14,11 +13,20 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 100% !important;
+    /* width: 100% !important; */
+    width: 82.188em;
     max-height: min(200vh);
     margin: 0em 4em 3em 4em;
     /* margin-bottom: 3em; */
 
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: .05em;
+    word-spacing: .05em;
 }
 
 h2 {
@@ -26,12 +34,18 @@ h2 {
     line-height: 1.2em;
 }
 
+.attn-text {
+    font-size: 1.87rem;
+    font-weight: 500;
+    line-height: 70px;
+    letter-spacing: .03em;
+}
+
 .Container-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0%;
-    margin: 11em 0 0 0;
 }
 
 .Container-header .btn-primary {
@@ -42,13 +56,13 @@ h2 {
 }
 
 
-.Left-panel .Header-text {
-    font-size: 3.375rem;
+.Left-panel .Header-text P {
+    font-size: 1.5rem;
     line-height: 1em;
     word-spacing: .1em;
     font-weight: 300;
     margin-bottom: .6em;
-
+    letter-spacing: .036em;
 }
 
 
@@ -72,31 +86,23 @@ div.Right-panel {
     object-fit: contain;
     align-items: flex-end;
     height: auto;
-}
-
-
-
-.Left-panel {
-    margin-left: 5%;
-
+    margin: 0 4% 0 0;
 }
 
 .Left-panel p {
     font-size: 3.375rem;
     line-height: 1em;
-    word-spacing: .1em;
     font-weight: 300;
     margin-bottom: .6em;
 }
 
 .Right-panel img {
-    object-fit: cover;
+    object-fit: contain;
     height: auto;
-    max-width: 100%;
-    min-width: 40%;
-    max-height: 100%;
-    min-height: 40%;
-    object-position: 10em 0%;
+    width: 45.25em;
+    height: 45.875em;
+    object-position: 8em 0%;
+
 }
 
 
@@ -107,38 +113,38 @@ div.Right-panel {
 
 
 .Container-header .btn-primary {
-    width: 25vw;
-    height: 8vh;
+    width: 25rem;
+    /* height: 8vh; */
+}
+
+.btn-play-bingo {
+    width: 31.25em;
+    height: 4.375rem;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: .2em;
 }
 
 /* end panel styling */
 
 .section {
     width: 100%;
+    margin: 0 10%;
 
 }
 
 .graphicFrame {
     height: 20em;
     width: 30em;
-    /* background-color: lightgray; */
     background-color: transparent;
-    /* margin: 1em 0; */
     padding: 0;
     margin: 0;
     object-fit: cover;
     display: flex;
-    /* justify-content: center; */
-    align-items: flex-end;
-
 }
 
-.homepageGraphicTwo {
-    object-fit: cover;
-    max-height: 25em;
-    max-width: 25em;
-    filter: saturate(28);
-}
+
 
 
 
@@ -163,9 +169,7 @@ div.Right-panel {
     width: 100%;
     /* issue end */
     padding: 0;
-    /* margin: 5vh 4%; */
     font-size: 25px;
-    align-items: center;
 }
 
 .row:nth-child(2) {
@@ -175,20 +179,10 @@ div.Right-panel {
     z-index: 1;
 }
 
-.body-content {
-    /* height: 65vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 
 
-.btn-dark {
-    width: 200px;
-    border-radius: 0;
-}
+
 
 
 
@@ -198,22 +192,25 @@ div.Right-panel {
 }
 
 
-.who-are-we h2,
-.row h2 {
-    font-size: 60px;
-    margin-bottom: 1.2em;
-
+.who-are-we h2 {
+    font-size: 2.875rem;
+    line-height: 3.444em;
+    margin: 0;
+    letter-spacing: .036em;
 }
 
 .we-are-subtitle {
     font-weight: normal;
-    font-size: 40px;
-    margin: .2em 0 1.3em 0;
+    font-size: 1.875rem;
+    margin: 0;
+    font-weight: 400;
+    line-height: 3.125rem;
+    font-variant: thin;
+    letter-spacing: .046em;
+
 }
 
-.we-are-text {
-    font-size: 30px;
-}
+
 
 .whoWeAreFrame {
     height: 12em;
@@ -262,27 +259,64 @@ div.Right-panel {
 
 
 
-.team-button,
-.summit-button {
-    width: fit-content;
-    margin-top: 2em;
-    padding: .5% 1.2%;
-    font-size: 32px;
-    display: flex;
-    align-items: center;
-    justify-self: center;
+.team-button, .summit-button{
+    margin-top: 3.5em;
+    width: 21.063rem;
+    height: 4.375rem;
+    border-radius: 30px;
+    border: 0px solid transparent;
+    font-family: 'Hiragino Kaku Gothic', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+
 }
 
-.team-button span,
+/* .team-button span,
 .summit-button span {
     padding-top: .2em;
-}
+} */
 
 
 /* why bingo row */
 
+.homepageGraphicTwo {
+    object-fit: cover;
+    max-height: 34.938rem;
+    max-width: 35.5em;
+}
+
+div .row .body-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .body-content .btn-primary {
     width: 12vw;
+}
+
+.row .body-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* For centering text */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+}
+
+.col-md-6 h2 {
+    font-size: 2.875rem;
+}
+
+.col-md-6 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 3.125rem;
 }
 
 /* waves */
@@ -316,9 +350,7 @@ div.Right-panel {
         height: 30vh;
     }
 
-    h1 {
-        font-size: 24px;
-    }
+
 }
 
 @media(max-width: 769px) {
@@ -345,13 +377,13 @@ div.Right-panel {
     }
 
 
-    .Right-panel img {
+    /* .Right-panel img {
         width: 100%;
         height: auto;
         object-fit: cover;
         object-position: 5em 0%;
 
-    }
+    } */
 
     div.Middle-panel {
         position: relative;

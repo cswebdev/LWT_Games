@@ -16,8 +16,6 @@
     /* width: 100% !important; */
     width: 82.188em;
     max-height: min(200vh);
-    margin: 0em 4em 3em 4em;
-    /* margin-bottom: 3em; */
 
 }
 
@@ -45,10 +43,11 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0%;
+
 }
 
-.Container-header .btn-primary {
+.Container-header .btn-primary,
+.btn-play-bingo-purple {
     margin-top: 2em;
     -webkit-box-shadow: 1px 7px 5px 0px rgba(228, 204, 255, 1);
     -moz-box-shadow: 1px 7px 5px 0px rgba(228, 204, 255, 1);
@@ -105,20 +104,8 @@ div.Right-panel {
 
 }
 
-
-
-.Left-panel img {
-    border: 1px solid pink;
-}
-
-
-.Container-header .btn-primary {
-    width: 25rem;
-    /* height: 8vh; */
-}
-
 .btn-play-bingo {
-    width: 31.25em;
+    width: 31.2rem;
     height: 4.375rem;
     font-weight: 800;
     font-size: 24px;
@@ -126,17 +113,27 @@ div.Right-panel {
     letter-spacing: .2em;
 }
 
+.btn-play-bingo-purple {
+    width: 25rem;
+    height: 4.375rem;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: .2em;
+}
+
+
 /* end panel styling */
 
 .section {
     width: 100%;
-    margin: 0 10%;
+    /* margin: 0 10%; */
 
 }
 
 .graphicFrame {
     height: 20em;
-    width: 30em;
+    /* width: 30em; */
     background-color: transparent;
     padding: 0;
     margin: 0;
@@ -149,14 +146,15 @@ div.Right-panel {
 
 
 .rainbowGraphic {
-    object-fit: cover;
-    max-height: 15em;
-    max-width: 15em;
+    object-fit: contain;
+    max-height: 17.875em;
+    max-width: 17.625em;
     margin-left: 5em;
-    border: 1px solid red;
     /* background-color: white; */
 
 }
+
+
 
 /* row styling */
 
@@ -165,10 +163,10 @@ div.Right-panel {
     flex-direction: row;
     /* Changed width to 95vw */
     /* fixes width issue but worried responsiveness will be an issue */
-    width: 95vw;
-    width: 100%;
+    max-width: 100vw;
     /* issue end */
     padding: 0;
+    margin: 3em 0;
     font-size: 25px;
 }
 
@@ -191,13 +189,19 @@ div.Right-panel {
     max-width: 100%;
 }
 
-
-.who-are-we h2 {
+.row-h2 {
     font-size: 2.875rem;
-    line-height: 3.444em;
+}
+
+.who-are-we .row-h2 {
+    line-height: 3.444rem;
     margin: 0;
     letter-spacing: .036em;
 }
+
+/* .who-are-we>p {
+    font-size: 1.375rem;
+} */
 
 .we-are-subtitle {
     font-weight: normal;
@@ -259,7 +263,8 @@ div.Right-panel {
 
 
 
-.team-button, .summit-button{
+.team-button,
+.summit-button {
     margin-top: 3.5em;
     width: 21.063rem;
     height: 4.375rem;
@@ -292,9 +297,7 @@ div .row .body-content {
     align-items: center;
 }
 
-.body-content .btn-primary {
-    width: 12vw;
-}
+
 
 .row .body-content {
     display: flex;
@@ -309,9 +312,9 @@ div .row .body-content {
     /* Remove margin */
 }
 
-.col-md-6 h2 {
-    font-size: 2.875rem;
-}
+/* .row-h2 {
+    font-size: 1.875em;
+} */
 
 .col-md-6 p {
     font-size: 1.5rem;

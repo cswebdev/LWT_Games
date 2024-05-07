@@ -74,7 +74,6 @@ Button {
   font-size: 30px;
   font-family: 'Hiragaino Kaku Gothic ProN', sans-serif;
   src: url('../src/assets/Hiragino\ Kaku\ Gothic\ ProN.ttf') format('tff');
-  /* padding-left: 1%; */
 }
 
 .btn-primary,

@@ -77,8 +77,8 @@ const HomePage = () => {
          </div>
          <section className="Container-body">
             <div className="row body-content d-flex align-content-center justify-content-center">
-               <div className="col-md-6">
-                  <h2>Engaging with Lesbians Who Tech Pride Summit</h2>
+               <div className="col-md-5 m-0 p-0">
+                  <h2 className="row-h2">Engaging with Lesbians Who Tech Pride Summit</h2>
                   <p>
                      Every single member of Interconnected Collective came
                      together because of this Summit! Lesbians Who Tech is such
@@ -86,12 +86,8 @@ const HomePage = () => {
                      women, women of color, and nonbinary leaders. We hope to
                      see you there!
                   </p>
-                  <button
-                     type="button"
-                     className="btn btn-info summit-button"
-                  >
+                  <button type="button" className="btn btn-info summit-button">
                      Join The Summit{" "}
-                   
                   </button>
                </div>
                <div className="col-md-4 m-0 p-0">
@@ -108,11 +104,17 @@ const HomePage = () => {
             <div className="row body-content position-relative m-0 p-0">
                <section className="svg-container position-relative d-flex flex-row-reverse align-items-center z-1 m-0 p-0 ">
                   <div className="col-md-6 z-1 bg-transparent">
-                     <h2>Not your Grandma's Bingo!</h2>
+                     <h2 className="row-h2">Not your Grandma's Bingo!</h2>
                      <p>
-                        We created a light hearted game to stay engaged and <br />connect, all while learning and interacting with <br />attendees throughout the summit. 
+                        We created a light hearted game to stay engaged and{" "}
+                        <br />
+                        connect, all while learning and interacting with <br />
+                        attendees throughout the summit.
                      </p>
-                     <button type="button" className="btn btn-primary btn-play-bingo">
+                     <button
+                        type="button"
+                        className="btn btn-primary btn-play-bingo-purple"
+                     >
                         PLAY BINGO
                      </button>{" "}
                   </div>{" "}
@@ -123,8 +125,8 @@ const HomePage = () => {
                         alt="wave graphic"
                      />
                   </div>
-                  <section className="col-md-6 m-0 p-0">
-                     <div class="graphicFrame z-1">
+                  <section className="col-md-6 m-0 p-0 ">
+                     <div class="graphicFrame z-1 d-flex justify-content-center">
                         <img
                            src={imageAssets.bubbleGumGraphic}
                            className="rainbowGraphic z-1"

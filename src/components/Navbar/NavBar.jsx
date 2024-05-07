@@ -39,7 +39,9 @@ const NavBar = () => {
                      </Link>
                   </li>
                   <button type="button" className="btn-info nav-play-btn">
-                     <a href="">PLAY BINGO</a>
+                     <a href="https://laneecho.github.io/LWT-bingo/">
+                        PLAY BINGO
+                     </a>
                   </button>
                </ul>
                <button className="menu-btn" onClick={toggleMenu}>

@@ -38,11 +38,10 @@ const HomePage = () => {
             </section>
          </div>
          <div className="row d-flex text-center justify-content-center who-are-we">
-            <h2>Who Are We?</h2>
-            <p className="we-are-subtitle">We are Interconnected Collective</p>
-            <p className="we-are-text">
-               a group of gamers determined to breakthrough digital walls
-               through the power of fun!
+            <h2>What's InCo?</h2>
+            <p className="we-are-subtitle">
+               Breaking through digital with the power of fun and the <br />
+               passion for people [or gamers]
             </p>
 
             <div className="d-flex align-content-center justify-content-center">
@@ -73,11 +72,11 @@ const HomePage = () => {
             </div>
 
             <button type="button" className="btn btn-info team-button">
-               Meet the Team{" "}
+               MEET THE TEAM{" "}
             </button>
          </div>
          <section className="Container-body">
-            <div className="row body-content">
+            <div className="row body-content d-flex align-content-center justify-content-center">
                <div className="col-md-6">
                   <h2>Engaging with Lesbians Who Tech Pride Summit</h2>
                   <p>
@@ -92,12 +91,10 @@ const HomePage = () => {
                      className="btn btn-outline-info summit-button"
                   >
                      Join The Summit{" "}
-                     <span className="material-symbols-outlined ">
-                        chevron_right
-                     </span>
+                   
                   </button>
                </div>
-               <div className="col-md-6 m-0 p-0 d-flex">
+               <div className="col-md-4 m-0 p-0">
                   <div class="graphicFrame">
                      <img
                         src={imageAssets.homepageGraphicLane}

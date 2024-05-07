@@ -51,6 +51,8 @@
     width: 100%;
 }
 
+
+
 .nav-content ul {
     display: flex;
     align-items: center;
@@ -79,7 +81,6 @@ li .nav-link {
     height: 70px;
     border-radius: 30px;
     border: 0px solid transparent;
-
 
 }
 

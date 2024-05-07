@@ -17,6 +17,8 @@ h3 {
   font-family: 'new-science-serif', sans-serif;
 }
 
+
+
 h1 {
   font-size: 2.875rem;
   line-height: 6.856rem;
@@ -29,13 +31,22 @@ h2 {
   font-weight: 600;
 }
 
+.nav-link {
+  font-family: 'Hiragano Kuku Gothic', sans-serif;
+  src: url('../src/assets/Hiragino\ Kaku\ Gothic\ ProN.ttf') format('tff');
+}
+
 li {
   font-family: 'new-science-serif', sans-serif;
   src: url('../src/assets/Hiragino\ Kaku\ Gothic\ ProN.ttf') format('tff');
-  /* font-family: 'Poppins', sans-serif; */
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 36px;
+}
+
+p {
+  font-family: 'new-science-serif', sans-serif;
+  src: url('../src/assets/New\ Science\ Regular.ttf') format('tff');
 }
 
 small {

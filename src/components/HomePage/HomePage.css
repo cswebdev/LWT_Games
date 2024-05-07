@@ -124,7 +124,6 @@ div.Right-panel {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: .2em;
-
 }
 
 /* end panel styling */
@@ -260,7 +259,7 @@ div.Right-panel {
 
 
 
-.team-button{
+.team-button, .summit-button{
     margin-top: 3.5em;
     width: 21.063rem;
     height: 4.375rem;
@@ -269,6 +268,8 @@ div.Right-panel {
     font-family: 'Hiragino Kaku Gothic', sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
+    letter-spacing: .1em;
+
 }
 
 /* .team-button span,

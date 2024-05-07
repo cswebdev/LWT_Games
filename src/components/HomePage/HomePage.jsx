@@ -88,7 +88,7 @@ const HomePage = () => {
                   </p>
                   <button
                      type="button"
-                     className="btn btn-outline-info summit-button"
+                     className="btn btn-info summit-button"
                   >
                      Join The Summit{" "}
                    
@@ -108,15 +108,12 @@ const HomePage = () => {
             <div className="row body-content position-relative m-0 p-0">
                <section className="svg-container position-relative d-flex flex-row-reverse align-items-center z-1 m-0 p-0 ">
                   <div className="col-md-6 z-1 bg-transparent">
-                     <h2>Why Bingo?</h2>
+                     <h2>Not your Grandma's Bingo!</h2>
                      <p>
-                        Bingo game offers a refreshing break from traditional
-                        online activities, providing a light-hearted way to stay
-                        engaged and connected, all while fostering a sense of
-                        community.
+                        We created a light hearted game to stay engaged and <br />connect, all while learning and interacting with <br />attendees throughout the summit. 
                      </p>
-                     <button type="button" className="btn btn-primary">
-                        Play Bingo
+                     <button type="button" className="btn btn-primary btn-play-bingo">
+                        PLAY BINGO
                      </button>{" "}
                   </div>{" "}
                   <div className="wave-container z-0">

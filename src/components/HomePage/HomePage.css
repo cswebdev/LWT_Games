@@ -166,7 +166,7 @@ div.Right-panel {
     max-width: 100vw;
     /* issue end */
     padding: 0;
-    margin: 3em 0;
+    margin: 6.3em 0;
     font-size: 25px;
 }
 
@@ -194,15 +194,18 @@ div.Right-panel {
     line-height: 4.444rem;
     letter-spacing: .036em;
 
+
 }
 
 .who-are-we .row-h2 {
     line-height: 3.444rem;
     margin: 0;
     letter-spacing: .036em;
+
 }
 
-.who-are-we, p {
+.who-are-we,
+p {
     line-height: 2.844rem;
     margin-top: 1em;
     font-size: 1.3rem;
@@ -228,7 +231,7 @@ div.Right-panel {
 .whoWeAreFrame {
     height: 12em;
     width: 12em;
-    /* background-color: lightgray; */
+    background-color: rgb(65, 233, 65);
     border: 3px solid rgb(65, 233, 65);
     border-radius: 5%;
     margin: 2em 3em 0em 3em;
@@ -244,6 +247,20 @@ div.Right-panel {
     max-width: 29em;
     object-position: -9em -5em;
     filter: grayscale(1) brightness(1.3);
+    position: relative;
+    opacity: 85%;
+}
+
+.oliviaPortrait::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 0, 1);
+    /* Transparent green */
+    z-index: 1;
 }
 
 .laneDrawing {
@@ -270,7 +287,30 @@ div.Right-panel {
     align-items: center;
 }
 
+.who-we-are-graphics {
+    /* max-width: 15rem; */
+    max-height: auto;
+    object-fit: fill;
 
+}
+
+.blueBlob {
+    object-fit: fill;
+    max-width: 55rem;
+    max-height: auto;
+    position: absolute;
+    top: 112%;
+
+
+}
+
+.blueMountainImg {
+    max-height: 5em;
+    max-width: auto;
+    position: absolute;
+    bottom: -10%;
+    left: 17%;
+}
 
 .team-button,
 .summit-button {

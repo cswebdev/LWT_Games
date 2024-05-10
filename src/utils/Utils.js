@@ -9,6 +9,13 @@ const imageAssets = {
    bubbleGumGraphic: require("../assets/bubblegum.png"),
    homepageWave: require("../assets/homepage-wave.png"),
    homepageGraphicLane: require("../assets/right_mainpage_image.png"),
+   whiteCloud: require("../assets/whitecloud.png"),
+   greenCloud: require("../assets/greensolo.png"),
+   blueMountain: require("../assets/bluemountain.png"),
+   pinkCloud: require("../assets/pinkcloud.png"),
+   logo: require("../assets/Olympic_Carabiner_logo_Green_no_words_no_white.png"),
+   blueBlob: require("../assets/Rectangle_14.png"),
+   tealAndPurpleCloud: require("../assets/tealcloud_1.png"),
 };
 
 export default imageAssets;

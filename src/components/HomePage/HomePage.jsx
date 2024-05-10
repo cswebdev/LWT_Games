@@ -37,21 +37,35 @@ const HomePage = () => {
                </div>
             </section>
          </div>
-         <div className="row d-flex text-center justify-content-center who-are-we">
-            <h2>What's InCo?</h2>
-            <p className="we-are-subtitle">
+         <div className="who-we-are-graphic z-0">
+            <img
+               className="blueBlob"
+               src={imageAssets.blueBlob}
+               alt="blue background blob"
+            />
+         </div>
+         <div className="row d-flex text-center justify-content-center who-are-we z-1">
+            <h2 className="z-1 mb-5">What's InCo?</h2>
+            <p className="we-are-subtitle z-1">
                Breaking through digital with the power of fun and the <br />
                passion for people [or gamers]
             </p>
 
-            <div className="d-flex align-content-center justify-content-center">
+            <div className="d-flex align-content-center justify-content-center z-1 position-relative">
                <div className="whoWeAreFrame">
-                  <img
-                     className="oliviaPortrait"
-                     loading="lazy"
-                     src={imageAssets.oliviaPortrait}
-                     alt="Olivia Portrait"
-                  />
+                  <div className="blueMountain ">
+                     <img
+                        src={imageAssets.blueMountain}
+                        alt="blue mountain graphic"
+                        className="blueMountainImg z-2"
+                     />
+                     <img
+                        className="oliviaPortrait z-1"
+                        loading="lazy"
+                        src={imageAssets.oliviaPortrait}
+                        alt="Olivia Portrait"
+                     />
+                  </div>
                </div>
                <div className="whoWeAreFrame">
                   <img
@@ -71,14 +85,14 @@ const HomePage = () => {
                </div>
             </div>
 
-            <button type="button" className="btn btn-info team-button">
+            <button type="button" className="btn btn-info team-button z-1">
                MEET THE TEAM{" "}
             </button>
          </div>
-         <section className="Container-body">
+         <section className="Container-body z-1">
             <div className="row body-content d-flex align-content-center justify-content-center">
-               <div className="col-md-5 m-0 p-0">
-                  <h2 className="row-h2">
+               <div className="col-md-5 m-0 p-0 z-1">
+                  <h2 className="row-h2 z-1">
                      Engaging with Lesbians Who Tech Pride Summit
                   </h2>
                   <p>

@@ -22,7 +22,7 @@ const HomePage = () => {
                   <div className="Header-text">
                      <p>
                         <span className="attn-text">
-                           [ Innerconnected Colective ]
+                           [ Interconnected Collective ]
                         </span>
                      </p>
                      <p>Creating community and building </p>

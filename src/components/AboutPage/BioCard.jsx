@@ -60,7 +60,8 @@ const BioCard = ({ bio }) => {
                         {bio.pronouns}
                     </div>
                 </div>
-                : <img className="BioCard-blanks" src={bio.image} alt={bio.alt} />
+                // :
+                : ""
             }
             <BioModal
                 show={modalShow}

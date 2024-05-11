@@ -18,7 +18,7 @@ const BioList = () => {
     return (
         <div className="BioList">
             <div className="BioList-header">
-                <h2>Contributors</h2>
+                <h1>Contributors</h1>
                 <p>
                     Our one-of-a-kind group of techies who left an impression on InCo.
                 </p>

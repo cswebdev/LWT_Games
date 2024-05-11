@@ -44,21 +44,35 @@ const HomePage = () => {
                alt="blue background blob"
             />
          </div>
-         <div className="row d-flex text-center justify-content-center who-are-we z-1">
-            <h2 className="z-1 mb-5">What's InCo?</h2>
+         <div className="row d-flex text-center justify-content-center who-are-we z-1 overflow-hidden ">
+            <h2 className="z-1 mb-4">What's InCo?</h2>
             <p className="we-are-subtitle z-1">
                Breaking through digital with the power of fun and the <br />
                passion for people [or gamers]
             </p>
 
-            <div className="d-flex align-content-center justify-content-center z-1 position-relative">
-               <div className="whoWeAreFrame">
-                  <div className="blueMountain ">
-                     <img
-                        src={imageAssets.blueMountain}
-                        alt="blue mountain graphic"
-                        className="blueMountainImg z-2"
-                     />
+            <div className="d-flex align-content-center justify-content-center z-1 position-relative mt-4">
+               <img
+                  src={imageAssets.pinkCloud}
+                  loading="lazy"
+                  alt="tiny solo pink cloud"
+                  className="pinkCloudImg z-2"
+               />
+               <img
+                  src={imageAssets.tealAndPurpleCloud}
+                  loading="lazy"
+                  alt="teal and purple cloud"
+                  className="tealCloudImg"
+               ></img>
+
+               <div className="blueMountain">
+                  <img
+                     src={imageAssets.blueMountain}
+                     loading="lazy"
+                     alt="blue mountain graphic"
+                     className="blueMountainImg z-2"
+                  />
+                  <div className="whoWeAreFrame">
                      <img
                         className="oliviaPortrait z-1"
                         loading="lazy"
@@ -84,6 +98,11 @@ const HomePage = () => {
                   />
                </div>
             </div>
+               <img
+                  src={imageAssets.greenAndPinkCloud}
+                  alt="small green and pink cloud"
+                  className="greenAndPinkCloud"
+               />
 
             <button type="button" className="btn btn-info team-button z-1">
                MEET THE TEAM{" "}

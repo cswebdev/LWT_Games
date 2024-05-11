@@ -16,6 +16,7 @@ const imageAssets = {
    logo: require("../assets/Olympic_Carabiner_logo_Green_no_words_no_white.png"),
    blueBlob: require("../assets/Rectangle_14.png"),
    tealAndPurpleCloud: require("../assets/tealcloud_1.png"),
+   greenAndPinkCloud: require("../assets/greenAndPinkCloud.png"),
 };
 
 export default imageAssets;

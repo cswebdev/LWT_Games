@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-    font-size: 70px;
+    font-size: 46px;
     line-height: 1.2em;
 }
 
@@ -178,12 +178,6 @@ div.Right-panel {
 }
 
 
-
-
-
-
-
-
 /* who are we row */
 .who-are-we {
     max-width: 100%;
@@ -226,58 +220,78 @@ p {
 
 }
 
+.pinkCloudImg {
+    position: absolute;
+    width: 4.6em;
+    left: 13.5%;
+    top: 14%;
+}
 
+
+.tealCloudImg {
+    object-fit: contain;
+    position: absolute;
+    max-width: 18.2375rem;
+    left: 0;
+    top: 30%;
+    object-position: -3em 0;
+}
 
 .whoWeAreFrame {
-    height: 12em;
-    width: 12em;
+
+    height: 14em;
+    width: 14em;
     background-color: rgb(65, 233, 65);
     border: 3px solid rgb(65, 233, 65);
     border-radius: 5%;
     margin: 2em 3em 0em 3em;
-    object-fit: contain;
+    object-fit: cover;
     overflow: hidden;
     padding: 0;
 
 }
 
 .oliviaPortrait {
+    display: block;
     object-fit: cover;
-    max-height: 29em;
+    max-height: 35em;
     max-width: 29em;
-    object-position: -9em -5em;
+    object-position: -10em -6em;
     filter: grayscale(1) brightness(1.3);
     position: relative;
-    opacity: 85%;
+    opacity: 89%;
+
 }
 
 .oliviaPortrait::after {
     content: '';
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 255, 0, 1);
-    /* Transparent green */
     z-index: 1;
 }
 
 .laneDrawing {
     object-fit: contain;
-    max-height: 12em;
-    width: 12em;
+    height: 100%;
+    width: 100%;
 }
 
 .vestDrawing {
     object-fit: contain;
-    max-height: 12em;
-    max-width: 12em;
+    height: 110%;
+    width: 110%;
+    padding: 0;
+    margin: 0;
 
 }
 
 .whoWeAreFrame:nth-of-type(2) {
     border-color: #E11774;
+
 }
 
 .whoWeAreFrame:nth-of-type(3) {
@@ -285,6 +299,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .who-we-are-graphics {
@@ -292,25 +307,37 @@ p {
     max-height: auto;
     object-fit: fill;
 
+
 }
 
 .blueBlob {
     object-fit: fill;
-    max-width: 55rem;
-    max-height: auto;
+    height: 62.28rem;
+    width: auto;
     position: absolute;
-    top: 112%;
+    top: 108%;
 
 
 }
 
 .blueMountainImg {
-    max-height: 5em;
+    max-height: 6.575em;
     max-width: auto;
     position: absolute;
-    bottom: -10%;
-    left: 17%;
+    bottom: -5%;
+    left: 12.3%;
 }
+
+.greenAndPinkCloud {
+    position: absolute;
+    right: 0;
+    bottom: -60rem;
+    width: 18rem;
+    object-position: 6.23em 0;
+    padding: 0;
+
+}
+
 
 .team-button,
 .summit-button {
@@ -354,11 +381,9 @@ div .row .body-content {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* For centering text */
     padding: 0;
-    /* Remove padding */
     margin: 0;
-    /* Remove margin */
+
 }
 
 /* .row-h2 {

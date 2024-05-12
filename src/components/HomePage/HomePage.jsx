@@ -98,11 +98,11 @@ const HomePage = () => {
                   />
                </div>
             </div>
-               <img
-                  src={imageAssets.greenAndPinkCloud}
-                  alt="small green and pink cloud"
-                  className="greenAndPinkCloud"
-               />
+            <img
+               src={imageAssets.greenAndPinkCloud}
+               alt="small green and pink cloud"
+               className="greenAndPinkCloud"
+            />
 
             <button type="button" className="btn btn-info team-button z-1">
                MEET THE TEAM{" "}
@@ -110,7 +110,7 @@ const HomePage = () => {
          </div>
          <section className="Container-body z-1">
             <div className="row body-content d-flex align-content-center justify-content-center">
-               <div className="col-md-5 m-0 p-0 z-1">
+               <div className="col-md-6 m-0 p-0 z-1">
                   <h2 className="row-h2 z-1">
                      Engaging with Lesbians Who Tech Pride Summit
                   </h2>
@@ -125,7 +125,7 @@ const HomePage = () => {
                      JOIN THE SUMMIT
                   </button>
                </div>
-               <div className="col-md-4 m-0 p-0">
+               <div className="col-md-2 m-0 p-0">
                   <div class="graphicFrame">
                      <img
                         src={imageAssets.homepageGraphicLane}

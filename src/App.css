@@ -46,7 +46,8 @@ li {
 
 p {
   font-family: 'new-science-serif', sans-serif;
-  src: url('../src/assets/New\ Science\ Regular.ttf') format('tff');
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
 small {

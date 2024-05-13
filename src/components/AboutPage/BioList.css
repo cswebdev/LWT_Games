@@ -9,16 +9,28 @@
   margin-bottom: 30px;
 }
 
+.BioList-header p {
+  margin-left: 2.625rem;
+  margin-right: 2.625rem;
+}
+
 .BioList-bios {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 85px;
-  margin-right: 85px;
+  margin-left: 2rem;
+  margin-right: 2rem;
   column-gap: 40px;
   row-gap: 56px;
 }
 
+@media screen and (min-width: 600px) {
+  .BioList-bios {
+    margin-left: 85px;
+    margin-right: 85px;
+  }
+
+}
 .BioList-bingo {
   position: absolute;
   top: 44%;

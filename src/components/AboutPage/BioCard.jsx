@@ -53,11 +53,11 @@ const BioCard = ({ bio }) => {
                     </div>
 
                     <div className="BioCard-name">{bio.name}</div>
-                    <div className="BioCard-role">
-                        {bio.role}
-                    </div>
                     <div className="BioCard-pronouns">
                         {bio.pronouns}
+                    </div>
+                    <div className="BioCard-role">
+                        {bio.role}
                     </div>
                 </div>
                 : <img className="BioCard-blanks" src={bio.image} alt={bio.alt} />

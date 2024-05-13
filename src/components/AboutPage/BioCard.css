@@ -3,7 +3,7 @@
   z-index: 10;
   text-align: center;
   padding-bottom: 8px;
-  width: 20%;
+  width: 40%;
   transition-duration: 300ms;
   transition-timing-function: ease-in;
 }
@@ -52,8 +52,8 @@
   object-fit: cover;
   object-position: 100% 0;
   border-style: solid;
-  border-width: 8px;
-  border-radius: 55px;
+  border-width: 5px;
+  border-radius: 20px;
 }
 
 .BioCard-drawing {
@@ -72,8 +72,8 @@
 .BioCard-arrow-purple {
   position: absolute;
   z-index: 30;
-  right: 0px;
-  bottom: 0px;
+  right: -20px;
+  bottom: -15px;
   height: 44px;
   width: 44px;
   background-color: white;
@@ -88,8 +88,8 @@
 .BioCard-arrow-orange {
   position: absolute;
   z-index: 30;
-  right: 0px;
-  bottom: 0px;
+  right: -20px;
+  bottom: -15px;
   height: 44px;
   width: 44px;
   background-color: white;
@@ -105,4 +105,46 @@
   padding-top: 6px;
   padding-bottom: 6px;
   font-weight: 700;
+  font-family: 'new-science-serif';
+  font-size: 1.375rem;
+}
+
+.BioCard-pronouns, .BioCard-role {
+  font-family: 'new-science-serif';
+}
+
+.BioCard-pronouns {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.BioCard-role {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 600px) {
+  .BioCard-purple, .BioCard-orange {
+    width: 20%;
+  }
+
+  .BioCard-headshot {
+    border-width: 8px;
+    border-radius: 55px;
+  }
+
+  .BioCard-arrow-purple {
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .BioCard-arrow-orange {
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .BioCard-pronouns, .BioCard-role {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
 }

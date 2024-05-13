@@ -3,9 +3,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #161616;
-    color: white;
-    height: 40vh;
+    overflow: hidden;
+    background-color: transparent;
+    background-image: url('../../assets/Footer\ curve.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 40vh; */
+    min-height: min-content;
+    color: #ffff;
+    z-index: 9999;
+    position: relative;
+    margin-top: -150px;
+
 }
 
 .footer-row {
@@ -13,7 +23,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 80%;
+    margin: 6rem 0;
+    padding-top: 5%;
 }
 
 .col-2 h2 {
@@ -32,11 +43,15 @@
     margin: 0% 2% 0% 2%;
 }
 
-.logo-placeholder {
-    height: 101px;
-    width: 135px;
-    background-color: grey;
+.logo-frame {
+    height: 90px;
+    width: 65px;
+}
 
+.footer-logo {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
 .logo-placeholder p {
@@ -70,7 +85,7 @@ ul {
 
 .Loading-progress {
     height: 250px;
-    width: 8px;
+    width: 2px;
     border-radius: 3px;
     background: linear-gradient(0deg, red 0%, yellow 15%, lime 30%, cyan 50%, blue 65%, magenta 80%, red 100%);
     background-size: 200% 200%;

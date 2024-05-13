@@ -399,10 +399,11 @@ div .row .body-content {
 /* waves */
 .wave-graphic {
     width: 100%;
-    height: 55vh;
+    height: 75vh;
     position: absolute;
-    bottom: 0;
+    bottom: -100px;
     left: 0;
+
 
 }
 

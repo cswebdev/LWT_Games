@@ -136,7 +136,7 @@ const HomePage = () => {
                   </div>
                </div>
             </div>
-            <div className="row body-content position-relative m-0 p-0">
+            <div className="row body-content position-relative m-0 p-0 z-0">
                <section className="svg-container position-relative d-flex flex-row-reverse align-items-center z-1 m-0 p-0 ">
                   <div className="col-md-6 z-1 bg-transparent">
                      <h2 className="row-h2">Not your Grandma's Bingo!</h2>

@@ -123,6 +123,10 @@
   font-weight: 400;
 }
 
+.BioCard-blank {
+
+}
+
 @media screen and (min-width: 600px) {
   .BioCard-purple, .BioCard-orange {
     width: 20%;

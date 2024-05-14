@@ -2,32 +2,49 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: transparent;
     background-image: url('../../assets/Footer\ curve.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* height: 40vh; */
+    /* background-size: 100% 80%; */
     min-height: min-content;
+    max-height: 65.5vh;
     color: #ffff;
-    z-index: 9999;
+    z-index: 3;
     position: relative;
-    margin-top: -150px;
+    margin: -170px 0 0 0;
 
 }
 
 .footer-row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 6rem 0;
-    padding-top: 5%;
+    /* margin: 8rem 0 0 0 */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: 6rem 0; */
+    padding: 10% 0 0 0;
+
 }
 
-.col-2 h2 {
+.footer-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .col {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+} */
+
+/* .col-2 h2 {
     margin: 0;
 }
 
@@ -41,7 +58,7 @@
 .col-2 {
     min-width: max-content;
     margin: 0% 2% 0% 2%;
-}
+} */
 
 .logo-frame {
     height: 90px;

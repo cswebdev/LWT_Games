@@ -4,7 +4,14 @@ import imageAssets from "../../utils/Utils";
 
 const Footer = () => {
    return (
-      <div className="Footer">
+      <div
+         className="Footer"
+         style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+         }}
+      >
          <div className="row footer-row">
             <div
                className="col

@@ -44,7 +44,7 @@ const HomePage = () => {
                alt="blue background blob"
             />
 
-            <div className="row d-flex text-center justify-content-center who-are-we z-1 overflow-hidden ">
+            <div className="row d-flex text-center justify-content-center who-are-we z-1">
                <h2 className="z-1 mb-4">What's InCo?</h2>
                <p className="we-are-subtitle z-1">
                   Breaking through digital with the power of fun and the <br />

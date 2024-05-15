@@ -21,7 +21,7 @@ const GetInvolvedPage = () => {
                 <div className="col-8">
                     <h1>Join #LWTGames</h1>
                     <div className="GetInvolvedPage-content">
-                        <p>🌈 Lookin' for stretch asginmenst? Join Us! 🌐✨</p>
+                        <p>🌈 Lookin' for stretch assignments? Join Us! 🌐✨</p>
                         <p>🔍 We're actively seeking exceptional individuals in the following areas:</p>
                         <ul>
                             <li>Project Manager ⭐</li>

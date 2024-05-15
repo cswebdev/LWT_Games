@@ -89,7 +89,7 @@ const HomePage = () => {
                         alt="Drawing of Lane"
                      />
                   </div>
-                  <div className="whoWeAreFrame">
+                  <div className="whoWeAreFrame d-flex align-content-center justify-content-center">
                      <img
                         className="vestDrawing"
                         loading="lazy"

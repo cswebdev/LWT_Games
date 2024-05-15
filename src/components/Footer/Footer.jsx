@@ -20,12 +20,13 @@ const Footer = () => {
                <div className="logo-frame">
                   <img src={imageAssets.logo} alt="" className="footer-logo" />
                </div>
+
                <h3>Join our newsletter!</h3>
                <p style={{ fontWeight: "100" }}>
-                  Stay up to date with all things InCo
+                  Stay up to date with all things InCo!
                </p>
-               <input placeholder="Enter Email Address"></input>
-               <button type="button" className="btn btn-info">
+               <input placeholder="ENTER EMAIL ADDRESS"></input>
+               <button type="button" className="btn btn-info subscribe">
                   SUBSCRIBE
                </button>
             </div>

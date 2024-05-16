@@ -75,3 +75,4 @@ const BioCard = ({ bio }) => {
 };
 
 export default BioCard;
+

@@ -7,9 +7,9 @@ import imageAssets from "../../utils/Utils";
 const HomePage = () => {
    return (
       <>
-         <div className="Container">
-            <section className="Container-header">
-               <div className="row d-flex flex-row-reverse p-4">
+         <div className="container">
+            <section className="container-header">
+               <div className="row d-flex flex-row-reverse p-4 ">
                   <div className="col-lg-6 m-0 p-0 Right-panel">
                      <img
                         src={homepageGraphicOne}
@@ -54,7 +54,7 @@ const HomePage = () => {
                </p>
 
                <div className="d-flex align-content-center justify-content-center z-1 position-relative mt-4">
-                  <img
+                  {/* <img
                      src={imageAssets.pinkCloud}
                      loading="lazy"
                      alt="tiny solo pink cloud"
@@ -74,8 +74,8 @@ const HomePage = () => {
                         alt="blue mountain graphic"
                         className="blueMountainImg z-2"
                      />
-                  </div>
-                  <div className="whoWeAreFrame">
+                  </div> */}
+                  <div className="col-lg-4 whoWeAreFrame">
                      <img
                         className="oliviaPortrait z-1"
                         loading="lazy"
@@ -83,7 +83,7 @@ const HomePage = () => {
                         alt="Olivia Portrait"
                      />
                   </div>
-                  <div className="whoWeAreFrame">
+                  <div className="col-lg-4 whoWeAreFrame">
                      <img
                         className="laneDrawing"
                         loading="lazy"
@@ -91,7 +91,7 @@ const HomePage = () => {
                         alt="Drawing of Lane"
                      />
                   </div>
-                  <div className="whoWeAreFrame d-flex align-content-center justify-content-center">
+                  <div className="col-lg-4 whoWeAreFrame ">
                      <img
                         className="vestDrawing"
                         loading="lazy"

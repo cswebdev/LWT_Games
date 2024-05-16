@@ -9,7 +9,7 @@ const HomePage = () => {
       <>
          <div className="Container">
             <section className="Container-header">
-               <div className="row d-flex flex-row-reverse">
+               <div className="row d-flex flex-row-reverse p-4">
                   <div className="col-lg-6 m-0 p-0 Right-panel">
                      <img
                         src={homepageGraphicOne}
@@ -18,7 +18,7 @@ const HomePage = () => {
                      ></img>
                   </div>
 
-                  <div className="col-lg-6 m-0 p-0 Left-panel">
+                  <div className="col-lg-6 m-0 p-0 Left-panel d-flex flex-column justify-content-center">
                      <h1>We Are InCo.</h1>
                      <div className="Header-text">
                         <p>

@@ -119,7 +119,8 @@
 
 .BioModal-social-button a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 800;
   color: white;
 }
 
@@ -231,6 +232,7 @@
   }
 
   .BioModal-name {
+    text-align: left;
     font-size: 2.5rem;
     color: black;
     padding: 0px;
@@ -246,6 +248,7 @@
   }
 
   .BioModal-role {
+    text-align: left;
     font-size: 1.5rem;
     font-weight: 600;
     color: black;

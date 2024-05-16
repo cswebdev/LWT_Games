@@ -12,7 +12,7 @@
 .Container-header {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
     /* width: 100% !important; */
@@ -73,7 +73,7 @@ h2 {
 
 /* hero styling */
 div.Right-panel {
-    min-width: 40%;
+    /* min-width: 40%; */
     height: 92vh;
     display: flex;
     justify-content: center;
@@ -84,11 +84,23 @@ div.Right-panel {
 
 
 .Right-panel {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(189, 89, 89); */
     object-fit: contain;
     align-items: flex-end;
     height: auto;
     margin: 0 4% 0 0;
+}
+
+
+
+.Right-panel img {
+    object-fit: contain;
+    /* height: auto; */
+    max-width: 35.25em;
+    /* min-width: 14em; */
+    height: 45.875em;
+    object-position: 8em 0%;
+
 }
 
 .Left-panel p {
@@ -96,15 +108,6 @@ div.Right-panel {
     line-height: 1em;
     font-weight: 300;
     margin-bottom: .6em;
-}
-
-.Right-panel img {
-    object-fit: contain;
-    height: auto;
-    width: 45.25em;
-    height: 45.875em;
-    object-position: 8em 0%;
-
 }
 
 .btn-play-bingo {
@@ -172,18 +175,17 @@ div.Right-panel {
 
 
 .whoWeAreFrame {
-    height: 20rem;
-    width: 20rem;
+    height: 25%;
+    width: 22%;
     /* background-color: rgb(65, 233, 65); */
     border: 3px solid rgb(65, 233, 65);
     border-radius: 5%;
     margin: 2em 3em 0em 3em;
     overflow: hidden;
-    padding: 0;
 }
 
 .oliviaPortrait {
-    object-fit: fill;
+    object-fit: contain;
     max-height: 35em;
     max-width: 29em;
     object-position: -10em -6em;
@@ -206,20 +208,19 @@ div.Right-panel {
 }
 
 .laneDrawing {
-    object-fit: fill;
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
 
 .vestDrawing {
-    object-fit: fill;
     padding: 0;
     margin: 0;
 
 }
 
 img.vestDrawing {
-
+    object-fit: fill;
     margin: 0;
     padding: 0;
     transform: scale(1.1);
@@ -266,7 +267,7 @@ img.vestDrawing {
     /* max-width: 100vw; */
     /* height: 87vh; */
     padding: 0;
-    /* margin: 6.3em 0; */
+    /* margin: 2.3em 0; */
     font-size: 25px;
 }
 
@@ -278,7 +279,7 @@ img.vestDrawing {
 }
 
 
-
+/* who we are graphics */
 
 .pinkCloudImg {
     position: absolute;
@@ -300,7 +301,7 @@ img.vestDrawing {
 .blueBlob {
     object-fit: contain;
     height: auto;
-    width: 1414.01px;
+    /* width: 1414.01px; */
     position: absolute;
     /* top: 72.4rem; */
     /* top: 36% */
@@ -318,13 +319,6 @@ img.vestDrawing {
     width: auto;
 }
 
-/* .blueMountainImg {
-    max-height: 6.575em;
-    max-width: auto;
-    position: absolute;
-    bottom: -5%;
-    left: 8em;
-} */
 
 .greenAndPinkCloud {
     position: absolute;
@@ -350,10 +344,6 @@ img.vestDrawing {
 
 }
 
-/* .team-button span,
-.summit-button span {
-    padding-top: .2em;
-} */
 
 
 /* why bingo row */
@@ -368,10 +358,10 @@ img.vestDrawing {
 
 }
 
-.col-md-7 {
+/* .col-md-7 {
     padding-left: 2em;
-    /* max-width: 46.438em; */
-}
+    max-width: 46.438em;
+} */
 
 .col-md-7 p {
     width: 38.438rem;
@@ -449,7 +439,7 @@ img.vestDrawing {
     .blueBlob {
         object-fit: fill;
         height: auto;
-        width: 1414.01px;
+        /* width: 1414.01px; */
         position: absolute;
         top: 30.4rem;
         /* top: 29% */
@@ -543,7 +533,7 @@ img.vestDrawing {
         max-width: 100vw;
         /* max-height: max-content; */
         padding: 0;
-        margin: 4.3em 0;
+        /* margin: 4.3em 0; */
         font-size: 25px;
     }
 
@@ -629,13 +619,18 @@ img.vestDrawing {
 
 /* For tablets (between 481px and 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
+
+
+
+
     .blueBlob {
-        object-fit: fill;
+        /* object-fit: fill; */
         height: auto;
-        width: 66.28rem;
+        width: 30.28rem;
         position: absolute;
         /* top: 72.4rem; */
-        top: 40%
+        top: 30.4%;
+
     }
 
     .blueMountain {
@@ -673,7 +668,7 @@ img.vestDrawing {
 }
 
 @media(max-width: 769px) {
-    .Container-header {
+    /* .Container-header {
         flex-direction: column;
         width: 100%;
         padding: 0;
@@ -681,7 +676,7 @@ img.vestDrawing {
         justify-content: center;
         align-items: center;
         height: fit-content;
-    }
+    } */
 
     div.Left-panel,
     div.Right-panel,

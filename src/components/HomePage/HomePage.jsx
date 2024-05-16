@@ -9,31 +9,33 @@ const HomePage = () => {
       <>
          <div className="Container">
             <section className="Container-header">
-               <div className="Right-panel">
-                  <img
-                     src={homepageGraphicOne}
-                     loading="lazy"
-                     alt="homepage Left"
-                  ></img>
-               </div>
-
-               <div className="Left-panel">
-                  <h1>We Are InCo.</h1>
-                  <div className="Header-text">
-                     <p>
-                        <span className="attn-text">
-                           [ Interconnected Collective ]
-                        </span>
-                     </p>
-                     <p>Creating community and building </p>
-                     <p>connections with bingo!</p>
+               <div className="row d-flex flex-row-reverse">
+                  <div className="col-lg-6 m-0 p-0 Right-panel">
+                     <img
+                        src={homepageGraphicOne}
+                        loading="lazy"
+                        alt="homepage Left"
+                     ></img>
                   </div>
-                  <button
-                     type="button"
-                     className="btn btn-primary btn-play-bingo"
-                  >
-                     PLAY BINGO
-                  </button>
+
+                  <div className="col-lg-6 m-0 p-0 Left-panel">
+                     <h1>We Are InCo.</h1>
+                     <div className="Header-text">
+                        <p>
+                           <span className="attn-text">
+                              [ Interconnected Collective ]
+                           </span>
+                        </p>
+                        <p>Creating community and building </p>
+                        <p>connections with bingo!</p>
+                     </div>
+                     <button
+                        type="button"
+                        className="btn btn-primary btn-play-bingo"
+                     >
+                        PLAY BINGO
+                     </button>
+                  </div>
                </div>
             </section>
          </div>
@@ -160,7 +162,7 @@ const HomePage = () => {
                         alt="wave graphic"
                      />
                   </div>
-                  <section className="col-md-6 m-0 p-0 ">
+                  <section className="col-md-6 col-sm-6 m-0 p-0 ">
                      <div class="graphicFrame z-1 d-flex justify-content-center">
                         <img
                            src={imageAssets.bubbleGumGraphic}

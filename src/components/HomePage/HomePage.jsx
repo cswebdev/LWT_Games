@@ -99,37 +99,47 @@ const HomePage = () => {
                         alt="Drawing of a vest"
                      />
                   </div>
+                  <button
+                     type="button"
+                     className="btn btn-info team-button z-1"
+                  >
+                     MEET THE TEAM{" "}
+                  </button>
                </div>
                {/* <img
                   src={imageAssets.greenAndPinkCloud}
                   alt="small green and pink cloud"
                   className="greenAndPinkCloud"
                /> */}
-
-               <button type="button" className="btn btn-info team-button z-1">
-                  MEET THE TEAM{" "}
-               </button>
             </div>
          </div>
          <section className="container-body z-1">
-            <div className="row body-content d-flex align-content-center justify-content-center">
+            <div className="row body-content d-flex ">
                <div
-                  className="col-lg-6 m-0 p-0 z-1"
+                  className="col-lg-6 m-0 p-0 z-1 d-flex flex-column align-items-center"
                   style={{ border: "1px solid red" }}
                >
-                  <h2 className="row-h2 z-1">
-                     Engaging with Lesbians Who Tech Pride Summit
-                  </h2>
-                  <p className="who-are-we-p">
-                     Every single member of Interconnected Collective came
-                     together because of this Summit! Lesbians Who Tech is such
-                     an inspiring organization that continues striving for
-                     women, women of color, and nonbinary leaders. We hope to
-                     see you there!
-                  </p>
-                  <button type="button" className="btn btn-info summit-button">
-                     JOIN THE SUMMIT
-                  </button>
+                  <div
+                     className="text-content"
+                     style={{ border: "1px solid black" }}
+                  >
+                     <h2 className="row-h2 z-1">
+                        Engaging with the Lesbians Who Tech Pride Summit
+                     </h2>
+                     <p className="who-are-we-p">
+                        Every single member of Interconnected Collective came
+                        together because of this Summit! Lesbians Who Tech is
+                        such an inspiring organization that continues striving
+                        for women, women of color, and nonbinary leaders. We
+                        hope to see you there!
+                     </p>
+                     <button
+                        type="button"
+                        className="btn btn-info summit-button align-self-start"
+                     >
+                        JOIN THE SUMMIT
+                     </button>
+                  </div>
                </div>
                <div
                   className="col-lg-6 m-0 p-0"
@@ -164,13 +174,6 @@ const HomePage = () => {
                         PLAY BINGO
                      </button>{" "}
                   </div>{" "}
-                  {/* <div className="wave-container z-0 overflow-visible">
-                     <img
-                        className="wave-graphic z-0"
-                        src={imageAssets.homepageWave}
-                        alt="wave graphic"
-                     />
-                  </div> */}
                   <div
                      class="col-lg-6 graphicFrame z-1 d-flex justify-content-center"
                      style={{ border: "1px solid yellow" }}
@@ -182,6 +185,13 @@ const HomePage = () => {
                      />
                   </div>
                </section>
+               <div className="wave-container z-0 overflow-visible">
+                  <img
+                     className="wave-graphic z-0"
+                     src={imageAssets.homepageWave}
+                     alt="wave graphic"
+                  />
+               </div>
             </div>
          </section>
       </>

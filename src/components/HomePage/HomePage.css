@@ -140,9 +140,9 @@ div.Right-panel {
 .row-h2 {
     font-size: 2.875rem;
     line-height: 4.444rem;
-    letter-spacing: .036em;
+    letter-spacing: .04em;
     font-weight: 700;
-    max-width: 46.813rem;
+    max-width: 48.813rem;
 }
 
 .who-are-we .row-h2 {
@@ -155,7 +155,9 @@ div.Right-panel {
     line-height: 2.844rem;
     margin-top: 1em;
     font-size: 1.3rem;
-    width: 35.875rem;
+    /* max-width: 35.875rem; */
+    max-width: 48rem;
+    text-align: start;
 }
 
 /* .who-are-we>p {
@@ -274,7 +276,7 @@ div.Right-panel {
     display: flex;
     flex-direction: row;
     padding: 0;
-    /* margin: 2.3em 0; */
+    margin: 3.3em 0;
     font-size: 25px;
 }
 
@@ -285,6 +287,9 @@ div.Right-panel {
     z-index: 1;
 }
 
+.text-content p {
+    max-width: 37rem;
+}
 
 /* who we are graphics */
 
@@ -339,7 +344,7 @@ div.Right-panel {
 
 .team-button,
 .summit-button {
-    margin-top: 2.5em;
+    margin-top: 1.5em;
     width: 21.063rem;
     height: 4.375rem;
     border-radius: 30px;

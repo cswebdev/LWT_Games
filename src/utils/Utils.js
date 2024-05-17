@@ -3,7 +3,7 @@
 // logo = { logo };
 
 const imageAssets = {
-   oliviaPortrait: require("../assets/oliviam_headshot.jpg"),
+   oliviaPortrait: require("../assets/oliviam_headshot_greyscale.jpg"),
    vestDrawing: require("../assets/vest_noborder.png"),
    laneDrawing: require("../assets/Lane.png"),
    bubbleGumGraphic: require("../assets/bubblegum.png"),

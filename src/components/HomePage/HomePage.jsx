@@ -10,7 +10,7 @@ const HomePage = () => {
          <div className="container">
             <section className="container-header">
                <div className="row d-flex flex-row-reverse p-4 ">
-                  <div className="col-lg-6 m-0 p-0 Right-panel">
+                  <div className="col-lg-6 col-md-12 m-0 p-0 Right-panel">
                      <img
                         src={homepageGraphicOne}
                         loading="lazy"
@@ -18,7 +18,7 @@ const HomePage = () => {
                      ></img>
                   </div>
 
-                  <div className="col-lg-6 m-0 p-0 Left-panel d-flex flex-column justify-content-center">
+                  <div className="col-lg-6 col-md-12 m-0 p-0 Left-panel d-flex flex-column justify-content-center">
                      <h1>We Are InCo.</h1>
                      <div className="Header-text">
                         <p>
@@ -40,20 +40,20 @@ const HomePage = () => {
             </section>
          </div>
          <div className="who-we-are-graphic z-0">
-            <img
+            {/* <img
                className="blueBlob"
                src={imageAssets.blueBlob}
                alt="blue background blob"
-            />
+            /> */}
 
-            <div className="row d-flex text-center justify-content-center who-are-we z-1">
+            <div className="container d-flex flex-column text-center justify-content-center who-are-we z-1">
                <h2 className="z-1 mb-4">What's InCo?</h2>
                <p className="we-are-subtitle z-1">
                   Breaking through digital with the power of fun and the <br />
                   passion for people [or gamers]
                </p>
 
-               <div className="d-flex align-content-center justify-content-center z-1 position-relative mt-4">
+               <div className="row d-flex align-content-center justify-content-center z-1 position-relative ">
                   {/* <img
                      src={imageAssets.pinkCloud}
                      loading="lazy"
@@ -91,7 +91,7 @@ const HomePage = () => {
                         alt="Drawing of Lane"
                      />
                   </div>
-                  <div className="col-lg-4 whoWeAreFrame ">
+                  <div className="col-lg-4 whoWeAreFrame">
                      <img
                         className="vestDrawing"
                         loading="lazy"
@@ -100,20 +100,23 @@ const HomePage = () => {
                      />
                   </div>
                </div>
-               <img
+               {/* <img
                   src={imageAssets.greenAndPinkCloud}
                   alt="small green and pink cloud"
                   className="greenAndPinkCloud"
-               />
+               /> */}
 
                <button type="button" className="btn btn-info team-button z-1">
                   MEET THE TEAM{" "}
                </button>
             </div>
          </div>
-         <section className="Container-body z-1">
+         <section className="container-body z-1">
             <div className="row body-content d-flex align-content-center justify-content-center">
-               <div className="col-md-5 m-0 p-0 z-1">
+               <div
+                  className="col-lg-6 m-0 p-0 z-1"
+                  style={{ border: "1px solid red" }}
+               >
                   <h2 className="row-h2 z-1">
                      Engaging with Lesbians Who Tech Pride Summit
                   </h2>
@@ -128,7 +131,10 @@ const HomePage = () => {
                      JOIN THE SUMMIT
                   </button>
                </div>
-               <div className="col-md-4 m-0 p-0">
+               <div
+                  className="col-lg-6 m-0 p-0"
+                  style={{ border: "1px solid green" }}
+               >
                   <div class="graphicFrame">
                      <img
                         src={imageAssets.homepageGraphicLane}
@@ -140,8 +146,11 @@ const HomePage = () => {
                </div>
             </div>
             <div className="row body-content position-relative m-0 p-0 z-0">
-               <section className="svg-container position-relative d-flex flex-row-reverse align-items-center z-1 m-0 p-0 overflow-visible ">
-                  <div className="col-md-7 z-1 bg-transparent">
+               <section className="row svg-container position-relative d-flex flex-row-reverse align-items-center z-1 m-0 p-0 overflow-visible ">
+                  <div
+                     className="col-lg-6 z-1 bg-transparent"
+                     style={{ border: "1px solid purple" }}
+                  >
                      <h2 className="row-h2">Not your Grandma's Bingo!</h2>
                      <p className="who-are-we-p">
                         We created a light hearted game to stay engaged and
@@ -155,22 +164,23 @@ const HomePage = () => {
                         PLAY BINGO
                      </button>{" "}
                   </div>{" "}
-                  <div className="wave-container z-0 overflow-visible">
+                  {/* <div className="wave-container z-0 overflow-visible">
                      <img
                         className="wave-graphic z-0"
                         src={imageAssets.homepageWave}
                         alt="wave graphic"
                      />
+                  </div> */}
+                  <div
+                     class="col-lg-6 graphicFrame z-1 d-flex justify-content-center"
+                     style={{ border: "1px solid yellow" }}
+                  >
+                     <img
+                        src={imageAssets.bubbleGumGraphic}
+                        className="rainbowGraphic z-1"
+                        alt="rainbow graphic"
+                     />
                   </div>
-                  <section className="col-md-6 col-sm-6 m-0 p-0 ">
-                     <div class="graphicFrame z-1 d-flex justify-content-center">
-                        <img
-                           src={imageAssets.bubbleGumGraphic}
-                           className="rainbowGraphic z-1"
-                           alt="rainbow graphic"
-                        />
-                     </div>
-                  </section>
                </section>
             </div>
          </section>

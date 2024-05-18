@@ -24,16 +24,20 @@
   row-gap: 56px;
 }
 
+.BioList-bingo {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   .BioList-bios {
     margin-left: 85px;
     margin-right: 85px;
   }
 
-}
-.BioList-bingo {
-  position: absolute;
-  top: 14%;
-  left: 41%;
-  z-index: 0;
+  .BioList-bingo {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 0;
+  }
 }

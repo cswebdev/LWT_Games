@@ -60,8 +60,9 @@ const BioCard = ({ bio }) => {
                         {bio.role}
                     </div>
                 </div>
-                : <div className="BioCard-blank" onClick={handleShow}>
-                    <img className="BioCard-blanks" src={bio.image} alt={bio.alt} />
+                : <div className="BioCard-blank BioCard-graphics">
+                    <img className="BioCard-blank-img img-fluid" src={bio.image} alt={bio.alt} />
+                    <img className="BioCard-blank-hover img-fluid" src={bio.hover} alt={bio.alt} />
                 </div>
             }
             <BioModal

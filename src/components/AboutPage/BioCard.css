@@ -1,4 +1,4 @@
-.BioCard-purple, .BioCard-orange {
+.BioCard-purple, .BioCard-orange, .BioCard-blank {
   position: relative;
   z-index: 10;
   text-align: center;
@@ -28,6 +28,15 @@
 .BioCard-graphics:hover .BioCard-drawing {
   opacity: 1;
   cursor: pointer;
+}
+
+.BioCard-graphics:hover .BioCard-blank-hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.BioCard-graphics:hover .BioCard-blank-img {
+  opacity: 0;
 }
 
 .BioCard-graphics:hover .BioCard-arrow-purple {
@@ -67,6 +76,25 @@
   border-style: solid;
   border-width: 8px;
   border-radius: 55px;
+}
+
+.BioCard-blank-img {
+  position: relative;
+  z-index: 0;
+  object-fit: cover;
+  object-position: 100% 0;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
+.BioCard-blank-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
 }
 
 .BioCard-arrow-purple {
@@ -123,12 +151,8 @@
   font-weight: 400;
 }
 
-.BioCard-blank {
-
-}
-
 @media screen and (min-width: 600px) {
-  .BioCard-purple, .BioCard-orange {
+  .BioCard-purple, .BioCard-orange, .BioCard-blank {
     width: 20%;
   }
 

@@ -67,10 +67,10 @@ div.Right-panel {
 
 .Right-panel {
     /* background-color: rgb(189, 89, 89); */
-    object-fit: contain;
-    align-items: flex-end;
+    /* object-fit: contain; */
+    /* align-items: flex-end; */
     height: auto;
-    margin: 0 4% 0 0;
+    /* margin: 0 4% 0 0; */
 }
 
 
@@ -78,9 +78,11 @@ div.Right-panel {
 .Right-panel img {
     object-fit: contain;
     height: auto;
-    width: 35.25em;
-    /* min-width: 14em; */
-    object-position: 8em 0%;
+    /* max-width: 30.25em; */
+    max-width: 101%;
+    min-width: 28em;
+    /* object-position: 3em 0%; */
+    object-position: 1% 0;
 
 }
 
@@ -190,11 +192,16 @@ div.Right-panel {
     border-radius: 5%;
     margin: 1em 1em 0em 1em;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .whoWeAreFrame img {
+
     height: auto;
     width: 100%;
+    transform: scale(1.1);
 }
 
 /* 
@@ -426,6 +433,15 @@ div.Right-panel {
     }
 }
 
+@media (max-width: 1400px) and (min-width: 991px) {
+
+    .whoWeAreFrame {
+        margin: .8em 5em .8em 5em;
+
+    }
+
+}
+
 /* For extra-wide monitors (greater than 1440px) */
 /* @media (min-width: 1440px) {
 
@@ -533,7 +549,7 @@ div.Right-panel {
 /* } */
 
 /* For 15.4-inch (2880 × 1800) display */
-/* @media (min-width: 1440px) and (min-height: 900px) and (max-width: 1920px) and (max-height: 1200px) {
+@media (min-width: 1440px) and (min-height: 900px) and (max-width: 1920px) and (max-height: 1200px) {
     .row {
         display: flex;
         flex-direction: row;
@@ -588,8 +604,8 @@ div.Right-panel {
         bottom: -100px;
         left: 0;
         object-fit: fill;
-      }
-} */
+    }
+}
 
 
 

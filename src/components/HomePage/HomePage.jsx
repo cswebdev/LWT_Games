@@ -8,8 +8,40 @@ const HomePage = () => {
    return (
       <>
          <div className="container">
+            <div className="row">
+               <div className="col-lg-6 d-flex flex-column justify-content-center">
+                  <h1>We Are InCo.</h1>
+                  <div className="Header-text">
+                     <p>
+                        <span className="attn-text">
+                           [ Interconnected Collective ]
+                        </span>
+                     </p>
+                  </div>
+               </div>
+               <div className="col-lg-6 Right-panel">
+                  <img
+                     src={homepageGraphicOne}
+                     loading="lazy"
+                     alt="homepage Left"
+                  ></img>
+               </div>{" "}
+               <div className="col-12">
+                  <p>Creating community and building </p>
+                  <p>connections with bingo!</p>
+                  <button
+                     type="button"
+                     className="btn btn-primary btn-play-bingo"
+                  >
+                     PLAY BINGO
+                  </button>
+               </div>
+            </div>
+            <div className="row"></div>
+         </div>
+         {/* <div className="container">
             <section className="container-header">
-               <div className="row d-flex flex-row-reverse p-4 ">
+               <div className="row d-flex flex-row-reverse">
                   <div className="col-lg-6 col-md-12 m-0 p-0 Right-panel">
                      <img
                         src={homepageGraphicOne}
@@ -38,7 +70,8 @@ const HomePage = () => {
                   </div>
                </div>
             </section>
-         </div>
+         </div> */}
+
          <div className="who-we-are-graphic z-0">
             {/* <img
                className="blueBlob"
@@ -53,7 +86,7 @@ const HomePage = () => {
                   passion for people [or gamers]
                </p>
 
-               <div className="row d-flex align-content-center justify-content-center z-1 position-relative ">
+               <div className="row d-flex align-content-center justify-content-center z-1 position-relative">
                   {/* <img
                      src={imageAssets.pinkCloud}
                      loading="lazy"
@@ -75,7 +108,7 @@ const HomePage = () => {
                         className="blueMountainImg z-2"
                      />
                   </div> */}
-                  <div className="col-lg-4 whoWeAreFrame">
+                  <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame">
                      <img
                         className="oliviaPortrait z-1"
                         loading="lazy"
@@ -83,7 +116,7 @@ const HomePage = () => {
                         alt="Olivia Portrait"
                      />
                   </div>
-                  <div className="col-lg-4 whoWeAreFrame">
+                  <div className="col-xl-12 col-lg-12 col-12 whoWeAreFrame">
                      <img
                         className="laneDrawing"
                         loading="lazy"
@@ -91,7 +124,7 @@ const HomePage = () => {
                         alt="Drawing of Lane"
                      />
                   </div>
-                  <div className="col-lg-4 whoWeAreFrame">
+                  <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame">
                      <img
                         className="vestDrawing"
                         loading="lazy"
@@ -99,13 +132,10 @@ const HomePage = () => {
                         alt="Drawing of a vest"
                      />
                   </div>
-                  <button
-                     type="button"
-                     className="btn btn-info team-button z-1"
-                  >
-                     MEET THE TEAM{" "}
-                  </button>
                </div>
+               <button type="button" className="btn btn-info team-button z-1">
+                  MEET THE TEAM{" "}
+               </button>
                {/* <img
                   src={imageAssets.greenAndPinkCloud}
                   alt="small green and pink cloud"

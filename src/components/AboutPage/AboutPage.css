@@ -1,8 +1,76 @@
-.AboutPage-header img {
+.AboutPage p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.AboutPage-desktop {
   display: none;
 }
 
+.AboutPage-mobile {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.AboutPage-mobile h1 {
+  text-align: center;
+}
+
+.AboutPage-mobile svg {
+  position: absolute;
+  z-index: 1;
+}
+
+.AboutPage-mobile-juliane {
+  position: relative;
+  width: 14.125rem;
+  height: 24rem;
+  left: 20%;
+  z-index: 10;
+}
+
+.AboutPage-mobile-jimena {
+  position: relative;
+  width: 23.275rem;
+  height: 20.3rem;
+  right: -50px;
+  z-index: 10;
+}
+
+.AboutPage-mobile-wei {
+  position: relative;
+  width: 14.8rem;
+  height: 14.125rem;
+  margin-top: 2rem;
+  left: 40px;
+  z-index: 10;
+}
+
+.AboutPage-mobile-content {
+  position: relative;
+  margin: 2rem 3rem;
+  z-index: 10;
+}
+
+.AboutPage-mobile-inco-logo {
+  display: block;
+  position: relative;
+  margin: 2rem auto;
+  width: 78%;
+  height: auto;
+  z-index: 10;
+}
+
 @media screen and (min-width: 600px) {
+  .AboutPage-desktop {
+    display: block;
+  }
+
+  .AboutPage-mobile {
+    display: none;
+  }
+
   .AboutPage-header img {
     display: block;
     position: relative;
@@ -13,26 +81,26 @@
     height: auto;
     z-index: 10;
   }
-}
 
-.AboutPage-our-story {
-  position: relative;
-  z-index: 20;
-  margin-top: 0%;
-  margin-bottom: 15%;
-  margin-left: 80px;
-  margin-right: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 149px;
-}
+  .AboutPage-our-story {
+    position: relative;
+    z-index: 20;
+    margin-top: 0%;
+    margin-bottom: 15%;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 149px;
+  }
 
-.AboutPage-our-story img {
-  max-width: 80%;
-  height: auto;
-  margin-top: 8%;
-  margin-left: auto;
-  margin-right: auto;
+  .AboutPage-our-story img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 800px) {

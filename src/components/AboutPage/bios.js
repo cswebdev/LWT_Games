@@ -289,7 +289,7 @@ const JULIE = new Bio(
 const ORANGE = "orange";
 TEGAN.color = ORANGE;
 JULIANE.color = ORANGE;
-CHELSEA.color = ORANGE;
+LANE.color = ORANGE;
 AMY.color = ORANGE;
 
 
@@ -300,15 +300,15 @@ export const BIOS = [
   OLIVIAS,
   KD,
   JULIANE,
-  LANE,
+  CHELSEA,
   WEI,
   OLIVIAM,
   JIMENA,
-  CHELSEA,
+  LANE,
   ALEX,
-  {image: "/headshots/free_space.svg", hover: "/drawings/free_space.png", alt: "free space"},
+  {image: "/headshots/free_space.png", hover: "/drawings/free_space.png", alt: "free space"},
   JULIE,
-  {image: "/headshots/suprise.svg", alt: "suprise"},
+  {image: "/headshots/surprise.png", hover: "/drawings/surprise.png", alt: "suprise"},
   AMY,
 ];
 

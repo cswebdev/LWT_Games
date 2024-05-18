@@ -53,15 +53,17 @@ const BioCard = ({ bio }) => {
                     </div>
 
                     <div className="BioCard-name">{bio.name}</div>
-                    <div className="BioCard-role">
-                        {bio.role}
-                    </div>
                     <div className="BioCard-pronouns">
                         {bio.pronouns}
                     </div>
+                    <div className="BioCard-role">
+                        {bio.role}
+                    </div>
                 </div>
-                // :
-                : ""
+                : <div className="BioCard-blank BioCard-graphics">
+                    <img className="BioCard-blank-img img-fluid" src={bio.image} alt={bio.alt} />
+                    <img className="BioCard-blank-hover img-fluid" src={bio.hover} alt={bio.alt} />
+                </div>
             }
             <BioModal
                 show={modalShow}
@@ -74,3 +76,4 @@ const BioCard = ({ bio }) => {
 };
 
 export default BioCard;
+

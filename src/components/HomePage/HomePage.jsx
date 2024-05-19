@@ -7,9 +7,13 @@ import imageAssets from "../../utils/Utils";
 const HomePage = () => {
    return (
       <>
-         <div className="container">
-            <div className="row">
-               <div className="col-lg-6 d-flex flex-column justify-content-center">
+         <section className="container hero">
+            <div className="row d-flex align-items-stretch justify-content-between">
+               {/* <!-- Title and Subtitle Column --> */}
+               <div
+                  className="col-lg-6 col-md-12 m-0 p-0 order-1 order-lg-1 order-md-1 order-sm-1 d-flex flex-column justify-content-end position-relative overflow-visible col-title"
+                  // style={{ backgroundColor: "lightBlue" }}
+               >
                   <h1>We Are InCo.</h1>
                   <div className="Header-text">
                      <p>
@@ -19,14 +23,12 @@ const HomePage = () => {
                      </p>
                   </div>
                </div>
-               <div className="col-lg-6 Right-panel">
-                  <img
-                     src={homepageGraphicOne}
-                     loading="lazy"
-                     alt="homepage Left"
-                  ></img>
-               </div>{" "}
-               <div className="col-12">
+
+               {/* <!-- Paragraph Column  --> */}
+               <div
+                  className="col-lg-6 col-md-12 m-0 p-0 order-lg-3 order-md-last order-sm-last overflow-visible position-relative"
+                  // style={{ backgroundColor: "lightGreen" }}
+               >
                   <p>Creating community and building </p>
                   <p>connections with bingo!</p>
                   <button
@@ -36,58 +38,44 @@ const HomePage = () => {
                      PLAY BINGO
                   </button>
                </div>
-            </div>
-            <div className="row"></div>
-         </div>
-         {/* <div className="container">
-            <section className="container-header">
-               <div className="row d-flex flex-row-reverse">
-                  <div className="col-lg-6 col-md-12 m-0 p-0 Right-panel">
-                     <img
-                        src={homepageGraphicOne}
-                        loading="lazy"
-                        alt="homepage Left"
-                     ></img>
-                  </div>
-
-                  <div className="col-lg-6 col-md-12 m-0 p-0 Left-panel d-flex flex-column justify-content-center">
-                     <h1>We Are InCo.</h1>
-                     <div className="Header-text">
-                        <p>
-                           <span className="attn-text">
-                              [ Interconnected Collective ]
-                           </span>
-                        </p>
-                        <p>Creating community and building </p>
-                        <p>connections with bingo!</p>
-                     </div>
-                     <button
-                        type="button"
-                        className="btn btn-primary btn-play-bingo"
-                     >
-                        PLAY BINGO
-                     </button>
-                  </div>
+               {/* <!-- Image Column --> */}
+               <div
+                  className="col-lg-6 col-md-12 col-sm-12 m-0 p-0 order-lg-2 order-md-3 order-md2 order-sm-2 overflow-visible  heroGraphic object-fit-cover"
+                  style={{
+                     // backgroundColor: "red",
+                     height: "min-content",
+                     // border: "1px solid red",
+                  }}
+               >
+                  <img
+                     src={homepageGraphicOne}
+                     loading="lazy"
+                     alt="homepage Left"
+                     className="homepageGraphicOne object-fit-cover"
+                     // style={{ backgroundColor: "blue",}}
+                  ></img>
                </div>
-            </section>
-         </div> */}
+            </div>
+         </section>
 
-         <div className="who-we-are-graphic z-0">
-            {/* <img
+         <section className="container whatIsInco">
+            <div className="who-we-are-graphic z-0">
+               {/* <img
                className="blueBlob"
                src={imageAssets.blueBlob}
                alt="blue background blob"
             /> */}
 
-            <div className="container d-flex flex-column text-center justify-content-center who-are-we z-1">
-               <h2 className="z-1 mb-4">What's InCo?</h2>
-               <p className="we-are-subtitle z-1">
-                  Breaking through digital with the power of fun and the <br />
-                  passion for people [or gamers]
-               </p>
+               <div className="container d-flex flex-column text-center justify-content-center who-are-we z-1">
+                  <h2 className="z-1 mb-4">What's InCo?</h2>
+                  <p className="we-are-subtitle z-1">
+                     Breaking through digital with the power of fun and the{" "}
+                     <br />
+                     passion for people [or gamers]
+                  </p>
 
-               <div className="row d-flex align-content-center justify-content-center z-1 position-relative">
-                  {/* <img
+                  <div className="row d-flex align-content-center justify-content-center z-1 position-relative">
+                     {/* <img
                      src={imageAssets.pinkCloud}
                      loading="lazy"
                      alt="tiny solo pink cloud"
@@ -108,46 +96,51 @@ const HomePage = () => {
                         className="blueMountainImg z-2"
                      />
                   </div> */}
-                  <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame">
-                     <img
-                        className="oliviaPortrait z-1"
-                        loading="lazy"
-                        src={imageAssets.oliviaPortrait}
-                        alt="Olivia Portrait"
-                     />
+                     <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame">
+                        <img
+                           className="oliviaPortrait z-1"
+                           loading="lazy"
+                           src={imageAssets.oliviaPortrait}
+                           alt="Olivia Portrait"
+                        />
+                     </div>
+                     <div className="col-xl-12 col-lg-12 col-12 whoWeAreFrame">
+                        <img
+                           className="laneDrawing"
+                           loading="lazy"
+                           src={imageAssets.laneDrawing}
+                           alt="Drawing of Lane"
+                        />
+                     </div>
+                     <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame">
+                        <img
+                           className="vestDrawing"
+                           loading="lazy"
+                           src={imageAssets.vestDrawing}
+                           alt="Drawing of a vest"
+                        />
+                     </div>
                   </div>
-                  <div className="col-xl-12 col-lg-12 col-12 whoWeAreFrame">
-                     <img
-                        className="laneDrawing"
-                        loading="lazy"
-                        src={imageAssets.laneDrawing}
-                        alt="Drawing of Lane"
-                     />
-                  </div>
-                  <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame">
-                     <img
-                        className="vestDrawing"
-                        loading="lazy"
-                        src={imageAssets.vestDrawing}
-                        alt="Drawing of a vest"
-                     />
-                  </div>
-               </div>
-               <button type="button" className="btn btn-info team-button z-1">
-                  MEET THE TEAM{" "}
-               </button>
-               {/* <img
+                  <button
+                     type="button"
+                     className="btn btn-info team-button z-1"
+                  >
+                     MEET THE TEAM{" "}
+                  </button>
+                  {/* <img
                   src={imageAssets.greenAndPinkCloud}
                   alt="small green and pink cloud"
                   className="greenAndPinkCloud"
                /> */}
+               </div>
             </div>
-         </div>
-         <section className="container-body z-1">
+         </section>
+
+         <section className="container z-1">
             <div className="row body-content d-flex ">
                <div
                   className="col-lg-6 m-0 p-0 z-1 d-flex flex-column align-items-center"
-                  style={{ border: "1px solid red" }}
+                  // style={{ border: "1px solid red" }}
                >
                   <div
                      className="text-content"

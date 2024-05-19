@@ -40,51 +40,55 @@ h2 {
     letter-spacing: .03em;
 }
 
-/* .Container-body {
+
+
+.col-lg-6,
+.m-0,
+.p-o {
     display: flex;
+    align-items: start;
+    /* justify-content: center; */
     flex-direction: column;
-    justify-content: center;
-    margin: 4em 0;
-} */
+    /* width: 100% !important; */
+}
 
-
-
-
+.col-lg-6 {
+    vertical-align: text-bottom;
+}
 
 /* end Container styling */
 
 /* hero styling */
-div.Right-panel {
-    /* min-width: 40%; */
-    /* height: 92vh; */
+
+
+
+section {
+    min-height: fit-content;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    /* align-items: center; */
+}
+
+.col-title {
+    height: 35vh;
+    vertical-align: text-bottom;
+}
+
+.heroGraphic {
+    /* background-color: red; */
+    display: block;
+}
+
+.homepageGraphicOne {
+    max-width: 40%;
+    max-height: auto;
+    object-position: 3rem 0rem;
+    position: absolute;
+    object-fit: cover;
+    /* top: 6%; */
 }
 
 
-
-
-.Right-panel {
-    /* background-color: rgb(189, 89, 89); */
-    /* object-fit: contain; */
-    /* align-items: flex-end; */
-    height: auto;
-    /* margin: 0 4% 0 0; */
-}
-
-
-
-.Right-panel img {
-    object-fit: contain;
-    height: auto;
-    /* max-width: 30.25em; */
-    max-width: 101%;
-    min-width: 28em;
-    /* object-position: 3em 0%; */
-    object-position: 1% 0;
-
-}
 
 .Left-panel .Header-text P {
     font-size: 1.5rem;
@@ -204,8 +208,8 @@ div.Right-panel {
     transform: scale(1.1);
 }
 
-/* 
-.oliviaPortrait {
+
+/* .oliviaPortrait {
     object-fit: contain;
     max-height: 35em;
     max-width: 29em;
@@ -215,7 +219,7 @@ div.Right-panel {
     opacity: 89%;
     border-color: #E11774;
 
-}
+} */
 
 .oliviaPortrait::after {
     content: '';
@@ -226,7 +230,8 @@ div.Right-panel {
     height: 100%;
     background-color: hwb(120 0% 0%);
     z-index: 1;
-}
+} 
+/* 
 .laneDrawing {
     object-fit: contain;
     height: 100%;
@@ -433,11 +438,93 @@ div.Right-panel {
     }
 }
 
-@media (max-width: 1400px) and (min-width: 991px) {
+@media (max-width: 1400px) and (min-width: 1200px) {
+
+    .container.hero {
+        /* height: 300vh; */
+        /* margin: 40rem 0; */
+        background-color: #E11774;
+    }
+
+    .col-title {
+        height: 15vh;
+        vertical-align: text-bottom;
+    }
+
+    .homepageGraphicOne {
+        position: relative;
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+        object-position: 4rem 0rem;
+        /* background-color: red; */
+
+    }
+
+    /* img.homepageGraphicOne {
+        position: absolute;
+        height: 100%;
+        width: auto;
+        top: 2%;
+        object-fit: contain;
+        object-position: 4rem 0rem;
+
+    } */
+
+}
+
+@media (max-width: 1200px) and (min-width: 99px) {
+
+    .col-lg-6,
+    .m-0,
+    .p-o {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #E11774;
+    }
 
     .whoWeAreFrame {
         margin: .8em 5em .8em 5em;
 
+    }
+
+
+
+    .col-lg-6,
+    .m-0,
+    .p-0,
+    .order-lg-2,
+    .order-md-3,
+    .order-2,
+    .overflow-visible,
+    .heroGraphic {
+        position: relative;
+        display: inline;
+        /* visibility: hidden; */
+        /* object-position: 2rem 6rem; */
+        /* max-height: 20rem; */
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homepageGraphicOne {
+        position: relative;
+        height: 28rem;
+        width: auto;
+        object-fit: contain;
+        object-position: -1rem 0rem;
     }
 
 }

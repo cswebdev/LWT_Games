@@ -1,25 +1,4 @@
 /* Container styling */
-/* .Container {
-    display: flex;
-    flex-direction: row;
-    width: 100% !important;
-    justify-content: center;
-    position: relative;
-} */
-
-
-
-/* .Container-header {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
-    width: 100% !important;
-    width: 82.188em;
-    max-height: min(200vh);
-} */
-
 h1 {
     font-size: 46px;
     font-weight: 700;
@@ -46,7 +25,7 @@ h2 {
 .m-0,
 .p-o {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     /* justify-content: center; */
     flex-direction: column;
     /* width: 100% !important; */
@@ -63,7 +42,7 @@ h2 {
 
 
 section {
-    min-height: fit-content;
+    /* min-height: fit-content; */
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -163,7 +142,7 @@ section {
     font-size: 1.3rem;
     /* max-width: 35.875rem; */
     max-width: 48rem;
-    text-align: start;
+    text-align: flex-start;
 }
 
 /* .who-are-we>p {
@@ -230,7 +209,8 @@ section {
     height: 100%;
     background-color: hwb(120 0% 0%);
     z-index: 1;
-} 
+}
+
 /* 
 .laneDrawing {
     object-fit: contain;
@@ -284,11 +264,16 @@ section {
 
 /* row styling */
 
+section .container {
+    margin: 20rem 0;
+    width: 100%;
+}
+
 .row {
     display: flex;
     flex-direction: row;
     padding: 0;
-    margin: 3.3em 0;
+    /* margin: 3.3em 0; */
     font-size: 25px;
 }
 
@@ -353,7 +338,6 @@ section {
     padding: 0;
 }
 
-
 .team-button,
 .summit-button {
     margin-top: 1.5em;
@@ -365,9 +349,11 @@ section {
     font-weight: 800;
     font-size: 1.5rem;
     letter-spacing: .1em;
-
 }
 
+.team-button {
+    margin-top: 4em;
+}
 
 
 /* why bingo row */
@@ -393,7 +379,6 @@ section {
 
 .homepageGraphicTwo {
     object-fit: contain;
-
 }
 
 
@@ -403,10 +388,7 @@ section {
     width: 100%;
 }
 
-
-
-
-/* .rainbowGraphic {
+.rainbowGraphic {
     position: absolute;
     top: -5%;
     left: 13%;
@@ -414,8 +396,8 @@ section {
     max-height: 15.875em;
     max-width: 15.625em;
     margin-left: 5em;
-    background-color: white;
-} */
+    /* background-color: white; */
+}
 
 /* waves */
 .wave-graphic {
@@ -443,22 +425,26 @@ section {
     .container.hero {
         /* height: 300vh; */
         /* margin: 40rem 0; */
-        background-color: #E11774;
+        /* background-color: #E11774; */
     }
 
     .col-title {
-        height: 15vh;
+        /* height: 1px; */
         vertical-align: text-bottom;
+        /* background-color: #E11774; */
     }
 
     .homepageGraphicOne {
         position: relative;
-        height: 100%;
-        width: auto;
         object-fit: contain;
         object-position: 4rem 0rem;
         /* background-color: red; */
+        top: 70%;
+    }
 
+    img .homepageGraphicOne {
+        height: 30rem;
+        width: auto;
     }
 
     /* img.homepageGraphicOne {
@@ -479,26 +465,23 @@ section {
     .m-0,
     .p-o {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        /* align-items: center; */
+        /* justify-content: center; */
         flex-direction: column;
         width: 100%;
     }
 
     .container .hero {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center; */
+        /* align-items: center; */
         width: 100%;
         background-color: #E11774;
     }
 
     .whoWeAreFrame {
         margin: .8em 5em .8em 5em;
-
     }
-
-
 
     .col-lg-6,
     .m-0,
@@ -515,16 +498,20 @@ section {
         /* max-height: 20rem; */
         /* background-color: red; */
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
     }
 
     .homepageGraphicOne {
         position: relative;
         height: 28rem;
-        width: auto;
+        width: 100%;
         object-fit: contain;
         object-position: -1rem 0rem;
+    }
+
+    .col-title {
+        height: 6rem;
     }
 
 }

@@ -41,18 +41,20 @@ const HomePage = () => {
                {/* <!-- Image Column --> */}
                <div
                   className="col-lg-6 col-md-12 col-sm-12 m-0 p-0 order-lg-2 order-md-3 order-md2 order-sm-2 overflow-visible  heroGraphic object-fit-cover"
-                  style={{
-                     // backgroundColor: "red",
-                     height: "min-content",
-                     // border: "1px solid red",
-                  }}
+                  style={
+                     {
+                        // backgroundColor: "red",
+                        // height: "min-content",
+                        // border: "1px solid red",
+                     }
+                  }
                >
                   <img
                      src={homepageGraphicOne}
                      loading="lazy"
                      alt="homepage Left"
                      className="homepageGraphicOne object-fit-cover"
-                     // style={{ backgroundColor: "blue",}}
+                     // style={{ border: "1px solid purple" }}
                   ></img>
                </div>
             </div>
@@ -120,13 +122,17 @@ const HomePage = () => {
                            alt="Drawing of a vest"
                         />
                      </div>
+                     <div className="row">
+                        <div className="col-12">
+                           <button
+                              type="button"
+                              className="btn btn-info team-button z-1 "
+                           >
+                              MEET THE TEAM{" "}
+                           </button>
+                        </div>
+                     </div>
                   </div>
-                  <button
-                     type="button"
-                     className="btn btn-info team-button z-1"
-                  >
-                     MEET THE TEAM{" "}
-                  </button>
                   {/* <img
                   src={imageAssets.greenAndPinkCloud}
                   alt="small green and pink cloud"
@@ -158,7 +164,7 @@ const HomePage = () => {
                      </p>
                      <button
                         type="button"
-                        className="btn btn-info summit-button align-self-start"
+                        className="btn btn-info summit-button"
                      >
                         JOIN THE SUMMIT
                      </button>

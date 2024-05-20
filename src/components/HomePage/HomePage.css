@@ -21,19 +21,17 @@ h2 {
 
 
 
-.col-lg-6,
-.m-0,
-.p-o {
+.col-lg-6 {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     /* justify-content: center; */
-    flex-direction: column;
+    /* flex-direction: column; */
     /* width: 100% !important; */
 }
 
-.col-lg-6 {
+/* .col-lg-6 {
     vertical-align: text-bottom;
-}
+} */
 
 /* end Container styling */
 
@@ -145,9 +143,6 @@ section {
     text-align: flex-start;
 }
 
-/* .who-are-we>p {
-    font-size: 1.375rem;
-} */
 
 .we-are-subtitle {
     font-weight: normal;
@@ -253,7 +248,7 @@ section {
 
 .graphicFrame {
     height: 20em;
-    /* width: 30em; */
+    width: auto;
     background-color: transparent;
     padding: 0;
     margin: 0;
@@ -358,24 +353,7 @@ section .container {
 
 /* why bingo row */
 
-.row .body-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-    margin: 0;
 
-}
-
-/* .col-md-7 {
-    padding-left: 2em;
-    max-width: 46.438em;
-} */
-
-/* .col-md-7 p {
-    width: 38.438rem;
-} */
 
 .homepageGraphicTwo {
     object-fit: contain;
@@ -519,107 +497,13 @@ section .container {
 /* For extra-wide monitors (greater than 1440px) */
 /* @media (min-width: 1440px) {
 
-    .pinkCloudImg {
-        position: absolute;
-        width: 4.6em;
-        left: 13.5%;
-        top: 14%;
-    }
-
-
-    .tealCloudImg {
-        object-fit: contain;
-        position: absolute;
-        max-width: 18.2375rem;
-        left: 0;
-        top: 30%;
-        object-position: -3em 0;
-    }
-
-    .blueBlob {
-        object-fit: fill;
-        height: auto;
-        position: absolute;
-        top: 30.4rem;
-    }
-
-    .blueMountain {
-        position: absolute;
-        bottom: -5%;
-        left: 10%;
-        z-index: 2;
-    }
-
-    .blueMountainImg {
-        max-height: 6.575em;
-        width: auto;
-    }
 
 } */
 
 /* For 1980x1080 displays */
 /* (1920x1080) Full HD Display */
 /* @media screen and (max-width: 1920px) {
-    .row {
-        display: flex;
-        flex-direction: row;
-        max-width: 100vw;
-        max-height: max-content;
-        padding: 0;
-        margin: 6.3em 0;
-        font-size: 25px;
-    }
 
-    who-are-we section graphics
-    .pinkCloudImg {
-        position: absolute;
-        width: 4em;
-        left: 14.5%;
-        top: 15%;
-    }
-
-
-    .tealCloudImg {
-        object-fit: contain;
-        position: absolute;
-        max-width: 18.2375rem;
-        left: 0;
-        top: 32%;
-        object-position: -3em 0;
-    }
-
-    .blueBlob {
-        object-fit: fill;
-        height: auto;
-        width: 60em;
-        position: absolute;
-        top: 27.33%;
-        transform: scaleY(.9);
-    }
-
-    .blueMountain {
-        position: absolute;
-        bottom: -6%;
-        left: 9%;
-        z-index: 2;
-    }
-
-    .blueMountainImg {
-        max-height: 5.575em;
-        width: auto;
-    }
-
-    /* END who we are graphics */
-
-/* .wave-graphic {
-        width: 100%;
-        height: 77vh;
-        position: absolute;
-        bottom: -100px;
-        left: 0;
-        object-fit: fill;
-
-    } */
 /* } */
 
 /* For 15.4-inch (2880 × 1800) display */
@@ -634,7 +518,7 @@ section .container {
 
 
 
-    .pinkCloudImg {
+    /* .pinkCloudImg {
         position: absolute;
         width: 3.6em;
         left: 9.5%;
@@ -678,7 +562,7 @@ section .container {
         bottom: -100px;
         left: 0;
         object-fit: fill;
-    }
+    } */
 }
 
 

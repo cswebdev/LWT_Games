@@ -2,6 +2,7 @@ import React from "react";
 import "./HomePage.css";
 import homepageGraphicOne from "../../assets/left_mainpage_image.png";
 import imageAssets from "../../utils/Utils";
+import { DeviceSsd } from "react-bootstrap-icons";
 // import { Border } from "react-bootstrap-icons";
 
 const HomePage = () => {
@@ -26,7 +27,7 @@ const HomePage = () => {
 
                {/* <!-- Paragraph Column  --> */}
                <div
-                  className="col-lg-6 col-md-12 m-0 p-0 order-lg-3 order-md-last order-sm-last overflow-visible position-relative"
+                  className="col-lg-6 col-md-12 m-0 p-0 order-lg-3 order-md-last order-sm-last d-flex flex-column overflow-visible position-relative"
                   // style={{ backgroundColor: "lightGreen" }}
                >
                   <p>Creating community and building </p>
@@ -143,9 +144,9 @@ const HomePage = () => {
          </section>
 
          <section className="container z-1">
-            <div className="row body-content d-flex ">
+            <div className="row">
                <div
-                  className="col-lg-6 m-0 p-0 z-1 d-flex flex-column align-items-center"
+                  className="col-lg-6 m-0 p-0 z-1"
                   // style={{ border: "1px solid red" }}
                >
                   <div
@@ -179,13 +180,15 @@ const HomePage = () => {
                         src={imageAssets.homepageGraphicLane}
                         className="homepageGraphicTwo"
                         loading="lazy"
-                        alt="graphic of"
+                        alt="graphic of Lane"
                      />
                   </div>
                </div>
             </div>
+         </section>
+         <section className="container-fluid p-0 mb-5">
             <div className="row body-content position-relative m-0 p-0 z-0">
-               <section className="row svg-container position-relative d-flex flex-row-reverse align-items-center z-1 m-0 p-0 overflow-visible ">
+               <div className="col-lg-12 container-fluid position-relative d-flex flex-row-reverse align-items-center z-1 m-0 p-0 overflow-visible ">
                   <div
                      className="col-lg-6 z-1 bg-transparent"
                      style={{ border: "1px solid purple" }}
@@ -213,7 +216,7 @@ const HomePage = () => {
                         alt="rainbow graphic"
                      />
                   </div>
-               </section>
+               </div>
                <div className="wave-container z-0 overflow-visible">
                   <img
                      className="wave-graphic z-0"

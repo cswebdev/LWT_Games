@@ -35,6 +35,7 @@
   }
 
   .BioList-bingo {
+    display: block;
     position: absolute;
     top: 40%;
     left: 40%;

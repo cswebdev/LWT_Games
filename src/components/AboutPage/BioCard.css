@@ -97,6 +97,14 @@
   transition-timing-function: ease-in;
 }
 
+.BioCard-bingo {
+  display: block;
+}
+
+.BioCard-surprise {
+  display: block;
+}
+
 .BioCard-arrow-purple {
   position: absolute;
   z-index: 30;
@@ -159,6 +167,10 @@
   .BioCard-headshot {
     border-width: 8px;
     border-radius: 55px;
+  }
+
+  .BioCard-bingo {
+    display: none;
   }
 
   .BioCard-arrow-purple {

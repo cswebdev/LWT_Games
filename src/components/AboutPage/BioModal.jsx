@@ -1,8 +1,14 @@
+import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import "./BioModal.css";
-import { X } from "react-bootstrap-icons";
+import { X, CaretDown } from "react-bootstrap-icons";
 
 const BioModal = ({ bio, ...props }) => {
+
+  const [readMoreShow, setReadMoreShow] = useState(false);
+
+  const handleShow = () => setReadMoreShow(true);
+
   return (
     <Modal
       {...props}
@@ -77,10 +83,11 @@ const BioModal = ({ bio, ...props }) => {
                 <span className="BioModal-question"><span className="BioModal-q">Q.</span> Why did you join the group?</span><br></br>
                 <span><span className="BioModal-a">A:</span> {bio.reasonForJoining}</span>
               </div>
-              <div className="BioModal-gainedFromInCo">
+              {!readMoreShow && <div className="BioModal-readmore" onClick={handleShow}>Read More <CaretDown size={36} /></div>}
+              {readMoreShow && <div className="BioModal-gainedFromInCo">
                 <span className="BioModal-question"><span className="BioModal-q">Q.</span> What have you gained from InCo?</span><br></br>
                 <span><span className="BioModal-a">A:</span> {bio.gainedFromInCo}</span>
-              </div>
+              </div>}
             </div>
         </div>
       </Modal.Body>

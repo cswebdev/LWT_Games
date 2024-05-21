@@ -11,6 +11,8 @@
   position: relative;
   display: block;
   height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .AboutPage-mobile h1 {
@@ -20,6 +22,7 @@
 .AboutPage-mobile svg {
   position: absolute;
   z-index: 1;
+  overflow: hidden;
 }
 
 .AboutPage-mobile-juliane {
@@ -31,8 +34,9 @@
 }
 
 .AboutPage-mobile-jimena {
+  display: block;
   position: relative;
-  width: 23.275rem;
+  width: auto;
   height: 20.3rem;
   right: -50px;
   z-index: 10;

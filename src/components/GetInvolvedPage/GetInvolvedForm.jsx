@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./GetInvolvedForm.css";
 
 const FORM_SUBMIT_THANKS = `Thank you for your submission. Our team will look
 over your details and get back to you shortly!`;

@@ -1,4 +1,5 @@
 import GetInvolvedForm from "./GetInvolvedForm";
+import "./GetInvolvedPage.css";
 
 /** Component for GetInvolved Page
  *

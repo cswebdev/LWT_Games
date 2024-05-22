@@ -14,7 +14,7 @@ import { CaretDown, CaretUp } from "react-bootstrap-icons";
  * - none
  *
  * State:
- * - readMoreShow: boolean for expanding about us section on mobile
+ * - readMoreShow: boolean for expanding our story section on mobile
  *
  * App -> AboutPage -> BioList
  *

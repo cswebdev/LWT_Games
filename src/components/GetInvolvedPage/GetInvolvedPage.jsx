@@ -25,7 +25,7 @@ const GetInvolvedPage = () => {
             <img src={mobileHero} className="GetInvolvedPage-hero-mobile" alt="drawings of InCo members" />
             <div className="container ml-3 justify-content-center">
                 <div className="col-8">
-                    <h1>Join #LWTGames</h1>
+                    <h1>Join Interconnected Collective</h1>
                     <div className="GetInvolvedPage-content">
                         <p>🌈 Lookin' for stretch assignments? Join Us! 🌐✨</p>
                         <p>🔍 We're actively seeking exceptional individuals in the following areas:</p>

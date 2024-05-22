@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import MobileNav from "./MobileNav/MobileNav";
-import logo from "../../assets/LWT_logo.png";
+import logo from "../../assets/inco_logo.png";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -18,7 +18,7 @@ const NavBar = () => {
                <div className="logo-wrapper">
                   <div className="logo">
                      <Link to="/home">
-                        <img src={logo} alt="LWT logo" />
+                        <img src={logo} alt="InCo logo" />
                      </Link>
                   </div>
                </div>

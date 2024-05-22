@@ -8,7 +8,7 @@ import BioModal from "./BioModal";
  *
  * Props:
  * - bio: { name, pronouns, role, bio, photo, drawing, portfolio, linkedIn,
- *   behance, github, otherSocial, emoji, reasonForJoining, gainedFromLWT }
+ *   behance, github, otherSocial, emoji, reasonForJoining, gainedFromInCo }
  *
  * State:
  * - show: boolean for showing modal

@@ -7,7 +7,7 @@ import { X } from "react-bootstrap-icons";
  *
  * Props:
  * - bio: { name, pronouns, role, bio, photo, drawing, portfolio, linkedIn,
- *   behance, github, otherSocial, emoji, reasonForJoining, gainedFromLWT }
+ *   behance, github, otherSocial, emoji, reasonForJoining, gainedFromInCo }
  *
  * State:
  * - readMoreShow: boolean for expanding q and a section on mobile

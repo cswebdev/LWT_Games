@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
 
-  <h1 align="center">Official LWT Games Website</h1>
+  <h1 align="center">Official Interconnective Collective Website</h1>
 
   <p align="center">
     Home of the Unofficial Lesbians Who Tech Conference Bingo Game
@@ -49,7 +49,7 @@
 ## About The Project
 
 This website is the online location of the Unofficial LWT Bingo Game. Now in it's
-second year, the LWT Games team is iterating on last year's game.
+second year, the Interconnected Collective team is iterating on last year's game.
 
 Volunteers on the team are designing and building this website where conference
 attendees can play the bingo game, learn more about the team, and find out how to
@@ -155,16 +155,19 @@ The UI/UX designers for the website are:
 
 ## Acknowledgments
 
-Thanks to the entire LWTGames team:
+Thanks to the entire Interconnected Collective team:
 - Tegan Barron
 - Lane Hamilton
 - Liz Baranowicz
 - Olivia Servaes
+- KD Hubbard
 - Jimena Cuadros
 - Lynds Lesh
 - Olivia McCartney
-- Becca Jonas
 - Wei Yun Lim
+- Alex Sharp
+- Amy Ashmore
+- Julie Nguyen
 
 
 Additional thanks to:

@@ -9,10 +9,10 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
             onClick={toggleMenu}
          >
             <div className="mobile-menu-container">
-               <div className="logo-wrapper">LWT GAMES</div>
+               <div className="logo-wrapper">Interconnected Collective</div>
                <ul>
                   <li className="menu-item">Games</li>
-                  <li className="menu-item">LWT</li>
+                  <li className="menu-item">InCo</li>
                   <li className="menu-item">About Us</li>
                   <li className="menu-item">Get Involved</li>
                </ul>

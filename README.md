@@ -133,7 +133,7 @@ To set up this repo on your local machine, follow these instructions:
 The frontend engineers and primary contributors to this website are:
 
 - [Chelsea Snider](https://github.com/cswebdev) -- [LinkedIn](https://www.linkedin.com/in/chelsea-snider/)
-- [Juliane Cassidy](https://julianecassidy.com) -- [LinkedIn](https://www.linkedin.com/in/julianemcassidy/)
+- [Juliane Cassidy](https://github.com/julianecassidy) -- [LinkedIn](https://www.linkedin.com/in/julianemcassidy/)
 
 The UI/UX designers for the website are:
 
@@ -141,6 +141,7 @@ The UI/UX designers for the website are:
 - [Olivia Servaes](https://www.linkedin.com/in/oliviaservaes/)
 - [Lynds Lesh](https://www.linkedin.com/in/lyndsey-lesh/)
 
+The project repo exists here;
 - [Project Repo](https://github.com/cswebdev/LWT_Games)
 
 

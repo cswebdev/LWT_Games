@@ -2,7 +2,7 @@ import React from "react";
 import "./HomePage.css";
 import homepageGraphicOne from "../../assets/left_mainpage_image.png";
 import imageAssets from "../../utils/Utils";
-import { DeviceSsd } from "react-bootstrap-icons";
+// import { DeviceSsd } from "react-bootstrap-icons";
 // import { Border } from "react-bootstrap-icons";
 
 const HomePage = () => {

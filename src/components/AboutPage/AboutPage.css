@@ -37,7 +37,7 @@
   position: relative;
   width: auto;
   height: 20.3rem;
-  right: -50px;
+  right: -3.125rem;
   z-index: 10;
 }
 
@@ -46,7 +46,7 @@
   width: 14.8rem;
   height: 14.125rem;
   margin-top: 2rem;
-  left: 40px;
+  left: 2.5rem;
   z-index: 10;
 }
 
@@ -106,7 +106,7 @@
     position: relative;
     margin-left: auto;
     margin-right: 0px;
-    top: 51px;
+    top: 3.188rem;
     width: 78%;
     height: auto;
     z-index: 10;
@@ -121,7 +121,7 @@
     margin-right: 80px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 149px;
+    column-gap: 9.313rem;
   }
 
   .AboutPage-our-story img {

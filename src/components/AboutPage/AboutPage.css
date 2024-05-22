@@ -11,6 +11,8 @@
   position: relative;
   display: block;
   height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .AboutPage-mobile h1 {
@@ -20,6 +22,7 @@
 .AboutPage-mobile svg {
   position: absolute;
   z-index: 1;
+  overflow: hidden;
 }
 
 .AboutPage-mobile-juliane {
@@ -31,8 +34,9 @@
 }
 
 .AboutPage-mobile-jimena {
+  display: block;
   position: relative;
-  width: 23.275rem;
+  width: auto;
   height: 20.3rem;
   right: -50px;
   z-index: 10;
@@ -60,6 +64,29 @@
   width: 78%;
   height: auto;
   z-index: 10;
+}
+
+.AboutPage-readmore {
+  font-size: 1.25rem;
+  font-family: 'new-science-serif', 'sans-serif';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.AboutPage-readmore:hover {
+  cursor: pointer;
+}
+
+.AboutPage-hide-readmore {
+  background-color: #FFD30026;
+  width: 2.938rem;
+  height: 2.938rem;
+  border-radius: 50px;
+}
+
+.AboutPage-caretup {
+  margin-top: 2px;
+  margin-left: 6px;
 }
 
 @media screen and (min-width: 600px) {

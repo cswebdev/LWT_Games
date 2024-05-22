@@ -166,7 +166,7 @@ const JULIANE = new Bio(
   "Juliane Cassidy",
   "They/Them",
   "Frontend Engineer",
-  `I am a fullstack software engineer working in JavaScript, React, Python, and
+  `I am a fullstack software engineer working in JavaScript, TypeScript, React, Python, and
   Django. With a background in web design and database administration, I focus on
   building the interfaces that let end users intuitively interact with data and
   content.`,
@@ -179,7 +179,7 @@ const JULIANE = new Bio(
   undefined,
   undefined,
   "I joined LWT Games to take on more front end projects, collaborate with a team, and build my community.",
-  "I've gotten to work with a really cool group of folks."
+  "I've gotten to work with a really cool group of folks and the opportunity to translate other people's designs into code has been incredible."
 );
 
 const CHELSEA = new Bio(
@@ -293,6 +293,22 @@ LANE.color = ORANGE;
 AMY.color = ORANGE;
 
 
+// create order for mobile screens
+TEGAN.mobileOrder = 1;
+LIZ.mobileOrder = 2;
+LYNDS.mobileOrder = 3;
+OLIVIAS.mobileOrder = 4;
+KD.mobileOrder = 5;
+JULIANE.mobileOrder = 6;
+CHELSEA.mobileOrder = 7;
+WEI.mobileOrder = 8;
+OLIVIAM.mobileOrder = 10;
+JIMENA.mobileOrder = 11;
+LANE.mobileOrder = 12;
+ALEX.mobileOrder = 13;
+AMY.mobileOrder = 15;
+JULIE.mobileOrder = 16;
+
 export const BIOS = [
   TEGAN,
   LIZ,
@@ -302,13 +318,14 @@ export const BIOS = [
   JULIANE,
   CHELSEA,
   WEI,
+  {image: "/headshots/bingo.png", alt: "bingo", mobileOrder: 9, stylingClass: "BioCard-bingo"},
   OLIVIAM,
   JIMENA,
   LANE,
   ALEX,
-  {image: "/headshots/free_space.png", hover: "/drawings/free_space.png", alt: "free space"},
+  {image: "/headshots/free_space.png", hover: "/drawings/free_space.png", alt: "free space", mobileOrder: 14},
   JULIE,
-  {image: "/headshots/surprise.png", hover: "/drawings/surprise.png", alt: "suprise"},
+  {image: "/headshots/surprise.png", hover: "/drawings/surprise.png", alt: "suprise", mobileOrder: 17, stylingClass: "BioCard-surpirse"},
   AMY,
 ];
 

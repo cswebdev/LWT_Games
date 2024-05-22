@@ -13,7 +13,7 @@ import BioModal from "./BioModal";
  * State:
  * - show: boolean for showing modal
  *
- * BioList -> BioCard
+ * BioList -> BioCard -> BioModal
  */
 const BioCard = ({ bio }) => {
     // console.debug("BioCard", bio);
@@ -24,7 +24,7 @@ const BioCard = ({ bio }) => {
     return (
         <>
             {bio instanceof Bio
-                ? <div className={`BioCard-${bio.color}`} onClick={handleShow}>
+                ? <div className={`BioCard-${bio.color}`} style={{order:bio.mobileOrder}} onClick={handleShow}>
                     <div className="BioCard-graphics">
                         <img
                             className="BioCard-headshot img-fluid"
@@ -60,7 +60,7 @@ const BioCard = ({ bio }) => {
                         {bio.role}
                     </div>
                 </div>
-                : <div className="BioCard-blank BioCard-graphics">
+                : <div className={`BioCard-blank BioCard-graphics ${bio.stylingClass || ""}`} style={{order:bio.mobileOrder}}>
                     <img className="BioCard-blank-img img-fluid" src={bio.image} alt={bio.alt} />
                     <img className="BioCard-blank-hover img-fluid" src={bio.hover} alt={bio.alt} />
                 </div>

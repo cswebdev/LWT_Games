@@ -1,3 +1,4 @@
+import { useState } from "react";
 import BioList from "./BioList";
 import "./AboutPage.css";
 import logo from "../../assets/incologo.png";
@@ -5,6 +6,7 @@ import headerBackground from "../../assets/alltogether.png";
 import julianeHeader from "../../assets/juliane-header.png";
 import jimenaHeader from "../../assets/jimena-header.png";
 import weiHeader from "../../assets/wei-header.png";
+import { CaretDown, CaretUp } from "react-bootstrap-icons";
 
 /** Component for AboutPage
  *
@@ -12,7 +14,7 @@ import weiHeader from "../../assets/wei-header.png";
  * - none
  *
  * State:
- * - none
+ * - readMoreShow: boolean for expanding our story section on mobile
  *
  * App -> AboutPage -> BioList
  *
@@ -20,6 +22,11 @@ import weiHeader from "../../assets/wei-header.png";
  */
 const AboutPage = () => {
   // console.debug("AboutPage");
+
+  const [readMoreShow, setReadMoreShow] = useState(false);
+
+  const handleShow = () => setReadMoreShow(true);
+  const handleHide = () => setReadMoreShow(false);
 
   return (
     <div className="AboutPage">
@@ -68,14 +75,18 @@ const AboutPage = () => {
             game (for the fun of it!) to engage attendees at the Lesbians
             Who Tech & Allies conference, 2024.
           </p>
-          <p>
-            At InCo., we harness community training methodologies and
-            creative collaboration to elevate our talents. Inspired by the
-            neuroscience principle that "neurons that fire together wire
-            together," we've curated a suite of tools and techniques
-            designed to build something bigger than ourselves…an online
-            bingo board that can be played around the world!
-          </p>
+          {!readMoreShow && <div className="AboutPage-readmore" onClick={handleShow}>Read More <CaretDown size={36} /></div>}
+          {readMoreShow && <>
+            <p>
+              At InCo., we harness community training methodologies and
+              creative collaboration to elevate our talents. Inspired by the
+              neuroscience principle that "neurons that fire together wire
+              together," we've curated a suite of tools and techniques
+              designed to build something bigger than ourselves…an online
+              bingo board that can be played around the world!
+            </p>
+            <div class="AboutPage-hide-readmore" onClick={handleHide}><CaretUp size={36} className={"AboutPage-caretup"} /></div>
+          </>}
         </div>
         <img className="AboutPage-mobile-jimena" src={jimenaHeader} alt="Headshot of InCo member Jimena" />
         <img className="AboutPage-mobile-wei" src={weiHeader} alt="Headshot of InCo member Wei" />

@@ -22,3 +22,7 @@
   line-height: 1.5rem;
   font-family: sans-serif;
 }
+
+.GetInvolvedForm-button:hover {
+  background-color: #710071;
+}

@@ -245,7 +245,7 @@ const GetInvolvedForm = () => {
                 {message && <div className="alert alert-success" role="alert">
                     <p>{message}</p>
                 </div>}
-                <button type="submit" className="btn btn-primary btn-sm">Submit</button>
+                <button type="submit" className="btn btn-primary GetInvolvedForm-button btn-sm">Submit</button>
             </div>
         </form>
     );

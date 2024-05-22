@@ -1,3 +1,7 @@
+.GetInvolvedPage {
+  margin-bottom: 13rem;
+}
+
 .GetInvolvedPage-hero-desktop {
   display: none;
 }
@@ -25,7 +29,7 @@
     display: none;
   }
 
-  .GetInvolvedPage-hero-mobile {
+  .GetInvolvedPage-footer-mobile {
     display: none;
   }
 

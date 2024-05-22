@@ -9,10 +9,10 @@ const HomePage = () => {
    return (
       <>
          <section className="container hero">
-            <div className="row d-flex align-items-stretch justify-content-between">
+            <div className="row d-flex align-items-stretch justify-content-between pt-3">
                {/* <!-- Title and Subtitle Column --> */}
                <div
-                  className="col-lg-6 col-md-12 m-0 p-0 order-1 order-lg-1 order-md-1 order-sm-1 d-flex flex-column justify-content-end position-relative overflow-visible col-title"
+                  className="col-lg-6 col-md-12 mt-5 p-0  order-1 d-flex flex-column justify-content-end position-relative overflow-visible col-title"
                   // style={{ backgroundColor: "lightBlue" }}
                >
                   <h1>We Are InCo.</h1>
@@ -27,7 +27,7 @@ const HomePage = () => {
 
                {/* <!-- Paragraph Column  --> */}
                <div
-                  className="col-lg-6 col-md-12 m-0 p-0 order-lg-3 order-md-last order-sm-last d-flex flex-column overflow-visible position-relative"
+                  className="col-lg-6 col-md-12 col-sm-12 m-0 p-0 order-lg-3 order-md-last order-sm-last d-flex flex-column overflow-visible position-relative"
                   // style={{ backgroundColor: "lightGreen" }}
                >
                   <p>Creating community and building </p>
@@ -146,7 +146,7 @@ const HomePage = () => {
          <section className="container body-bottom z-1">
             <div className="row">
                <div
-                  className="col-lg-6 m-0 p-0 z-1"
+                  className="col-lg-7 order-lg-1 order-md-1 order-sm-2 m-0 p-0 z-1 "
                   // style={{ border: "1px solid red" }}
                >
                   <div
@@ -172,7 +172,7 @@ const HomePage = () => {
                   </div>
                </div>
                <div
-                  className="col-lg-6 m-0 p-0"
+                  className="col-lg-5 order-lg-2 order-md-2 order-sm-1 m-0 p-0"
                   style={{ border: "1px solid green" }}
                >
                   <div class="graphicFrame">
@@ -186,11 +186,14 @@ const HomePage = () => {
                </div>
             </div>
          </section>
-         <section className="container-fluid body-bottom p-0 mb-5">
+         <section className="container-fluid body-bottom p-0 mb-5 mt-5 ">
             <div className="row body-content position-relative m-0 p-0 z-0">
-               <div className="col-lg-12 position-relative d-flex grandmas-bingo z-1 m-0 p-0 overflow-visible ">
+               <div
+                  className="col-lg-12 position-relative d-flex grandmas-bingo align-items-center z-1 m-0 p-0 overflow-visible "
+                  style={{ border: "1px solid red" }}
+               >
                   <div
-                     className="col-lg-6 z-1 bg-transparent d-flex flex-column"
+                     className="col-lg-7 order-lg-1 order-md-1 order-sm-2 z-1 bg-transparent d-flex flex-column"
                      style={{ border: "1px solid purple" }}
                   >
                      <h2 className="row-h2">Not your Grandma's Bingo!</h2>
@@ -207,7 +210,7 @@ const HomePage = () => {
                      </button>{" "}
                   </div>{" "}
                   <div
-                     class="col-lg-6 graphicFrame z-1 d-flex justify-content-center "
+                     class="col-lg-5 graphicFrame order-lg-2 order-md-2 order-sm-1 z-1 d-flex justify-content-center"
                      style={{ border: "1px solid yellow" }}
                   >
                      <img

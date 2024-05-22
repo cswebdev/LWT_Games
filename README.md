@@ -74,7 +74,7 @@ get involved.
 
 ### Built With
 
-This project began in March 2024 and uses the following technologies:
+This project began in March 2024 and deployed officially in May 2024. It uses the following technologies:
 
 - ![Javascript][Javascript]
 - ![React][React]

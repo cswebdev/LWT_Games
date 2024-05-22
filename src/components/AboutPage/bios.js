@@ -166,7 +166,7 @@ const JULIANE = new Bio(
   "Juliane Cassidy",
   "They/Them",
   "Frontend Engineer",
-  `I am a fullstack software engineer working in JavaScript, React, Python, and
+  `I am a fullstack software engineer working in JavaScript, TypeScript, React, Python, and
   Django. With a background in web design and database administration, I focus on
   building the interfaces that let end users intuitively interact with data and
   content.`,
@@ -179,7 +179,7 @@ const JULIANE = new Bio(
   undefined,
   undefined,
   "I joined LWT Games to take on more front end projects, collaborate with a team, and build my community.",
-  "I've gotten to work with a really cool group of folks."
+  "I've gotten to work with a really cool group of folks and the opportunity to translate other people's designs into code has been incredible."
 );
 
 const CHELSEA = new Bio(

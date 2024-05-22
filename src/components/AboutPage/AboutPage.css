@@ -22,7 +22,6 @@
 .AboutPage-mobile svg {
   position: absolute;
   z-index: 1;
-  overflow: hidden;
 }
 
 .AboutPage-mobile-juliane {
@@ -84,9 +83,13 @@
   border-radius: 50px;
 }
 
+.AboutPage-caretdown {
+  margin-top: -5px;
+}
+
 .AboutPage-caretup {
   margin-top: 2px;
-  margin-left: 6px;
+  margin-left: 4px;
 }
 
 @media screen and (min-width: 600px) {

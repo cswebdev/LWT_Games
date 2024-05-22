@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import "./BioModal.css";
-import { X, CaretDown } from "react-bootstrap-icons";
+import { X } from "react-bootstrap-icons";
 
 /** Component for BioModal
  *

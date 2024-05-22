@@ -6,7 +6,6 @@ import headerBackground from "../../assets/alltogether.png";
 import julianeHeader from "../../assets/juliane-header.png";
 import jimenaHeader from "../../assets/jimena-header.png";
 import weiHeader from "../../assets/wei-header.png";
-import { CaretDown, CaretUp } from "react-bootstrap-icons";
 
 /** Component for AboutPage
  *

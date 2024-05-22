@@ -21,8 +21,8 @@ const GetInvolvedPage = () => {
 
     return (
         <div className="GetInvolvedPage">
-            <img src={desktopHero} className="GetInvolvedPage-hero-desktop" />
-            <img src={mobileHero} className="GetInvolvedPage-hero-mobile" />
+            <img src={desktopHero} className="GetInvolvedPage-hero-desktop" alt="drawings of InCo members" />
+            <img src={mobileHero} className="GetInvolvedPage-hero-mobile" alt="drawings of InCo members" />
             <div className="container ml-3 justify-content-center">
                 <div className="col-8">
                     <h1>Join #LWTGames</h1>
@@ -57,7 +57,7 @@ const GetInvolvedPage = () => {
                     <GetInvolvedForm />
                 </div>
             </div>
-            <img src={mobileFooter} className="GetInvolvedPage-footer-mobile" />
+            <img src={mobileFooter} className="GetInvolvedPage-footer-mobile" alt="drawings of InCo members" />
         </div>
     );
 

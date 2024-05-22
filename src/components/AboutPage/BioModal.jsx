@@ -3,6 +3,18 @@ import Modal from 'react-bootstrap/Modal';
 import "./BioModal.css";
 import { X, CaretDown } from "react-bootstrap-icons";
 
+/** Component for BioModal
+ *
+ * Props:
+ * - bio: { name, pronouns, role, bio, photo, drawing, portfolio, linkedIn,
+ *   behance, github, otherSocial, emoji, reasonForJoining, gainedFromLWT }
+ *
+ * State:
+ * - readMoreShow: boolean for expanding q and a section on mobile
+ *
+ * BioCard => BioModal
+ *
+ */
 const BioModal = ({ bio, ...props }) => {
 
   const [readMoreShow, setReadMoreShow] = useState(false);

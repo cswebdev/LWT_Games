@@ -1,3 +1,4 @@
+import { useState } from "react";
 import BioList from "./BioList";
 import "./AboutPage.css";
 import logo from "../../assets/incologo.png";
@@ -12,7 +13,7 @@ import weiHeader from "../../assets/wei-header.png";
  * - none
  *
  * State:
- * - none
+ * - readMoreShow: boolean for expanding about us section on mobile
  *
  * App -> AboutPage -> BioList
  *
@@ -20,6 +21,10 @@ import weiHeader from "../../assets/wei-header.png";
  */
 const AboutPage = () => {
   // console.debug("AboutPage");
+
+  const [readMoreShow, setReadMoreShow] = useState(false);
+
+  const handleShow = () => setReadMoreShow(true);
 
   return (
     <div className="AboutPage">

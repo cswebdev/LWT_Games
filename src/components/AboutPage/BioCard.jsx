@@ -13,7 +13,7 @@ import BioModal from "./BioModal";
  * State:
  * - show: boolean for showing modal
  *
- * BioList -> BioCard
+ * BioList -> BioCard -> BioModal
  */
 const BioCard = ({ bio }) => {
     // console.debug("BioCard", bio);

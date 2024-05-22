@@ -34,18 +34,18 @@
   height: 50px;
   border-radius: 100px;
   position: relative;
-  top: -70px;
+  top: -4.375rem;
   left: 85%;
   background-color: white;
   color: #6f30a05f;
   text-align: center;
-  font-size: 30px;
+  font-size: 1.875rem;
   transition: 0.15s ease-in;
 }
 
 .BioModal-mobile-graphics {
   position: relative;
-  margin-top: -50px;
+  margin-top: 3.125rem;
   margin-bottom: 2.18rem;
   background-color: #7030A0;
   width: 100%;
@@ -76,7 +76,7 @@
   font-family: 'new-science-serif', 'sans-serif';
   font-weight: 400;
   color: white;
-  padding-left: 15px;
+  padding-left: 0.938rem;
   vertical-align: middle;
 }
 
@@ -87,14 +87,14 @@
   font-weight: 400;
   color: white;
   width: 100%;
-  margin: 4px 0px;
+  margin: 0.25rem 0rem;
 }
 
 .BioModal-left {
   width: 36%;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 29px;
+  row-gap: 1.813rem;
 }
 
 .BioModal-left img {
@@ -113,7 +113,7 @@
 
 .BioModal-social-button {
   width: 80%;
-  height: 70px;
+  height: 4.375rem;
   margin: auto;
   background-color: #7030A0;
   border-radius: 30px;
@@ -153,11 +153,11 @@
   border-color: #7030A0;
   border-width: 1px;
   border-radius: 30px;
-  margin-top: 14px;
+  margin-top: 0.875rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.75rem;
-  padding: 20px 24px;
+  padding: 1.25px 1.5px;
   font-size: 1.125rem;
   font-family: 'new-science-serif', 'sans-serif';
 }
@@ -188,19 +188,19 @@
 }
 
 .BioModal-reasonForJoining {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .BioModal-gainedFromInCO {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
 }
 
 @media screen and (min-width: 600px) {
   .BioModal-desktop {
     display: flex;
     flex-wrap: nowrap;
-    gap: 30px;
+    gap: 1.875rem;
   }
 
   .BioModal-mobile {
@@ -208,7 +208,7 @@
   }
 
   .modal {
-    --bs-modal-border-radius: 30px;
+    --bs-modal-border-radius: 1.875rem;
   }
 
   .modal-dialog {
@@ -217,7 +217,7 @@
   }
 
   .modal-body {
-    padding: 30px 40px;
+    padding: 1.875rem 2.5rem;
   }
 
   .BioModal-social-button {
@@ -225,8 +225,8 @@
   }
 
   .BioModal-close {
-    width: 53px;
-    height: 53px;
+    width: 3.313rem;
+    height: 3.313rem;
     border-radius: 100px;
     position: block;
     top: 0px;
@@ -234,7 +234,7 @@
     background-color: #7030A0;
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem;
     transition: 0.15s ease-in;
   }
 
@@ -256,7 +256,7 @@
     font-size: 1rem;
     font-weight: 500;
     color: black;
-    padding-left: 15px;
+    padding-left: 0.938rem;
     vertical-align: middle;
   }
 
@@ -266,12 +266,13 @@
     font-weight: 600;
     color: black;
     width: 100%;
-    margin: 4px 0px;
+    margin: 0.25rem 0rem;
   }
 
   .BioModal-qanda {
     width: 100%;
-    height: 300px;
+    height: 18.75rem;
+    padding: 1.25rem;
     margin-bottom: 0;
     border-radius: 8px;
     overflow-x: hidden;

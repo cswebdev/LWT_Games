@@ -143,7 +143,7 @@ const HomePage = () => {
             </div>
          </section>
 
-         <section className="container z-1">
+         <section className="container body-bottom z-1">
             <div className="row">
                <div
                   className="col-lg-6 m-0 p-0 z-1"
@@ -178,7 +178,7 @@ const HomePage = () => {
                   <div class="graphicFrame">
                      <img
                         src={imageAssets.homepageGraphicLane}
-                        className="homepageGraphicTwo"
+                        className="homepageGraphicLane"
                         loading="lazy"
                         alt="graphic of Lane"
                      />
@@ -186,11 +186,11 @@ const HomePage = () => {
                </div>
             </div>
          </section>
-         <section className="container-fluid p-0 mb-5">
+         <section className="container-fluid body-bottom p-0 mb-5">
             <div className="row body-content position-relative m-0 p-0 z-0">
-               <div className="col-lg-12 container-fluid position-relative d-flex flex-row-reverse align-items-center z-1 m-0 p-0 overflow-visible ">
+               <div className="col-lg-12 position-relative d-flex grandmas-bingo z-1 m-0 p-0 overflow-visible ">
                   <div
-                     className="col-lg-6 z-1 bg-transparent"
+                     className="col-lg-6 z-1 bg-transparent d-flex flex-column"
                      style={{ border: "1px solid purple" }}
                   >
                      <h2 className="row-h2">Not your Grandma's Bingo!</h2>
@@ -207,7 +207,7 @@ const HomePage = () => {
                      </button>{" "}
                   </div>{" "}
                   <div
-                     class="col-lg-6 graphicFrame z-1 d-flex justify-content-center"
+                     class="col-lg-6 graphicFrame z-1 d-flex justify-content-center "
                      style={{ border: "1px solid yellow" }}
                   >
                      <img

@@ -246,7 +246,7 @@ section {
 
 }
 
-.graphicFrame {
+/* .graphicFrame {
     height: 20em;
     width: auto;
     background-color: transparent;
@@ -254,10 +254,23 @@ section {
     margin: 0;
     object-fit: cover;
     display: flex;
+} */
+
+.graphicFrame {
+    height: 20em;
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
+    display: flex;
+    overflow: hidden;
 }
 
-
 /* row styling */
+.grandmas-bingo {
+    flex-direction: row-reverse;
+}
 
 section .container {
     margin: 20rem 0;
@@ -355,16 +368,17 @@ section .container {
 
 
 
-.homepageGraphicTwo {
+.homepageGraphicLane {
     object-fit: contain;
+    max-width: max-content;
 }
 
 
-.homepageGraphicTwo img {
+/* .homepageGraphicTwo img {
     object-fit: fill;
     height: 100%;
     width: 100%;
-}
+} */
 
 .rainbowGraphic {
     position: absolute;
@@ -439,6 +453,8 @@ section .container {
 
 @media (max-width: 1200px) and (min-width: 99px) {
 
+
+
     .col-lg-6,
     .m-0,
     .p-o {
@@ -490,6 +506,23 @@ section .container {
 
     .col-title {
         height: 6rem;
+    }
+
+    .grandmas-bingo {
+        flex-direction: column;
+    }
+
+
+    .body-bottom,
+    .col-lg-6 {
+        /* background-color: red; */
+        position: relative;
+        flex-direction: column;
+    }
+
+    .rainbowGraphic {
+        position: relative;
+
     }
 
 }

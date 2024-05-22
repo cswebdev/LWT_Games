@@ -1,5 +1,8 @@
 import GetInvolvedForm from "./GetInvolvedForm";
 import "./GetInvolvedPage.css";
+import desktopHero from "../../assets/inco_joinus_desktop.png";
+import mobileHero from "../../assets/drawings-group-1.png";
+import mobileFooter from "../../assets/drawings-group-2.png";
 
 /** Component for GetInvolved Page
  *
@@ -17,8 +20,10 @@ const GetInvolvedPage = () => {
     // console.debug("GetInvolvedPage");
 
     return (
-        <div className="GetInvolvedPage container ml-3">
-            <div className="justify-content-center">
+        <div className="GetInvolvedPage">
+            <img src={desktopHero} className="GetInvolvedPage-hero-desktop" />
+            <img src={mobileHero} className="GetInvolvedPage-hero-mobile" />
+            <div className="container ml-3 justify-content-center">
                 <div className="col-8">
                     <h1>Join #LWTGames</h1>
                     <div className="GetInvolvedPage-content">
@@ -52,6 +57,7 @@ const GetInvolvedPage = () => {
                     <GetInvolvedForm />
                 </div>
             </div>
+            <img src={mobileFooter} className="GetInvolvedPage-footer-mobile" />
         </div>
     );
 

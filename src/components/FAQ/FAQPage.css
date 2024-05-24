@@ -1,4 +1,5 @@
 .FAQPage {
+  margin-top: 4rem;
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 12.5rem;
@@ -37,6 +38,10 @@
   box-shadow: none;
 }
 
+.accordion-button:focus {
+  box-shadow: none;
+}
+
 .accordion-body {
   font-family: "new-science-serif", sans-serif;
   font-weight: 400;
@@ -47,7 +52,7 @@
 }
 
 .FAQPage-bar {
-  margin-top: -1rem;
+  margin-top: 0rem;
   height: 2px;
   width: 100%;
   border-radius: 3px;

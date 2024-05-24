@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomePage.css";
-import homepageGraphicOne from "../../assets/left_mainpage_image.png";
+import homepageOliviaGraphic from "../../assets/left_mainpage_image.png";
 import imageAssets from "../../utils/Utils";
 import { DeviceSsd } from "react-bootstrap-icons";
 // import { Border } from "react-bootstrap-icons";
@@ -8,8 +8,8 @@ import { DeviceSsd } from "react-bootstrap-icons";
 const HomePage = () => {
    return (
       <>
-         <section className="container hero">
-            <div className="row d-flex align-items-stretch justify-content-between pt-3">
+         <section className="container hero overflow-visible">
+            <div className="row d-flex align-items-stretch justify-content-between pt-3 overflow-visible">
                {/* <!-- Title and Subtitle Column --> */}
                <div
                   className="col-lg-6 col-md-12 mt-5 p-0  order-1 d-flex flex-column justify-content-end position-relative overflow-visible col-title"
@@ -41,7 +41,7 @@ const HomePage = () => {
                </div>
                {/* <!-- Image Column --> */}
                <div
-                  className="col-lg-6 col-md-12 col-sm-12 m-0 p-0 order-lg-2 order-md-3 order-md2 order-sm-2 overflow-visible  heroGraphic object-fit-cover"
+                  className="col-lg-6 col-md-12 col-sm-12 m-0 p-0 order-lg-2 order-md-3 order-md2 order-sm-2 overflow-visible  heroGraphic object-fit-contain"
                   style={
                      {
                         // backgroundColor: "red",
@@ -51,17 +51,17 @@ const HomePage = () => {
                   }
                >
                   <img
-                     src={homepageGraphicOne}
+                     src={homepageOliviaGraphic}
                      loading="lazy"
                      alt="homepage Left"
-                     className="homepageGraphicOne object-fit-cover"
+                     className="homepageOliviaGraphic object-fit-contain"
                      // style={{ border: "1px solid purple" }}
                   ></img>
                </div>
             </div>
          </section>
 
-         <section className="container whatIsInco">
+         <section className="container whatIsInco overflow-visible">
             <div className="who-we-are-graphic z-0">
                {/* <img
                className="blueBlob"
@@ -99,7 +99,7 @@ const HomePage = () => {
                         className="blueMountainImg z-2"
                      />
                   </div> */}
-                     <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame">
+                     <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame flex-shrink-0">
                         <img
                            className="oliviaPortrait z-1"
                            loading="lazy"
@@ -146,7 +146,7 @@ const HomePage = () => {
          <section className="container body-bottom z-1">
             <div className="row">
                <div
-                  className="col-lg-7 order-lg-1 order-md-1 order-sm-2 m-0 p-0 z-1 "
+                  className="col-lg-7 order-lg-1 order-md-2 order-sm-2 m-0 p-0 z-1 "
                   // style={{ border: "1px solid red" }}
                >
                   <div
@@ -165,14 +165,14 @@ const HomePage = () => {
                      </p>
                      <button
                         type="button"
-                        className="btn btn-info summit-button"
+                        className="btn btn-info summit-button center-md"
                      >
                         JOIN THE SUMMIT
                      </button>
                   </div>
                </div>
                <div
-                  className="col-lg-5 order-lg-2 order-md-2 order-sm-1 m-0 p-0"
+                  className="col-lg-5 order-lg-2 order-md-1 order-sm-1 m-0 p-0"
                   style={{ border: "1px solid green" }}
                >
                   <div class="graphicFrame">
@@ -186,17 +186,17 @@ const HomePage = () => {
                </div>
             </div>
          </section>
-         <section className="container-fluid body-bottom p-0 mb-5 mt-5 ">
-            <div className="row body-content position-relative m-0 p-0 z-0">
+         <section className="container body-bottom p-0 mb-5 mt-5 overflow-hidden z-1">
+            <div className="row position-relative m-0 p-0 z-1">
                <div
-                  className="col-lg-12 position-relative d-flex grandmas-bingo align-items-center z-1 m-0 p-0 overflow-visible "
+                  className="col-lg-12 position-relative d-flex grandmas-bingo align-items-center z-1 m-0 p-0 "
                   style={{ border: "1px solid red" }}
                >
                   <div
-                     className="col-lg-7 order-lg-1 order-md-1 order-sm-2 z-1 bg-transparent d-flex flex-column"
+                     className="col-lg-7 order-lg-2 order-md-2 order-sm-2 z-1 bg-transparent d-flex flex-column"
                      style={{ border: "1px solid purple" }}
                   >
-                     <h2 className="row-h2">Not your Grandma's Bingo!</h2>
+                     <h2 className="row-h2">Not Your Grandma's Bingo!</h2>
                      <p className="who-are-we-p">
                         We created a light hearted game to stay engaged and
                         connect, all while learning and interacting with
@@ -204,13 +204,13 @@ const HomePage = () => {
                      </p>
                      <button
                         type="button"
-                        className="btn btn-primary btn-play-bingo-purple"
+                        className="btn btn-primary btn-play-bingo-purple center-md"
                      >
                         PLAY BINGO
                      </button>{" "}
                   </div>{" "}
                   <div
-                     class="col-lg-5 graphicFrame order-lg-2 order-md-2 order-sm-1 z-1 d-flex justify-content-center"
+                     class="col-lg-5 graphicFrame order-lg-1 order-md-1 order-sm-1 z-2 d-flex justify-content-center"
                      style={{ border: "1px solid yellow" }}
                   >
                      <img
@@ -220,15 +220,15 @@ const HomePage = () => {
                      />
                   </div>
                </div>
-               <div className="wave-container z-0 overflow-visible">
-                  <img
-                     className="wave-graphic z-0"
-                     src={imageAssets.homepageWave}
-                     alt="wave graphic"
-                  />
-               </div>
             </div>
          </section>
+         <div className="wave-container container-fluid z-0 overflow-visible">
+            <img
+               className="wave-graphic z-0"
+               src={imageAssets.homepageWave}
+               alt="wave graphic"
+            />
+         </div>
       </>
    );
 };

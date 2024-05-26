@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
    return (
-      <div className="App">
+      <div className="App overflow-hidden">
          <NavBar />
          <Routes>
             <Route path="/about" element={<AboutPage />} />
@@ -18,7 +18,7 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/get-involved" element={<GetInvolvedPage />} />
          </Routes>
-         {/* <Footer /> */}
+         <Footer />
       </div>
    );
 }

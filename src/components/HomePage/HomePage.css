@@ -173,6 +173,7 @@ h2 {
     max-width: 26%;
     min-width: 13em;
     border: 3px solid rgb(65, 233, 65);
+    background-color: hwb(120 0% 0%);
     border-radius: 5%;
     margin: 1em 1em 0em 1em;
     overflow: hidden;
@@ -186,6 +187,7 @@ h2 {
     height: auto;
     width: 100%;
     transform: scale(1.1);
+
 }
 
 
@@ -271,26 +273,31 @@ h2 {
 }
 
 /* row styling */
-.grandmas-bingo {
-    /* flex-direction: row-reverse; */
-}
+
 
 section:nth-last-of-type(2) {
-    margin: 5rem auto 12rem auto;
+    margin: 18rem auto 10rem auto;
+    /* border: 1px solid pink; */
 
 }
 
 section:nth-last-of-type(3) {
     margin: 20rem auto 10rem auto;
     width: 100%;
+    /* border: 1px solid red; */
 }
 
+
+#root>div>section:nth-child(5) {
+    display: flex;
+    /* border: 1px solid red; */
+    margin: 20rem auto 15rem auto;
+
+}
 
 #root>div>section:nth-child(5)>div {
-    display: flex;
     flex-direction: row-reverse;
 }
-
 
 
 .row {
@@ -316,31 +323,37 @@ section:nth-last-of-type(3) {
 
 .pinkCloudImg {
     position: absolute;
-    width: 4.6em;
-    left: 13.5%;
-    top: 14%;
+    width: 5.6em;
+    height: auto;
+    left: 4rem;
+    top: 16rem;
 }
 
 
 .tealCloudImg {
     object-fit: contain;
     position: absolute;
-    max-width: 18.2375rem;
-    left: 0;
-    top: 30%;
-    object-position: -3em 0;
+    width: 22.2375rem;
+    height: auto;
+    /* left: -23rem; */
+    left: -28%;
+    /* left: calc(-22rem + 1vw); */
+    left: -20vw;
+    /* object-position: calc(-2rem + 1vw); */
+    top: 19em;
 }
 
 .blueBlob {
-    object-fit: fill;
-    /* height: auto; */
-    /* max-width: 68rem; */
-    height: 30%;
-    width: 57%;
+    object-fit: contain;
+    max-height: 73.5rem;
+    max-width: auto;
     position: absolute;
-    /* top: 31.5%; */
-    top: 32%;
-    left: 0;
+    top: -7em;
+    left: -23%;
+    margin: 0;
+    padding: 0;
+    transform: scaleY(.85);
+    /* transform: rotate(-10deg); */
 }
 
 .blueMountain {
@@ -351,16 +364,21 @@ section:nth-last-of-type(3) {
 }
 
 .blueMountainImg {
-    max-height: 6.575em;
+    max-height: 8.575em;
     width: auto;
+    position: absolute;
+    top: 29.4rem;
+    left: 3rem;
+    opacity: 100%;
 }
 
 
 .greenAndPinkCloud {
     position: absolute;
     right: 0;
-    top: 29em;
-    width: 18rem;
+    top: 112rem;
+    width: 22rem;
+    height: auto;
     object-position: 6.23em 0;
     padding: 0;
 }
@@ -557,6 +575,12 @@ section:nth-last-of-type(3) {
         min-width: 76%;
     }
 
+    /* #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1 {
+        max-width: 30em;
+        border: 1px solid red;
+        margin: auto;
+    } */
+
 }
 
 
@@ -626,9 +650,10 @@ section:nth-last-of-type(3) {
     }
 
     /* text column max width */
-    #root>div>section:nth-child(5)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div,
+    #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div,
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-5.mt-md-0 {
         max-width: 46rem;
+        margin-top: 6%;
     }
 
     .center-md {

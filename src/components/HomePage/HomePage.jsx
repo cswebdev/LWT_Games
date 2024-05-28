@@ -6,13 +6,13 @@ import imageAssets from "../../utils/Utils";
 const HomePage = () => {
    return (
       <>
-         <section className="container hero">
-            <div className="row d-flex align-items-stretch justify-content-between pt-3 ">
+         <section className="container hero position-relative">
+            <div className="row d-flex align-items-stretch justify-content-between pt-3">
                {/* <!-- Title and Subtitle Column --> */}
                <div className="col-lg-6 col-md- mt-5 p-0  order-first order-md-1 order-lg-1 order-sm-1  d-flex flex-column justify-content-end position-relative col-title">
                   <h1>We Are InCo.</h1>
                   <div className="Header-text">
-                     <p>
+                     <p className="mb-lg-0">
                         <span className="attn-text">
                            [ Interconnected Collective ]
                         </span>
@@ -43,44 +43,41 @@ const HomePage = () => {
             </div>
          </section>
 
-         <section className="container whatIsInco">
-            <div className="who-we-are-graphic z-0">
-               <img
+         <section className="container whatIsInco position-relative">
+            {/* fixed assets */}
+            <img
                className="blueBlob"
                src={imageAssets.blueBlob}
-               alt="blue background blob"
+               alt="blue background blob z-0"
             />
-
+            <img
+               src={imageAssets.blueMountain}
+               loading="lazy"
+               alt="blue mountain graphic"
+               className="blueMountainImg z-2"
+            />
+            <img
+               src={imageAssets.pinkCloud}
+               loading="lazy"
+               alt="tiny solo pink cloud"
+               className="pinkCloudImg z-2"
+            />
+            <img
+               src={imageAssets.tealAndPurpleCloud}
+               loading="lazy"
+               alt="teal and purple cloud"
+               className="tealCloudImg"
+            ></img>
+            <div className="who-we-are-graphic z-0">
                <div className="container d-flex flex-column text-center justify-content-center who-are-we z-1 col-lg-12 col-md-12">
                   <h2 className="z-1 mb-4">What's InCo?</h2>
-                  <p className="we-are-subtitle z-1">
+                  <p className="we-are-subtitle z-1 mb-lg-5">
                      Breaking through digital with the power of fun and the{" "}
                      <br />
                      passion for people [or gamers]
                   </p>
 
                   <div className="row d-flex align-content-center justify-content-center z-1 position-relative">
-                     {/* <img
-                     src={imageAssets.pinkCloud}
-                     loading="lazy"
-                     alt="tiny solo pink cloud"
-                     className="pinkCloudImg z-2"
-                  />
-                  <img
-                     src={imageAssets.tealAndPurpleCloud}
-                     loading="lazy"
-                     alt="teal and purple cloud"
-                     className="tealCloudImg"
-                  ></img>
-
-                  <div className="blueMountain">
-                     <img
-                        src={imageAssets.blueMountain}
-                        loading="lazy"
-                        alt="blue mountain graphic"
-                        className="blueMountainImg z-2"
-                     />
-                  </div> */}
                      <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame flex-shrink-0">
                         <img
                            className="oliviaPortrait z-1"
@@ -116,23 +113,19 @@ const HomePage = () => {
                         </div>
                      </div>
                   </div>
-                  {/* <img
-                  src={imageAssets.greenAndPinkCloud}
-                  alt="small green and pink cloud"
-                  className="greenAndPinkCloud"
-               /> */}
                </div>
             </div>
          </section>
-
-         <section className="container body-bottom z-1">
-            <div className="row">
-               <div className="col-lg-7 order-2 m-0 p-0 z-1">
+         <img
+            src={imageAssets.greenAndPinkCloud}
+            alt="small green and pink cloud"
+            className="greenAndPinkCloud"
+         />
+         <section className="container body-bottom z-1 ">
+            <div className="row d-flex flex-row-reverse">
+               <div className="col-lg-7 order-2 m-0 p-0 z-1 ">
                   <div className="text-content col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                     <h2
-                        className="row-h2 z-1"
-                        style={{ border: "1px solid red" }}
-                     >
+                     <h2 className="row-h2 z-1">
                         Engaging with the Lesbians Who Tech Pride Summit
                      </h2>
                      <p className="who-are-we-p">

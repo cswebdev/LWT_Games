@@ -17,7 +17,6 @@
     max-width: 70% !important;
     gap: 25px;
 
-
 }
 
 .logo-wrapper {
@@ -31,29 +30,16 @@
 
 }
 
-.logo {
-    /* display: flex;
-    align-items: center; */
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
 
+.logo-img {
+    /* aspect-ratio: 1/1; */
+    height: 5.5rem;
+    width: auto
 }
 
-.logo img {
-    /* height: 5em; */
-    width: 7.89999em;
-    height: 6.4999999em;
-    padding: 0;
-    margin: 0;
-    /* width: 100%; */
-    aspect-ratio: 1/1;
-    display: block;
-
+#root > div > div.mobile-menu {
+    /* font-size: ; */
 }
-
-
 
 .nav-content ul {
     display: flex;

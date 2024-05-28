@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import MobileNav from "./MobileNav/MobileNav";
-import logo from "../../assets/LWT_logo.png";
 import { Link } from "react-router-dom";
+import imageAssets from "../../utils/Utils";
 
 const NavBar = () => {
    const [openMenu, setOpenMenu] = useState(false);
@@ -10,50 +10,59 @@ const NavBar = () => {
    const toggleMenu = () => {
       setOpenMenu(!openMenu);
    };
+
    return (
       <>
          <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
-         <div className="nav-wrapper">
-            <div className="nav-content">
-               <div className="logo-wrapper">
-                  <div className="logo">
-                     <Link to="/home">
-                        <img src={logo} alt="LWT logo" />
-                     </Link>
-                  </div>
-               </div>
-               <ul>
-                  <li>
-                     <a href="/about" className="menu-item nav-link">
-                        ABOUT US
-                     </a>
-                  </li>
-                  <li>
-                     <Link to="/faq" className="menu-item nav-link">
-                        FAQ
-                     </Link>
-                  </li>
-                  <li>
-                     <Link to="/GET INVOLVED" className="menu-item nav-link">
-                        GET INVOLVED
-                     </Link>
-                  </li>
-                  <button type="button" className="btn-info nav-play-btn">
-                     <a href="https://laneecho.github.io/LWT-bingo/">
-                        PLAY BINGO
-                     </a>
-                  </button>
-               </ul>
-               <button className="menu-btn" onClick={toggleMenu}>
-                  <span
-                     className={"material-symbols-outlined"}
-                     style={{ fontSize: "1.8rem" }}
-                  >
-                     {openMenu ? "close" : "menu"}
-                  </span>
+         <nav className="navbar navbar-expand-lg">
+            <div className="container">
+               <Link to="/home" className="navbar-brand">
+                  <img
+                     src={imageAssets.logo}
+                     alt="InCO logo"
+                     className="logo-img"
+                  />
+               </Link>
+               <button
+                  className="navbar-toggler"
+                  type="button"
+                  onClick={toggleMenu}
+               >
+                  <span className="navbar-toggler-icon"></span>
                </button>
+               <div
+                  className={`collapse navbar-collapse ${
+                     openMenu ? "show" : ""
+                  }`}
+               >
+                  <ul className="navbar-nav ml-auto">
+                     <li className="nav-item">
+                        <a href="/about" className="nav-link">
+                           ABOUT US
+                        </a>
+                     </li>
+                     <li className="nav-item">
+                        <Link to="/faq" className="nav-link">
+                           FAQ
+                        </Link>
+                     </li>
+                     <li className="nav-item">
+                        <Link to="/GET INVOLVED" className="nav-link">
+                           GET INVOLVED
+                        </Link>
+                     </li>
+                     <li className="nav-item">
+                        <a
+                           href="https://laneecho.github.io/LWT-bingo/"
+                           className="btn btn-info nav-play-btn"
+                        >
+                           PLAY BINGO
+                        </a>
+                     </li>
+                  </ul>
+               </div>
             </div>
-         </div>
+         </nav>
       </>
    );
 };

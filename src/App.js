@@ -18,7 +18,7 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/get-involved" element={<GetInvolvedPage />} />
          </Routes>
-         <Footer />
+         {/* <Footer /> */}
       </div>
    );
 }

@@ -22,7 +22,7 @@ const HomePage = () => {
 
                {/* <!-- Paragraph Column  --> */}
                <div className="col-lg-6 col-md-12 col-sm-12 m-0 p-0 order-lg-3 custom-order-3 order-md-last order-sm-last order-sm-3 d-flex flex-column overflow-visible position-relative">
-                  <p>Creating community and building </p>
+                  <p>Creating community and building</p>
                   <p>connections with bingo!</p>
                   <button
                      type="button"
@@ -45,11 +45,11 @@ const HomePage = () => {
 
          <section className="container whatIsInco">
             <div className="who-we-are-graphic z-0">
-               {/* <img
+               <img
                className="blueBlob"
                src={imageAssets.blueBlob}
                alt="blue background blob"
-            /> */}
+            />
 
                <div className="container d-flex flex-column text-center justify-content-center who-are-we z-1 col-lg-12 col-md-12">
                   <h2 className="z-1 mb-4">What's InCo?</h2>

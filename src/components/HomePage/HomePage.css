@@ -332,12 +332,15 @@ section:nth-last-of-type(3) {
 }
 
 .blueBlob {
-    object-fit: contain;
-    height: auto;
-    /* width: 1414.01px; */
+    object-fit: fill;
+    /* height: auto; */
+    /* max-width: 68rem; */
+    height: 30%;
+    width: 57%;
     position: absolute;
-    /* top: 72.4rem; */
-    /* top: 36% */
+    /* top: 31.5%; */
+    top: 32%;
+    left: 0;
 }
 
 .blueMountain {
@@ -428,6 +431,8 @@ section:nth-last-of-type(3) {
         /* min-width: 30%; */
         height: auto;
     }
+
+
 }
 
 @media (max-width: 1560px) and (min-width: 1401px) {
@@ -436,6 +441,8 @@ section:nth-last-of-type(3) {
         /* min-width: 32%; */
         height: auto;
     }
+
+
 }
 
 @media (max-width: 1400px) and (min-width: 1200px) {
@@ -446,17 +453,13 @@ section:nth-last-of-type(3) {
     .homepageOliviaGraphic {
         position: absolute;
         object-fit: contain;
-        object-position: 4rem 2rem;
+        /* object-position: 4rem 2rem; */
         top: 4.3%;
     }
 
     /* hero text formatting */
-    
 
-    #root>div>section.container.body-bottom.p-0.mt-5.overflow-hidden.z-1>div>div>div.col-lg-5.graphicFrame.order-1.z-2.d-flex.justify-content-center.bubbleGumFrame {
-        /* height: 30rem; */
 
-    }
 
 
     /* img.homepageOliviaGraphic {
@@ -483,7 +486,6 @@ section:nth-last-of-type(3) {
     }
 
 
-
     .wave-graphic {
         bottom: -90px;
         object-fit: fill;
@@ -496,8 +498,8 @@ section:nth-last-of-type(3) {
     .wave-graphic {
         min-height: 19.9%;
         max-height: 20%;
-    }
 
+    }
 
 
 }
@@ -509,6 +511,7 @@ section:nth-last-of-type(3) {
     .wave-graphic {
         max-height: 81vh;
         /* object-fit: cover; */
+
     }
 
     .attn-text {
@@ -547,6 +550,11 @@ section:nth-last-of-type(3) {
 
     .mt-md-5 {
         /* margin-top: 3rem !important; */
+    }
+
+    #root>div>section.container.whatIsInco>div>img {
+        top: 35.6%;
+        min-width: 76%;
     }
 
 }
@@ -601,14 +609,26 @@ section:nth-last-of-type(3) {
         width: 100%;
     }
 
+    #root>div>section.container.hero>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.overflow-visible.heroGraphic.object-fit-contain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .homepageOliviaGraphic {
         position: relative;
         height: 28rem;
-        width: 100%;
+        min-width: 150vw;
         min-width: none;
         max-width: fit-content;
-        object-position: 2rem 0rem;
-        margin-bottom: 1rem;
+        object-position: 10em 0rem;
+        margin: 0 0 4rem 0;
+    }
+
+    /* text column max width */
+    #root>div>section:nth-child(5)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div,
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-5.mt-md-0 {
+        max-width: 46rem;
     }
 
     .center-md {
@@ -662,22 +682,23 @@ section:nth-last-of-type(3) {
         position: relative;
         justify-content: center;
         align-items: center;
-        /* border: 1px solid red; */
         margin: 10rem 0 0 5rem;
     }
 
 
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-5.mt-md-0 {
-        margin-bottom: 80px !important;
+        bottom: 35px !important;
+        /* margin-top: 39px; */
+        padding-top: 20px;
     }
 
 
     .wave-graphic {
         width: auto;
         max-width: 180%;
-        max-height: 90vh;
-        min-height: 90vh;
+        max-height: 83vh;
+        min-height: 83vh;
         bottom: -90px;
         margin: 0 auto;
         object-position: -30rem 0rem;
@@ -692,15 +713,16 @@ section:nth-last-of-type(3) {
 
 } */
 
-/* For 1980x1080 displays */
-/* (1920x1080) Full HD Display */
-/* @media screen and (max-width: 1920px) {
 
-/* } */
+@media (max-width: 992px) {
 
-@media (min-width: 992px) {
+    /* do not delete important - it's okay it's commented out */
     .mb-lg-0 {
         /* margin-bottom: 0 !important; */
+    }
+
+    .homepageOliviaGraphic {
+        object-position: 5em 0rem;
     }
 }
 
@@ -762,11 +784,17 @@ section:nth-last-of-type(3) {
 
 
 
-@media (max-width:1000px) and (min-width: 989px) {
-    .homepageGraphicLane {
+@media (max-width:1100px) and (min-width: 790px) {
+
+    .homepageOliviaGraphic {
+        /* object-position: 8em 0; */
+    }
+
+    /* .homepageGraphicLane {
         object-position: 0em 0em;
         border: 1px solid pink;
-    }
+
+    } */
 }
 
 
@@ -780,6 +808,10 @@ section:nth-last-of-type(3) {
         padding: 0;
     }
 
+    .homepageOliviaGraphic {
+        object-position: 2em 0;
+    }
+
     .wave-graphic {
         width: 200vw;
         min-height: 85vh;
@@ -788,10 +820,14 @@ section:nth-last-of-type(3) {
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-5.mt-md-0 {
         margin-top: 30px !important;
+        bottom: 0 !important;
     }
 }
 
 @media (max-width: 580px) {
+
+
+
     .wave-graphic {
         min-width: 200vw;
         min-height: 86vh;

@@ -1,4 +1,8 @@
 import GetInvolvedForm from "./GetInvolvedForm";
+import "./GetInvolvedPage.css";
+import desktopHero from "../../assets/inco_joinus_desktop.png";
+import mobileHero from "../../assets/drawings-group-1.png";
+import mobileFooter from "../../assets/drawings-group-2.png";
 
 /** Component for GetInvolved Page
  *
@@ -16,10 +20,12 @@ const GetInvolvedPage = () => {
     // console.debug("GetInvolvedPage");
 
     return (
-        <div className="GetInvolvedPage container ml-3">
-            <div className="justify-content-center">
+        <div className="GetInvolvedPage">
+            <img src={desktopHero} className="GetInvolvedPage-hero-desktop" alt="drawings of InCo members" />
+            <img src={mobileHero} className="GetInvolvedPage-hero-mobile" alt="drawings of InCo members" />
+            <div className="container ml-3 justify-content-center">
                 <div className="col-8">
-                    <h1>Join #LWTGames</h1>
+                    <h1>Join Interconnected Collective</h1>
                     <div className="GetInvolvedPage-content">
                         <p>🌈 Lookin' for stretch assignments? Join Us! 🌐✨</p>
                         <p>🔍 We're actively seeking exceptional individuals in the following areas:</p>
@@ -51,6 +57,7 @@ const GetInvolvedPage = () => {
                     <GetInvolvedForm />
                 </div>
             </div>
+            <img src={mobileFooter} className="GetInvolvedPage-footer-mobile" alt="drawings of InCo members" />
         </div>
     );
 

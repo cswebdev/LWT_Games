@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./GetInvolvedForm.css";
 
 const FORM_SUBMIT_THANKS = `Thank you for your submission. Our team will look
 over your details and get back to you shortly!`;
@@ -244,7 +245,7 @@ const GetInvolvedForm = () => {
                 {message && <div className="alert alert-success" role="alert">
                     <p>{message}</p>
                 </div>}
-                <button type="submit" className="btn btn-primary btn-sm">Submit</button>
+                <button type="submit" className="btn btn-primary GetInvolvedForm-button btn-sm">Submit</button>
             </div>
         </form>
     );

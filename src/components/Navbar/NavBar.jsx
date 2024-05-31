@@ -20,43 +20,32 @@ const NavBar = () => {
 
    return (
       <>
-         <MobileNav isOpen={openMenu} closeMenu={closeMobileNav} />
-         <nav className="navbar nav-wrapper">
-            <div className="container">
-               <div className="d-flex align-items-center justify-content-between position-relative">
-                  <Link to="/home" className="navbar-brand logo-wrapper">
-                     <img
-                        src={imageAssets.logo}
-                        alt="InCO logo"
-                        className="logo-img m-0 p-0"
-                     />
-                  </Link>
-                  {showMenuBtn && (
-                     <button className="menu-btn" onClick={toggleMenu}>
-                        <span className={"material-symbols-outlined m-0 p-0"}>
-                           menu
-                        </span>
-                     </button>
-                  )}
+         <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
+         <div className="nav-wrapper">
+            <div className="nav-content">
+               <div className="logo-wrapper">
+                  <div className="logo">
+                     <Link to="/home">
+                        <img src={logo} alt="LWT logo" />
+                     </Link>
+                  </div>
                </div>
-               <div className="nav-content">
-                  <ul className="navbar-nav">
-                     <li className="">
-                        <a href="/about" className="menu-item nav-link">
-                           ABOUT US
-                        </a>
-                     </li>
-                     <li className="">
-                        <Link to="/faq" className="menu-item nav-link">
-                           FAQ
-                        </Link>
-                     </li>
-                     <li className="">
-                        <Link to="/GET INVOLVED" className="menu-item nav-link">
-                           GET INVOLVED
-                        </Link>
-                     </li>
-                  </ul>
+               <ul>
+                  <li>
+                     <a href="/about" className="menu-item nav-link">
+                        ABOUT US
+                     </a>
+                  </li>
+                  <li>
+                     <Link to="/faq" className="menu-item nav-link">
+                        FAQ
+                     </Link>
+                  </li>
+                  <li>
+                     <Link to="/GET INVOLVED" className="menu-item nav-link">
+                        GET INVOLVED
+                     </Link>
+                  </li>
                   <button type="button" className="btn-info nav-play-btn">
                      <a href="https://laneecho.github.io/LWT-bingo/">
                         PLAY BINGO

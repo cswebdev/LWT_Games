@@ -8,12 +8,12 @@ import BioModal from "./BioModal";
  *
  * Props:
  * - bio: { name, pronouns, role, bio, photo, drawing, portfolio, linkedIn,
- *   behance, github, otherSocial, emoji, reasonForJoining, gainedFromLWT }
+ *   behance, github, otherSocial, emoji, reasonForJoining, gainedFromInCo }
  *
  * State:
  * - show: boolean for showing modal
  *
- * BioList -> BioCard
+ * BioList -> BioCard -> BioModal
  */
 const BioCard = ({ bio }) => {
     // console.debug("BioCard", bio);
@@ -24,7 +24,7 @@ const BioCard = ({ bio }) => {
     return (
         <>
             {bio instanceof Bio
-                ? <div className={`BioCard-${bio.color}`} onClick={handleShow}>
+                ? <div className={`BioCard-${bio.color}`} style={{order:bio.mobileOrder}} onClick={handleShow}>
                     <div className="BioCard-graphics">
                         <img
                             className="BioCard-headshot img-fluid"
@@ -53,15 +53,17 @@ const BioCard = ({ bio }) => {
                     </div>
 
                     <div className="BioCard-name">{bio.name}</div>
-                    <div className="BioCard-role">
-                        {bio.role}
-                    </div>
                     <div className="BioCard-pronouns">
                         {bio.pronouns}
                     </div>
+                    <div className="BioCard-role">
+                        {bio.role}
+                    </div>
                 </div>
-                // :
-                : ""
+                : <div className={`BioCard-blank BioCard-graphics ${bio.stylingClass || ""}`} style={{order:bio.mobileOrder}}>
+                    <img className="BioCard-blank-img img-fluid" src={bio.image} alt={bio.alt} />
+                    <img className="BioCard-blank-hover img-fluid" src={bio.hover} alt={bio.alt} />
+                </div>
             }
             <BioModal
                 show={modalShow}
@@ -74,3 +76,4 @@ const BioCard = ({ bio }) => {
 };
 
 export default BioCard;
+

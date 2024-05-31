@@ -1,12 +1,12 @@
-import defaultImage from "../../assets/LWT_logo.png";
+import defaultImage from "../../assets/inco_logo.png";
 
 // Team bios: { name, pronouns, role, bio, photo, drawing, portfolio, linkedIn,
-// emoji, reasonForJoining, gainedFromLWT }
+// emoji, reasonForJoining, gainedFromInCo }
 class Bio {
   constructor (
     name,
     pronouns,
-    role="LWT Team Member",
+    role="InCo Team Member",
     bio="Bio coming soon.",
     photo=defaultImage,
     drawing,
@@ -42,7 +42,7 @@ const TEGAN = new Bio(
   "Tegan Barron",
   "She/They",
   "Founder",
-  `Tegan Barron has over ten years in Tech, is the Founder of LWT Games. As a
+  `Tegan Barron has over ten years in Tech, is the Founder of InCo. As a
   Change Management & future Director | Six Sigma | Lean | Leading global Change
   Management with Optimization, Modernization, Training, Documentation, and
   Cross-Functional Teams engagement.`,
@@ -54,7 +54,7 @@ const TEGAN = new Bio(
   undefined,
   undefined,
   undefined,
-  "Whether you're taking your first steps into the professional world, navigating a career transition, or seeking a fresh challenge as an expert, LWT Games is here to support your journey. I have been experienced all 3 step in my career and all I needed was a safe space to grow with others. That is why I started this group so folx can get out of the edie of needing experience to get a job but to have a job you need to have experience.",
+  "Whether you're taking your first steps into the professional world, navigating a career transition, or seeking a fresh challenge as an expert, InCo is here to support your journey. I have been experienced all 3 step in my career and all I needed was a safe space to grow with others. That is why I started this group so folx can get out of the edie of needing experience to get a job but to have a job you need to have experience.",
   "Community, friends, and so many good times.",
 );
 
@@ -166,7 +166,7 @@ const JULIANE = new Bio(
   "Juliane Cassidy",
   "They/Them",
   "Frontend Engineer",
-  `I am a fullstack software engineer working in JavaScript, React, Python, and
+  `I am a fullstack software engineer working in JavaScript, TypeScript, React, Python, and
   Django. With a background in web design and database administration, I focus on
   building the interfaces that let end users intuitively interact with data and
   content.`,
@@ -178,8 +178,8 @@ const JULIANE = new Bio(
   "https://github.com/julianecassidy",
   undefined,
   undefined,
-  "I joined LWT Games to take on more front end projects, collaborate with a team, and build my community.",
-  "I've gotten to work with a really cool group of folks."
+  "I joined InCo to take on more front end projects, collaborate with a team, and build my community.",
+  "I've gotten to work with a really cool group of folks and the opportunity to translate other people's designs into code has been incredible."
 );
 
 const CHELSEA = new Bio(
@@ -196,7 +196,7 @@ const CHELSEA = new Bio(
   "https://github.com/cswebdev",
   undefined,
   undefined,
-  "I joined #LWTGames to use my experience to help my fellow folks in the LGBTQIA+ community. In addition, I love playing games and web programming, and I'm thrilled to contribute to this wonderful community!​",
+  "I joined InCo to use my experience to help my fellow folks in the LGBTQIA+ community. In addition, I love playing games and web programming, and I'm thrilled to contribute to this wonderful community!​",
   "Community and being able to work with a fantastic group of talented and motivated people!"
 );
 
@@ -247,7 +247,7 @@ const KD = new Bio(
   "https://github.com/kdhubb",
   undefined,
   undefined,
-  "I wanted to contribute to the very fun projects from LWT Games and spend time working with all the amazing folx in this community!",
+  "I wanted to contribute to the very fun projects from InCo and spend time working with all the amazing folx in this community!",
   "I'm learning a lot about project management and software development from a very talented and organized group of people!"
 );
 
@@ -289,9 +289,25 @@ const JULIE = new Bio(
 const ORANGE = "orange";
 TEGAN.color = ORANGE;
 JULIANE.color = ORANGE;
-CHELSEA.color = ORANGE;
+LANE.color = ORANGE;
 AMY.color = ORANGE;
 
+
+// create order for mobile screens
+TEGAN.mobileOrder = 1;
+LIZ.mobileOrder = 2;
+LYNDS.mobileOrder = 3;
+OLIVIAS.mobileOrder = 4;
+KD.mobileOrder = 5;
+JULIANE.mobileOrder = 6;
+CHELSEA.mobileOrder = 7;
+WEI.mobileOrder = 8;
+OLIVIAM.mobileOrder = 10;
+JIMENA.mobileOrder = 11;
+LANE.mobileOrder = 12;
+ALEX.mobileOrder = 13;
+AMY.mobileOrder = 15;
+JULIE.mobileOrder = 16;
 
 export const BIOS = [
   TEGAN,
@@ -300,15 +316,16 @@ export const BIOS = [
   OLIVIAS,
   KD,
   JULIANE,
-  LANE,
+  CHELSEA,
   WEI,
+  {image: "/headshots/bingo.png", alt: "bingo", mobileOrder: 9, stylingClass: "BioCard-bingo"},
   OLIVIAM,
   JIMENA,
-  CHELSEA,
+  LANE,
   ALEX,
-  {image: "/headshots/free_space.svg", hover: "/drawings/free_space.png", alt: "free space"},
+  {image: "/headshots/free_space.png", hover: "/drawings/free_space.png", alt: "free space", mobileOrder: 14},
   JULIE,
-  {image: "/headshots/suprise.svg", alt: "suprise"},
+  {image: "/headshots/surprise.png", hover: "/drawings/surprise.png", alt: "suprise", mobileOrder: 17, stylingClass: "BioCard-surpirse"},
   AMY,
 ];
 

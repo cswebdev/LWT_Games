@@ -1,0 +1,42 @@
+.GetInvolvedPage {
+  margin-bottom: 13rem;
+}
+
+.GetInvolvedPage-hero-desktop {
+  display: none;
+}
+
+.GetInvolvedPage-hero-mobile {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+.GetInvolvedPage-footer-mobile {
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+}
+
+.GetInvolvedPage li {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-left: 4rem;
+}
+
+@media screen and (min-width: 600px) {
+  .GetInvolvedPage-hero-mobile {
+    display: none;
+  }
+
+  .GetInvolvedPage-footer-mobile {
+    display: none;
+  }
+
+  .GetInvolvedPage-hero-desktop {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+}

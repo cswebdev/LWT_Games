@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
 
-  <h1 align="center">Official LWT Games Website</h1>
+  <h1 align="center">Official Interconnected Collective Website</h1>
 
   <p align="center">
     Home of the Unofficial Lesbians Who Tech Conference Bingo Game
@@ -49,7 +49,7 @@
 ## About The Project
 
 This website is the online location of the Unofficial LWT Bingo Game. Now in it's
-second year, the LWT Games team is iterating on last year's game.
+second year, the Interconnected Collective team is iterating on last year's game.
 
 Volunteers on the team are designing and building this website where conference
 attendees can play the bingo game, learn more about the team, and find out how to
@@ -74,7 +74,7 @@ get involved.
 
 ### Built With
 
-This project began in March 2024 and uses the following technologies:
+This project began in March 2024 and deployed officially in May 2024. It uses the following technologies:
 
 - ![Javascript][Javascript]
 - ![React][React]
@@ -133,7 +133,7 @@ To set up this repo on your local machine, follow these instructions:
 The frontend engineers and primary contributors to this website are:
 
 - [Chelsea Snider](https://github.com/cswebdev) -- [LinkedIn](https://www.linkedin.com/in/chelsea-snider/)
-- [Juliane Cassidy](https://julianecassidy.com) -- [LinkedIn](https://www.linkedin.com/in/julianemcassidy/)
+- [Juliane Cassidy](https://github.com/julianecassidy) -- [LinkedIn](https://www.linkedin.com/in/julianemcassidy/)
 
 The UI/UX designers for the website are:
 
@@ -141,6 +141,7 @@ The UI/UX designers for the website are:
 - [Olivia Servaes](https://www.linkedin.com/in/oliviaservaes/)
 - [Lynds Lesh](https://www.linkedin.com/in/lyndsey-lesh/)
 
+The project repo exists here;
 - [Project Repo](https://github.com/cswebdev/LWT_Games)
 
 
@@ -155,16 +156,19 @@ The UI/UX designers for the website are:
 
 ## Acknowledgments
 
-Thanks to the entire LWTGames team:
+Thanks to the entire Interconnected Collective team:
 - Tegan Barron
 - Lane Hamilton
 - Liz Baranowicz
 - Olivia Servaes
+- KD Hubbard
 - Jimena Cuadros
 - Lynds Lesh
 - Olivia McCartney
-- Becca Jonas
 - Wei Yun Lim
+- Alex Sharp
+- Amy Ashmore
+- Julie Nguyen
 
 
 Additional thanks to:

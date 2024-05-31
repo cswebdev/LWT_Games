@@ -24,23 +24,30 @@
     flex-direction: row;
     /* padding: 0 0; */
     /* margin:  auto; */
-    gap: 10%;
+    gap: 3%;
     /* border: 1px solid red; */
-    width: 83%;
-
+    width: 80%;
+    /* width: 100%; */
 }
 
-.nav-content ul {
+.nav-content,
+ul {
     display: flex;
     flex-direction: row;
     /* border: 1px solid red; */
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
 
 }
 
 
+.nav-content>ul {
+    gap: 10%;
+    width: 80%;
+    justify-content: flex-end;
+    border: 1px solid red;
+}
 
 
 .navbar-brand {
@@ -192,9 +199,18 @@ li .nav-link {
     }
 }
 
-@media (max-width: 1012px) {}
+@media (max-width: 1120px) {
 
-@media(max-width: 992px) and (min-width: 764px) {
+    .nav-content {
+        width: 85%;
+    }
+
+    .nav-content>ul {
+        gap: 7%;
+    }
+}
+
+@media(max-width: 993px) and (min-width: 764px) {
 
     .nav-content {
         position: relative;
@@ -209,6 +225,7 @@ li .nav-link {
         /* width: 99% !important; */
         height: 152px;
         width: 100%;
+        position: relative;
     }
 
     .logo-wrapper {
@@ -237,7 +254,7 @@ li .nav-link {
         justify-content: center;
         align-items: center;
         flex-grow: 1;
-        position: relative;
+        /* position: relative; */
         max-height: 178px;
         min-height: 178px;
         flex-direction: row;
@@ -251,9 +268,9 @@ li .nav-link {
 
 
     .logo-img {
-        position: absolute;
+        position: relative;
+        /* position: absolute; */
         /* margin: 0 auto; */
-
         /* transform: translate(-50%, -50%); */
 
     }
@@ -323,12 +340,18 @@ li .nav-link {
         visibility: hidden;
     }
 
-    #root>div>div.nav-wrapper>div>ul>button {
-        visibility: hidden;
+    #root>div>div.nav-wrapper>div>button.btn-info.nav-play-btn {
+        display: none;
     }
 }
 
 @media (max-width: 764px) and (min-width: 320px) {
+
+    .nav-content {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
 
     .navbar-brand {
         display: flex;
@@ -341,19 +364,24 @@ li .nav-link {
     }
 
 
+    .menu-btn {
+        position: absolute;
+        left: 0;
 
+    }
 
     .material-symbols-outlined {
         font-size: 2.8rem;
     }
 
-    .nav-content li,
+    .nav-content ul,
     .btn-info {
         display: none;
     }
 
     .logo-img {
-        position: absolute;
+        position: relative;
+
     }
 
     #root>div>nav>div>div.collapse.navbar-collapse.show {

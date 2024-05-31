@@ -126,7 +126,7 @@
 }
 
 
-@media(max-width: 769px) and (min-width: 320px) {
+@media(max-width: 869px) and (min-width: 320px) {
 
     .mobile-menu-container {
         min-width: 55vw;
@@ -166,6 +166,10 @@
         justify-self: center;
         align-items: center;
         /* margin: auto; */
+    }
+
+    #root>div>div.nav-wrapper>div>button.btn-info.nav-play-btn {
+        display: none;
     }
 }
 

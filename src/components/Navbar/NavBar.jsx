@@ -20,18 +20,19 @@ const NavBar = () => {
 
    return (
       <>
-         <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
+         <MobileNav isOpen={openMenu} closeMenu={closeMobileNav} />
          <div className="nav-wrapper">
-            <div className="logo-wrapper">
-               <div className="logo">
-                  <Link to="/home">
-                     <img
-                        src={imageAssets.logo}
-                        alt="InCo logo"
-                        className="logo-img m-0 p-0"
-                     />
-                  </Link>
-                  <div className="nav-content"></div>
+            <div className="nav-content">
+               <div className="logo-wrapper">
+                  <div className="logo">
+                     <Link to="/home">
+                        <img
+                           src={imageAssets.logo}
+                           alt="InCo logo"
+                           className="logo-img"
+                        />
+                     </Link>
+                  </div>
                </div>
                <ul>
                   <li>
@@ -49,12 +50,18 @@ const NavBar = () => {
                         GET INVOLVED
                      </Link>
                   </li>
-                  <button type="button" className="btn-info nav-play-btn">
-                     <a href="https://laneecho.github.io/LWT-bingo/">
-                        PLAY BINGO
-                     </a>
-                  </button>
                </ul>
+               <button type="button" className="btn-info nav-play-btn">
+                  <a href="https://laneecho.github.io/LWT-bingo/">PLAY BINGO</a>
+               </button>
+               <button className="menu-btn" onClick={toggleMenu}>
+                  <span
+                     className={"material-symbols-outlined"}
+                     style={{ fontSize: "1.8rem" }}
+                  >
+                     {openMenu ? "close" : "menu"}
+                  </span>
+               </button>
             </div>
          </div>
       </>

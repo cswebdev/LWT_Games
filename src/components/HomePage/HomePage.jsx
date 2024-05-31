@@ -117,11 +117,11 @@ const HomePage = () => {
                </div>
             </div>
          </section>
-               <img
-                  className="blueBlob"
-                  src={imageAssets.blueBlob}
-                  alt="blue background blob z-0"
-               />
+         <img
+            className="blueBlob"
+            src={imageAssets.blueBlob}
+            alt="blue background blob z-0"
+         />
 
          <section className="container body-bottom z-1 ">
             <div className="row d-flex flex-row-reverse">

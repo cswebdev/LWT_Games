@@ -1,3 +1,7 @@
+#root>div>nav>div {
+    padding: 0;
+}
+
 .nav-wrapper {
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -5,50 +9,77 @@
     position: sticky;
     top: 0;
     z-index: 30;
-    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 90% !important; */
+    /* min-width: 720px; */
+    margin: 0 auto;
 }
 
 .nav-content {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    /* padding: 0 0; */
+    /* margin:  auto; */
+    gap: 5%;
+    /* border: 1px solid red; */
+    width: 83%;
+    padding-right: 3%;
+
+}
+
+.nav-content ul {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    min-width: 48%;
+    display: flex;
     justify-content: space-between;
-    padding: 0 0;
-    margin: 0 auto;
-    max-width: 70% !important;
-    gap: 25px;
+
+}
+
+.nav-content>ul>li {
+    /* min-width: fit-content; */
+    /* gap: 3%; */
+}
+
+
+.navbar-brand {
+    position: relative;
+    display: flex;
+    object-fit: contain;
 
 }
 
 .logo-wrapper {
-    position: relative;
-    display: flex;
-    /* padding: 0rem 1rem; */
-    width: 7.99999em;
-    height: 5em;
-    overflow: hidden;
-    object-fit: fill;
-
+    width: 100%;
 }
-
 
 .logo-img {
     /* aspect-ratio: 1/1; */
     height: 5.5rem;
-    width: auto
+    width: auto;
+    padding: 0;
+    margin: 0;
+    /* object-position: -1rem 0; */
+
 }
 
-#root > div > div.mobile-menu {
+#root>div>div.mobile-menu {
     /* font-size: ; */
 }
 
 .nav-content ul {
     display: flex;
     align-items: center;
-    gap: 50px;
+    /* gap: 50px; */
     list-style: none;
     margin: 0;
     padding: 0;
-    width: fit-content;
+    /* width: fit-content; */
 
 }
 
@@ -114,46 +145,196 @@ li .nav-link {
 
 .menu-btn {
     width: 2.5rem;
+    min-width: 2.5rem;
     height: 2.5rem;
+    min-height: auto;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
-    border-radius: 0.4rem;
+    border-radius: 50%;
     color: #fff;
     background: #e11774;
     line-height: 0;
     cursor: pointer;
-    transition: all 0.4s ease;
-    display: none;
+    transition: all 0.04s ease;
+    /* display: none; */
+    z-index: 9999;
+    /* transform: translateX(0vw); */
+    visibility: hidden;
+
+}
+
+.menu-btn-hidden {
+    visibility: hidden;
+
 }
 
 .menu-btn:hover {
-    color: #e11774;
-    background-color: #000;
-    border: 1px solid #e11774;
+    color: #ffffff;
+    background-color: #e11774;
+    /* border: 1px solid #e11774; */
+
 }
 
-@media(max-width: 769px) {
-    .menu-btn {
-        display: block;
-    }
 
+
+@media (max-width: 1490px) {
     .nav-wrapper {
-        width: 100vw;
+        max-width: 100% !important;
     }
 
-    .nav-content ul {
+}
+
+@media (max-width: 1200px) {
+    .nav-content {
+        gap: 6px;
+    }
+}
+
+@media(max-width: 992px) and (min-width: 764px) {
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        /* width: 99% !important; */
+    }
+
+    .row>* {
+        /* max-width: 100%; */
+    }
+
+    .menu-btn {
+        position: absolute;
+        left: 0;
+        z-index: 9999 !important;
+    }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        position: relative;
+        max-height: 178px;
+        min-height: 178px;
+        flex-direction: row;
+
+    }
+
+    #root>div>nav>div>div.d-flex.align-items-center.justify-content-between.position-relative.flex-row-reverse>a,
+    #root>div>nav>div>div.d-flex.align-items-center.justify-content-between.position-relative.flex-row>a {
+        margin: .6em 0;
+    }
+
+
+    .logo-img {
+        position: absolute;
+        /* margin: 0 auto; */
+        /* transform: translate(-50%, -50%); */
+
+    }
+
+
+    #root>div>nav>div>div.d-flex.align-items-center.justify-content-between.position-relative.flex-row>a>img {
+        /* transform: translate(-50%, -50%); */
+    }
+
+    /* .nav-content ul {
+        display: none;
+    } */
+
+    #root>div>nav>div>div.collapse.navbar-collapse.show {
         display: none;
     }
 
+    #root>div>nav>div>div.d-flex.align-items-center.justify-content-between {
+        flex-direction: row-reverse;
+        width: 100%;
+    }
 
+    #root>div>nav>div>div.d-flex.align-items-center.justify-content-between.row {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #root>div>nav>div>div.d-flex.align-items-center.justify-content-between.row-reverse {
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .menu-btn {
+        border-radius: 50%;
+        height: 2.6rem;
+        width: 2.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        visibility: visible;
+        transition: all 0.2s ease;
+    }
+
+    .menu-btn>span {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .material-symbols-outlined {
+        font-size: 2.8rem;
+    }
+
+    .menu-btn:hover {
+        border: none;
+
+    }
+
+    #root>div>nav>div>div.nav-content>button,
+    #root>div>nav>div>div.nav-content {
+        display: none;
+    }
 }
 
-@media (max-width: 1325px) {
-    .nav-wrapper {
-        padding: 0 2rem;
-        width: 100%;
+@media (max-width: 764px) and (min-width: 320px) {
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        position: relative;
+        /* padding-right: 3rem; */
+        max-height: 178px;
+        min-height: 178px;
+    }
+
+
+
+
+    .material-symbols-outlined {
+        font-size: 2.8rem;
+    }
+
+    .nav-content li,
+    .btn-info {
+        display: none;
+    }
+
+    .logo-img {
+        position: absolute;
+    }
+
+    #root>div>nav>div>div.collapse.navbar-collapse.show {
+        display: none;
+    }
+
+    #root>div>nav>div>div.d-flex.align-items-center.justify-content-between.position-relative.flex-row>a>img {
+        /* left: 14.7rem; */
+    }
+
+    #root>div>nav>div>div.d-flex.align-items-center.justify-content-between.position-relative.flex-row-reverse>a>img {
+        /* right: 10.9rem; */
     }
 }

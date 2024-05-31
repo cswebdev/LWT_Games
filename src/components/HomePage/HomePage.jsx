@@ -7,7 +7,7 @@ const HomePage = () => {
    return (
       <>
          <section className="container hero position-relative">
-            <div className="row d-flex align-items-stretch justify-content-between pt-3">
+            <div className="row d-flex align-items-stretch justify-content-between">
                {/* <!-- Title and Subtitle Column --> */}
                <div className="col-lg-6 col-md- mt-5 p-0  order-first order-md-1 order-lg-1 order-sm-1  d-flex flex-column justify-content-end position-relative col-title">
                   <h1>We Are InCo.</h1>
@@ -45,11 +45,7 @@ const HomePage = () => {
 
          <section className="container whatIsInco position-relative">
             {/* fixed assets */}
-            <img
-               className="blueBlob"
-               src={imageAssets.blueBlob}
-               alt="blue background blob z-0"
-            />
+
             <img
                src={imageAssets.blueMountain}
                loading="lazy"
@@ -68,8 +64,13 @@ const HomePage = () => {
                alt="teal and purple cloud"
                className="tealCloudImg"
             ></img>
-            <div className="who-we-are-graphic z-0">
-               <div className="container d-flex flex-column text-center justify-content-center who-are-we z-1 col-lg-12 col-md-12">
+            <img
+               src={imageAssets.greenAndPinkCloud}
+               alt="small green and pink cloud"
+               className="greenAndPinkCloud"
+            />
+            <div className="who-we-are-graphic z-0 position-relative">
+               <div className="container d-flex flex-column text-center justify-content-center who-are-we z-1 col-lg-12 col-md-12 position-relative">
                   <h2 className="z-1 mb-4">What's InCo?</h2>
                   <p className="we-are-subtitle z-1 mb-lg-5">
                      Breaking through digital with the power of fun and the{" "}
@@ -116,11 +117,12 @@ const HomePage = () => {
                </div>
             </div>
          </section>
-         <img
-            src={imageAssets.greenAndPinkCloud}
-            alt="small green and pink cloud"
-            className="greenAndPinkCloud"
-         />
+               <img
+                  className="blueBlob"
+                  src={imageAssets.blueBlob}
+                  alt="blue background blob z-0"
+               />
+
          <section className="container body-bottom z-1 ">
             <div className="row d-flex flex-row-reverse">
                <div className="col-lg-7 order-2 m-0 p-0 z-1 ">
@@ -144,7 +146,7 @@ const HomePage = () => {
                   </div>
                </div>
                <div className="col-lg-5 order-1 m-0 p-0">
-                  <div class="graphicFrame">
+                  <div className="graphicFrame">
                      <img
                         src={imageAssets.homepageGraphicLane}
                         className="homepageGraphicLane"
@@ -175,7 +177,7 @@ const HomePage = () => {
                      </button>
                   </div>
                   <div
-                     class="col-lg-5 graphicFrame order-1 z-2 d-flex justify-content-center bubbleGumFrame mb-md-2 mb-lg-5"
+                     className="col-lg-5 graphicFrame order-1 z-2 d-flex justify-content-center bubbleGumFrame mb-md-2 mb-lg-5"
                      // style={{ border: "1px solid yellow" }}
                   >
                      <img

@@ -12,6 +12,18 @@ body {
   position: relative;
 }
 
+@media (min-width: 1400px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+      max-width: 80%;
+  }
+}
+
 h1,
 h2,
 h3 {
@@ -94,14 +106,15 @@ Button {
 
 /* info button solid */
 
-.btn-info {
+.btn-info,
+.mobile-nav-play-btn {
   background-color: #E21674;
   border-color: #E21674;
   color: #ffff;
 }
 
 .btn-info:active,
-.btn-info:hover,
+.btn-info:active .btn-info:hover,
 .btn-info:focus-visible {
   background-color: #E21674;
   color: #ffff;

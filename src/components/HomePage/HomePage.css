@@ -53,11 +53,11 @@ h2 {
 }
 
 .homepageOliviaGraphic {
-    width: 43rem;
-    min-width: 40%;
+    max-width: 58rem;
+    /* min-width: 40%; */
     /* padding: %; */
     height: auto;
-    object-position: 4rem 5rem;
+    object-position: 0rem -8.8rem;
     /* max-width: 450px; */
     /* height: min-content; */
     position: absolute;
@@ -123,8 +123,8 @@ h2 {
 /* end panel styling */
 /* who are we row */
 .who-are-we {
-    /* height: 130vh; */
     position: relative;
+    padding-top: 3rem;
 }
 
 .row-h2 {
@@ -248,18 +248,8 @@ h2 {
     max-height: auto;
     object-fit: fill;
 
-
 }
 
-/* .graphicFrame {
-    height: 20em;
-    width: auto;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    object-fit: cover;
-    display: flex;
-} */
 
 .graphicFrame {
     height: 20em;
@@ -282,7 +272,7 @@ section:nth-last-of-type(2) {
 }
 
 section:nth-last-of-type(3) {
-    margin: 20rem auto 10rem auto;
+    margin: 28rem auto 10rem auto;
     width: 100%;
     /* border: 1px solid red; */
 }
@@ -315,6 +305,11 @@ section:nth-last-of-type(3) {
     z-index: 1;
 }
 
+
+#root>div>section.container.whatIsInco.position-relative>div>div>p {
+    width: 104%;
+}
+
 /* .text-content p {
     max-width: 37rem;
 } */
@@ -344,16 +339,84 @@ section:nth-last-of-type(3) {
 }
 
 .blueBlob {
-    object-fit: contain;
-    max-height: 73.5rem;
-    max-width: auto;
+    /* object-fit: contain; */
+    /* height: auto; */
+    /* max-height: 100rem; */
+    /* min-width: 1%; */
+    /* min-width: 1314px; */
+    /* max-width: 80vw; */
+    /* min-width: 60em; */
+    /* width: 100%; */
+    /* min-height: 100%; */
+    /* min-width: 73.99%; */
+    height: auto;
+    width: 29rem;
+    /* width: 99%; */
+    /* min-width: 109%; */
     position: absolute;
-    top: -7em;
-    left: -23%;
+    top: 40.4rem;
+    /* top: -25%; */
+    /* left: -29em; */
+    /* left: -30%; */
+    /* left: 100%; */
     margin: 0;
     padding: 0;
-    transform: scaleY(.85);
+    aspect-ratio: 1/1;
+    /* transform: scaleY(.6) scaleX(.73); */
     /* transform: rotate(-10deg); */
+}
+
+.container {
+    --bs-gutter-x: 0rem;
+}
+
+
+@media (min-width: 1400px) {
+    .blueBlob {
+        max-width: 80vw;
+
+        height: auto;
+        z-index: -9999;
+    }
+
+    #root>div>section.container.whatIsInco.position-relative>div>div {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #root>div>section.container.whatIsInco.position-relative>div>div>div {
+        min-width: 80vw;
+
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    .blueBlob {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .blueBlob {
+        width: 200vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .blueBlob {
+        /* left: -95em; */
+        /* Adjust as needed */
+    }
+}
+
+@media (max-width: 576px) {
+    .blueBlob {
+        /* left: -50em; */
+        /* Adjust as needed */
+    }
 }
 
 .blueMountain {
@@ -364,11 +427,11 @@ section:nth-last-of-type(3) {
 }
 
 .blueMountainImg {
-    max-height: 8.575em;
+    max-height: 7.575em;
     width: auto;
     position: absolute;
-    top: 29.4rem;
-    left: 3rem;
+    top: 30.2rem;
+    left: 3.9rem;
     opacity: 100%;
 }
 
@@ -503,6 +566,44 @@ section:nth-last-of-type(3) {
         scale: 1.1;
     }
 
+    .pinkCloudImg {
+        position: absolute;
+        width: 4.9em;
+        height: auto;
+        left: 3.2rem;
+        top: 16rem;
+    }
+
+
+    .tealCloudImg {
+        width: 20.2375rem;
+        height: auto;
+        left: -21vw;
+        top: 18rem;
+    }
+
+    /* .blueBlob {
+        max-height: 63.5rem;
+        max-width: auto;
+        top: -6em;
+        left: -22.6%;
+
+    } */
+
+    .blueMountainImg {
+        max-height: 6.575em;
+        width: auto;
+        top: 28.4rem;
+        left: 2.4rem;
+    }
+
+
+    .greenAndPinkCloud {
+        right: -8rem;
+        top: 45rem;
+        width: 22rem;
+        height: auto;
+    }
 
     .wave-graphic {
         bottom: -90px;
@@ -544,12 +645,54 @@ section:nth-last-of-type(3) {
     }
 
     .homepageOliviaGraphic {
-        /* max-width: 130%; */
-        /* min-width: 38%; */
         height: auto;
         object-fit: cover;
-        /* top: 2em; */
     }
+
+    /* ### homepage absolute position image assets ### */
+
+    /* .blueBlob {
+        max-height: 62.5rem;
+        max-width: auto;
+        top: 27.7em;
+        left: -25%;
+    } */
+
+    .pinkCloudImg {
+        position: absolute;
+        width: 9.9em;
+        height: auto;
+        left: 50.2rem;
+        top: 11.8rem;
+    }
+
+
+    .tealCloudImg {
+        width: 29.2375rem;
+        height: auto;
+        left: -23vw;
+        top: 46.6rem;
+    }
+
+
+    .blueMountainImg {
+        max-height: 7.1em;
+        width: auto;
+        top: 32.6rem;
+        left: 17.3rem;
+    }
+
+
+    .greenAndPinkCloud {
+        right: -7em;
+        top: 61rem;
+        width: 22rem;
+        height: auto;
+        /* object-position: 6.23em 0; */
+    }
+
+    /* ### END homepage absolute image assets ### */
+
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div {
         margin: 0;
@@ -566,6 +709,7 @@ section:nth-last-of-type(3) {
         padding-top: 0;
     }
 
+    /* ### DO NOT DELETE! #### */
     .mt-md-5 {
         /* margin-top: 3rem !important; */
     }
@@ -575,18 +719,13 @@ section:nth-last-of-type(3) {
         min-width: 76%;
     }
 
-    /* #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1 {
-        max-width: 30em;
-        border: 1px solid red;
-        margin: auto;
-    } */
 
 }
 
 
 
 
-@media (max-width: 1200px) and (min-width: 99px) {
+@media (max-width: 1199px) and (min-width: 99px) {
 
     .col-lg-6,
     .m-0,
@@ -739,7 +878,7 @@ section:nth-last-of-type(3) {
 } */
 
 
-@media (max-width: 992px) {
+@media (max-width: 992px) and (min-width: 99px) {
 
     /* do not delete important - it's okay it's commented out */
     .mb-lg-0 {
@@ -749,6 +888,51 @@ section:nth-last-of-type(3) {
     .homepageOliviaGraphic {
         object-position: 5em 0rem;
     }
+
+
+    /* .blueBlob {
+        max-height: 49.5rem;
+        max-width: auto;
+        top: 28.7em;
+        left: -25%;
+        transform: scaleY(.95);
+    } */
+
+    .pinkCloudImg {
+        position: absolute;
+        max-width: 19%;
+        min-width: 15%;
+        height: auto;
+        left: 41.2rem;
+        top: 12.2rem;
+    }
+
+
+    .tealCloudImg {
+        width: 30.2375rem;
+        height: auto;
+        left: -39vw;
+        top: 43.6rem;
+    }
+
+
+    .blueMountainImg {
+        max-height: 7.2em;
+        width: auto;
+        top: 29.5rem;
+        left: 9.8rem;
+    }
+
+
+    .greenAndPinkCloud {
+        right: -9em;
+        top: 58rem;
+        width: 19rem;
+        height: auto;
+        /* object-position: 6.23em 0; */
+    }
+
+
 }
 
 /* For 15.4-inch (2880 × 1800) display */
@@ -827,6 +1011,70 @@ section:nth-last-of-type(3) {
 
 /*Shrinking for mobile*/
 
+
+
+@media (max-width: 809px) and (min-width: 99px) {
+
+
+
+    .wave-graphic {
+        min-width: 200vw;
+        min-height: 86vh;
+        max-height: 86vh;
+    }
+
+    .custom-order-2 {
+        order: 2 !important;
+    }
+
+    .custom-order-3 {
+        order: 3 !important;
+    }
+
+
+    /* .blueBlob {
+        max-height: 49.5rem;
+        max-width: auto;
+        top: 28.7em;
+        left: -25%;
+        transform: scaleY(.95);
+    } */
+
+    .pinkCloudImg {
+        position: absolute;
+        max-width: 14%;
+        min-width: 12%;
+        height: auto;
+        left: 40rem;
+        top: 12.6rem;
+    }
+
+
+    .tealCloudImg {
+        width: 28.2375rem;
+        height: auto;
+        left: -39vw;
+        top: 44.4rem;
+    }
+
+
+    .blueMountainImg {
+        max-height: 7.2em;
+        width: auto;
+        top: 29.5rem;
+        left: 9.8rem;
+    }
+
+
+    .greenAndPinkCloud {
+        right: -5em;
+        top: 58rem;
+        width: 19rem;
+        height: auto;
+    }
+
+}
+
 @media(max-width: 769px) {
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div {
@@ -847,23 +1095,47 @@ section:nth-last-of-type(3) {
         margin-top: 30px !important;
         bottom: 0 !important;
     }
-}
-
-@media (max-width: 580px) {
 
 
+    /* .blueBlob {
+        max-height: 40.5rem;
+        max-width: auto;
+        top: 37em;
+        left: -27%;
+        transform: scaleY(1);
+    } */
 
-    .wave-graphic {
-        min-width: 200vw;
-        min-height: 86vh;
-        max-height: 86vh;
+    .pinkCloudImg {
+        position: absolute;
+        max-width: 20%;
+        min-width: 20%;
+        height: auto;
+        left: 32rem;
+        top: 16.6rem;
     }
 
-    .custom-order-2 {
-        order: 2 !important;
+
+    .tealCloudImg {
+        width: 24.2375rem;
+        height: auto;
+        left: -41vw;
+        top: 52.4rem;
     }
 
-    .custom-order-3 {
-        order: 3 !important;
+
+    .blueMountainImg {
+        max-height: 7.2em;
+        width: auto;
+        top: 35.7rem;
+        left: 4.1rem;
     }
+
+
+    .greenAndPinkCloud {
+        right: -10em;
+        top: 65rem;
+        width: 19rem;
+        height: auto;
+    }
+
 }

@@ -51,9 +51,9 @@ const NavBar = () => {
                         PLAY BINGO
                      </a>
                   </button>
+               </ul>
                </div>
             </div>
-         </nav>
       </>
    );
 };

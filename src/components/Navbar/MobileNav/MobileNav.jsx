@@ -17,10 +17,24 @@ const MobileNav = ({ isOpen, closeMenu }) => {
                </button>
                <div className="logo-wrapper"></div>
                <ul>
-                  <li className="menu-item">Games</li>
-                  <li className="menu-item">LWT</li>
-                  <li className="menu-item">About Us</li>
-                  <li className="menu-item">Get Involved</li>
+                  <li className="">
+                     <a href="/about" className="mobile-menu-item nav-link">
+                        ABOUT US
+                     </a>
+                  </li>
+                  <li className="">
+                     <Link to="/faq" className="mobile-menu-item nav-link">
+                        FAQ
+                     </Link>
+                  </li>
+                  <li className="">
+                     <Link
+                        to="/GET INVOLVED"
+                        className="mobile-menu-item nav-link"
+                     >
+                        GET INVOLVED
+                     </Link>
+                  </li>
                </ul>
                <button type="button" className="btn-info nav-play-btn">
                   <a href="https://laneecho.github.io/LWT-bingo/">PLAY BINGO</a>

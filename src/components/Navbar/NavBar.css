@@ -24,10 +24,9 @@
     flex-direction: row;
     /* padding: 0 0; */
     /* margin:  auto; */
-    gap: 5%;
+    gap: 10%;
     /* border: 1px solid red; */
     width: 83%;
-    padding-right: 3%;
 
 }
 
@@ -35,16 +34,13 @@
     display: flex;
     flex-direction: row;
     /* border: 1px solid red; */
-    min-width: 48%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 
 }
 
-.nav-content>ul>li {
-    /* min-width: fit-content; */
-    /* gap: 3%; */
-}
+
 
 
 .navbar-brand {
@@ -55,7 +51,9 @@
 }
 
 .logo-wrapper {
-    width: 100%;
+    /* position: absolute; */
+    /* right: 100; */
+    width: max-content;
 }
 
 .logo-img {
@@ -65,6 +63,7 @@
     padding: 0;
     margin: 0;
     /* object-position: -1rem 0; */
+
 
 }
 
@@ -193,13 +192,34 @@ li .nav-link {
     }
 }
 
+@media (max-width: 1012px) {}
+
 @media(max-width: 992px) and (min-width: 764px) {
+
+    .nav-content {
+        position: relative;
+        width: 100%;
+    }
+
     .nav-wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 0 1rem;
         /* width: 99% !important; */
+        height: 152px;
+        width: 100%;
+    }
+
+    .logo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #root>div>div.nav-wrapper>div>ul {
+        display: none;
     }
 
     .row>* {
@@ -233,6 +253,7 @@ li .nav-link {
     .logo-img {
         position: absolute;
         /* margin: 0 auto; */
+
         /* transform: translate(-50%, -50%); */
 
     }
@@ -275,6 +296,7 @@ li .nav-link {
         margin: 0;
         visibility: visible;
         transition: all 0.2s ease;
+
     }
 
     .menu-btn>span {
@@ -292,9 +314,17 @@ li .nav-link {
 
     }
 
-    #root>div>nav>div>div.nav-content>button,
+    /* #root>div>nav>div>div.nav-content>button,
     #root>div>nav>div>div.nav-content {
         display: none;
+    } */
+
+    #root>div>div.nav-wrapper>div>ul>li {
+        visibility: hidden;
+    }
+
+    #root>div>div.nav-wrapper>div>ul>button {
+        visibility: hidden;
     }
 }
 

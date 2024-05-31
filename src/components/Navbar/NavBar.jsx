@@ -22,13 +22,16 @@ const NavBar = () => {
       <>
          <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
          <div className="nav-wrapper">
-            <div className="nav-content">
-               <div className="logo-wrapper">
-                  <div className="logo">
-                     <Link to="/home">
-                        <img src={logo} alt="LWT logo" />
-                     </Link>
-                  </div>
+            <div className="logo-wrapper">
+               <div className="logo">
+                  <Link to="/home">
+                     <img
+                        src={imageAssets.logo}
+                        alt="InCo logo"
+                        className="logo-img m-0 p-0"
+                     />
+                  </Link>
+                  <div className="nav-content"></div>
                </div>
                <ul>
                   <li>
@@ -52,8 +55,8 @@ const NavBar = () => {
                      </a>
                   </button>
                </ul>
-               </div>
             </div>
+         </div>
       </>
    );
 };

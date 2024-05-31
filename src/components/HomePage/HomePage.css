@@ -351,6 +351,7 @@ section:nth-last-of-type(3) {
     /* min-width: 73.99%; */
     height: auto;
     width: 29rem;
+    display: none;
     /* width: 99%; */
     /* min-width: 109%; */
     position: absolute;

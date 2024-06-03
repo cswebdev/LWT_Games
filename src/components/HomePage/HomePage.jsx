@@ -123,7 +123,7 @@ const HomePage = () => {
             alt="blue background blob z-0"
          />
 
-         <section className="container body-bottom z-1 ">
+         {/* <section className="container body-bottom z-1 ">
             <div className="row d-flex flex-row-reverse">
                <div className="col-lg-7 order-2 m-0 p-0 z-1 ">
                   <div className="text-content col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -188,7 +188,7 @@ const HomePage = () => {
                   </div>
                </div>
             </div>
-         </section>
+         </section> */}
          <div className="wave-container container-fluid z-0 overflow-hidden w-0">
             {/* <img
                className="wave-graphic z-0"

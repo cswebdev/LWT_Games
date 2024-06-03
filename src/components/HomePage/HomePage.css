@@ -438,10 +438,10 @@ section:nth-last-of-type(3) {
 
     width: auto;
     position: absolute;
-    top: 51%;
-    /* top: clamp(50%, 52%, 54%); */
-    left: 3%;
-    /* left: clamp(2%, 3%, 5%); */
+    /* top: 51%; */
+    top: clamp(50%, 52%, 54%);
+    /* left: 3%; */
+    left: clamp(2%, 3%, 5%);
     opacity: 100%;
 }
 
@@ -551,7 +551,9 @@ section:nth-last-of-type(3) {
 @media (max-width: 1400px) {
     .col-title {
         vertical-align: text-bottom;
+        height: 20vh;
     }
+
 
     .homepageOliviaGraphic {
         object-position: 5rem -5.8rem;
@@ -574,13 +576,18 @@ section:nth-last-of-type(3) {
         /* max-width: 50%; */
     }
 
+
+
     section:nth-last-of-type(3) {
-        margin: 10rem auto 10rem auto;
+        margin: 15rem auto 10rem auto;
         width: 100%;
+        /* background-color: red; */
+        height: max-content;
     }
 
     .whoWeAreFrame {
-        min-width: 1rem;
+        /* min-width: 1rem; */
+        max-width: 50%;
     }
 
     .whoWeAreFrame>img {
@@ -612,10 +619,10 @@ section:nth-last-of-type(3) {
     } */
 
     .blueMountainImg {
-        max-height: 6.575em;
+        max-height: 3.575em;
         width: auto;
-        top: 28.4rem;
-        left: 2.4rem;
+        top: 15.8rem;
+        left: 2rem;
     }
 
 
@@ -667,6 +674,13 @@ section:nth-last-of-type(3) {
         transform: translate(-11%, 10%);
 
         /* border: 1px solid red; */
+    }
+
+    .blueMountainImg {
+        max-width: fit-content;
+        height: auto;
+        left: 1rem;
+        top: 13rem;
     }
 
 }
@@ -762,12 +776,6 @@ section:nth-last-of-type(3) {
     }
 
 
-    .blueMountainImg {
-        max-height: 7.1em;
-        width: auto;
-        top: 32.6rem;
-        left: 17.3rem;
-    }
 
 
     .greenAndPinkCloud {
@@ -814,8 +822,9 @@ section:nth-last-of-type(3) {
     /* do not delete important - it's okay it's commented out */
 
 
-    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title {
-        padding-top: 2%;
+    section:nth-last-of-type(2) {
+        margin: 0rem auto 10em auto;
+        /* background-color: red; */
     }
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative {
@@ -896,10 +905,10 @@ section:nth-last-of-type(3) {
 
 
     .blueMountainImg {
-        max-height: 7.2em;
+        max-height: 2.8em;
         width: auto;
-        top: 29.5rem;
-        left: 9.8rem;
+        top: 9.9rem;
+        left: -1rem;
     }
 
 
@@ -916,7 +925,7 @@ section:nth-last-of-type(3) {
 
 
 
-@media (max-width: 768px) and (min-width: 99px) {
+@media (max-width: 769px) and (min-width: 99px) {
 
     .col-lg-6,
     .m-0,
@@ -926,10 +935,18 @@ section:nth-last-of-type(3) {
         width: 100%;
     }
 
-    .col-title {
-        /* height: 25vh; */
+    /* HERO SECTION */
 
+    section:nth-last-of-type(2) {
+        margin: 0rem auto 10em auto;
+        /* background-color: red; */
     }
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title {
+        overflow: visible;
+    }
+
+
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title {
         padding-top: 8%;
@@ -991,7 +1008,7 @@ section:nth-last-of-type(3) {
     }
 
     .whoWeAreFrame {
-        width: 50%;
+        min-width: 48%;
     }
 
     /* text column max width */
@@ -1061,6 +1078,14 @@ section:nth-last-of-type(3) {
         padding-top: 20px;
     }
 
+    #root>div>section.container.whatIsInco.position-relative>div>div>div>div.row>div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #root>div>section.container.whatIsInco.position-relative>div>div>div>div.row>div>button {
+        display: block;
+    }
 
     .wave-graphic {
         width: auto;
@@ -1189,12 +1214,12 @@ section:nth-last-of-type(3) {
     }
 
 
-    .blueMountainImg {
+    /* .blueMountainImg {
         max-height: 7.2em;
         width: auto;
         top: 29.5rem;
         left: 9.8rem;
-    }
+    } */
 
 
     .greenAndPinkCloud {
@@ -1229,6 +1254,10 @@ section:nth-last-of-type(3) {
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-5.mt-md-0 {
         margin-top: 30px !important;
         bottom: 0 !important;
+    }
+
+    .whoWeAreFrame {
+        max-height: 40%;
     }
 
 

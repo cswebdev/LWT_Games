@@ -12,6 +12,14 @@
 /* ### hero styling */
 
 /* ### HERO TEXT STYLING  */
+#root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title,
+#root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative {
+    /* padding-left: 5em; */
+    /* background-color: rebeccapurple; */
+    /* left: 3%; */
+    overflow: hidden;
+}
+
 h1 {
     font-size: 46px;
     font-weight: 700;
@@ -53,26 +61,15 @@ h2 {
 }
 
 .homepageOliviaGraphic {
-    max-width: 58rem;
-    /* min-width: 40%; */
-    /* padding: %; */
-    height: auto;
-    object-position: 0rem -8.8rem;
-    /* max-width: 450px; */
-    /* height: min-content; */
+    max-width: 55rem;
+    object-position: 4rem -7.2rem;
     position: absolute;
-    object-fit: contain;
-    top: 3%;
-    overflow: visible;
+    border: 1px solid red;
+    /* left: 15%; */
+    /* left: 47%; */
+    transform: translate(-0%, -1%);
+
 }
-
-
-#root>div>section.container.hero.overflow-visible>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-2.order-md-3.order-md-2.order-sm-2.overflow-visible.heroGraphic.object-fit-contain>img {
-    /* border: 1px solid red; */
-    overflow: hidden;
-    object-position: 3em -1em;
-}
-
 
 .Left-panel .Header-text P {
     font-size: 1.5rem;
@@ -108,12 +105,11 @@ h2 {
     letter-spacing: .2em;
 }
 
-.Container-header .btn-primary,
-.btn-play-bingo-purple {
+#root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative>button {
     margin-top: 2em;
-    -webkit-box-shadow: 1px 7px 5px 0px rgba(228, 204, 255, 1);
-    -moz-box-shadow: 1px 7px 5px 0px rgba(228, 204, 255, 1);
-    box-shadow: 1px 7px 5px 0px rgba(228, 204, 255, 1);
+    -webkit-box-shadow: 0px 7px 7px .01px rgb(195, 145, 251);
+    -moz-box-shadow: 0px 7px 7px .01px rgb(195, 145, 251);
+    box-shadow: 0px 6px 7px .01px rgb(195, 145, 251);
 }
 
 
@@ -170,8 +166,8 @@ h2 {
 .whoWeAreFrame {
     aspect-ratio: 1/1;
     height: auto;
-    max-width: 26%;
-    min-width: 13em;
+    width: 26%;
+    /* min-width: 13em; */
     border: 3px solid rgb(65, 233, 65);
     background-color: hwb(120 0% 0%);
     border-radius: 5%;
@@ -180,6 +176,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: relative;
 }
 
 .whoWeAreFrame img {
@@ -265,6 +262,10 @@ h2 {
 /* row styling */
 
 
+section:nth-of-type(1) {
+    /* background-color: #E11774; */
+}
+
 section:nth-last-of-type(2) {
     margin: 18rem auto 10rem auto;
     /* border: 1px solid pink; */
@@ -272,7 +273,7 @@ section:nth-last-of-type(2) {
 }
 
 section:nth-last-of-type(3) {
-    margin: 28rem auto 10rem auto;
+    margin: 30rem auto 10rem auto;
     width: 100%;
     /* border: 1px solid red; */
 }
@@ -282,6 +283,7 @@ section:nth-last-of-type(3) {
     display: flex;
     /* border: 1px solid red; */
     margin: 20rem auto 15rem auto;
+    /* background-color: #E11774; */
 
 }
 
@@ -307,7 +309,7 @@ section:nth-last-of-type(3) {
 
 
 #root>div>section.container.whatIsInco.position-relative>div>div>p {
-    width: 104%;
+    /* width: 104%; */
 }
 
 /* .text-content p {
@@ -383,12 +385,15 @@ section:nth-last-of-type(3) {
     #root>div>section.container.whatIsInco.position-relative>div>div {
         justify-content: center;
         align-items: center;
+        min-width: 100%;
     }
 
     #root>div>section.container.whatIsInco.position-relative>div>div>div {
         min-width: 80vw;
+        /* border: 4px solid red; */
 
     }
+
 
 
 }
@@ -420,19 +425,23 @@ section:nth-last-of-type(3) {
     }
 }
 
-.blueMountain {
+/* .blueMountain {
     position: absolute;
-    bottom: -5%;
+    bottom: -1%;
     left: 8%;
     z-index: 2;
-}
+} */
 
 .blueMountainImg {
-    max-height: 7.575em;
+    /* max-height: 24%; */
+    height: clamp(20%, 22%, 24%);
+
     width: auto;
     position: absolute;
-    top: 30.2rem;
-    left: 3.9rem;
+    top: 51%;
+    /* top: clamp(50%, 52%, 54%); */
+    left: 3%;
+    /* left: clamp(2%, 3%, 5%); */
     opacity: 100%;
 }
 
@@ -469,10 +478,6 @@ section:nth-last-of-type(3) {
 
 
 
-.homepageGraphicLane {
-    object-fit: contain;
-    max-width: max-content;
-}
 
 
 #root>div>section.container.body-bottom.p-0.mt-5.overflow-hidden.z-1>div>div>div.col-lg-5.graphicFrame.order-1.z-2.d-flex.justify-content-center.bubbleGumFrame {
@@ -507,36 +512,54 @@ section:nth-last-of-type(3) {
     }
 }
 
-@media (max-width: 1680px) and (min-width: 1401px) {
+#root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
+    /* background-color: #E11774; */
+    margin-top: 3em;
+    /* width: 50%; */
+
+
+}
+
+@media (max-width: 1680px) {
+
     .homepageOliviaGraphic {
-        /* top: 6%; */
+        /* top: 14.5%; */
         /* min-width: 30%; */
         height: auto;
+        /* top: 5%; */
+        max-width: 52rem;
+        object-position: 7rem -6.19rem;
+        transform: translate(-10%, 2%);
+
     }
 
 
 }
 
-@media (max-width: 1560px) and (min-width: 1401px) {
+@media (max-width: 1560px) {
     .homepageOliviaGraphic {
         /* top: 7%; */
-        /* min-width: 32%; */
+        max-width: 50rem;
         height: auto;
+        transform: translate(-10%, 3%);
+
     }
 
 
 }
 
-@media (max-width: 1400px) and (min-width: 1200px) {
+@media (max-width: 1400px) {
     .col-title {
         vertical-align: text-bottom;
     }
 
     .homepageOliviaGraphic {
-        position: absolute;
-        object-fit: contain;
-        /* object-position: 4rem 2rem; */
-        top: 4.3%;
+        object-position: 5rem -5.8rem;
+        /* margin-top: 1em; */
+        max-width: 46.9rem;
+        transform: translate(-10%, 5%);
+
+        /* top: 6%; */
     }
 
     /* hero text formatting */
@@ -544,19 +567,16 @@ section:nth-last-of-type(3) {
 
 
 
-    /* img.homepageOliviaGraphic {
-        position: absolute;
-        height: 100%;
-        width: auto;
-        top: 2%;
-        object-fit: contain;
-        object-position: 4rem 0rem;
 
-    } */
     #root>div>section.container.whatIsInco.overflow-visible>div>div>div {
         margin: auto;
         /* min-width: 100%; */
         /* max-width: 50%; */
+    }
+
+    section:nth-last-of-type(3) {
+        margin: 10rem auto 10rem auto;
+        width: 100%;
     }
 
     .whoWeAreFrame {
@@ -620,13 +640,54 @@ section:nth-last-of-type(3) {
         max-height: 20%;
 
     }
+}
 
+
+
+
+@media (max-width: 1249px) and (min-width: 993px) {
+
+    section:nth-last-of-type(2) {
+        margin: 12rem auto 10rem auto;
+    }
+
+    section:nth-last-of-type(3) {
+        margin: 16rem auto 10rem auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .homepageOliviaGraphic {
+        max-width: 43.5rem;
+        /* min-width: 70.7vw; */
+        height: auto;
+        /* top: calc(2rem + (3rem - 1em)); */
+        /* left: 48%; */
+        transform: translate(-11%, 10%);
+
+        /* border: 1px solid red; */
+    }
 
 }
 
 
 
-@media (max-width:1200px) and (min-width: 991px) {
+
+
+@media (max-width: 1069px) {
+    .homepageOliviaGraphic {
+        max-width: 41rem;
+        max-height: auto;
+        transform: translate(-10%, 13%);
+        object-position: 4rem -5rem;
+
+
+    }
+}
+
+@media (max-width:992px) and (min-width: 768px) {
+
 
     .wave-graphic {
         max-height: 81vh;
@@ -634,21 +695,46 @@ section:nth-last-of-type(3) {
 
     }
 
+    #root>div>section.container.hero.position-relative>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: block;
+
+    }
+
+
     .attn-text {
         font-size: 1.83rem;
     }
 
-    #root>div>section.container.hero.overflow-visible>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-2.order-md-3.order-md-2.order-sm-2.overflow-visible.heroGraphic.object-fit-contain {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
+        /* background-color: #E11774; */
+        position: relative;
+        max-height: 0%;
+        padding: 0;
+        margin: 0;
     }
 
-    .homepageOliviaGraphic {
-        height: auto;
-        object-fit: cover;
+    /* #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.overflow-visible.heroGraphic.object-fit-contain>.homepageOliviaGraphic {
+        height: 18em;
+        width: auto;
+        margin: 0 auto;
+        position: relative;
+        object-fit: contain;
+        object-position: 8em -2em;
+    } */
+
+    section:nth-last-of-type(2) {
+        margin: 10rem auto 5rem auto;
     }
+
+    section:nth-last-of-type(3) {
+        margin: 10rem auto 5rem auto;
+        width: 100%;
+    }
+
 
     /* ### homepage absolute position image assets ### */
 
@@ -723,26 +809,150 @@ section:nth-last-of-type(3) {
 
 }
 
+@media (max-width: 992px) {
+
+    /* do not delete important - it's okay it's commented out */
+
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title {
+        padding-top: 2%;
+    }
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative {
+
+        align-items: center;
+    }
+
+    #root>div>section.container.hero.position-relative>div {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .justify-content-between {
+        justify-content: center !important;
+    }
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
+        height: 20em;
+        /* border: 1px solid #E11774; */
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        /* align-items: center; */
+        /* margin: auto; */
+
+    }
+
+    .homepageOliviaGraphic {
+        max-height: 22em;
+        width: auto;
+        position: absolute;
+        transform: translate(-43%, -0%);
+        /* object-position: 5em -5rem; */
+        align-self: center;
+        /* margin-top: 3em; */
+        /* left: -1em; */
+        /* top: 0.1em; */
+        margin: 0 auto;
+
+    }
 
 
 
-@media (max-width: 1199px) and (min-width: 99px) {
+    #root>div>section.container.whatIsInco.position-relative>div>div {
+        min-width: 100%;
+    }
+
+    .we-are-subtitle {
+        margin-bottom: 2em;
+    }
+
+    /* .blueBlob {
+        max-height: 49.5rem;
+        max-width: auto;
+        top: 28.7em;
+        left: -25%;
+        transform: scaleY(.95);
+    } */
+
+    .pinkCloudImg {
+        position: absolute;
+        max-width: 19%;
+        min-width: 15%;
+        height: auto;
+        left: 41.2rem;
+        top: 12.2rem;
+    }
+
+
+    .tealCloudImg {
+        width: 30.2375rem;
+        height: auto;
+        left: -39vw;
+        top: 43.6rem;
+    }
+
+
+    .blueMountainImg {
+        max-height: 7.2em;
+        width: auto;
+        top: 29.5rem;
+        left: 9.8rem;
+    }
+
+
+    .greenAndPinkCloud {
+        right: -9em;
+        top: 58rem;
+        width: 19rem;
+        height: auto;
+        /* object-position: 6.23em 0; */
+    }
+
+
+}
+
+
+
+@media (max-width: 768px) and (min-width: 99px) {
 
     .col-lg-6,
     .m-0,
     .p-o {
         display: flex;
-        /* align-items: center; */
-        /* justify-content: center; */
         flex-direction: column;
         width: 100%;
     }
 
+    .col-title {
+        /* height: 25vh; */
+
+    }
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title {
+        padding-top: 8%;
+    }
+
+    /* .homepageOliviaGraphic {
+        object-position: 5.3em -5rem;
+        min-height: 22em;
+        left: -5em;
+        top: 1em;
+        transform: translate(-55%, 0%);
+    } */
+
     .container .hero {
         display: flex;
-        /* justify-content: center; */
+        /* justify-content: l; */
         /* align-items: center; */
         width: 100%;
+        /* border: 1px solid #E11774; */
+    }
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
+        margin: 0;
     }
 
     .whoWeAreFrame {
@@ -758,16 +968,8 @@ section:nth-last-of-type(3) {
     .overflow-visible,
     .heroGraphic {
         position: relative;
-        display: inline;
-        display: flex;
         align-items: center;
-        min-width: min-content;
     }
-
-
-    /* #root>div>section.container.body-bottom.p-0.mt-5.overflow-hidden.z-1>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column {
-        min-width: 90%;
-    } */
 
     .col-lg-7 {
         width: 100%;
@@ -777,23 +979,26 @@ section:nth-last-of-type(3) {
         display: flex;
         justify-content: center;
         align-items: center;
+        /* border: 1px solid #E11774; */
     }
 
     .homepageOliviaGraphic {
+        min-height: 21em;
+        width: auto;
         position: relative;
-        height: 28rem;
-        min-width: 150vw;
-        min-width: none;
-        max-width: fit-content;
-        object-position: 10em 0rem;
-        margin: 0 0 4rem 0;
+        object-position: 3em -3em;
+        transform: translate(0%, 0%);
+    }
+
+    .whoWeAreFrame {
+        width: 50%;
     }
 
     /* text column max width */
     #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div,
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-5.mt-md-0 {
-        max-width: 46rem;
         margin-top: 6%;
+        background-color: rgb(148, 90, 207);
     }
 
     .center-md {
@@ -802,9 +1007,7 @@ section:nth-last-of-type(3) {
         margin-right: auto;
     }
 
-    .col-title {
-        height: 6rem;
-    }
+
 
     .grandmas-bingo {
         flex-direction: column;
@@ -879,62 +1082,6 @@ section:nth-last-of-type(3) {
 } */
 
 
-@media (max-width: 992px) and (min-width: 99px) {
-
-    /* do not delete important - it's okay it's commented out */
-    .mb-lg-0 {
-        /* margin-bottom: 0 !important; */
-    }
-
-    .homepageOliviaGraphic {
-        object-position: 5em 0rem;
-    }
-
-
-    /* .blueBlob {
-        max-height: 49.5rem;
-        max-width: auto;
-        top: 28.7em;
-        left: -25%;
-        transform: scaleY(.95);
-    } */
-
-    .pinkCloudImg {
-        position: absolute;
-        max-width: 19%;
-        min-width: 15%;
-        height: auto;
-        left: 41.2rem;
-        top: 12.2rem;
-    }
-
-
-    .tealCloudImg {
-        width: 30.2375rem;
-        height: auto;
-        left: -39vw;
-        top: 43.6rem;
-    }
-
-
-    .blueMountainImg {
-        max-height: 7.2em;
-        width: auto;
-        top: 29.5rem;
-        left: 9.8rem;
-    }
-
-
-    .greenAndPinkCloud {
-        right: -9em;
-        top: 58rem;
-        width: 19rem;
-        height: auto;
-        /* object-position: 6.23em 0; */
-    }
-
-
-}
 
 /* For 15.4-inch (2880 × 1800) display */
 @media (min-width: 1440px) and (min-height: 900px) and (max-width: 1920px) and (max-height: 1200px) {
@@ -990,23 +1137,6 @@ section:nth-last-of-type(3) {
         width: 100%;
     }
 }
-
-
-
-
-@media (max-width:1100px) and (min-width: 790px) {
-
-    .homepageOliviaGraphic {
-        /* object-position: 8em 0; */
-    }
-
-    /* .homepageGraphicLane {
-        object-position: 0em 0em;
-        border: 1px solid pink;
-
-    } */
-}
-
 
 
 
@@ -1082,9 +1212,13 @@ section:nth-last-of-type(3) {
         padding: 0;
     }
 
-    .homepageOliviaGraphic {
-        object-position: 2em 0;
+
+
+    .container {
+        /* max-width: 720px; */
+        /* width: 100%; */
     }
+
 
     .wave-graphic {
         width: 200vw;

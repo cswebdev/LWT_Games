@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import "./HomePage.css";
 import homepageOliviaGraphic from "../../assets/left_mainpage_image.png";
 import imageAssets from "../../utils/Utils";
@@ -9,8 +9,8 @@ const HomePage = () => {
          <section className="container hero position-relative">
             <div className="row d-flex align-items-stretch justify-content-between">
                {/* <!-- Title and Subtitle Column --> */}
-               <div className="col-lg-6 col-md- mt-5 p-0  order-first order-md-1 order-lg-1 order-sm-1  d-flex flex-column justify-content-end position-relative col-title">
-                  <h1>We Are InCo.</h1>
+               <div className="col-lg-6 col-md-12 mt-5 p-0  order-first order-md-1 order-lg-1 order-sm-1  d-flex flex-column justify-content-end position-relative col-title">
+                  <h1 className="m-0">We Are InCo.</h1>
                   <div className="Header-text">
                      <p className="mb-lg-0">
                         <span className="attn-text">
@@ -26,18 +26,18 @@ const HomePage = () => {
                   <p>connections with bingo!</p>
                   <button
                      type="button"
-                     className="btn btn-primary btn-play-bingo"
+                     className="btn btn-primary btn-play-bingo mt-5"
                   >
                      PLAY BINGO
                   </button>
                </div>
                {/* <!-- Image Column --> */}
-               <div className="col-lg-6 col-md-12 col-sm-12 m-0 p-0 order-lg-2 order-md-3 custom-order-2 order-md-2 order-sm-2 overflow-visible  heroGraphic object-fit-contain">
+               <div className="col-lg-6 col-md-12 col-sm-12 order-lg-2 order-md-3 custom-order-2 order-md-2 order-sm-2 heroGraphic object-fit-contain ">
                   <img
                      src={homepageOliviaGraphic}
                      loading="lazy"
                      alt="homepage Left"
-                     className="homepageOliviaGraphic object-fit-contain"
+                     className="homepageOliviaGraphic"
                   ></img>
                </div>
             </div>
@@ -46,12 +46,6 @@ const HomePage = () => {
          <section className="container whatIsInco position-relative">
             {/* fixed assets */}
 
-            <img
-               src={imageAssets.blueMountain}
-               loading="lazy"
-               alt="blue mountain graphic"
-               className="blueMountainImg z-2"
-            />
             <img
                src={imageAssets.pinkCloud}
                loading="lazy"
@@ -87,6 +81,12 @@ const HomePage = () => {
                            alt="Olivia Portrait"
                         />
                      </div>
+                     <img
+                        src={imageAssets.blueMountain}
+                        loading="lazy"
+                        alt="blue mountain graphic"
+                        className="blueMountainImg z-2"
+                     />
                      <div className="col-xl-12 col-lg-12 col-12 whoWeAreFrame">
                         <img
                            className="laneDrawing"
@@ -189,12 +189,12 @@ const HomePage = () => {
                </div>
             </div>
          </section>
-         <div className="wave-container container-fluid z-0 overflow-visible">
-            <img
+         <div className="wave-container container-fluid z-0 overflow-hidden w-0">
+            {/* <img
                className="wave-graphic z-0"
                src={imageAssets.homepageWave}
                alt="wave graphic"
-            />
+            /> */}
          </div>
       </>
    );

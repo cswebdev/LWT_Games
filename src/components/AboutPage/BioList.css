@@ -28,7 +28,7 @@
   display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .BioList-bios {
     margin-left: 5.313rem;
     margin-right: 5.313rem;

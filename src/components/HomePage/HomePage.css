@@ -199,7 +199,7 @@ h2 {
     display: relative;
 }
 
-.olivaOuterFrame {
+.oliviaOuterFrame {
     /* max-width: 293px; */
     height: 293px;
     width: 100%;
@@ -216,17 +216,15 @@ h2 {
 
 }
 
-.olivaOuterFrame .blueMountainImg {
-    bottom: -16px;
-    left: -24px;
-}
 
 .whoWeAreFrame img {
-
     height: auto;
     width: 100%;
-    transform: scale(1.10);
+}
 
+.whoWeAreFrame img:nth-of-type(1) {
+    transform: scale(1.15);
+    background-color: red;
 }
 
 
@@ -236,7 +234,7 @@ h2 {
     position: relative;
     opacity: 89%;
     border-color: #E11774;
-    transform: scale(0.7);
+    transform: scale(0.75);
 
 }
 
@@ -251,8 +249,8 @@ h2 {
     z-index: 1;
 }
 
-/* 
-.laneDrawing {
+
+/* .laneDrawing {
     object-fit: contain;
     height: 100%;
     width: 100%;
@@ -262,13 +260,12 @@ h2 {
     padding: 0;
     margin: 0;
 
-}  img.vestDrawing {
-    object-fit: contain;
+}   */
+.vestDrawing {
+    object-fit: fill;
     margin: 0;
     padding: 0;
-    transform: scale(1.1);
-
-} */
+}
 
 .whoWeAreFrame:nth-of-type(2) {
     border-color: #E11774;
@@ -317,17 +314,13 @@ section:nth-last-of-type(2) {
 
 }
 
-section:nth-last-of-type(3) {
-    margin: 30rem auto 10rem auto;
-    width: 100%;
-    /* border: 1px solid red; */
-}
 
 
 #root>div>section:nth-child(5) {
     display: flex;
+    width: 100%;
     /* border: 1px solid red; */
-    margin: 20rem auto 15rem auto;
+    margin: 10rem auto 15rem auto;
     /* background-color: #E11774; */
 
 }
@@ -369,6 +362,7 @@ section:nth-last-of-type(3) {
     height: auto;
     left: 4rem;
     top: 16rem;
+    z-index: 10;
 }
 
 
@@ -391,22 +385,23 @@ section:nth-last-of-type(3) {
     /* max-height: 100rem; */
     /* min-width: 1%; */
     /* min-width: 1314px; */
-    /* max-width: 80vw; */
+    width: 55vw;
     /* min-width: 60em; */
     /* width: 100%; */
     /* min-height: 100%; */
     /* min-width: 73.99%; */
     height: auto;
-    width: 29rem;
-    display: none;
+    /* width: 65rem; */
+    /* display: none; */
     /* width: 99%; */
     /* min-width: 109%; */
     position: absolute;
-    top: 40.4rem;
+    /* top: 42.4rem; */
     /* top: -25%; */
     /* left: -29em; */
     /* left: -30%; */
-    /* left: 100%; */
+    left: 0%;
+    top: 69rem;
     margin: 0;
     padding: 0;
     aspect-ratio: 1/1;
@@ -431,7 +426,7 @@ section:nth-last-of-type(3) {
         max-width: 80vw;
 
         height: auto;
-        z-index: -9999;
+        z-index: -9;
     }
 
     #root>div>section.container.whatIsInco.position-relative>div>div {
@@ -459,7 +454,9 @@ section:nth-last-of-type(3) {
 
 @media (max-width: 992px) {
     .blueBlob {
-        width: 200vw;
+        top: 119rem;
+        width: 85vw;
+        left: -9rem;
     }
 }
 
@@ -477,38 +474,27 @@ section:nth-last-of-type(3) {
     }
 }
 
-/* .blueMountain {
-    position: absolute;
-    bottom: -1%;
-    left: 8%;
-    z-index: 2;
-} */
+#root>div>section:nth-child(5) {
+
+margin: 5rem auto;
+}
+
+
+.oliviaOuterFrame .blueMountainImg {
+    bottom: -38px;
+    left: -62px;
+}
+
 
 .blueMountainImg {
-    /* max-height: 24%; */
-    /* height: clamp(24%, 10%, 10%); */
-    /* height: clamp(20%, 22%, 24%); */
-    /* max-height: 20%; */
-    /* min-height: 16%; */
-    /* max-height: 20vh; */
+
     width: auto;
     position: absolute;
-    /* top: 55.5%; */
-    /* top: calc(50vh + (1000vh - 992vh)); */
-    /* top: clamp(40%, 49%, 55%); */
-    /* left: 3rem; */
-    /* bottom: 23vh; */
-    /* left: clamp(5%, 8%, 9%); */
     opacity: 100%;
-    /* aspect-ratio: 4/3; */
-    max-width: 162px;
+    max-width: 168px;
     max-height: auto;
-    bottom: -16px;
-    /* left: 0; */
-    left: 6vw;
     padding: 0;
     margin: 0;
-    /* transform: translate(70%, 0%); */
 }
 
 
@@ -646,14 +632,9 @@ section:nth-last-of-type(3) {
         height: max-content;
     }
 
-    .whoWeAreFrame {
-        /* min-width: 1rem; */
-        /* max-width: 50%; */
-    }
 
-    .whoWeAreFrame>img {
-        scale: 1.1;
-    }
+
+
 
     .pinkCloudImg {
         position: absolute;
@@ -680,10 +661,9 @@ section:nth-last-of-type(3) {
     } */
 
     .blueMountainImg {
-        max-height: 3.575em;
+        /* max-height: 102px; */
         width: auto;
-        top: 15.8rem;
-        left: 2rem;
+        /* left: 2rem; */
     }
 
 
@@ -725,6 +705,8 @@ section:nth-last-of-type(3) {
     }
 }
 
+
+
 @media (max-width: 1200px) {
     .homepageOliviaGraphic {
         max-width: 43.5rem;
@@ -737,12 +719,32 @@ section:nth-last-of-type(3) {
         /* border: 1px solid red; */
     }
 
-    .blueMountainImg {
-        max-width: fit-content;
-        height: auto;
-        left: 1rem;
-        top: 13rem;
+
+    #root>div>section.container.whatIsInco.position-relative>div>div>div.row.d-flex.align-content-center.justify-content-center.z-1.position-relative>div.col-xl-4.col-lg-12.col-12.position-relative.oliviaOuterFrame.p-0>div {
+        margin: 0 0em
     }
+
+    /* .oliviaPortrait {
+        transform: scale(.65);
+        width: 350%;
+        margin: 0;
+        padding: 0;
+    } */
+
+    .whoWeAreFrame {
+        max-width: 30%;
+        margin: 0 .5em;
+    }
+
+
+    .oliviaOuterFrame .blueMountainImg {
+        /* max-width: fit-content; */
+        height: auto;
+        left: -2em;
+        top: 7.7em;
+    }
+
+
 
 }
 
@@ -762,7 +764,19 @@ section:nth-last-of-type(3) {
 }
 
 @media (max-width:992px) and (min-width: 768px) {
+    #root>div>section.container.whatIsInco.position-relative>div>div>div.row.d-flex.align-content-center.justify-content-center.z-1.position-relative {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    #root>div>section.container.whatIsInco.position-relative>div>div>div.row.d-flex.align-content-center.justify-content-center.z-1.position-relative>div.col-xl-4.col-lg-12.col-12.position-relative.oliviaOuterFrame.p-0>div {
+        margin: -.8em 0em;
+    }
+
+    .whoWeAreFrame {
+        max-width: 39.55%;
+        margin: .8em 0em;
+    }
 
     .wave-graphic {
         max-height: 81vh;
@@ -957,6 +971,8 @@ section:nth-last-of-type(3) {
         height: auto;
         left: 41.2rem;
         top: 12.2rem;
+        z-index: 10;
+
     }
 
 
@@ -965,14 +981,17 @@ section:nth-last-of-type(3) {
         height: auto;
         left: -39vw;
         top: 43.6rem;
+        z-index: 10;
+
     }
 
 
+    .oliviaOuterFrame .blueMountainImg,
     .blueMountainImg {
-        max-height: 2.8em;
+        max-height: 5em;
         width: auto;
-        top: 9.9rem;
-        left: -1rem;
+        top: 10.7rem;
+        left: -3.9rem;
     }
 
 

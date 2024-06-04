@@ -43,9 +43,14 @@ const HomePage = () => {
             </div>
          </section>
 
+         <img
+            className="blueBlob z-0"
+            src={imageAssets.blueBlob}
+            alt="blue background blob z-0"
+         />
+
          <section className="container whatIsInco position-relative">
             {/* fixed assets */}
-
             <img
                src={imageAssets.pinkCloud}
                loading="lazy"
@@ -71,9 +76,8 @@ const HomePage = () => {
                      <br />
                      passion for people [or gamers]
                   </p>
-
                   <div className="row d-flex align-content-center justify-content-center z-1 position-relative">
-                     <div className="col-xl-4 col-lg-12 col-12 position-relative olivaOuterFrame p-0">
+                     <div className="col-xl-4 col-lg-12 col-12 position-relative oliviaOuterFrame p-0">
                         <div className="oliviaFrame position-relative">
                            <img
                               className="oliviaPortrait z-1"
@@ -89,7 +93,7 @@ const HomePage = () => {
                            className="blueMountainImg z-2"
                         />
                      </div>
-                     <div className="col-xl-12 col-lg-12 col-12 whoWeAreFrame">
+                     <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame">
                         <img
                            className="laneDrawing"
                            loading="lazy"
@@ -119,13 +123,8 @@ const HomePage = () => {
                </div>
             </div>
          </section>
-         <img
-            className="blueBlob"
-            src={imageAssets.blueBlob}
-            alt="blue background blob z-0"
-         />
 
-         {/* <section className="container body-bottom z-1 ">
+         <section className="container body-bottom z-1 ">
             <div className="row d-flex flex-row-reverse">
                <div className="col-lg-7 order-2 m-0 p-0 z-1 ">
                   <div className="text-content col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -190,7 +189,7 @@ const HomePage = () => {
                   </div>
                </div>
             </div>
-         </section> */}
+         </section>
          <div className="wave-container container-fluid z-0 overflow-hidden w-0">
             {/* <img
                className="wave-graphic z-0"

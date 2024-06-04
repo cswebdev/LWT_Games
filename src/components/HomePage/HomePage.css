@@ -170,7 +170,7 @@ h2 {
 .whoWeAreFrame {
     aspect-ratio: 1/1;
     height: auto;
-    width: 26%;
+    width: 293px;
     /* min-width: 13em; */
     border: 3px solid rgb(65, 233, 65);
     background-color: hwb(120 0% 0%);
@@ -379,6 +379,13 @@ section:nth-last-of-type(3) {
     --bs-gutter-x: 0rem;
 }
 
+/* .whoWeAreFrame.oliviaFrame {
+    max-height: 100%;
+    max-width: 348px;
+    width: 100%;
+} */
+
+
 
 @media (min-width: 1400px) {
     .blueBlob {
@@ -440,15 +447,28 @@ section:nth-last-of-type(3) {
 
 .blueMountainImg {
     /* max-height: 24%; */
-    height: clamp(20%, 22%, 24%);
-
+    /* height: clamp(24%, 10%, 10%); */
+    /* height: clamp(20%, 22%, 24%); */
+    /* max-height: 20%; */
+    /* min-height: 16%; */
+    /* max-height: 20vh; */
     width: auto;
     position: absolute;
-    top: 15rem;
-    /* top: clamp(48%, 49%, 54%); */
-    left: 1.6rem;
+    /* top: 55.5%; */
+    /* top: calc(50vh + (1000vh - 992vh)); */
+    /* top: clamp(40%, 49%, 55%); */
+    /* left: 3rem; */
+    /* bottom: 23vh; */
     /* left: clamp(2%, 2%, 5%); */
     opacity: 100%;
+    /* aspect-ratio: 4/3; */
+    max-width: 132px;
+    max-height: auto;
+    bottom: -16px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transform: translate(40%, 0%);
 }
 
 
@@ -528,7 +548,6 @@ section:nth-last-of-type(3) {
 @media (max-width: 1680px) {
 
     .homepageOliviaGraphic {
-     
         height: auto;
         max-width: 52rem;
         object-position: 7rem -6.19rem;
@@ -543,7 +562,7 @@ section:nth-last-of-type(3) {
         max-width: 50rem;
         height: auto;
         /* transform: translate(-10%, 3%); */
-        /* top: 3rem; */
+        top: 3rem;
 
     }
 
@@ -589,7 +608,7 @@ section:nth-last-of-type(3) {
 
     .whoWeAreFrame {
         /* min-width: 1rem; */
-        max-width: 50%;
+        /* max-width: 50%; */
     }
 
     .whoWeAreFrame>img {
@@ -863,7 +882,7 @@ section:nth-last-of-type(3) {
         max-height: 22em;
         width: auto;
         position: absolute;
-        transform: translate(-43%, -0%);
+        transform: translate(-43%, -10%);
         /* object-position: 5em -5rem; */
         align-self: center;
         /* margin-top: 3em; */
@@ -951,6 +970,9 @@ section:nth-last-of-type(3) {
         overflow: visible;
     }
 
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative {
+        height: 30vh;
+    }
 
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title {
@@ -1005,11 +1027,10 @@ section:nth-last-of-type(3) {
     }
 
     .homepageOliviaGraphic {
-        min-height: 21em;
+        min-height: 22em;
         width: auto;
         position: relative;
-        object-position: 3em -3em;
-        transform: translate(0%, 0%);
+        transform: translate(-1%, -5%);
     }
 
     .whoWeAreFrame {

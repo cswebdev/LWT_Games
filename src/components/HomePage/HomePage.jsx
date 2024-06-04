@@ -73,7 +73,13 @@ const HomePage = () => {
                   </p>
 
                   <div className="row d-flex align-content-center justify-content-center z-1 position-relative">
-                     <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame flex-shrink-0">
+                     <img
+                        src={imageAssets.blueMountain}
+                        loading="lazy"
+                        alt="blue mountain graphic"
+                        className="blueMountainImg z-2"
+                     />
+                     <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame position-relative">
                         <img
                            className="oliviaPortrait z-1"
                            loading="lazy"
@@ -81,12 +87,6 @@ const HomePage = () => {
                            alt="Olivia Portrait"
                         />
                      </div>
-                     <img
-                        src={imageAssets.blueMountain}
-                        loading="lazy"
-                        alt="blue mountain graphic"
-                        className="blueMountainImg z-2"
-                     />
                      <div className="col-xl-12 col-lg-12 col-12 whoWeAreFrame">
                         <img
                            className="laneDrawing"
@@ -103,15 +103,15 @@ const HomePage = () => {
                            alt="Drawing of a vest"
                         />
                      </div>
-                     <div className="row">
-                        <div className="col-12">
-                           <button
-                              type="button"
-                              className="btn btn-info team-button z-1 "
-                           >
-                              MEET THE TEAM{" "}
-                           </button>
-                        </div>
+                  </div>
+                  <div className="row">
+                     <div className="col-12">
+                        <button
+                           type="button"
+                           className="btn btn-info team-button z-1 "
+                        >
+                           MEET THE TEAM{" "}
+                        </button>
                      </div>
                   </div>
                </div>

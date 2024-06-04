@@ -18,7 +18,7 @@ const FAQ_2 = new FAQ(
 
 const FAQ_3 = new FAQ(
   "How can I play?",
-  "Check back soon."
+  "You can start at <a href='/'>incocollective.com</a> and hit the button that says “Play Bingo!”"
 )
 
 const FAQ_4 = new FAQ(
@@ -55,17 +55,17 @@ const FAQ_8 = new FAQ(
 
 const FAQ_9 = new FAQ(
   "What format is the game in, and what software or applications do I need to use it?",
-  "Check back soon."
+  "You are good to play on any operating system!"
 )
 
 const FAQ_10 = new FAQ(
   "How can I provide feedback or report any issues with the digital product?",
-  "You can send us feedback or report issues to <a href='mailto:intercoll.team@gmail.com'>intercoll.team@gmail.com</a>. We will also happily take pictures of your animals."
+  "We’d love your thoughts and feedback! Feel free to email us a <a href='mailto:intercoll.team@gmail.com'>intercoll.team@gmail.com</a>."
 )
 
 const FAQ_11 = new FAQ(
   "Will my personal information be collected or stored when I play?",
-  "Check back soon."
+  "We don't directly store anything about the user in our database, but Googles authentication system does store off the basic information needed to authenticate to the account (either GitHub or Google)."
 )
 
 const FAQ_12 = new FAQ(

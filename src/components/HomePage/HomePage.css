@@ -167,10 +167,26 @@ h2 {
 
 
 
-.whoWeAreFrame {
+/* .whoWeAreFrame {
     aspect-ratio: 1/1;
     height: auto;
     width: 293px;
+    border: 3px solid rgb(65, 233, 65);
+    background-color: hwb(120 0% 0%);
+    border-radius: 5%;
+    margin: 1em 1.5em 0em 1.5em;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: relative;
+} */
+
+.whoWeAreFrame,
+.oliviaFrame {
+    aspect-ratio: 1/1;
+    height: auto;
+    max-width: 293px;
     /* min-width: 13em; */
     border: 3px solid rgb(65, 233, 65);
     background-color: hwb(120 0% 0%);
@@ -183,11 +199,33 @@ h2 {
     display: relative;
 }
 
+.olivaOuterFrame {
+    /* max-width: 293px; */
+    height: 293px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin: 0em .5em 0 0;
+    max-width: 293px;
+}
+
+.oliviaFrame {
+    aspect-ratio: 1/1;
+    height: 100%;
+    width: 100%;
+    margin: 1em 0em 0 0;
+
+}
+
+.olivaOuterFrame .blueMountainImg {
+    bottom: -16px;
+    left: -24px;
+}
+
 .whoWeAreFrame img {
 
     height: auto;
     width: 100%;
-    transform: scale(1.1);
+    transform: scale(1.10);
 
 }
 
@@ -198,6 +236,7 @@ h2 {
     position: relative;
     opacity: 89%;
     border-color: #E11774;
+    transform: scale(0.7);
 
 }
 
@@ -459,16 +498,17 @@ section:nth-last-of-type(3) {
     /* top: clamp(40%, 49%, 55%); */
     /* left: 3rem; */
     /* bottom: 23vh; */
-    /* left: clamp(2%, 2%, 5%); */
+    /* left: clamp(5%, 8%, 9%); */
     opacity: 100%;
     /* aspect-ratio: 4/3; */
-    max-width: 132px;
+    max-width: 162px;
     max-height: auto;
     bottom: -16px;
-    left: 0;
+    /* left: 0; */
+    left: 6vw;
     padding: 0;
     margin: 0;
-    transform: translate(40%, 0%);
+    /* transform: translate(70%, 0%); */
 }
 
 

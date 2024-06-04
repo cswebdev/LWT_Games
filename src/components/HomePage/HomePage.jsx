@@ -73,18 +73,20 @@ const HomePage = () => {
                   </p>
 
                   <div className="row d-flex align-content-center justify-content-center z-1 position-relative">
-                     <img
-                        src={imageAssets.blueMountain}
-                        loading="lazy"
-                        alt="blue mountain graphic"
-                        className="blueMountainImg z-2"
-                     />
-                     <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame position-relative">
+                     <div className="col-xl-4 col-lg-12 col-12 position-relative olivaOuterFrame p-0">
+                        <div className="oliviaFrame position-relative">
+                           <img
+                              className="oliviaPortrait z-1"
+                              loading="lazy"
+                              src={imageAssets.oliviaPortrait}
+                              alt="Olivia Portrait"
+                           />
+                        </div>
                         <img
-                           className="oliviaPortrait z-1"
+                           src={imageAssets.blueMountain}
                            loading="lazy"
-                           src={imageAssets.oliviaPortrait}
-                           alt="Olivia Portrait"
+                           alt="blue mountain graphic"
+                           className="blueMountainImg z-2"
                         />
                      </div>
                      <div className="col-xl-12 col-lg-12 col-12 whoWeAreFrame">

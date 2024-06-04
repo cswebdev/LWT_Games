@@ -1,129 +1,125 @@
-import { useEffect } from "react";
-import "./HomePage.css";
-import homepageOliviaGraphic from "../../assets/left_mainpage_image.png";
-import imageAssets from "../../utils/Utils";
+import { useEffect } from 'react';
+import './HomePage.css';
+import homepageOliviaGraphic from '../../assets/left_mainpage_image.png';
+import imageAssets from '../../utils/Utils';
 
 const HomePage = () => {
-   return (
-      <>
-         <section className="container hero position-relative">
-            <div className="row d-flex align-items-stretch justify-content-between">
-               {/* <!-- Title and Subtitle Column --> */}
-               <div className="col-lg-6 col-md-12 p-0 order-first order-md-1 order-lg-1 order-sm-1  d-flex flex-column justify-content-end position-relative col-title">
-                  <h1 className="m-0">We Are InCo.</h1>
-                  <div className="Header-text">
-                     <p className="mb-lg-0">
-                        <span className="attn-text">
-                           [ Interconnected Collective ]
-                        </span>
-                     </p>
-                  </div>
-               </div>
-
-               {/* <!-- Paragraph Column  --> */}
-               <div className="col-lg-6 col-md-12 col-sm-12 m-0 p-0 order-lg-3 custom-order-3 order-md-last order-sm-last order-sm-3 d-flex flex-column overflow-visible position-relative">
-                  <p>Creating community and building</p>
-                  <p>connections with bingo!</p>
-                  <button
-                     type="button"
-                     className="btn btn-primary btn-play-bingo mt-5"
-                  >
-                     PLAY BINGO
-                  </button>
-               </div>
-               {/* <!-- Image Column --> */}
-               <div className="col-lg-6 col-md-12 col-sm-12 order-lg-2 order-md-3 custom-order-2 order-md-2 order-sm-2 heroGraphic object-fit-contain ">
-                  <img
-                     src={homepageOliviaGraphic}
-                     loading="lazy"
-                     alt="homepage Left"
-                     className="homepageOliviaGraphic"
-                  ></img>
-               </div>
+  return (
+    <>
+      <section className='container hero position-relative'>
+        <div className='row d-flex align-items-stretch justify-content-between'>
+          {/* <!-- Title and Subtitle Column --> */}
+          <div className='col-lg-6 col-md-12 p-0 order-first order-md-1 order-lg-1 order-sm-1  d-flex flex-column justify-content-end position-relative col-title'>
+            <h1 className='m-0'>We Are InCo.</h1>
+            <div className='Header-text'>
+              <p className='mb-lg-0'>
+                <span className='attn-text'>[ Interconnected Collective ]</span>
+              </p>
             </div>
-         </section>
+          </div>
 
-         <section className="container whatIsInco position-relative">
-            {/* fixed assets */}
-
+          {/* <!-- Paragraph Column  --> */}
+          <div className='col-lg-6 col-md-12 col-sm-12 m-0 p-0 order-lg-3 custom-order-3 order-md-last order-sm-last order-sm-3 d-flex flex-column overflow-visible position-relative'>
+            <p>Creating community and building</p>
+            <p>connections with bingo!</p>
+            <button
+              type='button'
+              className='btn btn-primary btn-play-bingo mt-5'
+            >
+              PLAY BINGO
+            </button>
+          </div>
+          {/* <!-- Image Column --> */}
+          <div className='col-lg-6 col-md-12 col-sm-12 order-lg-2 order-md-3 custom-order-2 order-md-2 order-sm-2 heroGraphic object-fit-contain '>
             <img
-               src={imageAssets.pinkCloud}
-               loading="lazy"
-               alt="tiny solo pink cloud"
-               className="pinkCloudImg z-2"
-            />
-            <img
-               src={imageAssets.tealAndPurpleCloud}
-               loading="lazy"
-               alt="teal and purple cloud"
-               className="tealCloudImg"
+              src={homepageOliviaGraphic}
+              loading='lazy'
+              alt='homepage Left'
+              className='homepageOliviaGraphic'
             ></img>
-            <img
-               src={imageAssets.greenAndPinkCloud}
-               alt="small green and pink cloud"
-               className="greenAndPinkCloud"
-            />
-            <div className="who-we-are-graphic z-0 position-relative">
-               <div className="container d-flex flex-column text-center justify-content-center who-are-we z-1 col-lg-12 col-md-12 position-relative">
-                  <h2 className="z-1 mb-4">What's InCo?</h2>
-                  <p className="we-are-subtitle z-1 mb-lg-5">
-                     Breaking through digital with the power of fun and the{" "}
-                     <br />
-                     passion for people [or gamers]
-                  </p>
+          </div>
+        </div>
+      </section>
 
-                  <div className="row d-flex align-content-center justify-content-center z-1 position-relative">
-                     <img
-                        src={imageAssets.blueMountain}
-                        loading="lazy"
-                        alt="blue mountain graphic"
-                        className="blueMountainImg z-2"
-                     />
-                     <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame position-relative">
-                        <img
-                           className="oliviaPortrait z-1"
-                           loading="lazy"
-                           src={imageAssets.oliviaPortrait}
-                           alt="Olivia Portrait"
-                        />
-                     </div>
-                     <div className="col-xl-12 col-lg-12 col-12 whoWeAreFrame">
-                        <img
-                           className="laneDrawing"
-                           loading="lazy"
-                           src={imageAssets.laneDrawing}
-                           alt="Drawing of Lane"
-                        />
-                     </div>
-                     <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame">
-                        <img
-                           className="vestDrawing"
-                           loading="lazy"
-                           src={imageAssets.vestDrawing}
-                           alt="Drawing of a vest"
-                        />
-                     </div>
-                  </div>
-                  <div className="row">
-                     <div className="col-12">
-                        <button
-                           type="button"
-                           className="btn btn-info team-button z-1 "
-                        >
-                           MEET THE TEAM{" "}
-                        </button>
-                     </div>
-                  </div>
-               </div>
+      <section className='container whatIsInco position-relative'>
+        {/* fixed assets */}
+
+        <img
+          src={imageAssets.pinkCloud}
+          loading='lazy'
+          alt='tiny solo pink cloud'
+          className='pinkCloudImg z-2'
+        />
+        <img
+          src={imageAssets.tealAndPurpleCloud}
+          loading='lazy'
+          alt='teal and purple cloud'
+          className='tealCloudImg'
+        ></img>
+        <img
+          src={imageAssets.greenAndPinkCloud}
+          alt='small green and pink cloud'
+          className='greenAndPinkCloud'
+        />
+        <div className='who-we-are-graphic z-0 position-relative'>
+          <div className='container d-flex flex-column text-center justify-content-center who-are-we z-1 col-lg-12 col-md-12 position-relative'>
+            <h2 className='z-1 mb-4'>What's InCo?</h2>
+            <p className='we-are-subtitle z-1 mb-lg-5'>
+              Breaking through digital with the power of fun and the <br />
+              passion for people [or gamers]
+            </p>
+
+            <div className='row d-flex align-content-center justify-content-center z-1 position-relative'>
+              <div className='col-xl-4 col-lg-12 col-12 position-relative olivaOuterFrame'>
+                <div className='oliviaFrame position-relative'>
+                  <img
+                    className='oliviaPortrait z-1'
+                    loading='lazy'
+                    src={imageAssets.oliviaPortrait}
+                    alt='Olivia Portrait'
+                  />
+                </div>
+                <img
+                  src={imageAssets.blueMountain}
+                  loading='lazy'
+                  alt='blue mountain graphic'
+                  className='blueMountainImg z-2'
+                />
+              </div>
+              <div className='col-xl-12 col-lg-12 col-12 whoWeAreFrame'>
+                <img
+                  className='laneDrawing'
+                  loading='lazy'
+                  src={imageAssets.laneDrawing}
+                  alt='Drawing of Lane'
+                />
+              </div>
+              <div className='col-xl-4 col-lg-12 col-12 whoWeAreFrame'>
+                <img
+                  className='vestDrawing'
+                  loading='lazy'
+                  src={imageAssets.vestDrawing}
+                  alt='Drawing of a vest'
+                />
+              </div>
             </div>
-         </section>
-         <img
-            className="blueBlob"
-            src={imageAssets.blueBlob}
-            alt="blue background blob z-0"
-         />
+            <div className='row'>
+              <div className='col-12'>
+                <button type='button' className='btn btn-info team-button z-1 '>
+                  MEET THE TEAM{' '}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <img
+        className='blueBlob'
+        src={imageAssets.blueBlob}
+        alt='blue background blob z-0'
+      />
 
-         {/* <section className="container body-bottom z-1 ">
+      {/* <section className="container body-bottom z-1 ">
             <div className="row d-flex flex-row-reverse">
                <div className="col-lg-7 order-2 m-0 p-0 z-1 ">
                   <div className="text-content col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -189,15 +185,15 @@ const HomePage = () => {
                </div>
             </div>
          </section> */}
-         <div className="wave-container container-fluid z-0 overflow-hidden w-0">
-            {/* <img
+      <div className='wave-container container-fluid z-0 overflow-hidden w-0'>
+        {/* <img
                className="wave-graphic z-0"
                src={imageAssets.homepageWave}
                alt="wave graphic"
             /> */}
-         </div>
-      </>
-   );
+      </div>
+    </>
+  );
 };
 
 export default HomePage;

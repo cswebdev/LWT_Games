@@ -9,7 +9,7 @@ const HomePage = () => {
          <section className="container hero position-relative">
             <div className="row d-flex align-items-stretch justify-content-between">
                {/* <!-- Title and Subtitle Column --> */}
-               <div className="col-lg-6 col-md-12 mt-5 p-0  order-first order-md-1 order-lg-1 order-sm-1  d-flex flex-column justify-content-end position-relative col-title">
+               <div className="col-lg-6 col-md-12 p-0 order-first order-md-1 order-lg-1 order-sm-1  d-flex flex-column justify-content-end position-relative col-title">
                   <h1 className="m-0">We Are InCo.</h1>
                   <div className="Header-text">
                      <p className="mb-lg-0">

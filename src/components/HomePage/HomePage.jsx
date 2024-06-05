@@ -48,7 +48,11 @@ const HomePage = () => {
             src={imageAssets.blueBlob}
             alt="blue background blob z-0"
          />
-
+         {/* <img
+            src={imageAssets.greenAndPinkCloud}
+            alt="small green and pink cloud"
+            className="greenAndPinkCloud"
+         /> */}
          <section className="container whatIsInco position-relative">
             {/* fixed assets */}
             <img
@@ -63,11 +67,7 @@ const HomePage = () => {
                alt="teal and purple cloud"
                className="tealCloudImg"
             ></img>
-            <img
-               src={imageAssets.greenAndPinkCloud}
-               alt="small green and pink cloud"
-               className="greenAndPinkCloud"
-            />
+
             <div className="who-we-are-graphic z-0 position-relative">
                <div className="container d-flex flex-column text-center justify-content-center who-are-we z-1 col-lg-12 col-md-12 position-relative">
                   <h2 className="z-1 mb-4">What's InCo?</h2>
@@ -161,7 +161,7 @@ const HomePage = () => {
          <section className="container body-bottom p-0 overflow-hidden z-1 mb-lg-0 mb-md-5 mb-sm-0">
             <div className="row position-relative m-0 p-0 z-1">
                <div className="col-lg-12 position-relative d-flex grandmas-bingo align-items-center justify-content-lg-end justify-content-md-between z-1 column-gap-lg-3 gap-md-0 gap-sm-0 mb-lg-0">
-                  <div className="col-lg-7 col-md-12 col-sm-12 order-2 z-1 bg-transparent d-flex flex-column mt-lg-5 mt-md-0 ">
+                  <div className="col-lg-7 col-md-12 col-sm-12 order-2 z-1 bg-transparent d-flex flex-column mt-lg-6 mt-md-0 ">
                      <h2 className="row-h2 col-md-12 col-sm-12 mt-md-5 mt-sm-0 d-flex flex-row align-content-center">
                         Not Your Grandma's Bingo!
                      </h2>
@@ -178,7 +178,7 @@ const HomePage = () => {
                      </button>
                   </div>
                   <div
-                     className="col-lg-5 graphicFrame order-1 z-2 d-flex justify-content-center bubbleGumFrame mb-md-2 mb-lg-5"
+                     className="col-lg-6 graphicFrame order-1 z-2 d-flex justify-content-center bubbleGumFrame mb-md-2 mb-lg-5"
                      // style={{ border: "1px solid yellow" }}
                   >
                      <img

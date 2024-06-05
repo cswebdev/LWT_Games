@@ -97,14 +97,14 @@ const GetInvolvedForm = () => {
                 <div className="col-md-6 my-3">
                     <label htmlFor="pronouns">Pronouns:*</label>
                     <select className="form-select" name="pronouns" id="pronouns" form="GetInvolvedForm-app" required onChange={handleChange}>
-                        <option value="she">She / Her</option>
-                        <option value="he">He / Him</option>
-                        <option value="they">They / Them</option>
+                        <option value="she-her">She / Her</option>
+                        <option value="he-him">He / Him</option>
+                        <option value="they-them">They / Them</option>
                         <option value="she-they">She / They</option>
                         <option value="he-they">He / They</option>
                         <option value="mx">Mx</option>
-                        <option value="ze">Ze / Zir</option>
-                        <option value="ey">Ey / Em</option>
+                        <option value="ze-zir">Ze / Zir</option>
+                        <option value="ey-em">Ey / Em</option>
                         <option value="other">Other</option>
                         <option value="none">I choose not to disclose.</option>
                     </select>
@@ -217,25 +217,33 @@ const GetInvolvedForm = () => {
                     <input type="email" name="email" className="form-control" placeholder="hello@email.com" value={formData.email} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
-                    <label htmlFor="linkedIn">LinkedIn:</label>
-                    <input type="url" name="linkedIn" className="form-control" placeholder="Share your LinkedIn" value={formData.linkedIn} onChange={handleChange}></input>
+                    <label htmlFor="linkedIn">LinkedIn:*</label>
+                    <input type="url" name="linkedIn" className="form-control" placeholder="https://www.linkedin.com/in/your-profile" value={formData.linkedIn} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="github">GitHub:</label>
-                    <input type="url" name="github" className="form-control" placeholder="Share your GitHub" value={formData.github} onChange={handleChange}></input>
+                    <input type="url" name="github" className="form-control" placeholder="https://github.com/your-profile" value={formData.github} onChange={handleChange}></input>
                 </div>
                 <div className="form-group mt-3 mb-5">
                     <label htmlFor="portfolio">Portfolio:</label>
-                    <input type="url" name="portfolio" className="form-control" placeholder="Any other portfolio links?" value={formData.portfolio} onChange={handleChange}></input>
+                    <input type="url" name="portfolio" className="form-control" placeholder="https://yourprofile.com" value={formData.portfolio} onChange={handleChange}></input>
                 </div>
                 <h3>Additional Information</h3>
                 <div className="form-group my-3">
-                    <label htmlFor="skills">What skills are you most interested in learning about / want to develop to achieve your career goals? </label>
-                    <textarea name="skills" className="form-control" value={formData.skills} onChange={handleChange}></textarea>
+                    <label htmlFor="background">Do you have any specific skills, experiences, or education that may apply?* </label>
+                    <textarea name="background" className="form-control" value={formData.background} required onChange={handleChange}></textarea>
                 </div>
                 <div className="form-group my-3">
-                    <label htmlFor="goals">What are your professional goals for the next 1-3 years? </label>
-                    <textarea name="goals" className="form-control" value={formData.goals} onChange={handleChange}></textarea>
+                    <label htmlFor="skills">What skills are you most interested in learning about / want to develop to achieve your career goals?* </label>
+                    <textarea name="skills" className="form-control" value={formData.skills} required onChange={handleChange}></textarea>
+                </div>
+                <div className="form-group my-3">
+                    <label htmlFor="goals">What are your professional goals for the next 1-3 years?* </label>
+                    <textarea name="goals" className="form-control" value={formData.goals} required onChange={handleChange}></textarea>
+                </div>
+                <div className="form-group my-3">
+                    <label htmlFor="referral">Who were you referred by?</label>
+                    <input type="text" name="referral" className="form-control" placeholder="(if anyone)" value={formData.timezone} onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="otherCmments">Anything else we should know about you or that you'd like to tell us? </label>

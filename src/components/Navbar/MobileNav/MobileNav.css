@@ -169,7 +169,8 @@
     }
 
     #root>div>div.nav-wrapper>div>button.btn-info.nav-play-btn {
-        display: none;
+        /* display: none; */
+        visibility: hidden;
     }
 }
 

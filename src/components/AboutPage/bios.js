@@ -65,14 +65,14 @@ const LIZ = new Bio(
   `UXer with strengths in research, interaction design, and strategy // Lifelong dabbler and lowbrow artist // Unexpected corporate techie​`,
   "/headshots/liz_headshot.jpg",
   "/drawings/liz_drawing.png",
-  undefined,
+  "https://liz-baranowicz.notion.site/Liz-Baranowicz-s-Portfolio-71dd0cf1ac864752ac39ebc6b057d522",
   "https://www.linkedin.com/in/liz-baranowicz/",
   undefined,
   undefined,
   undefined,
   undefined,
-  "To be a part of a cool project with cool people and build queer community!​",
-  "This project has helped me grow my skills, but also forge a network of likeminded friends – every time I leave one of our meetings or worksessions, I feel energized and excited and ready to take on the world.​",
+  "Go be a part of an amazing and innovative project with cool people and build queer community!​",
+  "This project has helped me grow my technical skills, but also forge a network of likeminded friends and collaborators – every time I leave one of our meetings or worksessions, I feel energized and excited and ready to take on the tech world.​",
 );
 
 const LANE = new Bio(
@@ -255,17 +255,17 @@ const ALEX = new Bio(
   "Alex Sharp",
   "She/Her",
   "CX Engineer",
-  "I'm a customer success engineer with ten years of experience supporting healthcare software. I have a strong interest in developing tools to improve user productivity for my teams.",
+  "I'm a customer success engineer with ten years of experience supporting healthcare software. I have a strong interest in developing tools to improve user productivity for my team.",
   "/headshots/alex_headshot.jpg",
   "/drawings/alex_drawing.png",
   undefined,
   "www.linkedin.com/in/alex-nicole-sharp",
   undefined,
-  undefined,
+  "https://github.com/alexsharp4096",
   undefined,
   undefined,
   "I'm interested in expanding my development knowledge and more connections in the queer community.",
-  "I've met knew people and am learning new skills.",
+  "I’ve met some really great people and have learned a great deal even in a short time.",
 );
 
 const JULIE = new Bio(

@@ -25,6 +25,7 @@
 
 .AboutPage-mobile svg {
   position: absolute;
+  right: 0rem;
   z-index: 1;
 }
 

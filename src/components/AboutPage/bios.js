@@ -318,7 +318,7 @@ export const BIOS = [
   JULIANE,
   CHELSEA,
   WEI,
-  {image: "/headshots/bingo.png", alt: "bingo", mobileOrder: 9, stylingClass: "BioCard-bingo"},
+  {image: "/headshots/bingo.png", hover: "/headshots/bingo.png", alt: "bingo", mobileOrder: 9, stylingClass: "BioCard-bingo"},
   OLIVIAM,
   JIMENA,
   LANE,

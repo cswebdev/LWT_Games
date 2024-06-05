@@ -101,7 +101,7 @@ const OLIVIAS = new Bio(
   "Dynamic Digital Designer specializing in storytelling to elevate your brand ",
   "/headshots/olivias_headshot.jpeg",
   "/drawings/olivias_drawing.png",
-  undefined,
+  "http://oliviaservaes.com/",
   "https://www.linkedin.com/in/oliviaservaes/",
   undefined,
   undefined,

@@ -259,7 +259,7 @@ const ALEX = new Bio(
   "/headshots/alex_headshot.jpg",
   "/drawings/alex_drawing.png",
   undefined,
-  "www.linkedin.com/in/alex-nicole-sharp",
+  "https://www.linkedin.com/in/alex-nicole-sharp",
   undefined,
   "https://github.com/alexsharp4096",
   undefined,

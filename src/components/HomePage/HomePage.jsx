@@ -58,11 +58,7 @@ const HomePage = () => {
             />
          </svg>
 
-         {/* <img
-            className="blueBlob z-0"
-            src={imageAssets.blueBlob}
-            alt="blue background blob z-0"
-         /> */}
+        
          {/* <img
             src={imageAssets.greenAndPinkCloud}
             alt="small green and pink cloud"

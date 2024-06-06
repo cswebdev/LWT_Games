@@ -189,8 +189,8 @@ h2 {
     height: auto;
     max-width: 293px;
     /* min-width: 13em; */
-    border: 3px solid rgb(65, 233, 65);
-    background-color: hwb(120 0% 0%);
+    border: 3px solid #A0CD62;
+    background-color: #A0CD62;
     border-radius: 5%;
     /* margin: 1em 1em 0em 1em; */
     overflow: hidden;
@@ -419,6 +419,9 @@ section:nth-last-of-type(2) {
 
 
 
+
+
+
 @media (min-width: 1400px) {
     .blueBlob {
         max-width: 80vw;
@@ -548,6 +551,15 @@ section:nth-last-of-type(2) {
 }
 
 /* waves */
+
+.wave-container {
+    /* position: absolute; */
+    width: 100%;
+    background-color: red;
+    overflow: hidden;
+
+}
+
 .wave-graphic {
     width: 100%;
     height: 45rem;
@@ -996,6 +1008,8 @@ section:nth-last-of-type(2) {
         margin-bottom: 5rem;
     }
 
+
+
     .who-are-we {
         padding-top: 0;
         /* background-color: #E11774; */
@@ -1008,6 +1022,10 @@ section:nth-last-of-type(2) {
         margin-bottom: 2em;
     }
 
+    #root>div>section.container.whatIsInco.position-relative>div>div>p {
+        width: 595.2px;
+    }
+
     /* .blueBlob {
         max-height: 49.5rem;
         max-width: auto;
@@ -1018,7 +1036,7 @@ section:nth-last-of-type(2) {
 
 
     .blueBlob {
-        min-width: 52rem;
+        /* min-width: 52rem; */
         top: 105rem
     }
 
@@ -1099,12 +1117,16 @@ section:nth-last-of-type(2) {
         margin-left: 5rem;
     }
 
+    .wave-container {
+        border: 1px solid red;
+    }
+
     .wave-graphic {
         /* height: 51vh; */
         height: 55rem;
-        width: 200%;
-        object-position: -30rem 0;
-        /* object-fit: cover; */
+        width: 100%;
+        /* object-position: -30rem 0; */
+        object-fit: cover;
 
     }
 
@@ -1312,7 +1334,7 @@ section:nth-last-of-type(2) {
     }
 
     .wave-graphic {
-        width: 200%;
+        width: 100%;
         /* max-width: 180%; */
         /* height: 40rem; */
         /* min-height: 83vh; */
@@ -1402,7 +1424,7 @@ section:nth-last-of-type(2) {
     }
 
     .wave-graphic {
-        min-width: 200%;
+        min-width: 100%;
         /* height: 50rem; */
         /* max-height: 86vh; */
         /* object-fit: contain; */
@@ -1466,14 +1488,16 @@ section:nth-last-of-type(2) {
 }
 
 @media(max-width: 769px) {
-
+    #root>div>section.container.whatIsInco.position-relative {
+        margin-top: 28rem;
+    }
 
     .wave-graphic {
         /* width: 200vw; */
         /* /* min-height: 85vh; */
         height: 50rem;
-        width: 200%;
-        object-fit: cover;
+        width: 100%;
+        object-fit: stretch;
     }
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-5.mt-md-0 {
@@ -1486,7 +1510,9 @@ section:nth-last-of-type(2) {
     }
 
     .blueBlob {
-        min-width: 49rem;
+        /* max-width: 5em; */
+        /* position: absolute; */
+        overflow: hidden;
     }
 
 
@@ -1537,6 +1563,349 @@ section:nth-last-of-type(2) {
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-6.col-md-12.graphicFrame.order-1.z-2.d-flex.justify-content-center.bubbleGumFrame.mb-md-2.mb-lg-5 {
         align-items: center;
+
+    }
+}
+
+@media (max-width: 650px) {
+
+    .blueBlob {
+        width: 100%;
+        /* min-width: 49em; */
+        /* top: 105rem; */
+    }
+}
+
+
+@media (max-width: 620px) {
+
+    /* hero section */
+
+    /* hero text */
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title>h1 {
+        font-size: 26px;
+        letter-spacing: .13rem;
+    }
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title>div>p>span {
+        font-size: 20px;
+        letter-spacing: .13rem;
+    }
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative>p {
+        font-size: 20px;
+    }
+
+
+    /* Hero image graphic */
+
+    /* #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
+        height: 50vh !important;
+    } */
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100%;
+        height: 100%;
+        /* object-fit: contain; */
+        margin: 0;
+        padding: 0;
+        margin: -3em 0 0 0;
+        display: flex !important;
+    }
+
+    .homepageOliviaGraphic {
+        /* max-width: 40rem; */
+        /* height: auto; */
+        transform: scale(0.90);
+        /* right: 50%; */
+        /* position: relative; */
+        /* margin: auto; */
+        width: 100%;
+        height: 100%;
+        min-height: auto;
+
+    }
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain>img {
+        /* height: 200px !important; */
+        margin: auto;
+        /* width: 100%; */
+        /* height: auto; */
+        aspect-ratio: 6/5;
+        /* transform: scale(1); */
+        /* max-width: 30rem; */
+        /* max-height: auto; */
+        /* position: relative; */
+    }
+
+    /* hero section button  */
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative>button {
+        width: 300px !important;
+        height: 61px !important;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 27px;
+        letter-spacing: 0.15em;
+    }
+
+
+    /* blueBlob fixed image */
+
+    .blueBlob {
+        max-width: 49em;
+        /* min-width: 48em; */
+        top: 105rem;
+    }
+
+    /* whoWeAre section styling for margin */
+    /* #root > div > section.container.whatIsInco.position-relative {
+        margin: 0em 0em 0em 0em
+    } */
+
+    /* who we are section container */
+    #root>div>section.container.whatIsInco.position-relative {
+        margin: -3em 0em 0em 0em;
+    }
+
+    /* whoWeAre text */
+    #root>div>section.container.whatIsInco.position-relative>div>div>h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 39.96px;
+        letter-spacing: 0.13em;
+        text-align: left;
+    }
+
+    #root>div>section.container.whatIsInco.position-relative>div>div>p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.13em;
+        text-align: center;
+        max-width: 390px;
+    }
+
+    /* who we are button */
+    #root>div>section.container.whatIsInco.position-relative>div>div>div:nth-child(4)>div>button {
+        width: 300px;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 27px;
+        letter-spacing: 0.15em;
+
+    }
+
+    /* Engaging with Lesbians Who Tech  */
+
+    #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div {
+        justify-content: center;
+        align-items: center;
+        width: 380px;
+    }
+
+
+    /* h2 */
+    #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div>h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        width: 296px;
+
+    }
+
+    /* p */
+    #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div>p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    /* button */
+    #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div>button {
+        width: 340px;
+        font-size: 20px;
+
+    }
+
+    /* Not your grandmas bingo section */
+
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div {
+        justify-content: center;
+        align-items: center;
+        width: 380px;
+    }
+
+    /* h2  */
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-6.mt-md-0>h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+    }
+
+    /* p  */
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-6.mt-md-0>p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    /* button  */
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-6.mt-md-0>button.btn-play-bingo-purple {
+        width: 340px !important;
+        font-size: 20px;
+
+    }
+}
+
+@media (max-width: 420px) {
+
+
+    /* hero section */
+
+    /* hero text */
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title>h1 {
+        font-size: 26px;
+        letter-spacing: .13rem;
+    }
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title>div>p>span {
+        font-size: 20px;
+        letter-spacing: .13rem;
+    }
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative>p {
+        font-size: 20px;
+    }
+
+
+    /* Hero image graphic */
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        /* object-fit: contain; */
+        margin: 0;
+        padding: 0;
+        margin: -5em 0 0 0;
+        display: flex;
+    }
+
+    .homepageOliviaGraphic {
+        /* height: 45rem; */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* min-height: 22em; */
+        /* transform: scale(0.70) translate(-5em, 0); */
+    }
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain>img {
+        /* min-width: 35rem;
+        height: auto; */
+        /* aspect-ratio: 7/5; */
+        /* scale: 0.8; */
+
+
+    }
+
+    /* blueBlob fixed image */
+
+    .blueBlob {
+        max-width: 49em;
+        /* min-width: 48em; */
+        top: 105rem;
+    }
+
+    /* whoWeAre section styling for margin */
+    /* #root > div > section.container.whatIsInco.position-relative {
+        margin: 0em 0em 0em 0em
+    } */
+
+    /* whoWeAre text */
+    #root>div>section.container.whatIsInco.position-relative>div>div>h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 39.96px;
+        letter-spacing: 0.13em;
+        text-align: left;
+    }
+
+    #root>div>section.container.whatIsInco.position-relative>div>div>p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.13em;
+        text-align: center;
+        max-width: 300px;
+    }
+
+    /* Engaging with Lesbians Who Tech  */
+
+    #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div {
+        justify-content: center;
+        align-items: center;
+        width: 296px;
+    }
+
+
+    /* h2 */
+    #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div>h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        width: 296px;
+
+    }
+
+    /* p */
+    #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div>p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    /* button */
+    #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div>button {
+        width: 302px;
+        font-size: 18px;
+
+    }
+
+    /* Not your grandmas bingo section */
+
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div {
+        justify-content: center;
+        align-items: center;
+        width: 296px;
+    }
+
+    /* h2  */
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-6.mt-md-0>h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+    }
+
+    /* p  */
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-6.mt-md-0>p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    /* button  */
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-6.mt-md-0>button.btn-play-bingo-purple {
+        width: 302px !important;
+        font-size: 18px;
 
     }
 }

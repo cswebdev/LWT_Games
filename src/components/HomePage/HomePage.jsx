@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./HomePage.css";
 import homepageOliviaGraphic from "../../assets/left_mainpage_image.png";
 import imageAssets from "../../utils/Utils";

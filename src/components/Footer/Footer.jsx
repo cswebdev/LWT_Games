@@ -38,10 +38,10 @@ const Footer = () => {
             <div className="col col-about">
                <h2>Explore</h2>
                <ul>
-                  <li className="footer-item">Home</li>
+                  {/* <li className="footer-item">Home</li>
                   <li className="footer-item">About Us</li>
                   <li className="footer-item">Contact US</li>
-                  <li className="footer-item">Play Bingo</li>
+                  <li className="footer-item">Play Bingo</li> */}
                </ul>
             </div>
             <div className="col">
@@ -52,9 +52,9 @@ const Footer = () => {
             <div className="col col-follow">
                <h2>Follow</h2>
                <ul>
-                  <li className="footer-item">Instagram</li>
+                  {/* <li className="footer-item">Instagram</li>
                   <li className="footer-item">Twitter</li>
-                  <li className="footer-item">Linkedin</li>
+                  <li className="footer-item">Linkedin</li> */}
                </ul>
             </div>
          </div>

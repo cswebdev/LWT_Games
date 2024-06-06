@@ -1,24 +1,36 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import MobileNav from "./MobileNav/MobileNav";
-import logo from "../../assets/inco_logo.png";
 import { Link } from "react-router-dom";
+import imageAssets from "../../utils/Utils";
 
 const NavBar = () => {
    const [openMenu, setOpenMenu] = useState(false);
+   const [showMenuBtn, setShowMenuBtn] = useState(true);
 
    const toggleMenu = () => {
       setOpenMenu(!openMenu);
+      setShowMenuBtn(!showMenuBtn);
    };
+
+   const closeMobileNav = () => {
+      setOpenMenu(false);
+      setShowMenuBtn(true);
+   };
+
    return (
       <>
-         <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
+         <MobileNav isOpen={openMenu} closeMenu={closeMobileNav} />
          <div className="nav-wrapper">
             <div className="nav-content">
                <div className="logo-wrapper">
                   <div className="logo">
                      <Link to="/home">
-                        <img src={logo} alt="InCo logo" />
+                        <img
+                           src={imageAssets.logo}
+                           alt="InCo logo"
+                           className="logo-img"
+                        />
                      </Link>
                   </div>
                </div>
@@ -34,16 +46,14 @@ const NavBar = () => {
                      </Link>
                   </li>
                   <li>
-                     <Link to="/get-involved" className="menu-item nav-link">
+                     <Link to="/GET INVOLVED" className="menu-item nav-link">
                         GET INVOLVED
                      </Link>
                   </li>
-                  <button type="button" className="btn-info nav-play-btn">
-                     <a href="https://laneecho.github.io/LWT-bingo/">
-                        PLAY BINGO
-                     </a>
-                  </button>
                </ul>
+               <button type="button" className="btn-info nav-play-btn">
+                  <a href="https://laneecho.github.io/LWT-bingo/">PLAY BINGO</a>
+               </button>
                <button className="menu-btn" onClick={toggleMenu}>
                   <span
                      className={"material-symbols-outlined"}

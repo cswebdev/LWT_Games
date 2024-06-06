@@ -12,6 +12,18 @@ body {
   position: relative;
 }
 
+@media (min-width: 1400px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 80%;
+  }
+}
+
 h1,
 h2,
 h3 {
@@ -47,7 +59,8 @@ li {
 
 p {
   font-family: 'new-science-serif', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.50rem;
+  /* font-size: 24px; */
   line-height: 1.5rem;
 }
 
@@ -76,6 +89,8 @@ Button {
   font-size: 30px;
   font-family: 'Hiragaino Kaku Gothic ProN', sans-serif;
   src: url('../src/assets/Hiragino\ Kaku\ Gothic\ ProN.ttf') format('tff');
+  width: 400px !important;
+  height: 70px;
 }
 
 .btn-primary,
@@ -95,14 +110,19 @@ Button {
 
 /* info button solid */
 
-.btn-info {
+.btn-info,
+.mobile-nav-play-btn {
   background-color: #E21674;
   border-color: #E21674;
   color: #ffff;
 }
 
+.nav-play-btn {
+  width: 264px !important;
+}
+
 .btn-info:active,
-.btn-info:hover,
+.btn-info:active .btn-info:hover,
 .btn-info:focus-visible {
   background-color: #E21674;
   color: #ffff;

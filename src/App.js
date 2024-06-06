@@ -10,7 +10,7 @@ import NotFoundPage from "./components/NotFound/NotFoundPage";
 
 function App() {
    return (
-      <div className="App">
+      <div className="App overflow-hidden">
          <NavBar />
          <Routes>
             <Route path="/about" element={<AboutPage />} />
@@ -20,7 +20,7 @@ function App() {
             <Route path="/get-involved" element={<GetInvolvedPage />} />
             <Route path="*" element={<NotFoundPage />} />
          </Routes>
-         <Footer />
+         {/* <Footer /> */}
       </div>
    );
 }

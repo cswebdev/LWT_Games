@@ -5,7 +5,7 @@ import NavBar from "./components/Navbar/NavBar";
 import AboutPage from "./components/AboutPage/AboutPage";
 import FAQPage from "./components/FAQ/FAQPage";
 import GetInvolvedPage from "./components/GetInvolvedPage/GetInvolvedPage";
-import Footer from "./components/Footer/Footer";
+// import Footer from "./components/Footer/Footer";
 import NotFoundPage from "./components/NotFound/NotFoundPage";
 
 function App() {

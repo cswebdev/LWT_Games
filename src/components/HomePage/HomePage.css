@@ -107,6 +107,7 @@ h2 {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: .2em;
+    margin-top: 2em;
 }
 
 #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative>button {
@@ -310,7 +311,7 @@ section:nth-of-type(2) {
 }
 
 section:nth-last-of-type(2) {
-    margin: 1rem auto 15rem auto;
+    margin: 5% auto 15rem auto;
     /* border: 1px solid pink; */
 
 }
@@ -456,6 +457,8 @@ section:nth-last-of-type(2) {
         left: -12.5rem;
         top: 90rem;
     }
+
+
 }
 
 @media (max-width: 768px) {
@@ -547,11 +550,12 @@ section:nth-last-of-type(2) {
 /* waves */
 .wave-graphic {
     width: 100%;
-    min-height: 19%;
+    height: 45rem;
+    /* min-height: 19%; */
     position: absolute;
     bottom: -90px;
     left: 0;
-    object-fit: stretch;
+    object-fit: cover;
 
 }
 
@@ -690,6 +694,7 @@ section:nth-last-of-type(2) {
     .wave-graphic {
         bottom: -90px;
         object-fit: fill;
+
     }
 
 
@@ -697,8 +702,8 @@ section:nth-last-of-type(2) {
 
 @media (max-width: 1999px) and (min-width: 1400px) {
     .wave-graphic {
-        min-height: 19.9%;
-        max-height: 20%;
+        /* min-height: 19.9%; */
+        /* max-height: 20%; */
 
     }
 
@@ -789,11 +794,7 @@ section:nth-last-of-type(2) {
         margin: .8em 0em;
     }
 
-    .wave-graphic {
-        max-height: 81vh;
-        /* object-fit: cover; */
 
-    }
 
     #root>div>section.container.hero.position-relative>div {
         display: flex;
@@ -912,15 +913,30 @@ section:nth-last-of-type(2) {
 
     #root>div>section:nth-child(5) {
 
-        margin: 5rem auto 25rem auto;
+        margin: 20rem auto 30rem auto;
         /* top: 2em; */
         /* height: 90vh; */
+    }
+
+    #root>div>section:nth-child(6)>div {
+        justify-content: center;
+    }
+
+    #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1,
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-6.mt-md-0 {
+        max-width: 80%;
+    }
+
+    #root>div>section:nth-child(5)>div {
+        margin: 10rem 0;
     }
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative {
 
         align-items: center;
     }
+
+
 
     #root>div>section.container.hero.position-relative>div {
         text-align: center;
@@ -943,6 +959,8 @@ section:nth-last-of-type(2) {
         /* margin: auto; */
 
     }
+
+
 
     .homepageOliviaGraphic {
         max-height: 22em;
@@ -997,6 +1015,12 @@ section:nth-last-of-type(2) {
         left: -25%;
         transform: scaleY(.95);
     } */
+
+
+    .blueBlob {
+        min-width: 52rem;
+        top: 105rem
+    }
 
     .pinkCloudImg {
         position: absolute;
@@ -1061,8 +1085,35 @@ section:nth-last-of-type(2) {
         position: relative;
     }
 
+    /* bubbleGum Graphic Container */
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-6.col-md-12.graphicFrame.order-1.z-2.d-flex.justify-content-center.bubbleGumFrame.mb-md-2.mb-lg-5 {
+        align-items: flex-end;
+    }
 
+    .summit-button,
+    .btn-play-bingo-purple {
+        margin: 3em auto 0 auto;
+    }
+
+    .bubbleGumGraphic {
+        margin-left: 5rem;
+    }
+
+    .wave-graphic {
+        /* height: 51vh; */
+        height: 55rem;
+        width: 200%;
+        object-position: -30rem 0;
+        /* object-fit: cover; */
+
+    }
+
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
+
 
 
 
@@ -1079,8 +1130,13 @@ section:nth-last-of-type(2) {
     /* HERO SECTION */
 
     section:nth-of-type(1) {
-        margin: 2rem auto 10em auto;
+        margin: 2rem auto 25em auto;
         /* background-color: red; */
+    }
+
+    #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1,
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-6.mt-md-0 {
+        max-width: 100%;
     }
 
 
@@ -1113,6 +1169,11 @@ section:nth-last-of-type(2) {
         width: 100%;
         /* border: 1px solid #E11774; */
     }
+
+
+    /* Rectangle 14 */
+
+
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
         margin: 0;
@@ -1164,7 +1225,6 @@ section:nth-last-of-type(2) {
     #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div,
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-5.mt-md-0 {
         margin-top: 6%;
-        background-color: rgb(148, 90, 207);
     }
 
     .center-md {
@@ -1246,15 +1306,20 @@ section:nth-last-of-type(2) {
         display: block;
     }
 
+    #root>div>section.container.whatIsInco.position-relative>div>div>div:nth-child(4)>div>button {
+        display: block !important;
+        z-index: 9999 !important;
+    }
+
     .wave-graphic {
-        width: auto;
-        max-width: 180%;
-        max-height: 83vh;
-        min-height: 83vh;
+        width: 200%;
+        /* max-width: 180%; */
+        /* height: 40rem; */
+        /* min-height: 83vh; */
         bottom: -90px;
         margin: 0 auto;
-        object-position: -30rem 0rem;
-        object-fit: fill;
+        object-position: -40rem 0rem;
+        /* object-fit: fill; */
     }
 
 }
@@ -1337,9 +1402,11 @@ section:nth-last-of-type(2) {
     }
 
     .wave-graphic {
-        min-width: 200vw;
-        min-height: 86vh;
-        max-height: 86vh;
+        min-width: 200%;
+        /* height: 50rem; */
+        /* max-height: 86vh; */
+        /* object-fit: contain; */
+        /* object-position: -50rem 0; */
     }
 
     .custom-order-2 {
@@ -1358,6 +1425,7 @@ section:nth-last-of-type(2) {
         left: -25%;
         transform: scaleY(.95);
     } */
+
 
     .pinkCloudImg {
         position: absolute;
@@ -1393,26 +1461,19 @@ section:nth-last-of-type(2) {
         height: auto;
     }
 
+
+
 }
 
 @media(max-width: 769px) {
 
-    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div {
-        padding: 0;
-    }
-
-
-
-    .container {
-        /* max-width: 720px; */
-        /* width: 100%; */
-    }
-
 
     .wave-graphic {
-        width: 200vw;
-        min-height: 85vh;
-        max-height: 85vh;
+        /* width: 200vw; */
+        /* /* min-height: 85vh; */
+        height: 50rem;
+        width: 200%;
+        object-fit: cover;
     }
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-5.mt-md-0 {
@@ -1424,14 +1485,10 @@ section:nth-last-of-type(2) {
         max-height: 40%;
     }
 
+    .blueBlob {
+        min-width: 49rem;
+    }
 
-    /* .blueBlob {
-        max-height: 40.5rem;
-        max-width: auto;
-        top: 37em;
-        left: -27%;
-        transform: scaleY(1);
-    } */
 
     .pinkCloudImg {
         position: absolute;
@@ -1468,4 +1525,18 @@ section:nth-last-of-type(2) {
         height: auto;
     }
 
+
+    #root>div>section.container.whatIsInco.position-relative>div>div>div:nth-child(4)>div>button {
+        display: block !important;
+        z-index: 9999 !important;
+    }
+
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0 {
+        margin-top: -10rem;
+    }
+
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-6.col-md-12.graphicFrame.order-1.z-2.d-flex.justify-content-center.bubbleGumFrame.mb-md-2.mb-lg-5 {
+        align-items: center;
+
+    }
 }

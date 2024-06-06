@@ -43,11 +43,26 @@ const HomePage = () => {
             </div>
          </section>
 
-         <img
+         <svg
+            width="829"
+            height="885"
+            viewBox="0 0 829 885"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="blueBlob z-0"
+         >
+            <path
+               d="M-585 103.565C58 -138.836 -29 129.282 509 63.2825C1047 -2.71748 753.581 461.389 711 617.283C555.107 1188.02 -585 666.283 -585 666.283V103.565Z"
+               fill="#D8F7FE"
+               fill-opacity="0.75"
+            />
+         </svg>
+
+         {/* <img
             className="blueBlob z-0"
             src={imageAssets.blueBlob}
             alt="blue background blob z-0"
-         />
+         /> */}
          {/* <img
             src={imageAssets.greenAndPinkCloud}
             alt="small green and pink cloud"
@@ -191,11 +206,11 @@ const HomePage = () => {
             </div>
          </section>
          <div className="wave-container container-fluid z-0 overflow-hidden w-0">
-            {/* <img
+            <img
                className="wave-graphic z-0"
                src={imageAssets.homepageWave}
                alt="wave graphic"
-            /> */}
+            />
          </div>
       </>
    );

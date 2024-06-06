@@ -4,28 +4,17 @@ import imageAssets from "../../utils/Utils";
 
 const Footer = () => {
    return (
-      <div
-         className="Footer"
-         style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-         }}
-      >
+      <div className="Footer">
          <div className="row footer-row">
-            <div
-               className="col
-             col-logo"
-            >
-               <div className="logo-frame">
-                  <img src={imageAssets.logo} alt="" className="footer-logo" />
-               </div>
-
+            <div className="logo-frame">
+               <img src={imageAssets.logo} alt="" className="footer-logo" />
+            </div>
+            <div className="col-logo">
                <h3>Join our newsletter!</h3>
-               <p style={{ fontWeight: "100" }}>
+               <p>
                   Stay up to date with all things InCo!
                </p>
-               <input placeholder="ENTER EMAIL ADDRESS"></input>
+               <input placeholder="Enter Email Address"></input>
                <button type="button" className="btn btn-info subscribe">
                   SUBSCRIBE
                </button>
@@ -35,13 +24,13 @@ const Footer = () => {
                   <div className="Loading-progress"></div>
                </div>
             </div>
-            <div className="col col-about">
-               <h2>Explore</h2>
+            <div className="col col-menu">
+               <h3 className="footer-title">Explore</h3>
                <ul>
-                  <li className="footer-item">Home</li>
-                  <li className="footer-item">About Us</li>
-                  <li className="footer-item">Contact US</li>
-                  <li className="footer-item">Play Bingo</li>
+                  <li className="footer-item"><a href="/about">About Us</a></li>
+                  <li className="footer-item"><a href="/faq">FAQ</a></li>
+                  <li className="footer-item"> <a href="/get-involved">Join Us</a></li>
+                  <li className="footer-item"><a href="/bingo-link">Play Bingo</a></li>
                </ul>
             </div>
             <div className="col">
@@ -50,12 +39,12 @@ const Footer = () => {
                </div>
             </div>
             <div className="col col-follow">
-               <h2>Follow</h2>
-               <ul>
-                  <li className="footer-item">Instagram</li>
-                  <li className="footer-item">Twitter</li>
-                  <li className="footer-item">Linkedin</li>
-               </ul>
+               <h3 className="footer-title">Follow</h3>
+               <div className="share-logos">
+                  <a href="https://www.instagram.com/interconnectedco/"><img className="share-logo" src={imageAssets.instagram} alt="instagram logo" /></a>
+                  <a href="https://www.linkedin.com/company/interconnected-collective/"><img className="share-logo" src={imageAssets.linkedin} alt="linkedin logo" /></a>
+                  <a href="https://www.facebook.com/profile.php?id=61558814939983"><img className="share-logo" src={imageAssets.facebook} alt="facebook logo" /></a>
+               </div>
             </div>
          </div>
       </div>

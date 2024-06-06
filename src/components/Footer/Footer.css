@@ -5,29 +5,16 @@
     /* overflow: hidden; */
     background-color: transparent;
     background-image: url('../../assets/Footer\ curve.png');
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
     /* background-size: 100% 80%; */
-    min-height: min-content;
-    max-height: 65.5vh;
+    min-height: 600px;
+    /* max-height: 65.5vh; */
     color: #ffff;
-    z-index: 3;
+    z-index: 30;
     position: relative;
-    /* margin: -11.450rem 0 0 0; */
-    margin: -155px 0 0 0;
-
-}
-
-.footer-row {
-    display: flex;
-    flex-direction: row;
-    /* margin: 8rem 0 0 0 */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* margin: 6rem 0; */
-    padding: 3% 0 0 0;
-
+    padding: 8% 80px 2% 80px;
 }
 
 .footer-row {
@@ -62,26 +49,26 @@
 } */
 
 .logo-frame {
-    height: 100px;
-    width: 85px;
-    margin-bottom: .8em;
+    width: 100%;
+    margin-top: 1.5em;
+    margin-bottom: 3rem;;
 }
 
 .footer-logo {
     object-fit: contain;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 10%;
 }
-
-
 
 .footer-row h3 {
     font-size: 1.875rem;
-    margin: 0;
+    font-weight: 700;
 }
 
 .footer-row p {
-    margin: .3em 0;
+    margin: 1.5em 0;
+    font-size: 1.5rem;
+    font-weight: 400;
     letter-spacing: .1em;
 }
 
@@ -91,16 +78,18 @@
     border-radius: 8px;
     border: none;
     background-color: #5576aa;
-    margin: .4em 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
 }
 
 input::placeholder {
     color: #ffffff;
     font-family: 'new-science-serif', sans-serif;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1rem;
     letter-spacing: .1em;
-    padding-left: .25em;
+    text-transform: uppercase;
 }
 
 /* Target text input by the user */
@@ -115,16 +104,53 @@ ul {
     text-align: left;
 }
 
+.col-menu, .col-follow {
+    align-self: flex-start;
+}
+
+.footer-title {
+    text-decoration: underline;
+}
+
 .footer-item {
     list-style: none;
+    line-height: 3.25rem;
+}
 
+.footer-item a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
+}
+
+.footer-item a:hover {
+    color: #e21674;
+}
+
+.share-logos {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    margin-top: 2.5rem;
+}
+
+.share-logo {
+    width: 60px;
+    height: 60px;
+    transition: 0.2s ease-in;
+}
+
+.share-logo:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
 }
 
 .subscribe {
     background-color: #ffff;
     border: none;
     color: #000;
-    width: 29.313rem;
+    width: 100%;
     height: 3.875rem;
     border-radius: 30px;
     font-family: 'Hiragino Kaku Gothic', sans-serif;
@@ -139,17 +165,17 @@ ul {
     justify-content: center;
     align-items: center;
     justify-content: center;
-
+    width: 30%;
 }
 
 .Loading {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: -1.5rem;
 }
 
 .Loading-progress {
-    height: 250px;
+    height: 320px;
     width: 2px;
     border-radius: 3px;
     background: linear-gradient(0deg, red 0%, yellow 15%, lime 30%, cyan 50%, blue 65%, magenta 80%, red 100%);

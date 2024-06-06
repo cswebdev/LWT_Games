@@ -17,6 +17,9 @@ const imageAssets = {
    blueBlob: require("../assets/Rectangle_14.png"),
    tealAndPurpleCloud: require("../assets/tealcloud_1.png"),
    greenAndPinkCloud: require("../assets/greenAndPinkCloud.png"),
+   linkedin: require("../assets/linkedin.png"),
+   facebook: require("../assets/facebook.png"),
+   instagram: require("../assets/instagram.png"),
 };
 
 export default imageAssets;

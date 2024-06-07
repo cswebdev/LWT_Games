@@ -23,10 +23,9 @@ const GetInvolvedPage = () => {
         <div className="GetInvolvedPage">
             <img src={desktopHero} className="GetInvolvedPage-hero-desktop" alt="drawings of InCo members" />
             <img src={mobileHero} className="GetInvolvedPage-hero-mobile" alt="drawings of InCo members" />
-            <div className="container ml-3 justify-content-center">
-                <div className="col-8">
+            <div className="container GetInvolvedPage-content justify-content-center">
+                <div className="col-11 col-md-8">
                     <h1>Join Interconnected Collective</h1>
-                    <div className="GetInvolvedPage-content">
                         <p>🌈 Lookin' for stretch assignments? Join Us! 🌐✨</p>
                         <p>🔍 We're actively seeking exceptional individuals in the following areas:</p>
                         <ul>
@@ -51,7 +50,6 @@ const GetInvolvedPage = () => {
                             <li>Add a real-world project to your portfolio 📂</li>
                             <li>Learn and grow with like-minded peers 👩‍💻👨‍💻</li>
                         </ul>
-                    </div>
                     <hr></hr>
                     <h2>Apply to Join Us</h2>
                     <GetInvolvedForm />

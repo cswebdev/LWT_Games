@@ -127,6 +127,21 @@
     cursor: pointer;
 }
 
+.Footer-boring-stuff {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.Footer-boring-stuff a {
+    color: white;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
+}
+
+.Footer-boring-stuff a:hover {
+    color: #e21674
+}
+
 .Loading {
     display: flex;
     justify-content: center;

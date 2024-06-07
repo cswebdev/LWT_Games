@@ -22,12 +22,10 @@
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
-    /* padding: 0 0; */
-    /* margin:  auto; */
-    gap: 3%;
+
+    gap: 2%;
     /* border: 1px solid red; */
-    width: 82%;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .nav-content,
@@ -37,14 +35,14 @@ ul {
     /* border: 1px solid red; */
     /* width: 100%; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 }
 
 
 .nav-content>ul {
-    gap: 10%;
-    width: 80%;
+    gap: 5%;
+    width: 60%;
     justify-content: flex-end;
 }
 
@@ -62,14 +60,45 @@ ul {
 }
 
 .logo-img {
-    /* aspect-ratio: 1/1; */
     height: 5.5rem;
     width: auto;
     padding: 0;
     margin: 0;
-    /* object-position: -1rem 0; */
+}
 
+.logo-img:hover {
+    animation: logoShake 2s ease 0s 1 normal forwards;
+    scale: 1.01;
 
+}
+
+@keyframes logoShake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-2px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateX(2px);
+    }
+
+    80% {
+        transform: translateX(0px);
+    }
+
+    90% {
+        transform: translateX(-0px);
+    }
 }
 
 #root>div>div.mobile-menu {
@@ -100,11 +129,18 @@ li .nav-link {
 }
 
 .nav-play-btn {
-    width: 384px;
-    height: 70px;
+    /* width: 384px;
+    height: 70px; */
     border-radius: 30px;
     border: 0px solid transparent;
-    padding: 5px 10px 5px 10px;
+    /* padding: 5px 10px 5px 10px; */
+    width: 284px;
+    height: 70px;
+    /* padding: 20px 30px 20px 30px; */
+    /* gap: 13px; */
+    /* border-radius: 30px 0px 0px 0px; */
+    opacity: 0px;
+
 }
 
 .nav-play-btn a {
@@ -221,12 +257,7 @@ li .nav-link {
     }
 }
 
-@media (max-width: 1300px) {
-
-    .nav-content {
-        min-width: 92%;
-    }
-}
+@media (max-width: 1300px) {}
 
 @media (max-width: 1280px) {
 
@@ -238,7 +269,7 @@ li .nav-link {
 
 @media (max-width: 1220px) {
     #root>div>div.nav-wrapper>div>ul {
-        gap: 6%
+        gap: 1.5%
     }
 }
 
@@ -271,7 +302,7 @@ li .nav-link {
         gap: 3%;
     }
 
-    .nav-content{
+    .nav-content {
         width: 100%;
     }
 

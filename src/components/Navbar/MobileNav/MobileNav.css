@@ -43,8 +43,8 @@
 
 #root>div>div.mobile-menu.active>div>button,
 #root>div>div.mobile-menu>div>button {
-    top: 5.6rem;
-    left: 1.5rem;
+    top: 2.8rem;
+    left: 0rem;
 
 }
 
@@ -56,12 +56,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    transition: all 0.2s ease;
+    margin-left: 2em;
+    /* transition: all 0.2s ease; */
+    animation: fadeIn 2s ease 0s 1 normal forwards;
+
 }
 
 .material-symbols-outlined {
     font-size: 2.8rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.menu-btn:active {
+    animation: fadeOut 2s ease 0s 1 normal forwards;
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
 }
 
 .outline {
@@ -108,7 +139,7 @@
     opacity: 0;
     bottom: -0.6rem;
     transform: translateX(-1rem);
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
 }
 
 .mobile-menu-item:hover::before {
@@ -193,7 +224,7 @@
 @media (max-width: 575px) and (min-width: 269px) {
     .menu-btn {
         position: absolute;
-        left: 10%;
+        left: 0;
 
     }
 }
@@ -217,7 +248,9 @@
         align-items: center;
         margin: 0;
         visibility: visible;
-        transition: all 0.2s ease;
+        /* transition: all 0.2s ease; */
+        left: 1em;
+
     }
 
     .material-symbols-outlined {
@@ -258,7 +291,7 @@
         align-items: center;
         margin: 0;
         visibility: visible;
-        transition: all 0.2s ease;
+        /* transition: all 0.2s ease; */
     }
 
     .material-symbols-outlined {
@@ -276,9 +309,24 @@
 
     }
 
-    .nav-content {
-        display: none;
+
+    #root>div>div.nav-wrapper>div>div>div>a>img {
+        height: 4.5em;
+        width: auto;
+    }
+
+    #root>div>div.nav-wrapper>div>button.menu-btn {
+        height: 2.9rem;
+        width: 2.9rem;
+        left: .5em;
     }
 
 
+    #root>div>div.nav-wrapper>div>ul {
+        display: none;
+    }
+
+    #root>div>div.nav-wrapper>div>button.btn-info.nav-play-btn {
+        display: none;
+    }
 }

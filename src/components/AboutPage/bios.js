@@ -78,7 +78,7 @@ const LIZ = new Bio(
 const LANE = new Bio(
   "Lane Hamilton",
   "She/They",
-  "Front End",
+  "Frontend Engineer",
   `I'm a Los Angeles based frontend Software Engineer with experience in
   developing JavaScript applications using React/ Next.js. Passionate about apps
   having an aesthetically pleasing design.​`,

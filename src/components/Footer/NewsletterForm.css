@@ -12,6 +12,11 @@
   margin: 1em 0;
 }
 
+.subscribe:hover {
+  background-color: #E21674;
+  color: white;
+}
+
 .footer-row input {
   width: 100%;
   height: 4.375rem;

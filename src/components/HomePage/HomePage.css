@@ -565,10 +565,9 @@ section:nth-last-of-type(2) {
     height: 45rem;
     /* min-height: 19%; */
     position: absolute;
-    bottom: -90px;
+    bottom: 500px;
     left: 0;
     object-fit: cover;
-
 }
 
 @keyframes move-forever {
@@ -704,7 +703,7 @@ section:nth-last-of-type(2) {
     }
 
     .wave-graphic {
-        bottom: -90px;
+        /* bottom: -90px; */
         object-fit: fill;
 
     }
@@ -1335,7 +1334,7 @@ section:nth-last-of-type(2) {
         /* max-width: 180%; */
         /* height: 40rem; */
         /* min-height: 83vh; */
-        bottom: -90px;
+        bottom: 1200px;
         margin: 0 auto;
         object-position: -40rem 0rem;
         /* object-fit: fill; */

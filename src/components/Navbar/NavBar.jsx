@@ -25,7 +25,7 @@ const NavBar = () => {
             <div className="nav-content">
                <div className="logo-wrapper">
                   <div className="logo">
-                     <Link to="/home">
+                     <Link to="/">
                         <img
                            src={imageAssets.logo}
                            alt="InCo logo"

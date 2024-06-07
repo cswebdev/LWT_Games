@@ -94,6 +94,7 @@
 .footer-item {
     list-style: none;
     line-height: 3.25rem;
+    display: block;
 }
 
 .footer-item a {
@@ -205,5 +206,9 @@
 
     .col-menu {
         margin-top: 3rem;
+    }
+
+    .footer-items {
+        text-align: left;
     }
 }

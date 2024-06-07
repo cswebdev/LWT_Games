@@ -28,8 +28,7 @@
     width: 100%;
 }
 
-.nav-content,
-ul {
+.nav-content {
     display: flex;
     flex-direction: row;
     /* border: 1px solid red; */

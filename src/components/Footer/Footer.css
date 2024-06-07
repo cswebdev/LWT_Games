@@ -1,8 +1,10 @@
+/* Rest of code. */
+
 .Footer {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: transparent;
+    overflow: hidden;
     background-image: url('../../assets/Footer\ curve.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,6 +15,21 @@
     padding: 8% 80px 2% 80px;
 }
 
+.Footer-mobile {
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    overflow: hidden;
+    background-image: url('../../assets/mobile-footer-curve.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    color: #ffff;
+    z-index: 30;
+    position: relative;
+    padding: 8% 20px 15% 20px;
+}
+
 .footer-row {
     display: flex;
     justify-content: center;
@@ -20,15 +37,17 @@
 }
 
 .logo-frame {
-    width: 100%;
-    margin-top: 1.5em;
+    width: 70%;
+    margin-top: 10rem;
     margin-bottom: 3rem;;
 }
 
 .footer-logo {
     object-fit: contain;
     height: auto;
-    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .footer-row h3 {
@@ -69,14 +88,29 @@ input[type="text"] {
     font-family: 'new-science-serif', sans-serif;
 }
 
-ul {
+.footer-items {
     margin: 0;
     padding: 0;
-    text-align: left;
+    text-align: center;
+}
+
+.col-newsletter {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .col-menu, .col-follow {
     align-self: flex-start;
+    text-align: center;
+}
+
+.col-follow {
+    margin-top: 3rem;
 }
 
 .footer-title {
@@ -102,6 +136,7 @@ ul {
 .share-logos {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
     gap: 40px;
     margin-top: 2.5rem;
 }
@@ -131,14 +166,6 @@ ul {
     margin: 1em 0;
 }
 
-.col-logo {
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-}
-
 .Loading {
     display: flex;
     justify-content: center;
@@ -163,5 +190,60 @@ ul {
 
     100% {
         background-position: 0% -200%;
+    }
+}
+
+
+/* Media queries to handle which version loads on mobile/tablet/desktop */
+.Footer {
+    display: none;
+}
+
+.Footer-mobile {
+    display: flex;
+}
+
+@media screen and (min-width: 600px) {
+    .Footer-mobile {
+        padding: 8% 50px 15% 50px;
+    }
+
+    .logo-frame {
+        width: 40%;
+    }
+
+    .Loading-left {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .Footer {
+        display: flex;
+    }
+
+    .Footer-mobile {
+        display: none;
+    }
+
+    .logo-frame {
+        width: 100%;
+        margin-top: 1.5em;
+        margin-bottom: 3rem;;
+    }
+
+    .footer-logo {
+        object-fit: contain;
+        height: auto;
+        width: 10%;
+    }
+
+    .col-newsletter {
+        text-align: left;
+        width: 30%;
+    }
+
+    .col-menu {
+        margin-top: 3rem;
     }
 }

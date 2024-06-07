@@ -20,7 +20,7 @@ function App() {
             <Route path="/get-involved" element={<GetInvolvedPage />} />
             <Route path="*" element={<NotFoundPage />} />
          </Routes>
-         {/* <Footer /> */}
+         <Footer />
       </div>
    );
 }

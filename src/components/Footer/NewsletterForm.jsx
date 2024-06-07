@@ -58,6 +58,10 @@ const NewsletterForm = () => {
                 <button type="button" className="btn btn-info subscribe">
                     SUBSCRIBE
                 </button>
+                <input type="hidden" name="form-name" value="NewsletterForm" />
+                {message && <div className="alert alert-success" role="alert">
+                    <p>{message}</p>
+                </div>}
             </form>
         </>
     );

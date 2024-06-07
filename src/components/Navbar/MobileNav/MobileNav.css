@@ -152,10 +152,14 @@
     /* margin-top: 10em; */
     position: absolute;
     margin: 75vh auto;
-    width: 96%;
+    width: 100%;
     left: 2%;
 }
 
+#root>div>div.mobile-menu.active>div>button.btn-info.nav-play-btn {
+    display: block;
+    min-width: 96%;
+}
 
 @media(max-width: 869px) and (min-width: 320px) {
 

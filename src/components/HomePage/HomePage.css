@@ -825,7 +825,6 @@ section:nth-last-of-type(2) {
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
         /* background-color: #E11774; */
         position: relative;
-        max-height: 0%;
         padding: 0;
         margin: 0;
     }

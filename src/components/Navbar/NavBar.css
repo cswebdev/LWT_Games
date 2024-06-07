@@ -66,14 +66,14 @@ ul {
     margin: 0;
 }
 
-.logo-img:active {
+.logo-img:hover {
     animation: logoShake 2s ease 0s 1 normal forwards;
     scale: 1.01;
 
 }
 
-.logo-img:hover {
-    scale: 1.02;
+.logo-img:active {
+    scale: .98;
 }
 
 @keyframes logoShake {

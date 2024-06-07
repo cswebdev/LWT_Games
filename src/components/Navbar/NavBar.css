@@ -66,10 +66,14 @@ ul {
     margin: 0;
 }
 
-.logo-img:hover {
+.logo-img:active {
     animation: logoShake 2s ease 0s 1 normal forwards;
     scale: 1.01;
 
+}
+
+.logo-img:hover {
+    scale: 1.02;
 }
 
 @keyframes logoShake {
@@ -83,13 +87,13 @@ ul {
     30%,
     50%,
     70% {
-        transform: translateX(-2px);
+        transform: translateX(-1.3px);
     }
 
     20%,
     40%,
     60% {
-        transform: translateX(2px);
+        transform: translateX(1.3px);
     }
 
     80% {
@@ -97,7 +101,7 @@ ul {
     }
 
     90% {
-        transform: translateX(-0px);
+        transform: translateX(0px);
     }
 }
 

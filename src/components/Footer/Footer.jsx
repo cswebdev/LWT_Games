@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import imageAssets from "../../utils/Utils";
+import NewsletterForm from "./NewsletterForm";
 
 const Footer = () => {
    return (
@@ -11,14 +12,7 @@ const Footer = () => {
                <img src={imageAssets.logo} alt="" className="footer-logo" />
             </div>
             <div className="col-newsletter">
-               <h3>Join our newsletter!</h3>
-               <p>
-                  Stay up to date with all things InCo!
-               </p>
-               <input placeholder="Enter Email Address"></input>
-               <button type="button" className="btn btn-info subscribe">
-                  SUBSCRIBE
-               </button>
+               <NewsletterForm />
             </div>
             <div className="col">
                <div className="Loading">
@@ -55,14 +49,7 @@ const Footer = () => {
                <img src={imageAssets.logo} alt="" className="footer-logo" />
             </div>
             <div className="col-newsletter">
-               <h3>Join our newsletter!</h3>
-               <p>
-                  Stay up to date with all things InCo!
-               </p>
-               <input placeholder="Enter Email Address"></input>
-               <button type="button" className="btn btn-info subscribe">
-                  SUBSCRIBE
-               </button>
+               <NewsletterForm />
             </div>
             <div className="col Loading-left">
                <div className="Loading">

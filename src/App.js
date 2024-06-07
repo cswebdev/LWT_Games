@@ -7,6 +7,7 @@ import FAQPage from "./components/FAQ/FAQPage";
 import GetInvolvedPage from "./components/GetInvolvedPage/GetInvolvedPage";
 import Footer from "./components/Footer/Footer";
 import NotFoundPage from "./components/NotFound/NotFoundPage";
+import TermsOfServicePage from "./components/TermsPages/TermsOfServicePage";
 
 function App() {
    return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/FAQ" element={<FAQPage />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/get-involved" element={<GetInvolvedPage />} />
+            <Route path="/terms-of-service" element={<TermsOfServicePage />} />
             <Route path="*" element={<NotFoundPage />} />
          </Routes>
          <Footer />

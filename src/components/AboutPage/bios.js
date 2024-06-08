@@ -288,44 +288,44 @@ const JULIE = new Bio(
 // make colors for border and hover effects orange
 const ORANGE = "orange";
 TEGAN.color = ORANGE;
-JULIANE.color = ORANGE;
-LANE.color = ORANGE;
+KD.color = ORANGE;
+JIMENA.color = ORANGE;
 AMY.color = ORANGE;
 
 
 // create order for mobile screens
 TEGAN.mobileOrder = 1;
-LIZ.mobileOrder = 2;
-LYNDS.mobileOrder = 3;
-OLIVIAS.mobileOrder = 4;
-KD.mobileOrder = 5;
-JULIANE.mobileOrder = 6;
-CHELSEA.mobileOrder = 7;
-WEI.mobileOrder = 8;
-OLIVIAM.mobileOrder = 10;
-JIMENA.mobileOrder = 11;
-LANE.mobileOrder = 12;
+LANE.mobileOrder = 2;
+LIZ.mobileOrder = 3;
+LYNDS.mobileOrder = 4;
+OLIVIAS.mobileOrder = 5;
+KD.mobileOrder = 6;
+JULIANE.mobileOrder = 7;
+CHELSEA.mobileOrder = 8;
+WEI.mobileOrder = 10;
+OLIVIAM.mobileOrder = 11;
+JIMENA.mobileOrder = 12;
 ALEX.mobileOrder = 13;
 AMY.mobileOrder = 15;
 JULIE.mobileOrder = 16;
 
 export const BIOS = [
   TEGAN,
+  LANE,
   LIZ,
   LYNDS,
   OLIVIAS,
   KD,
   JULIANE,
   CHELSEA,
-  WEI,
   {image: "/headshots/bingo.png", hover: "/headshots/bingo.png", alt: "bingo", mobileOrder: 9, stylingClass: "BioCard-bingo"},
+  WEI,
   OLIVIAM,
   JIMENA,
-  LANE,
-  ALEX,
   {image: "/headshots/free_space.png", hover: "/drawings/free_space.png", alt: "free space", mobileOrder: 14},
-  JULIE,
+  ALEX,
   {image: "/headshots/surprise.png", hover: "/drawings/surprise.png", alt: "suprise", mobileOrder: 17, stylingClass: "BioCard-surpirse"},
+  JULIE,
   AMY,
 ];
 

@@ -130,13 +130,30 @@ Button {
 }
 
 .btn-info-check:checked+.btn,
-.btn-info.active,
 .btn-info.show,
 .btn-info:first-child:active,
 :not(.btn-info-check)+.btn-info:active {
   background-color: #ca1468;
   color: #fff;
   border: 1px solid #ca1468;
+}
+
+.btn-info:hover {
+  background-color: #d10060;
+}
+
+.btn-info:active,
+.btn-info:focus,
+.btn-info:focus-visible {
+  background-color: #fff !important;
+  border: 4px solid #E21674 !important;
+}
+
+/* Change the color of the text inside the button when active */
+.btn-info:active a,
+.btn-info:focus a,
+.btn-info:focus-visible a {
+  color: #E21674;
 }
 
 /* info button outline */

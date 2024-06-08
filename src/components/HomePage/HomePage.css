@@ -67,12 +67,6 @@ h2 {
     object-position: 4rem -7.2rem;
     position: absolute;
     top: 3rem;
-    /* border: 1px solid red; */
-    /* top: -1rem; */
-    /* left: 15%; */
-    /* left: 47%; */
-    /* transform: translate(-0%, -1%); */
-
 }
 
 .Left-panel .Header-text P {
@@ -94,21 +88,39 @@ h2 {
 .btn-play-bingo {
     width: 31.2rem;
     height: 4.375rem;
+
+}
+
+.btn-play-bingo>a {
     font-weight: 800;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: .2em;
+    text-decoration: none;
+    color: #fff;
 }
 
 .btn-play-bingo-purple {
     width: 25rem;
     height: 4.375rem;
+    margin-top: 2em;
+}
+
+.btn-play-bingo-purple>a {
     font-weight: 800;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: .2em;
-    margin-top: 2em;
+    color: #fff;
+    text-decoration: none;
 }
+
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
 
 #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative>button {
     margin-top: 2em;
@@ -133,7 +145,6 @@ h2 {
     line-height: 4.444rem;
     letter-spacing: .04em;
     font-weight: 700;
-    /* max-width: 48.813rem; */
 }
 
 
@@ -142,10 +153,6 @@ h2 {
     margin-top: 1em;
     font-size: 1.3rem;
     width: 100%;
-    /* max-width: 35.875rem; */
-    /* max-width: 38rem; */
-    /* text-align: start; */
-
 }
 
 .who-are-we-p .row-h2 {
@@ -166,33 +173,14 @@ h2 {
 
 }
 
-
-
-/* .whoWeAreFrame {
-    aspect-ratio: 1/1;
-    height: auto;
-    width: 293px;
-    border: 3px solid rgb(65, 233, 65);
-    background-color: hwb(120 0% 0%);
-    border-radius: 5%;
-    margin: 1em 1.5em 0em 1.5em;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: relative;
-} */
-
 .whoWeAreFrame,
 .oliviaFrame {
     aspect-ratio: 1/1;
     height: auto;
     max-width: 293px;
-    /* min-width: 13em; */
     border: 3px solid #A0CD62;
     background-color: #A0CD62;
     border-radius: 5%;
-    /* margin: 1em 1em 0em 1em; */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -201,12 +189,10 @@ h2 {
 }
 
 .oliviaOuterFrame {
-    /* max-width: 293px; */
     height: 293px;
     width: 100%;
     aspect-ratio: 1/1;
     max-width: 293px;
-    /* margin: 1em 1em 0em 1em; */
 }
 
 .oliviaFrame {
@@ -214,9 +200,7 @@ h2 {
     height: 100%;
     width: 100%;
     margin: 0em 2em 0em 0em;
-
 }
-
 
 .whoWeAreFrame img {
     height: auto;
@@ -250,18 +234,6 @@ h2 {
     z-index: 1;
 }
 
-
-/* .laneDrawing {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
-}
-
-.vestDrawing {
-    padding: 0;
-    margin: 0;
-
-}   */
 .vestDrawing {
     object-fit: fill;
     margin: 0;
@@ -283,7 +255,6 @@ h2 {
 }
 
 .who-we-are-graphics {
-    /* max-width: 15rem; */
     max-height: auto;
     object-fit: fill;
 
@@ -304,19 +275,10 @@ h2 {
 /* row styling */
 
 
-section:nth-of-type(2) {
-    /* background-color: #E11774; */
-    /* margin-top: 10vh; */
-    /* margin: 20vh 0; */
-}
 
 section:nth-last-of-type(2) {
     margin: 5% auto 15rem auto;
-    /* border: 1px solid pink; */
-
 }
-
-
 
 #root>div>section:nth-child(5) {
     display: flex;
@@ -332,7 +294,6 @@ section:nth-last-of-type(2) {
     display: flex;
     flex-direction: row;
     padding: 0;
-    /* margin: 3.3em 0; */
     font-size: 25px;
 }
 
@@ -343,14 +304,6 @@ section:nth-last-of-type(2) {
     z-index: 1;
 }
 
-
-#root>div>section.container.whatIsInco.position-relative>div>div>p {
-    /* width: 104%; */
-}
-
-/* .text-content p {
-    max-width: 37rem;
-} */
 
 /* who we are graphics */
 
@@ -369,42 +322,21 @@ section:nth-last-of-type(2) {
     position: absolute;
     width: 22.2375rem;
     height: auto;
-    /* left: -23rem; */
     left: -28%;
-    /* left: calc(-22rem + 1vw); */
     left: -20vw;
-    /* object-position: calc(-2rem + 1vw); */
     top: 19em;
 }
 
 .blueBlob {
-    /* object-fit: contain; */
-    /* height: auto; */
-    /* max-height: 100rem; */
-    /* min-width: 1%; */
-    /* min-width: 1314px; */
     width: 55vw;
-    /* min-width: 60em; */
-    /* width: 100%; */
-    /* min-height: 100%; */
-    /* min-width: 73.99%; */
     height: auto;
-    /* width: 65rem; */
-    /* display: none; */
-    /* width: 99%; */
-    /* min-width: 109%; */
     position: absolute;
-    /* top: 42.4rem; */
-    /* top: -25%; */
-    /* left: -29em; */
-    /* left: -30%; */
     left: 0%;
     top: 61rem;
     margin: 0;
     padding: 0;
     aspect-ratio: 1/1;
-    /* transform: scaleY(.6) scaleX(.73); */
-    /* transform: rotate(-10deg); */
+
 }
 
 .container {
@@ -523,10 +455,16 @@ section:nth-last-of-type(2) {
     height: 4.375rem;
     border-radius: 30px;
     border: 0px solid transparent;
+}
+
+.team-button>a,
+.summit-button>a {
     font-family: 'Hiragino Kaku Gothic', sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
     letter-spacing: .1em;
+    color: #fff;
+    text-decoration: none;
 }
 
 .team-button {
@@ -1873,14 +1811,30 @@ section:nth-last-of-type(2) {
 
     .whoWeAreFrame,
     .oliviaFrame {
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 
     /* blueMountain */
 
     #root>div>section.container.whatIsInco.position-relative>div>div>div.row.d-flex.align-content-center.justify-content-center.z-1.position-relative>div.col-xl-4.col-lg-12.col-12.position-relative.oliviaOuterFrame.p-0>img {
-        transform: scale(0.9);
+        transform: scale(0.8);
+        left: -.5rem;
+        top: 12rem;
     }
+
+    .graphicFrame {
+        margin-bottom: 2rem;
+    }
+
+    #root>div>section:nth-child(6)>div>div.col-lg-5.order-1.m-0.p-0>div>img {
+        transform: scale(0.8);
+    }
+
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-6.col-md-12.graphicFrame.order-1.z-2.d-flex.justify-content-center.bubbleGumFrame.mb-md-2.mb-lg-5>img {
+        transform: scale(0.8);
+        margin-bottom: 1em;
+    }
+
 }
 
 /* ##### height adjustments ##### */

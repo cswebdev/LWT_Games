@@ -83,7 +83,7 @@ const HomePage = () => {
                <div className="container d-flex flex-column text-center justify-content-center who-are-we z-1 col-lg-12 col-md-12 position-relative">
                   <h2 className="z-1 mb-4">What's InCo?</h2>
                   <p className="we-are-subtitle z-1 mb-lg-5">
-                     Breaking through digital with the power of fun and the{" "}
+                     Breaking through digital walls with the power of fun and the{" "}
                      <br />
                      passion for people [or gamers]
                   </p>

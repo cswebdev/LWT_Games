@@ -403,16 +403,14 @@ section:nth-last-of-type(2) {
         width: 95vw;
         left: -10em;
         top: 110rem;
+    }
 
+    #root > div > div.wave-container.container-fluid.z-0.overflow-hidden.w-0 > img {
+        height: 65rem;
+        margin-bottom: -100px;
     }
 }
 
-@media (max-width: 576px) {
-    .blueBlob {
-        /* left: -50em; */
-        /* Adjust as needed */
-    }
-}
 
 #root>div>section:nth-child(5) {
 
@@ -1636,6 +1634,12 @@ section:nth-last-of-type(2) {
     }
 }
 
+@media (max-width: 595px ) {
+    #root > div > div.wave-container.container-fluid.z-0.overflow-hidden.w-0 > img {
+        height: 80rem;
+    }
+}
+
 @media (max-width: 535px) {
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
@@ -1661,10 +1665,18 @@ section:nth-last-of-type(2) {
 
 @media (max-width: 505px) {
     .wave-graphic {
-        height: 90rem;
+        min-height: 90rem;
     }
 
 }
+
+@media (max-width: 504px) and (min-width: 421px) {
+    .wave-graphic {
+        min-height: 110rem;
+    }
+
+}
+
 
 @media (max-width: 420px) {
 
@@ -1835,6 +1847,10 @@ section:nth-last-of-type(2) {
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-6.col-md-12.graphicFrame.order-1.z-2.d-flex.justify-content-center.bubbleGumFrame.mb-md-2.mb-lg-5>img {
         transform: scale(0.8);
         margin-bottom: 1em;
+    }
+
+    #root > div > div.wave-container.container-fluid.z-0.overflow-hidden.w-0 > img {
+        height: 110rem;
     }
 
 }

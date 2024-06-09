@@ -403,7 +403,7 @@ section:nth-last-of-type(2) {
         top: 110rem;
     }
 
-    #root > div > div.wave-container.container-fluid.z-0.overflow-hidden.w-0 > img {
+    #root>div>div.wave-container.container-fluid.z-0.overflow-hidden.w-0>img {
         height: 65rem;
         margin-bottom: -100px;
     }
@@ -1472,13 +1472,7 @@ section:nth-last-of-type(2) {
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain>img {
         /* height: 200px !important; */
         margin: auto;
-        /* width: 100%; */
-        /* height: auto; */
         aspect-ratio: 6/5;
-        /* transform: scale(1); */
-        /* max-width: 30rem; */
-        /* max-height: auto; */
-        /* position: relative; */
     }
 
     /* hero section button  */
@@ -1508,7 +1502,7 @@ section:nth-last-of-type(2) {
     /* who we are section container */
 
     #root>div>section.container.whatIsInco.position-relative {
-        margin: -5em 0em 0em 0em;
+        margin: -5em auto 0em auto;
         display: block;
     }
 
@@ -1632,8 +1626,8 @@ section:nth-last-of-type(2) {
     }
 }
 
-@media (max-width: 595px ) {
-    #root > div > div.wave-container.container-fluid.z-0.overflow-hidden.w-0 > img {
+@media (max-width: 595px) {
+    #root>div>div.wave-container.container-fluid.z-0.overflow-hidden.w-0>img {
         height: 80rem;
     }
 }
@@ -1847,7 +1841,7 @@ section:nth-last-of-type(2) {
         margin-bottom: 1em;
     }
 
-    #root > div > div.wave-container.container-fluid.z-0.overflow-hidden.w-0 > img {
+    #root>div>div.wave-container.container-fluid.z-0.overflow-hidden.w-0>img {
         height: 110rem;
     }
 

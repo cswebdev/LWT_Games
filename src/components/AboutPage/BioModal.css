@@ -160,6 +160,7 @@
   padding: 1.25px 1.5px;
   font-size: 1.125rem;
   font-family: 'new-science-serif', 'sans-serif';
+  padding: 2%;
 }
 
 .BioModal-q {
@@ -286,6 +287,7 @@
   .modal-dialog {
     max-width: 60%;
   }
+
   .BioModal-info {
     width: 88%;
   }

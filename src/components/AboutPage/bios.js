@@ -186,8 +186,7 @@ const CHELSEA = new Bio(
   "Chelsea Snider",
   "She/They",
   "Fullstack Developer",
-  `Full Stack Developer | React | AngularJS | Python | Django | Java | Spring
-  Boot | Greenville, SC`,
+  `I am a fullstack software developer with experience in JavaScript, TypeScript, React, and Java Spring Boot. I enjoy working with clients to create intuitive and stylish user interfaces, leveraging my skills to develop efficient, scalable, and visually stunning software solutions.`,
   "/headshots/chelsea_headshot.png",
   "/drawings/chelsea_drawing.png",
   "https://chelseasnider.netlify.app/",

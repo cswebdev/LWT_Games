@@ -26,7 +26,7 @@ const Footer = () => {
                   <li className="footer-item"><Link to="/about">About Us</Link></li>
                   <li className="footer-item"><Link to="/faq">FAQ</Link></li>
                   <li className="footer-item"> <Link to="/get-involved">Join Us</Link></li>
-                  <li className="footer-item"><Link to="/bingo-link">Play Bingo</Link></li>
+                  <li className="footer-item"><Link to="https://bingo.incocollective.com">Play Bingo</Link></li>
                </ul>
             </div>
             <div className="col">
@@ -69,7 +69,7 @@ const Footer = () => {
                   <li className="footer-item"><a href="/about">About Us</a></li>
                   <li className="footer-item"><a href="/faq">FAQ</a></li>
                   <li className="footer-item"> <a href="/get-involved">Join Us</a></li>
-                  <li className="footer-item"><a href="/bingo-link">Play Bingo</a></li>
+                  <li className="footer-item"><a href="https://bingo.incocollective.com">Play Bingo</a></li>
                </ul>
             </div>
             <div className="col">

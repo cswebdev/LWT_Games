@@ -59,6 +59,10 @@
 .NotFoundPage-button {
   width: 100%;
   text-transform: uppercase;
+  font-family: 'Hiragino Kaku Gothic', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: .1em;
 }
 
 .NotFoundPage-button:hover {

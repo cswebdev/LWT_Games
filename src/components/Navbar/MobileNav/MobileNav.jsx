@@ -37,7 +37,7 @@ const MobileNav = ({ isOpen, closeMenu }) => {
                   </li>
                </ul>
                <button type="button" className="btn-info mobile-nav-play-btn">
-                  <a href="https://laneecho.github.io/LWT-bingo/">PLAY BINGO</a>
+                  <a href="https://bingo.incocollective.com">PLAY BINGO</a>
                </button>
             </div>
          </div>

@@ -23,7 +23,7 @@ const NotFoundPage = () => {
             </div>
             <div className="NotFoundPage-bar"></div>
             <div className="NotFoundPage-buttons">
-                <a href="/bingo"
+                <a href="https://bingo.incocollective.com"
                     className="btn btn-primary NotFoundPage-button"
                 >
                     Play Bingo

@@ -1,22 +1,8 @@
 /* Container styling */
 
-
-
-
-
-
-
-
-/* end Container styling */
-
-/* ### hero styling */
-
 /* ### HERO TEXT STYLING  */
 #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title,
 #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative {
-    /* padding-left: 5em; */
-    /* background-color: rebeccapurple; */
-    /* left: 3%; */
     overflow: visible;
     height: 45vh;
 }
@@ -49,7 +35,6 @@ h2 {
 }
 
 /* ### HERO TEXT STYLING END ### */
-
 
 #root>div>section.container.hero.overflow-visible>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-2.order-md-3.order-md-2.order-sm-2.overflow-visible.heroGraphic.object-fit-contain {
     object-fit: contain;
@@ -128,10 +113,6 @@ a:active {
     -moz-box-shadow: 0px 7px 7px .01px rgb(195, 145, 251);
     box-shadow: 0px 6px 7px .01px rgb(195, 145, 251);
 }
-
-
-
-
 
 /* end panel styling */
 /* who are we row */
@@ -343,21 +324,25 @@ section:nth-last-of-type(2) {
     --bs-gutter-x: 0rem;
 }
 
-/* .whoWeAreFrame.oliviaFrame {
-    max-height: 100%;
-    max-width: 348px;
-    width: 100%;
-} */
+@media (min-width: 992px) and (max-width: 1400px) and (min-height: 1200px) {
+    #root>div>section.container.hero.position-relative {
+        background-color: red;
+        max-height: 38rem;
 
+    }
 
+    #root>div>section.container.whatIsInco.position-relative {
+        margin: 5rem auto 15rem auto;
+        max-height: 40rem;
+    }
 
+}
 
 
 
 @media (min-width: 1400px) {
     .blueBlob {
         max-width: 80vw;
-
         height: auto;
         z-index: -9;
     }
@@ -370,11 +355,7 @@ section:nth-last-of-type(2) {
 
     #root>div>section.container.whatIsInco.position-relative>div>div>div {
         min-width: 80vw;
-        /* border: 4px solid red; */
-
     }
-
-
 }
 
 @media (max-width: 1200px) {
@@ -392,8 +373,6 @@ section:nth-last-of-type(2) {
         left: -12.5rem;
         top: 90rem;
     }
-
-
 }
 
 @media (max-width: 768px) {
@@ -411,8 +390,7 @@ section:nth-last-of-type(2) {
 
 
 #root>div>section:nth-child(5) {
-
-    margin: 0rem auto 15em auto;
+    margin: 10rem auto 20rem auto;
     top: 2em;
     height: 90vh;
 }
@@ -469,13 +447,6 @@ section:nth-last-of-type(2) {
     margin-top: 4em;
 }
 
-
-/* why bingo row */
-
-
-
-
-
 #root>div>section.container.body-bottom.p-0.mt-5.overflow-hidden.z-1>div>div>div.col-lg-5.graphicFrame.order-1.z-2.d-flex.justify-content-center.bubbleGumFrame {
     height: 40rem;
 }
@@ -489,7 +460,6 @@ section:nth-last-of-type(2) {
 /* waves */
 
 .wave-container {
-    /* position: absolute; */
     width: 100%;
     background-color: red;
     overflow: hidden;
@@ -516,71 +486,44 @@ section:nth-last-of-type(2) {
 }
 
 #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
-    /* background-color: #E11774; */
     margin-top: 3em;
-    /* width: 50%; */
-
-
 }
 
 @media (max-width: 1680px) {
-
     .homepageOliviaGraphic {
         height: auto;
         max-width: 52rem;
         object-position: 7rem -6.19rem;
     }
-
-
 }
 
 @media (max-width: 1560px) {
     .homepageOliviaGraphic {
-        /* top: 7%; */
         max-width: 50rem;
         height: auto;
-        /* transform: translate(-10%, 3%); */
         top: 3rem;
-
     }
-
-
 }
 
 @media (max-width: 1400px) {
     .col-title {
         vertical-align: text-bottom;
-        /* height: 20vh; */
     }
-
 
     .homepageOliviaGraphic {
         object-position: 5rem -5.8rem;
-        /* margin-top: 1em; */
         max-width: 46.9rem;
         transform: translate(-10%, 5%);
-
-        /* top: 6%; */
     }
 
     /* hero text formatting */
 
-
-
-
-
     #root>div>section.container.whatIsInco.overflow-visible>div>div>div {
         margin: auto;
-        /* min-width: 100%; */
-        /* max-width: 50%; */
     }
 
-
-
     section:nth-last-of-type(3) {
-        /* margin: 0rem auto 10rem auto; */
         width: 100%;
-        /* background-color: red; */
         height: max-content;
     }
 
@@ -596,8 +539,6 @@ section:nth-last-of-type(2) {
         align-items: center;
         margin: auto;
     }
-
-
 
     .pinkCloudImg {
         position: absolute;
@@ -615,20 +556,9 @@ section:nth-last-of-type(2) {
         top: 18rem;
     }
 
-    /* .blueBlob {
-        max-height: 63.5rem;
-        max-width: auto;
-        top: -6em;
-        left: -22.6%;
-
-    } */
-
     .blueMountainImg {
-        /* max-height: 102px; */
         width: auto;
-        /* left: 2rem; */
     }
-
 
     .greenAndPinkCloud {
         right: -8rem;
@@ -636,29 +566,9 @@ section:nth-last-of-type(2) {
         width: 22rem;
         height: auto;
     }
-
-    .wave-graphic {
-        /* bottom: -90px; */
-
-    }
-
-
 }
-
-@media (max-width: 1999px) and (min-width: 1400px) {
-    .wave-graphic {
-        /* min-height: 19.9%; */
-        /* max-height: 20%; */
-
-    }
-
-}
-
-
-
 
 @media (max-width: 1249px) and (min-width: 993px) {
-
 
     section:nth-of-type(2) {
         margin: 0rem auto 10em auto;
@@ -666,18 +576,11 @@ section:nth-last-of-type(2) {
     }
 }
 
-
-
 @media (max-width: 1200px) {
     .homepageOliviaGraphic {
         max-width: 43.5rem;
-        /* min-width: 70.7vw; */
         height: auto;
-        /* top: calc(2rem + (3rem - 1em)); */
-        /* left: 48%; */
         transform: translate(-11%, 10%);
-
-        /* border: 1px solid red; */
     }
 
 
@@ -685,33 +588,16 @@ section:nth-last-of-type(2) {
         margin: 0 0em
     }
 
-    /* .oliviaPortrait {
-        transform: scale(.65);
-        width: 350%;
-        margin: 0;
-        padding: 0;
-    } */
-
     .whoWeAreFrame {
-        /* max-width: 30%; */
         margin: 0 .5em;
     }
 
-
     .oliviaOuterFrame .blueMountainImg {
-        /* max-width: fit-content; */
         height: auto;
         left: -2em;
         top: 7.7em;
     }
-
-
-
 }
-
-
-
-
 
 @media (max-width: 1069px) {
     .homepageOliviaGraphic {
@@ -756,36 +642,17 @@ section:nth-last-of-type(2) {
     }
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
-        /* background-color: #E11774; */
         position: relative;
         padding: 0;
         margin: 0;
     }
-
-    /* #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.overflow-visible.heroGraphic.object-fit-contain>.homepageOliviaGraphic {
-        height: 18em;
-        width: auto;
-        margin: 0 auto;
-        position: relative;
-        object-fit: contain;
-        object-position: 8em -2em;
-    } */
-
 
     section:nth-last-of-type(3) {
         margin: 0rem auto 5rem auto;
         width: 100%;
     }
 
-
     /* ### homepage absolute position image assets ### */
-
-    /* .blueBlob {
-        max-height: 62.5rem;
-        max-width: auto;
-        top: 27.7em;
-        left: -25%;
-    } */
 
     .pinkCloudImg {
         position: absolute;
@@ -795,7 +662,6 @@ section:nth-last-of-type(2) {
         top: 11.8rem;
     }
 
-
     .tealCloudImg {
         width: 29.2375rem;
         height: auto;
@@ -803,15 +669,11 @@ section:nth-last-of-type(2) {
         top: 46.6rem;
     }
 
-
-
-
     .greenAndPinkCloud {
         right: -7em;
         top: 61rem;
         width: 22rem;
         height: auto;
-        /* object-position: 6.23em 0; */
     }
 
     /* ### END homepage absolute image assets ### */
@@ -841,26 +703,13 @@ section:nth-last-of-type(2) {
         top: 35.6%;
         min-width: 76%;
     }
-
-
 }
 
 @media (max-width: 992px) {
-
-    /* do not delete important - it's okay it's commented out */
-
     .col-title {
         margin-top: 0rem;
     }
 
-
-
-    #root>div>section:nth-child(5) {
-
-        margin: 20rem auto 30rem auto;
-        /* top: 2em; */
-        /* height: 90vh; */
-    }
 
     #root>div>section:nth-child(6)>div {
         justify-content: center;
@@ -876,11 +725,10 @@ section:nth-last-of-type(2) {
     }
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative {
-
         align-items: center;
+        justify-content: flex-start;
+        max-height: 20rem;
     }
-
-
 
     #root>div>section.container.hero.position-relative>div {
         text-align: center;
@@ -895,31 +743,19 @@ section:nth-last-of-type(2) {
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
         height: 20em;
-        /* border: 1px solid #E11774; */
         width: 100%;
         position: relative;
         justify-content: center;
-        /* align-items: center; */
-        /* margin: auto; */
-
     }
-
-
 
     .homepageOliviaGraphic {
         max-height: 22em;
         width: auto;
         position: absolute;
         transform: translate(-43%, -10%);
-        /* object-position: 5em -5rem; */
         align-self: center;
-        /* margin-top: 3em; */
-        /* left: -1em; */
-        /* top: 0.1em; */
         margin: 0 auto;
-
     }
-
 
     .whoWeAreFrame:nth-of-type(3) {
         margin: 1em;
@@ -940,11 +776,8 @@ section:nth-last-of-type(2) {
         margin-bottom: 5rem;
     }
 
-
-
     .who-are-we {
         padding-top: 0;
-        /* background-color: #E11774; */
         justify-content: center !important;
         align-items: center !important;
         align-content: center !important;
@@ -958,17 +791,7 @@ section:nth-last-of-type(2) {
         width: 595.2px;
     }
 
-    /* .blueBlob {
-        max-height: 49.5rem;
-        max-width: auto;
-        top: 28.7em;
-        left: -25%;
-        transform: scaleY(.95);
-    } */
-
-
     .blueBlob {
-        /* min-width: 52rem; */
         top: 105rem
     }
 
@@ -980,9 +803,7 @@ section:nth-last-of-type(2) {
         left: 41.2rem;
         top: 12.2rem;
         z-index: 10;
-
     }
-
 
     .tealCloudImg {
         width: 30.2375rem;
@@ -990,9 +811,7 @@ section:nth-last-of-type(2) {
         left: -39vw;
         top: 43.6rem;
         z-index: 10;
-
     }
-
 
     .oliviaOuterFrame .blueMountainImg,
     .blueMountainImg {
@@ -1002,13 +821,11 @@ section:nth-last-of-type(2) {
         left: -3.9rem;
     }
 
-
     .greenAndPinkCloud {
         right: -9em;
         top: 58rem;
         width: 19rem;
         height: auto;
-        /* object-position: 6.23em 0; */
     }
 
     #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div>button {
@@ -1056,9 +873,7 @@ section:nth-last-of-type(2) {
     .wave-graphic {
         height: 112rem;
         width: 100%;
-        /* object-position: -30rem 0; */
         object-fit: cover;
-
     }
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div {
@@ -1066,9 +881,6 @@ section:nth-last-of-type(2) {
         margin-left: auto;
     }
 }
-
-
-
 
 @media (max-width: 769px) and (min-width: 99px) {
 
@@ -1084,7 +896,6 @@ section:nth-last-of-type(2) {
 
     section:nth-of-type(1) {
         margin: 2rem auto 25em auto;
-        /* background-color: red; */
     }
 
     #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1,
@@ -1092,38 +903,18 @@ section:nth-last-of-type(2) {
         max-width: 100%;
     }
 
-
-
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title {
         overflow: visible;
     }
-
-
-
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title {
         padding-top: 8%;
     }
 
-    /* .homepageOliviaGraphic {
-        object-position: 5.3em -5rem;
-        min-height: 22em;
-        left: -5em;
-        top: 1em;
-        transform: translate(-55%, 0%);
-    } */
-
     .container .hero {
         display: flex;
-        /* justify-content: l; */
-        /* align-items: center; */
         width: 100%;
-        /* border: 1px solid #E11774; */
     }
-
-
-    /* Rectangle 14 */
-
 
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
@@ -1184,16 +975,12 @@ section:nth-last-of-type(2) {
         margin-right: auto;
     }
 
-
-
     .grandmas-bingo {
         flex-direction: column;
     }
 
-
     .body-bottom,
     .col-lg-6 {
-        /* background-color: red; */
         position: relative;
         flex-direction: column;
         justify-content: center;
@@ -1201,12 +988,10 @@ section:nth-last-of-type(2) {
     }
 
     #root>div>section.container-fluid.body-bottom.p-0.mb-5.mt-5.overflow-hidden>div>div.col-lg-12.position-relative.d-flex.grandmas-bingo.align-items-center.z-1.overflow-visible>div.col-lg-7.order-lg-1.order-md-2.order-sm-2.z-1.bg-transparent.d-flex.flex-column {
-        /* margin: 10px; */
         overflow: hidden;
     }
 
     .row-h2 {
-        /* font-size: 30px; */
         font-weight: 700;
         line-height: 50px;
         width: 100%;
@@ -1264,9 +1049,6 @@ section:nth-last-of-type(2) {
 
     .wave-graphic {
         width: 100%;
-        /* max-width: 180%; */
-        /* height: 40rem; */
-        /* min-height: 83vh; */
         bottom: 1200px;
         margin: 0 auto;
         object-position: -40rem 0rem;
@@ -1417,7 +1199,6 @@ section:nth-last-of-type(2) {
 @media (max-width: 620px) {
 
     /* hero section */
-
     /* hero text */
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title>h1 {
         font-size: 26px;
@@ -1434,12 +1215,6 @@ section:nth-last-of-type(2) {
     }
 
 
-    /* Hero image graphic */
-
-    /* #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
-        height: 50vh !important;
-    } */
-
     .heroGraphic {
         /* height: 30% !important; */
         position: relative;
@@ -1455,7 +1230,6 @@ section:nth-last-of-type(2) {
         margin: 0em 0 -15% 0;
         display: flex !important;
         object-fit: cover;
-        /* background-color: red; */
         position: relative;
     }
 
@@ -1470,7 +1244,6 @@ section:nth-last-of-type(2) {
     }
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain>img {
-        /* height: 200px !important; */
         margin: auto;
         aspect-ratio: 6/5;
     }
@@ -1490,14 +1263,8 @@ section:nth-last-of-type(2) {
 
     .blueBlob {
         max-width: 49em;
-        /* min-width: 48em; */
         top: 105rem;
     }
-
-    /* whoWeAre section styling for margin */
-    /* #root > div > section.container.whatIsInco.position-relative {
-        margin: 0em 0em 0em 0em
-    } */
 
     /* who we are section container */
 
@@ -1538,7 +1305,7 @@ section:nth-last-of-type(2) {
 
     #root>div>section:nth-child(6) {
         display: block;
-        margin-top: 45rem;
+        margin-top: 25rem;
     }
 
     #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div {
@@ -1582,7 +1349,6 @@ section:nth-last-of-type(2) {
     /* Not your grandmas bingo section */
     #root>div>section:nth-child(6) {
         display: block;
-        /* margin-top: 45rem; */
     }
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div {
@@ -1590,7 +1356,6 @@ section:nth-last-of-type(2) {
         align-items: center;
         width: 390px;
         margin: auto;
-
     }
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-6.col-md-12.graphicFrame.order-1.z-2.d-flex.justify-content-center.bubbleGumFrame.mb-md-2.mb-lg-5>img {
@@ -1671,8 +1436,6 @@ section:nth-last-of-type(2) {
 
 
 @media (max-width: 420px) {
-
-
     /* hero section */
 
     /* hero text */
@@ -1689,7 +1452,6 @@ section:nth-last-of-type(2) {
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative>p {
         font-size: 20px;
     }
-
 
     /* Hero image graphic */
 
@@ -1725,11 +1487,6 @@ section:nth-last-of-type(2) {
         /* min-width: 48em; */
         top: 105rem;
     }
-
-    /* whoWeAre section styling for margin */
-    /* #root > div > section.container.whatIsInco.position-relative {
-        margin: 0em 0em 0em 0em
-    } */
 
     /* whoWeAre text */
     #root>div>section.container.whatIsInco.position-relative>div>div>h2 {

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Footer.css";
 import imageAssets from "../../utils/Utils";
 import NewsletterForm from "./NewsletterForm";
@@ -43,7 +42,7 @@ const Footer = () => {
                </div>
             </div>
             <div className="Footer-boring-stuff">
-               <Link to="/terms-of-service">Terms of Use</Link>
+               <a href="/terms-of-service">Terms of Use</a>
                &nbsp;/&nbsp;
                &copy; 2024 Interconnected Collective
             </div>
@@ -86,7 +85,7 @@ const Footer = () => {
                </div>
             </div>
             <div className="Footer-boring-stuff">
-               <Link to="/terms-of-service">Terms of Use</Link>
+               <a href="/terms-of-service">Terms of Use</a>
                &nbsp;/&nbsp;
                &copy; 2024 Interconnected Collective
             </div>

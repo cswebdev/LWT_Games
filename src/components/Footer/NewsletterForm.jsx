@@ -19,6 +19,8 @@ const NewsletterForm = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState(null);
 
+    console.log(email);
+
     /** Update form input. */
     function handleChange(evt) {
         setEmail(evt.target.value);
@@ -33,6 +35,7 @@ const NewsletterForm = () => {
     /** Send form data on form submit and show outcome message. */
     function handleSubmit(evt) {
         evt.preventDefault();
+        console.log(handleSubmit);
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -55,7 +58,7 @@ const NewsletterForm = () => {
                 onSubmit={handleSubmit}
             >
                 <input name="email" type="email" onChange={handleChange} placeholder="Enter Email Address"></input>
-                <button type="button" className="btn btn-info subscribe">
+                <button type="submit" className="btn btn-info subscribe">
                     SUBSCRIBE
                 </button>
                 <input type="hidden" name="form-name" value="NewsletterForm" />

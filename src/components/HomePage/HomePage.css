@@ -326,7 +326,6 @@ section:nth-last-of-type(2) {
 
 @media (min-width: 992px) and (max-width: 1400px) and (min-height: 1200px) {
     #root>div>section.container.hero.position-relative {
-        background-color: red;
         max-height: 38rem;
 
     }

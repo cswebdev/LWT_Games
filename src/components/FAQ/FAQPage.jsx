@@ -24,7 +24,7 @@ const FAQPage = () => {
          <div className="FAQPage-questions">
             <h2>FAQ</h2>
             {FAQS.map((faq, idx) => (
-               <Accordion>
+               <Accordion key={idx}>
                   <Accordion.Item eventKey={idx}>
                      <Accordion.Header className="FAQPage-question">{faq.question}</Accordion.Header>
                      <div className="FAQPage-bar"></div>

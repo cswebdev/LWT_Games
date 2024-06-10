@@ -23,10 +23,10 @@ const Footer = () => {
             <div className="col col-menu">
                <h3 className="footer-title">Explore</h3>
                <ul className="footer-items">
-                  <li className="footer-item"><Link to="/about">About Us</Link></li>
-                  <li className="footer-item"><Link to="/faq">FAQ</Link></li>
-                  <li className="footer-item"> <Link to="/get-involved">Join Us</Link></li>
-                  <li className="footer-item"><Link to="https://bingo.incocollective.com">Play Bingo</Link></li>
+                  <li className="footer-item"><a href="/about">About Us</a></li>
+                  <li className="footer-item"><a href="/faq">FAQ</a></li>
+                  <li className="footer-item"><a href="/get-involved">Join Us</a></li>
+                  <li className="footer-item"><a href="https://bingo.incocollective.com">Play Bingo</a></li>
                </ul>
             </div>
             <div className="col">
@@ -68,7 +68,7 @@ const Footer = () => {
                <ul className="footer-items">
                   <li className="footer-item"><a href="/about">About Us</a></li>
                   <li className="footer-item"><a href="/faq">FAQ</a></li>
-                  <li className="footer-item"> <a href="/get-involved">Join Us</a></li>
+                  <li className="footer-item"><a href="/get-involved">Join Us</a></li>
                   <li className="footer-item"><a href="https://bingo.incocollective.com">Play Bingo</a></li>
                </ul>
             </div>

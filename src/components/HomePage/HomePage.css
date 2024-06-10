@@ -258,7 +258,7 @@ a:active {
 
 
 section:nth-last-of-type(2) {
-    margin: 40rem auto 15rem auto;
+    margin: 5rem auto 15rem auto;
 }
 
 #root>div>section:nth-child(5) {
@@ -377,7 +377,10 @@ section:nth-last-of-type(2) {
     }
 }
 
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 992px) and (min-height: 850px) {
     .blueBlob {
         width: 95vw;
         left: -10em;
@@ -388,11 +391,19 @@ section:nth-last-of-type(2) {
         height: 65rem;
         margin-bottom: -100px;
     }
+
+    #root>div>section:nth-child(6) {
+        margin-top: 33rem;
+    }
+
+    #root>div>div.wave-container.container-fluid.z-0.overflow-hidden.w-0>img {
+        height: 120rem;
+    }
 }
 
 
 #root>div>section:nth-child(5) {
-    margin: 10rem auto 20rem auto;
+    margin: 10rem auto 15rem auto;
     top: 2em;
     height: 90vh;
 }
@@ -720,6 +731,20 @@ section:nth-last-of-type(2) {
         max-height: 50rem;
     }
 }
+
+
+@media (min-width:320px) and (max-width: 615px)and (min-height: 350px) {
+
+    #root>div>section.container.whatIsInco.position-relative>div>div {
+        margin-top: 5em !important;
+    }
+
+    #root>div>section:nth-child(6) {
+        padding-top: 5rem !important;
+    }
+
+}
+
 
 @media (max-width: 992px) {
     .col-title {

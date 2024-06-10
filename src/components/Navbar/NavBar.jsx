@@ -52,7 +52,7 @@ const NavBar = () => {
                   </li>
                </ul>
                <button type="button" className="btn-info nav-play-btn">
-                  <a href="https://bingo.incocollective.com">PLAY BINGO</a>
+                  <a href="http://bingo.incocollective.com/">PLAY BINGO</a>
                </button>
                <button className="menu-btn" onClick={toggleMenu}>
                   <span

@@ -27,7 +27,9 @@ const HomePage = () => {
                      type="button"
                      className="btn btn-primary btn-play-bingo mt-5"
                   >
-                     PLAY BINGO
+                     <a href="https://laneecho.github.io/LWT-bingo/">
+                        PLAY BINGO
+                     </a>
                   </button>
                </div>
                {/* <!-- Image Column --> */}
@@ -57,7 +59,6 @@ const HomePage = () => {
             />
          </svg>
 
-        
          {/* <img
             src={imageAssets.greenAndPinkCloud}
             alt="small green and pink cloud"
@@ -82,7 +83,7 @@ const HomePage = () => {
                <div className="container d-flex flex-column text-center justify-content-center who-are-we z-1 col-lg-12 col-md-12 position-relative">
                   <h2 className="z-1 mb-4">What's InCo?</h2>
                   <p className="we-are-subtitle z-1 mb-lg-5">
-                     Breaking through digital with the power of fun and the{" "}
+                     Breaking through digital walls with the power of fun and the{" "}
                      <br />
                      passion for people [or gamers]
                   </p>
@@ -126,7 +127,7 @@ const HomePage = () => {
                            type="button"
                            className="btn btn-info team-button z-1 "
                         >
-                           MEET THE TEAM{" "}
+                           <a href="/about">MEET THE TEAM</a>
                         </button>
                      </div>
                   </div>
@@ -152,7 +153,9 @@ const HomePage = () => {
                         type="button"
                         className="btn btn-info summit-button center-md"
                      >
-                        JOIN THE SUMMIT
+                        <a href="https://lesbianswhotech.org/pridesummit2024/">
+                           JOIN THE SUMMIT
+                        </a>
                      </button>
                   </div>
                </div>
@@ -184,7 +187,9 @@ const HomePage = () => {
                         type="button"
                         className="btn btn-primary btn-play-bingo-purple center-md"
                      >
-                        PLAY BINGO
+                        <a href="https://laneecho.github.io/LWT-bingo/">
+                           PLAY BINGO
+                        </a>
                      </button>
                   </div>
                   <div

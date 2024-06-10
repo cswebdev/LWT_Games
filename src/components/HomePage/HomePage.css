@@ -1,22 +1,8 @@
 /* Container styling */
 
-
-
-
-
-
-
-
-/* end Container styling */
-
-/* ### hero styling */
-
 /* ### HERO TEXT STYLING  */
 #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title,
 #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative {
-    /* padding-left: 5em; */
-    /* background-color: rebeccapurple; */
-    /* left: 3%; */
     overflow: visible;
     height: 45vh;
 }
@@ -50,7 +36,6 @@ h2 {
 
 /* ### HERO TEXT STYLING END ### */
 
-
 #root>div>section.container.hero.overflow-visible>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-2.order-md-3.order-md-2.order-sm-2.overflow-visible.heroGraphic.object-fit-contain {
     object-fit: contain;
     overflow: visible;
@@ -67,12 +52,6 @@ h2 {
     object-position: 4rem -7.2rem;
     position: absolute;
     top: 3rem;
-    /* border: 1px solid red; */
-    /* top: -1rem; */
-    /* left: 15%; */
-    /* left: 47%; */
-    /* transform: translate(-0%, -1%); */
-
 }
 
 .Left-panel .Header-text P {
@@ -94,21 +73,39 @@ h2 {
 .btn-play-bingo {
     width: 31.2rem;
     height: 4.375rem;
+
+}
+
+.btn-play-bingo>a {
     font-weight: 800;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: .2em;
+    text-decoration: none;
+    color: #fff;
 }
 
 .btn-play-bingo-purple {
     width: 25rem;
     height: 4.375rem;
+    margin-top: 2em;
+}
+
+.btn-play-bingo-purple>a {
     font-weight: 800;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: .2em;
-    margin-top: 2em;
+    color: #fff;
+    text-decoration: none;
 }
+
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
 
 #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative>button {
     margin-top: 2em;
@@ -116,10 +113,6 @@ h2 {
     -moz-box-shadow: 0px 7px 7px .01px rgb(195, 145, 251);
     box-shadow: 0px 6px 7px .01px rgb(195, 145, 251);
 }
-
-
-
-
 
 /* end panel styling */
 /* who are we row */
@@ -129,11 +122,12 @@ h2 {
 }
 
 .row-h2 {
-    font-size: 2.875rem;
-    line-height: 4.444rem;
-    letter-spacing: .04em;
+    font-size: 46px;
     font-weight: 700;
-    /* max-width: 48.813rem; */
+    line-height: 55.11px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
 }
 
 
@@ -142,10 +136,6 @@ h2 {
     margin-top: 1em;
     font-size: 1.3rem;
     width: 100%;
-    /* max-width: 35.875rem; */
-    /* max-width: 38rem; */
-    /* text-align: start; */
-
 }
 
 .who-are-we-p .row-h2 {
@@ -162,37 +152,16 @@ h2 {
     font-weight: 400;
     line-height: 3.125rem;
     font-variant: thin;
-    letter-spacing: .046em;
-
 }
-
-
-
-/* .whoWeAreFrame {
-    aspect-ratio: 1/1;
-    height: auto;
-    width: 293px;
-    border: 3px solid rgb(65, 233, 65);
-    background-color: hwb(120 0% 0%);
-    border-radius: 5%;
-    margin: 1em 1.5em 0em 1.5em;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: relative;
-} */
 
 .whoWeAreFrame,
 .oliviaFrame {
     aspect-ratio: 1/1;
     height: auto;
     max-width: 293px;
-    /* min-width: 13em; */
     border: 3px solid #A0CD62;
     background-color: #A0CD62;
     border-radius: 5%;
-    /* margin: 1em 1em 0em 1em; */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -201,12 +170,10 @@ h2 {
 }
 
 .oliviaOuterFrame {
-    /* max-width: 293px; */
     height: 293px;
     width: 100%;
     aspect-ratio: 1/1;
     max-width: 293px;
-    /* margin: 1em 1em 0em 1em; */
 }
 
 .oliviaFrame {
@@ -214,9 +181,7 @@ h2 {
     height: 100%;
     width: 100%;
     margin: 0em 2em 0em 0em;
-
 }
-
 
 .whoWeAreFrame img {
     height: auto;
@@ -250,18 +215,6 @@ h2 {
     z-index: 1;
 }
 
-
-/* .laneDrawing {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
-}
-
-.vestDrawing {
-    padding: 0;
-    margin: 0;
-
-}   */
 .vestDrawing {
     object-fit: fill;
     margin: 0;
@@ -283,7 +236,6 @@ h2 {
 }
 
 .who-we-are-graphics {
-    /* max-width: 15rem; */
     max-height: auto;
     object-fit: fill;
 
@@ -304,19 +256,10 @@ h2 {
 /* row styling */
 
 
-section:nth-of-type(2) {
-    /* background-color: #E11774; */
-    /* margin-top: 10vh; */
-    /* margin: 20vh 0; */
-}
 
 section:nth-last-of-type(2) {
     margin: 5% auto 15rem auto;
-    /* border: 1px solid pink; */
-
 }
-
-
 
 #root>div>section:nth-child(5) {
     display: flex;
@@ -332,7 +275,6 @@ section:nth-last-of-type(2) {
     display: flex;
     flex-direction: row;
     padding: 0;
-    /* margin: 3.3em 0; */
     font-size: 25px;
 }
 
@@ -343,14 +285,6 @@ section:nth-last-of-type(2) {
     z-index: 1;
 }
 
-
-#root>div>section.container.whatIsInco.position-relative>div>div>p {
-    /* width: 104%; */
-}
-
-/* .text-content p {
-    max-width: 37rem;
-} */
 
 /* who we are graphics */
 
@@ -369,63 +303,46 @@ section:nth-last-of-type(2) {
     position: absolute;
     width: 22.2375rem;
     height: auto;
-    /* left: -23rem; */
     left: -28%;
-    /* left: calc(-22rem + 1vw); */
     left: -20vw;
-    /* object-position: calc(-2rem + 1vw); */
     top: 19em;
 }
 
 .blueBlob {
-    /* object-fit: contain; */
-    /* height: auto; */
-    /* max-height: 100rem; */
-    /* min-width: 1%; */
-    /* min-width: 1314px; */
     width: 55vw;
-    /* min-width: 60em; */
-    /* width: 100%; */
-    /* min-height: 100%; */
-    /* min-width: 73.99%; */
     height: auto;
-    /* width: 65rem; */
-    /* display: none; */
-    /* width: 99%; */
-    /* min-width: 109%; */
     position: absolute;
-    /* top: 42.4rem; */
-    /* top: -25%; */
-    /* left: -29em; */
-    /* left: -30%; */
     left: 0%;
     top: 61rem;
     margin: 0;
     padding: 0;
     aspect-ratio: 1/1;
-    /* transform: scaleY(.6) scaleX(.73); */
-    /* transform: rotate(-10deg); */
+
 }
 
 .container {
     --bs-gutter-x: 0rem;
 }
 
-/* .whoWeAreFrame.oliviaFrame {
-    max-height: 100%;
-    max-width: 348px;
-    width: 100%;
-} */
+@media (min-width: 992px) and (max-width: 1400px) and (min-height: 1200px) {
+    #root>div>section.container.hero.position-relative {
+        background-color: red;
+        max-height: 38rem;
 
+    }
 
+    #root>div>section.container.whatIsInco.position-relative {
+        margin: 5rem auto 15rem auto;
+        max-height: 40rem;
+    }
 
+}
 
 
 
 @media (min-width: 1400px) {
     .blueBlob {
         max-width: 80vw;
-
         height: auto;
         z-index: -9;
     }
@@ -438,11 +355,7 @@ section:nth-last-of-type(2) {
 
     #root>div>section.container.whatIsInco.position-relative>div>div>div {
         min-width: 80vw;
-        /* border: 4px solid red; */
-
     }
-
-
 }
 
 @media (max-width: 1200px) {
@@ -460,8 +373,6 @@ section:nth-last-of-type(2) {
         left: -12.5rem;
         top: 90rem;
     }
-
-
 }
 
 @media (max-width: 768px) {
@@ -469,20 +380,17 @@ section:nth-last-of-type(2) {
         width: 95vw;
         left: -10em;
         top: 110rem;
+    }
 
+    #root>div>div.wave-container.container-fluid.z-0.overflow-hidden.w-0>img {
+        height: 65rem;
+        margin-bottom: -100px;
     }
 }
 
-@media (max-width: 576px) {
-    .blueBlob {
-        /* left: -50em; */
-        /* Adjust as needed */
-    }
-}
 
 #root>div>section:nth-child(5) {
-
-    margin: 0rem auto 15em auto;
+    margin: 10rem auto 20rem auto;
     top: 2em;
     height: 90vh;
 }
@@ -523,22 +431,21 @@ section:nth-last-of-type(2) {
     height: 4.375rem;
     border-radius: 30px;
     border: 0px solid transparent;
+}
+
+.team-button>a,
+.summit-button>a {
     font-family: 'Hiragino Kaku Gothic', sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
     letter-spacing: .1em;
+    color: #fff;
+    text-decoration: none;
 }
 
 .team-button {
     margin-top: 4em;
 }
-
-
-/* why bingo row */
-
-
-
-
 
 #root>div>section.container.body-bottom.p-0.mt-5.overflow-hidden.z-1>div>div>div.col-lg-5.graphicFrame.order-1.z-2.d-flex.justify-content-center.bubbleGumFrame {
     height: 40rem;
@@ -553,7 +460,6 @@ section:nth-last-of-type(2) {
 /* waves */
 
 .wave-container {
-    /* position: absolute; */
     width: 100%;
     background-color: red;
     overflow: hidden;
@@ -562,8 +468,7 @@ section:nth-last-of-type(2) {
 
 .wave-graphic {
     width: 100%;
-    height: 45rem;
-    /* min-height: 19%; */
+    height: 59rem;
     position: absolute;
     bottom: 500px;
     left: 0;
@@ -581,71 +486,44 @@ section:nth-last-of-type(2) {
 }
 
 #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
-    /* background-color: #E11774; */
     margin-top: 3em;
-    /* width: 50%; */
-
-
 }
 
 @media (max-width: 1680px) {
-
     .homepageOliviaGraphic {
         height: auto;
         max-width: 52rem;
         object-position: 7rem -6.19rem;
     }
-
-
 }
 
 @media (max-width: 1560px) {
     .homepageOliviaGraphic {
-        /* top: 7%; */
         max-width: 50rem;
         height: auto;
-        /* transform: translate(-10%, 3%); */
         top: 3rem;
-
     }
-
-
 }
 
 @media (max-width: 1400px) {
     .col-title {
         vertical-align: text-bottom;
-        /* height: 20vh; */
     }
-
 
     .homepageOliviaGraphic {
         object-position: 5rem -5.8rem;
-        /* margin-top: 1em; */
         max-width: 46.9rem;
         transform: translate(-10%, 5%);
-
-        /* top: 6%; */
     }
 
     /* hero text formatting */
 
-
-
-
-
     #root>div>section.container.whatIsInco.overflow-visible>div>div>div {
         margin: auto;
-        /* min-width: 100%; */
-        /* max-width: 50%; */
     }
 
-
-
     section:nth-last-of-type(3) {
-        /* margin: 0rem auto 10rem auto; */
         width: 100%;
-        /* background-color: red; */
         height: max-content;
     }
 
@@ -661,8 +539,6 @@ section:nth-last-of-type(2) {
         align-items: center;
         margin: auto;
     }
-
-
 
     .pinkCloudImg {
         position: absolute;
@@ -680,20 +556,9 @@ section:nth-last-of-type(2) {
         top: 18rem;
     }
 
-    /* .blueBlob {
-        max-height: 63.5rem;
-        max-width: auto;
-        top: -6em;
-        left: -22.6%;
-
-    } */
-
     .blueMountainImg {
-        /* max-height: 102px; */
         width: auto;
-        /* left: 2rem; */
     }
-
 
     .greenAndPinkCloud {
         right: -8rem;
@@ -701,30 +566,9 @@ section:nth-last-of-type(2) {
         width: 22rem;
         height: auto;
     }
-
-    .wave-graphic {
-        /* bottom: -90px; */
-        object-fit: fill;
-
-    }
-
-
 }
-
-@media (max-width: 1999px) and (min-width: 1400px) {
-    .wave-graphic {
-        /* min-height: 19.9%; */
-        /* max-height: 20%; */
-
-    }
-
-}
-
-
-
 
 @media (max-width: 1249px) and (min-width: 993px) {
-
 
     section:nth-of-type(2) {
         margin: 0rem auto 10em auto;
@@ -732,18 +576,11 @@ section:nth-last-of-type(2) {
     }
 }
 
-
-
 @media (max-width: 1200px) {
     .homepageOliviaGraphic {
         max-width: 43.5rem;
-        /* min-width: 70.7vw; */
         height: auto;
-        /* top: calc(2rem + (3rem - 1em)); */
-        /* left: 48%; */
         transform: translate(-11%, 10%);
-
-        /* border: 1px solid red; */
     }
 
 
@@ -751,33 +588,16 @@ section:nth-last-of-type(2) {
         margin: 0 0em
     }
 
-    /* .oliviaPortrait {
-        transform: scale(.65);
-        width: 350%;
-        margin: 0;
-        padding: 0;
-    } */
-
     .whoWeAreFrame {
-        /* max-width: 30%; */
         margin: 0 .5em;
     }
 
-
     .oliviaOuterFrame .blueMountainImg {
-        /* max-width: fit-content; */
         height: auto;
         left: -2em;
         top: 7.7em;
     }
-
-
-
 }
-
-
-
-
 
 @media (max-width: 1069px) {
     .homepageOliviaGraphic {
@@ -822,36 +642,17 @@ section:nth-last-of-type(2) {
     }
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
-        /* background-color: #E11774; */
         position: relative;
         padding: 0;
         margin: 0;
     }
-
-    /* #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.overflow-visible.heroGraphic.object-fit-contain>.homepageOliviaGraphic {
-        height: 18em;
-        width: auto;
-        margin: 0 auto;
-        position: relative;
-        object-fit: contain;
-        object-position: 8em -2em;
-    } */
-
 
     section:nth-last-of-type(3) {
         margin: 0rem auto 5rem auto;
         width: 100%;
     }
 
-
     /* ### homepage absolute position image assets ### */
-
-    /* .blueBlob {
-        max-height: 62.5rem;
-        max-width: auto;
-        top: 27.7em;
-        left: -25%;
-    } */
 
     .pinkCloudImg {
         position: absolute;
@@ -861,7 +662,6 @@ section:nth-last-of-type(2) {
         top: 11.8rem;
     }
 
-
     .tealCloudImg {
         width: 29.2375rem;
         height: auto;
@@ -869,15 +669,11 @@ section:nth-last-of-type(2) {
         top: 46.6rem;
     }
 
-
-
-
     .greenAndPinkCloud {
         right: -7em;
         top: 61rem;
         width: 22rem;
         height: auto;
-        /* object-position: 6.23em 0; */
     }
 
     /* ### END homepage absolute image assets ### */
@@ -907,26 +703,13 @@ section:nth-last-of-type(2) {
         top: 35.6%;
         min-width: 76%;
     }
-
-
 }
 
 @media (max-width: 992px) {
-
-    /* do not delete important - it's okay it's commented out */
-
     .col-title {
         margin-top: 0rem;
     }
 
-
-
-    #root>div>section:nth-child(5) {
-
-        margin: 20rem auto 30rem auto;
-        /* top: 2em; */
-        /* height: 90vh; */
-    }
 
     #root>div>section:nth-child(6)>div {
         justify-content: center;
@@ -942,11 +725,10 @@ section:nth-last-of-type(2) {
     }
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative {
-
         align-items: center;
+        justify-content: flex-start;
+        max-height: 20rem;
     }
-
-
 
     #root>div>section.container.hero.position-relative>div {
         text-align: center;
@@ -961,31 +743,19 @@ section:nth-last-of-type(2) {
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
         height: 20em;
-        /* border: 1px solid #E11774; */
         width: 100%;
         position: relative;
         justify-content: center;
-        /* align-items: center; */
-        /* margin: auto; */
-
     }
-
-
 
     .homepageOliviaGraphic {
         max-height: 22em;
         width: auto;
         position: absolute;
         transform: translate(-43%, -10%);
-        /* object-position: 5em -5rem; */
         align-self: center;
-        /* margin-top: 3em; */
-        /* left: -1em; */
-        /* top: 0.1em; */
         margin: 0 auto;
-
     }
-
 
     .whoWeAreFrame:nth-of-type(3) {
         margin: 1em;
@@ -1006,11 +776,8 @@ section:nth-last-of-type(2) {
         margin-bottom: 5rem;
     }
 
-
-
     .who-are-we {
         padding-top: 0;
-        /* background-color: #E11774; */
         justify-content: center !important;
         align-items: center !important;
         align-content: center !important;
@@ -1024,17 +791,7 @@ section:nth-last-of-type(2) {
         width: 595.2px;
     }
 
-    /* .blueBlob {
-        max-height: 49.5rem;
-        max-width: auto;
-        top: 28.7em;
-        left: -25%;
-        transform: scaleY(.95);
-    } */
-
-
     .blueBlob {
-        /* min-width: 52rem; */
         top: 105rem
     }
 
@@ -1046,9 +803,7 @@ section:nth-last-of-type(2) {
         left: 41.2rem;
         top: 12.2rem;
         z-index: 10;
-
     }
-
 
     .tealCloudImg {
         width: 30.2375rem;
@@ -1056,9 +811,7 @@ section:nth-last-of-type(2) {
         left: -39vw;
         top: 43.6rem;
         z-index: 10;
-
     }
-
 
     .oliviaOuterFrame .blueMountainImg,
     .blueMountainImg {
@@ -1068,13 +821,11 @@ section:nth-last-of-type(2) {
         left: -3.9rem;
     }
 
-
     .greenAndPinkCloud {
         right: -9em;
         top: 58rem;
         width: 19rem;
         height: auto;
-        /* object-position: 6.23em 0; */
     }
 
     #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div>button {
@@ -1120,12 +871,9 @@ section:nth-last-of-type(2) {
     }
 
     .wave-graphic {
-        /* height: 51vh; */
-        height: 55rem;
+        height: 112rem;
         width: 100%;
-        /* object-position: -30rem 0; */
         object-fit: cover;
-
     }
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div {
@@ -1133,9 +881,6 @@ section:nth-last-of-type(2) {
         margin-left: auto;
     }
 }
-
-
-
 
 @media (max-width: 769px) and (min-width: 99px) {
 
@@ -1151,7 +896,6 @@ section:nth-last-of-type(2) {
 
     section:nth-of-type(1) {
         margin: 2rem auto 25em auto;
-        /* background-color: red; */
     }
 
     #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1,
@@ -1159,38 +903,18 @@ section:nth-last-of-type(2) {
         max-width: 100%;
     }
 
-
-
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title {
         overflow: visible;
     }
-
-
-
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.mt-5.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title {
         padding-top: 8%;
     }
 
-    /* .homepageOliviaGraphic {
-        object-position: 5.3em -5rem;
-        min-height: 22em;
-        left: -5em;
-        top: 1em;
-        transform: translate(-55%, 0%);
-    } */
-
     .container .hero {
         display: flex;
-        /* justify-content: l; */
-        /* align-items: center; */
         width: 100%;
-        /* border: 1px solid #E11774; */
     }
-
-
-    /* Rectangle 14 */
-
 
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
@@ -1251,16 +975,12 @@ section:nth-last-of-type(2) {
         margin-right: auto;
     }
 
-
-
     .grandmas-bingo {
         flex-direction: column;
     }
 
-
     .body-bottom,
     .col-lg-6 {
-        /* background-color: red; */
         position: relative;
         flex-direction: column;
         justify-content: center;
@@ -1268,12 +988,10 @@ section:nth-last-of-type(2) {
     }
 
     #root>div>section.container-fluid.body-bottom.p-0.mb-5.mt-5.overflow-hidden>div>div.col-lg-12.position-relative.d-flex.grandmas-bingo.align-items-center.z-1.overflow-visible>div.col-lg-7.order-lg-1.order-md-2.order-sm-2.z-1.bg-transparent.d-flex.flex-column {
-        /* margin: 10px; */
         overflow: hidden;
     }
 
     .row-h2 {
-        /* font-size: 30px; */
         font-weight: 700;
         line-height: 50px;
         width: 100%;
@@ -1331,80 +1049,12 @@ section:nth-last-of-type(2) {
 
     .wave-graphic {
         width: 100%;
-        /* max-width: 180%; */
-        /* height: 40rem; */
-        /* min-height: 83vh; */
         bottom: 1200px;
         margin: 0 auto;
         object-position: -40rem 0rem;
-        /* object-fit: fill; */
     }
 
 }
-
-/* For extra-wide monitors (greater than 1440px) */
-/* @media (min-width: 1440px) {
-
-
-} */
-
-
-
-/* For 15.4-inch (2880 × 1800) display */
-@media (min-width: 1440px) and (min-height: 900px) and (max-width: 1920px) and (max-height: 1200px) {
-    .row {
-        display: flex;
-        flex-direction: row;
-        max-width: 100vw;
-        padding: 0;
-        font-size: 25px;
-    }
-
-
-
-    /* .pinkCloudImg {
-        position: absolute;
-        width: 3.6em;
-        left: 9.5%;
-        top: 16%;
-    }
-
-
-    .tealCloudImg {
-        object-fit: contain;
-        position: absolute;
-        max-width: 18.2375rem;
-        left: 0;
-        top: 32%;
-        object-position: -4em 0;
-    }
-
-    .blueBlob {
-        object-fit: fill;
-        height: auto;
-        width: 68em;
-        position: absolute;
-        top: 28.7%;
-    }
-
-    .blueMountain {
-        position: absolute;
-        bottom: -6%;
-        left: 14%;
-        z-index: 2;
-    }
-
-    .blueMountainImg {
-        max-height: 5.595em;
-        width: auto;
-    }
-    */
-
-    .wave-graphic {
-        width: 100%;
-    }
-}
-
 
 
 /*Shrinking for mobile*/
@@ -1414,17 +1064,11 @@ section:nth-last-of-type(2) {
 @media (max-width: 809px) and (min-width: 99px) {
 
     section:nth-of-type(2) {
-        /* background-color: #E11774; */
-        /* margin-top: 10vh; */
         top: 0rem;
     }
 
     .wave-graphic {
         min-width: 100%;
-        /* height: 50rem; */
-        /* max-height: 86vh; */
-        /* object-fit: contain; */
-        /* object-position: -50rem 0; */
     }
 
     .custom-order-2 {
@@ -1434,15 +1078,6 @@ section:nth-last-of-type(2) {
     .custom-order-3 {
         order: 3 !important;
     }
-
-
-    /* .blueBlob {
-        max-height: 49.5rem;
-        max-width: auto;
-        top: 28.7em;
-        left: -25%;
-        transform: scaleY(.95);
-    } */
 
 
     .pinkCloudImg {
@@ -1463,15 +1098,6 @@ section:nth-last-of-type(2) {
     }
 
 
-
-    /* .blueMountainImg {
-        max-height: 7.2em;
-        width: auto;
-        top: 29.5rem;
-        left: 9.8rem;
-    } */
-
-
     .greenAndPinkCloud {
         right: -5em;
         top: 58rem;
@@ -1486,19 +1112,12 @@ section:nth-last-of-type(2) {
 @media(max-width: 769px) {
     section:nth-of-type(1) {
         margin: 2rem auto 0em auto;
-        /* background-color: red; */
     }
 
-    #root>div>section.container.whatIsInco.position-relative {
-        /* margin-top: 28rem; */
-    }
 
     .wave-graphic {
-        /* width: 200vw; */
-        /* /* min-height: 85vh; */
-        height: 50rem;
+        height: 70rem;
         width: 100%;
-        object-fit: stretch;
     }
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-7.col-md-12.col-sm-12.order-2.z-1.bg-transparent.d-flex.flex-column.mt-lg-5.mt-md-0 {
@@ -1511,8 +1130,7 @@ section:nth-last-of-type(2) {
     }
 
     .blueBlob {
-        /* max-width: 5em; */
-        /* position: absolute; */
+
         overflow: hidden;
     }
 
@@ -1573,8 +1191,7 @@ section:nth-last-of-type(2) {
 
     .blueBlob {
         width: 100%;
-        /* min-width: 49em; */
-        /* top: 105rem; */
+
     }
 }
 
@@ -1582,7 +1199,6 @@ section:nth-last-of-type(2) {
 @media (max-width: 620px) {
 
     /* hero section */
-
     /* hero text */
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.p-0.order-first.order-md-1.order-lg-1.order-sm-1.d-flex.flex-column.justify-content-end.position-relative.col-title>h1 {
         font-size: 26px;
@@ -1599,12 +1215,6 @@ section:nth-last-of-type(2) {
     }
 
 
-    /* Hero image graphic */
-
-    /* #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
-        height: 50vh !important;
-    } */
-
     .heroGraphic {
         /* height: 30% !important; */
         position: relative;
@@ -1615,29 +1225,18 @@ section:nth-last-of-type(2) {
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
         justify-content: center !important;
         align-items: center !important;
-        /* width: 100%; */
-        /* height: 50%; */
-        /* object-fit: contain; */
         margin: 0;
         padding: 0;
         margin: 0em 0 -15% 0;
         display: flex !important;
         object-fit: cover;
-        /* background-color: red; */
         position: relative;
     }
 
     .homepageOliviaGraphic {
-        /* max-width: 40rem; */
-        /* height: auto; */
-        /* transform: scale(1.05); */
-        /* right: 50%; */
-        position: relative;
-        /* margin: auto; */
-        /* aspect-ratio: 6/9 !important; */
-        object-fit: contain;
 
-        /* width: 21em; */
+        position: relative;
+        object-fit: contain;
         width: 100%;
         object-position: 4em -3em;
 
@@ -1645,15 +1244,8 @@ section:nth-last-of-type(2) {
     }
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain>img {
-        /* height: 200px !important; */
         margin: auto;
-        /* width: 100%; */
-        /* height: auto; */
         aspect-ratio: 6/5;
-        /* transform: scale(1); */
-        /* max-width: 30rem; */
-        /* max-height: auto; */
-        /* position: relative; */
     }
 
     /* hero section button  */
@@ -1671,19 +1263,13 @@ section:nth-last-of-type(2) {
 
     .blueBlob {
         max-width: 49em;
-        /* min-width: 48em; */
         top: 105rem;
     }
-
-    /* whoWeAre section styling for margin */
-    /* #root > div > section.container.whatIsInco.position-relative {
-        margin: 0em 0em 0em 0em
-    } */
 
     /* who we are section container */
 
     #root>div>section.container.whatIsInco.position-relative {
-        margin: -5em 0em 0em 0em;
+        margin: -5em auto 0em auto;
         display: block;
     }
 
@@ -1719,7 +1305,7 @@ section:nth-last-of-type(2) {
 
     #root>div>section:nth-child(6) {
         display: block;
-        margin-top: 45rem;
+        margin-top: 25rem;
     }
 
     #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div {
@@ -1763,7 +1349,6 @@ section:nth-last-of-type(2) {
     /* Not your grandmas bingo section */
     #root>div>section:nth-child(6) {
         display: block;
-        /* margin-top: 45rem; */
     }
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div {
@@ -1771,7 +1356,6 @@ section:nth-last-of-type(2) {
         align-items: center;
         width: 390px;
         margin: auto;
-
     }
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-6.col-md-12.graphicFrame.order-1.z-2.d-flex.justify-content-center.bubbleGumFrame.mb-md-2.mb-lg-5>img {
@@ -1807,9 +1391,51 @@ section:nth-last-of-type(2) {
     }
 }
 
+@media (max-width: 595px) {
+    #root>div>div.wave-container.container-fluid.z-0.overflow-hidden.w-0>img {
+        height: 80rem;
+    }
+}
+
+@media (max-width: 535px) {
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
+        display: flex;
+        align-items: center !important;
+        position: relative;
+    }
+
+    .homepageOliviaGraphic {
+        height: auto;
+        width: 50rem;
+        transform: scale(.8);
+        object-fit: contain;
+        position: absolute;
+        top: -5rem;
+    }
+
+    #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative {
+        justify-content: flex-start;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 505px) {
+    .wave-graphic {
+        min-height: 90rem;
+    }
+
+}
+
+@media (max-width: 504px) and (min-width: 421px) {
+    .wave-graphic {
+        min-height: 110rem;
+    }
+
+}
+
+
 @media (max-width: 420px) {
-
-
     /* hero section */
 
     /* hero text */
@@ -1827,7 +1453,6 @@ section:nth-last-of-type(2) {
         font-size: 20px;
     }
 
-
     /* Hero image graphic */
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.order-lg-2.order-md-3.custom-order-2.order-md-2.order-sm-2.heroGraphic.object-fit-contain {
@@ -1836,20 +1461,19 @@ section:nth-last-of-type(2) {
         width: 100%;
         height: 100%;
         /* object-fit: contain; */
-        margin: 0;
-        padding: 0;
-        margin: 0em 0 0 0;
         display: flex;
+        position: relative;
+        margin-bottom: .1rem;
     }
 
     .homepageOliviaGraphic {
-        /* height: 45rem; */
-        /* width: 100%; */
-        /* height: 100%; */
-        /* height: 10em; */
-        transform: scale(1.15);
-        object-position: 2em -2em;
-
+        height: auto;
+        width: 50rem;
+        transform: scale(.70);
+        object-fit: contain;
+        position: relative;
+        top: -5rem;
+        left: -7rem;
     }
 
     #root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative {
@@ -1863,11 +1487,6 @@ section:nth-last-of-type(2) {
         /* min-width: 48em; */
         top: 105rem;
     }
-
-    /* whoWeAre section styling for margin */
-    /* #root > div > section.container.whatIsInco.position-relative {
-        margin: 0em 0em 0em 0em
-    } */
 
     /* whoWeAre text */
     #root>div>section.container.whatIsInco.position-relative>div>div>h2 {
@@ -1955,14 +1574,34 @@ section:nth-last-of-type(2) {
 
     .whoWeAreFrame,
     .oliviaFrame {
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 
     /* blueMountain */
 
     #root>div>section.container.whatIsInco.position-relative>div>div>div.row.d-flex.align-content-center.justify-content-center.z-1.position-relative>div.col-xl-4.col-lg-12.col-12.position-relative.oliviaOuterFrame.p-0>img {
-        transform: scale(0.9);
+        transform: scale(0.8);
+        left: -.5rem;
+        top: 12rem;
     }
+
+    .graphicFrame {
+        margin-bottom: 2rem;
+    }
+
+    #root>div>section:nth-child(6)>div>div.col-lg-5.order-1.m-0.p-0>div>img {
+        transform: scale(0.8);
+    }
+
+    #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div>div.col-lg-6.col-md-12.graphicFrame.order-1.z-2.d-flex.justify-content-center.bubbleGumFrame.mb-md-2.mb-lg-5>img {
+        transform: scale(0.8);
+        margin-bottom: 1em;
+    }
+
+    #root>div>div.wave-container.container-fluid.z-0.overflow-hidden.w-0>img {
+        height: 110rem;
+    }
+
 }
 
 /* ##### height adjustments ##### */
@@ -1971,4 +1610,27 @@ section:nth-last-of-type(2) {
         margin-top: 50em;
     }
 
+}
+
+@media (min-height: 1300px) and (max-height: 1600px) {
+    #root>div>section.container.whatIsInco.position-relative {
+        margin-bottom: 20em;
+    }
+
+    #root>div>section.container.whatIsInco.position-relative,
+    #root>div>section.container.whatIsInco.position-relative>div {
+        height: max-content;
+    }
+
+    #root>div>svg {
+        /* scale: 0.9; */
+        /* left: -10rem; */
+        aspect-ratio: 2/1;
+        top: 80rem;
+        scale: 1.5;
+    }
+
+    #root>div>div.wave-container.container-fluid.z-0.overflow-hidden.w-0>img {
+        overflow: visible !important;
+    }
 }

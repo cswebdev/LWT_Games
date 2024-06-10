@@ -258,7 +258,7 @@ a:active {
 
 
 section:nth-last-of-type(2) {
-    margin: 5% auto 15rem auto;
+    margin: 40rem auto 15rem auto;
 }
 
 #root>div>section:nth-child(5) {
@@ -707,6 +707,20 @@ section:nth-last-of-type(2) {
     }
 }
 
+@media (min-height: 992px) and (min-width: 992px) {
+    #root>div>section.container.whatIsInco.position-relative {
+        margin: 0 auto;
+    }
+
+    #root>div>section:nth-child(6) {
+        margin: 5em auto;
+    }
+
+    #root>div>svg {
+        max-height: 50rem;
+    }
+}
+
 @media (max-width: 992px) {
     .col-title {
         margin-top: 0rem;
@@ -771,6 +785,7 @@ section:nth-last-of-type(2) {
 
     #root>div>section.container.whatIsInco.position-relative>div>div {
         min-width: 100%;
+        margin: 35rem auto 15rem auto;
     }
 
     .graphicFrame {
@@ -794,7 +809,7 @@ section:nth-last-of-type(2) {
     }
 
     .blueBlob {
-        top: 105rem
+        top: 95rem
     }
 
     .pinkCloudImg {
@@ -1271,7 +1286,7 @@ section:nth-last-of-type(2) {
     /* who we are section container */
 
     #root>div>section.container.whatIsInco.position-relative {
-        margin: -5em auto 0em auto;
+        margin: -5em auto 5em auto;
         display: block;
     }
 
@@ -1351,6 +1366,7 @@ section:nth-last-of-type(2) {
     /* Not your grandmas bingo section */
     #root>div>section:nth-child(6) {
         display: block;
+        margin-top: 50rem !important;
     }
 
     #root>div>section.container.body-bottom.p-0.overflow-hidden.z-1.mb-lg-0.mb-md-5.mb-sm-0>div>div {

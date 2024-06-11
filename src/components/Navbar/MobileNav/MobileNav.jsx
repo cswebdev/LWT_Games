@@ -29,7 +29,7 @@ const MobileNav = ({ isOpen, closeMenu }) => {
                   </li>
                   <li className="">
                      <Link
-                        to="/GET INVOLVED"
+                        to="/get-involved"
                         className="mobile-menu-item nav-link"
                      >
                         GET INVOLVED

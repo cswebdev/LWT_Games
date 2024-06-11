@@ -20,14 +20,14 @@ const HomePage = () => {
                <div className="col-lg-6 col-md-12 col-sm-12 m-0 p-0 order-lg-3 custom-order-3 order-md-last order-sm-last order-sm-3 d-flex flex-column overflow-visible position-relative">
                   <p>Creating community and building</p>
                   <p>connections with bingo!</p>
-                  <button
-                     type="button"
-                     className="btn btn-primary btn-play-bingo mt-5"
-                  >
-                     <a href="https://laneecho.github.io/LWT-bingo/">
+                  <a href="https://laneecho.github.io/LWT-bingo/">
+                     <button
+                        type="button"
+                        className="btn btn-primary btn-play-bingo mt-5"
+                     >
                         PLAY BINGO
-                     </a>
-                  </button>
+                     </button>
+                  </a>
                </div>
                <div className="col-lg-6 col-md-12 col-sm-12 order-lg-2 order-md-3 custom-order-2 order-md-2 order-sm-2 heroGraphic object-fit-contain ">
                   <img
@@ -112,12 +112,14 @@ const HomePage = () => {
                   </div>
                   <div className="row">
                      <div className="col-12">
-                        <button
-                           type="button"
-                           className="btn btn-info team-button z-1 "
-                        >
-                           <a href="/about">MEET THE TEAM</a>
-                        </button>
+                        <a href="/about">
+                           <button
+                              type="button"
+                              className="btn btn-info team-button z-1 "
+                           >
+                              MEET THE TEAM
+                           </button>
+                        </a>
                      </div>
                   </div>
                </div>
@@ -138,14 +140,14 @@ const HomePage = () => {
                         for women, women of color, and nonbinary leaders. We
                         hope to see you there!
                      </p>
-                     <button
-                        type="button"
-                        className="btn btn-info summit-button center-md"
-                     >
-                        <a href="https://lesbianswhotech.org/pridesummit2024/">
+                     <a href="https://lesbianswhotech.org/pridesummit2024/">
+                        <button
+                           type="button"
+                           className="btn btn-info summit-button center-md"
+                        >
                            JOIN THE SUMMIT
-                        </a>
-                     </button>
+                        </button>
+                     </a>
                   </div>
                </div>
                <div className="col-lg-5 order-1 m-0 p-0">
@@ -172,19 +174,16 @@ const HomePage = () => {
                         connect, all while learning and interacting with
                         attendees throughout the summit.
                      </p>
-                     <button
-                        type="button"
-                        className="btn btn-primary btn-play-bingo-purple center-md"
+                     <a
+                        className="btn btn-primary btn-play-bingo-purple center-md "
+                        href="https://laneecho.github.io/LWT-bingo/"
                      >
-                        <a href="https://laneecho.github.io/LWT-bingo/">
-                           PLAY BINGO
-                        </a>
-                     </button>
+                        {" "}
+                        PLAY BINGO
+                     </a>
                   </div>
                   <div
-                     className="col-lg-6 col-md-12 graphicFrame order-1 z-2 d-flex justify-content-center bubbleGumFrame mb-md-2 mb-lg-5"
-                     // style={{ border: "1px solid yellow" }}
-                  >
+                     className="col-lg-6 col-md-12 graphicFrame order-1 z-2 d-flex justify-content-center bubbleGumFrame mb-md-2 mb-lg-5"                  >
                      <img
                         src={imageAssets.bubbleGumGraphic}
                         className="bubbleGumGraphic z-1"

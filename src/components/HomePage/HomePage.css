@@ -76,13 +76,21 @@ h2 {
 
 }
 
-.btn-play-bingo>a {
+#root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative>a {
+    text-decoration: none;
+}
+
+a>.btn-play-bingo {
     font-weight: 800;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: .2em;
-    text-decoration: none;
+    text-decoration: none !important;
     color: #fff;
+}
+
+#root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative>a>.btn.btn-primary.btn-play-bingo.mt-5 {
+    text-decoration: none !important;
 }
 
 .btn-play-bingo-purple {
@@ -91,7 +99,7 @@ h2 {
     margin-top: 2em;
 }
 
-.btn-play-bingo-purple>a {
+a>.btn-play-bingo-purple {
     font-weight: 800;
     font-size: 24px;
     line-height: 36px;
@@ -107,7 +115,7 @@ a:active {
 }
 
 
-#root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative>button {
+#root>div>section.container.hero.position-relative>div>div.col-lg-6.col-md-12.col-sm-12.m-0.p-0.order-lg-3.custom-order-3.order-md-last.order-sm-last.order-sm-3.d-flex.flex-column.overflow-visible.position-relative>a>button {
     margin-top: 2em;
     -webkit-box-shadow: 0px 7px 7px .01px rgb(195, 145, 251);
     -moz-box-shadow: 0px 7px 7px .01px rgb(195, 145, 251);
@@ -443,14 +451,33 @@ section:nth-last-of-type(2) {
     border: 0px solid transparent;
 }
 
-.team-button>a,
-.summit-button>a {
+a>.team-button,
+a>.summit-button {
     font-family: 'Hiragino Kaku Gothic', sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
     letter-spacing: .1em;
     color: #fff;
     text-decoration: none;
+}
+
+#root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div>a>button:hover,
+#root>div>section.container.whatIsInco.position-relative>div>div>div:nth-child(4)>div>a>button:hover {
+    color: #fff;
+}
+
+#root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div>a>button:active:focus {
+    color: #E11774;
+
+}
+
+#root>div>section.container.whatIsInco.position-relative>div>div>div:nth-child(4)>div>a>button:active:focus {
+    color: #E11774;
+}
+
+a:active>.team-button,
+a:active>.summit-button {
+    color: #E11774;
 }
 
 .team-button {

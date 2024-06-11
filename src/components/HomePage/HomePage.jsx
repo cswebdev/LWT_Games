@@ -7,7 +7,6 @@ const HomePage = () => {
       <>
          <section className="container hero position-relative">
             <div className="row d-flex align-items-stretch justify-content-between">
-               {/* <!-- Title and Subtitle Column --> */}
                <div className="col-lg-6 col-md-12 p-0 order-first order-md-1 order-lg-1 order-sm-1  d-flex flex-column justify-content-end position-relative col-title">
                   <h1 className="m-0">We Are InCo.</h1>
                   <div className="Header-text">
@@ -18,21 +17,18 @@ const HomePage = () => {
                      </p>
                   </div>
                </div>
-
-               {/* <!-- Paragraph Column  --> */}
                <div className="col-lg-6 col-md-12 col-sm-12 m-0 p-0 order-lg-3 custom-order-3 order-md-last order-sm-last order-sm-3 d-flex flex-column overflow-visible position-relative">
                   <p>Creating community and building</p>
                   <p>connections with bingo!</p>
                   <button
                      type="button"
-                     className="btn btn-primary btn-play-bingo mt-5" 
+                     className="btn btn-primary btn-play-bingo mt-5"
                   >
                      <a href="https://laneecho.github.io/LWT-bingo/">
                         PLAY BINGO
                      </a>
                   </button>
                </div>
-               {/* <!-- Image Column --> */}
                <div className="col-lg-6 col-md-12 col-sm-12 order-lg-2 order-md-3 custom-order-2 order-md-2 order-sm-2 heroGraphic object-fit-contain ">
                   <img
                      src={homepageOliviaGraphic}
@@ -58,14 +54,7 @@ const HomePage = () => {
                fill-opacity="0.75"
             />
          </svg>
-
-         {/* <img
-            src={imageAssets.greenAndPinkCloud}
-            alt="small green and pink cloud"
-            className="greenAndPinkCloud"
-         /> */}
          <section className="container whatIsInco position-relative">
-            {/* fixed assets */}
             <img
                src={imageAssets.pinkCloud}
                loading="lazy"
@@ -83,8 +72,8 @@ const HomePage = () => {
                <div className="container d-flex flex-column text-center justify-content-center who-are-we z-1 col-lg-12 col-md-12 position-relative">
                   <h2 className="z-1 mb-4">What's InCo?</h2>
                   <p className="we-are-subtitle z-1 mb-lg-5">
-                     Breaking through digital walls with the power of fun and the{" "}
-                     <br />
+                     Breaking through digital walls with the power of fun and
+                     the <br />
                      passion for people [or gamers]
                   </p>
                   <div className="row d-flex align-content-center justify-content-center z-1 position-relative">

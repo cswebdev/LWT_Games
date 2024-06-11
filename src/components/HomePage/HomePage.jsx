@@ -25,7 +25,7 @@ const HomePage = () => {
                   <p>connections with bingo!</p>
                   <button
                      type="button"
-                     className="btn btn-primary btn-play-bingo mt-5"
+                     className="btn btn-primary btn-play-bingo mt-5" 
                   >
                      <a href="https://laneecho.github.io/LWT-bingo/">
                         PLAY BINGO

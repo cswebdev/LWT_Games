@@ -51,9 +51,11 @@ const NavBar = () => {
                      </Link>
                   </li>
                </ul>
-               <button type="button" className="btn-info nav-play-btn">
-                  <a href="http://bingo.incocollective.com/">PLAY BINGO</a>
-               </button>
+               <a href="http://bingo.incocollective.com">
+                  <button type="button" className="btn-info nav-play-btn">
+                     PLAY BINGO
+                  </button>
+               </a>
                <button className="menu-btn" onClick={toggleMenu}>
                   <span
                      className={"material-symbols-outlined"}

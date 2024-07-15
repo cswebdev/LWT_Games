@@ -150,7 +150,7 @@ The project repo exists here;
 <!-- VERSION HISTORY -->
 
 ## Version History
-- 1.0.0 (in production)
+- 1.0.0
 
 <!-- ACKNOWLEDGMENTS -->
 

@@ -12,7 +12,7 @@ over your details and get back to you shortly!`;
  * State:
  * - formData: {firstName, lastName, prefName, pronouns, dob, city, state,
  * timezone, gender, sexualOrientation, email, linkedIn, github, portfolio,
- * skills, goals, otherComments}
+ * skills, goals, referral, otherComments}
  * - message: null or thank you message
  *
  * GetInvolevdPage -> GetInvolvedForm
@@ -36,6 +36,7 @@ const GetInvolvedForm = () => {
         portfolio: "",
         skills: "",
         goals: "",
+        referral: "",
         otherComments: "",
     };
 
@@ -243,7 +244,7 @@ const GetInvolvedForm = () => {
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="referral">Who were you referred by?</label>
-                    <input type="text" name="referral" className="form-control" placeholder="(if anyone)" value={formData.timezone} onChange={handleChange}></input>
+                    <input type="text" name="referral" className="form-control" placeholder="(if anyone)" value={formData.referral} onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="otherCmments">Anything else we should know about you or that you'd like to tell us? </label>

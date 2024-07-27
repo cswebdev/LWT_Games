@@ -331,7 +331,6 @@ section:nth-last-of-type(2) {
 
     #root>div>section.container.whatIsInco.position-relative {
         margin: 5rem auto 20rem auto;
-        max-height: 40rem;
     }
 
     .blueBlob {
@@ -339,8 +338,6 @@ section:nth-last-of-type(2) {
     }
 
 }
-
-
 
 @media (min-width: 1400px) {
     .blueBlob {
@@ -720,7 +717,7 @@ section:nth-last-of-type(2) {
 
 @media (min-height: 992px) and (min-width: 992px) {
     #root>div>section.container.whatIsInco.position-relative {
-        margin: 0 auto;
+        margin: auto;
     }
 
     #root>div>section:nth-child(6) {
@@ -728,6 +725,12 @@ section:nth-last-of-type(2) {
     }
 
     #root>div>svg {
+        max-height: 50rem;
+    }
+}
+
+@media (max-width: 992px) and (min-height: 1300px) {
+    #root>div>section.container.whatIsInco.position-relative {
         max-height: 50rem;
     }
 }
@@ -743,6 +746,40 @@ section:nth-last-of-type(2) {
         padding-top: 5rem !important;
     }
 
+}
+
+@media (min-width: 992px) and (max-width: 2359px) and (min-height: 1200px) and (max-height: 1299px) {
+
+    #root>div>section.container.whatIsInco.position-relative {
+        margin: 10em auto 15em auto;
+        /* background-color: red; */
+    }
+
+    #root>div>svg {
+        top: 62rem;
+        width: 60%;
+    }
+
+    #root>div>div.wave-container.container-fluid.z-0.overflow-hidden.w-0>img {
+        object-position: -20rem 0rem;
+    }
+}
+
+@media (max-height: 1400px) and (min-height:400px) and (max-width:1400px) and (min-width:992px) {
+    #root>div>section.container.hero.position-relative {
+        margin-bottom: 0em !important;
+        height: 42rem;
+    }
+
+    #root>div>section.container.whatIsInco.position-relative {
+        display: block;
+        margin: 0em auto 2em auto !important;
+        height: 50rem;
+    }
+
+    #root>div>section:nth-child(6) {
+        margin: 0em auto 10rem auto !important;
+    }
 }
 
 
@@ -1660,11 +1697,6 @@ section:nth-last-of-type(2) {
         margin-bottom: 20em;
     }
 
-    #root>div>section.container.whatIsInco.position-relative,
-    #root>div>section.container.whatIsInco.position-relative>div {
-        height: max-content;
-    }
-
     #root>div>svg {
         /* scale: 0.9; */
         /* left: -10rem; */
@@ -1675,5 +1707,72 @@ section:nth-last-of-type(2) {
 
     #root>div>div.wave-container.container-fluid.z-0.overflow-hidden.w-0>img {
         overflow: visible !important;
+    }
+}
+
+
+@media (min-width: 1400px) and (max-width: 3000px) and (min-height:200px) and (max-height:3000px) {
+    #root>div>section.container.hero.position-relative {
+        margin-bottom: 0em !important;
+        height: 42rem;
+    }
+
+    #root>div>section.container.whatIsInco.position-relative {
+        display: block;
+        margin: 0em auto 2em auto !important;
+        height: 54rem;
+    }
+
+    #root>div>section:nth-child(6) {
+        margin: 0em auto 10rem auto !important;
+    }
+
+    .blueBlob {
+        top: 52em !important;
+    }
+
+}
+
+@media (max-width: 620px) and (min-width:200px) and (max-height:1500px) and (min-height: 99px) {
+    #root>div>section.container.hero.position-relative {
+        margin-bottom: 0em !important;
+        height: 42rem;
+    }
+
+    #root>div>section.container.whatIsInco.position-relative {
+        display: block;
+        margin: 0em auto 0em auto !important;
+        min-height: 90rem;
+    }
+
+    #root>div>section:nth-child(6) {
+        margin: 0em auto 10rem auto !important;
+        height: 70rem;
+    }
+
+    #root>div>section.container.whatIsInco.position-relative>div>div {
+        margin: 0;
+    }
+
+    #root>div>svg {
+        position: absolute !important;
+        top: 90rem;
+    }
+}
+
+@media (max-width: 1399px) and (min-width: 992px) and (max-height:2500px) and (min-height: 1400px) {
+    #root>div>section.container.hero.position-relative {
+        margin-bottom: 0em !important;
+        height: 42rem;
+    }
+
+    #root>div>section.container.whatIsInco.position-relative {
+        display: block;
+        margin: 0em auto 2em auto !important;
+        height: 54rem;
+    }
+
+    #root>div>section:nth-child(6) {
+        margin: 0em auto 10rem auto !important;
     }
 }

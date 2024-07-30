@@ -9,7 +9,9 @@ const Footer = () => {
          <div className="Footer">
             <div className="row footer-row">
                <div className="logo-frame">
-                  <img src={imageAssets.logo} alt="InCo logo with rainbow carabiners interconnected like Olympic rings" className="footer-logo" />
+                  <a href="/" aria-label="Homepage">
+                     <img src={imageAssets.logo} alt="InCo logo with rainbow carabiners interconnected like Olympic rings" className="footer-logo" />
+                  </a>
                </div>
                <div className="col-newsletter">
                   <NewsletterForm />

@@ -247,7 +247,7 @@ const GetInvolvedForm = () => {
                     <input type="text" name="referral" id="referral" className="form-control" placeholder="(if anyone)" value={formData.referral} onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
-                    <label htmlFor="otherCmments">Anything else we should know about you or that you'd like to tell us? </label>
+                    <label htmlFor="otherComments">Anything else we should know about you or that you'd like to tell us? </label>
                     <textarea name="otherComments" id="otherComments" className="form-control" value={formData.otherComments} onChange={handleChange}></textarea>
                 </div>
                 <input type="hidden" name="form-name" value="GetInvolvedForm" />

@@ -85,15 +85,15 @@ const GetInvolvedForm = () => {
                 <h3>Personal Information</h3>
                 <div className="col-md-6 my-3">
                     <label htmlFor="firstName" className="form-label">First Name:*</label>
-                    <input type="text" name="firstName" className="form-control" placeholder="First Name" value={formData.firstName} required onChange={handleChange}></input>
+                    <input type="text" name="firstName" id="firstName" className="form-control" placeholder="First Name" value={formData.firstName} required onChange={handleChange}></input>
                 </div>
                 <div className="col-md-6 my-3">
                     <label htmlFor="lastName">Last Name:*</label>
-                    <input type="text" name="lastName" className="form-control" placeholder="Last Name" value={formData.lastName} required onChange={handleChange}></input>
+                    <input type="text" name="lastName" id="lastName" className="form-control" placeholder="Last Name" value={formData.lastName} required onChange={handleChange}></input>
                 </div>
                 <div className="col-md-6 my-3">
                     <label htmlFor="prefName">Preferred Name:</label>
-                    <input type="text" name="prefName" className="form-control" placeholder="What should we call you?" value={formData.prefName} onChange={handleChange}></input>
+                    <input type="text" name="prefName" id="prefName" className="form-control" placeholder="What should we call you?" value={formData.prefName} onChange={handleChange}></input>
                 </div>
                 <div className="col-md-6 my-3">
                     <label htmlFor="pronouns">Pronouns:*</label>
@@ -112,11 +112,11 @@ const GetInvolvedForm = () => {
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="dob">Date of Birth:*</label>
-                    <input type="date" name="dob" className="form-control" value={formData.dob} required onChange={handleChange}></input>
+                    <input type="date" name="dob" id="dob" className="form-control" value={formData.dob} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group col-md-6 my-3">
                     <label htmlFor="city">City:*</label>
-                    <input type="text" name="city" className="form-control" placeholder="City" value={formData.city} required onChange={handleChange}></input>
+                    <input type="text" name="city" id="city" className="form-control" placeholder="City" value={formData.city} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group col-md-6 my-3">
                     <label htmlFor="state">State:*</label>
@@ -176,7 +176,7 @@ const GetInvolvedForm = () => {
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="timezone">Timezone:</label>
-                    <input type="text" name="timezone" className="form-control" placeholder="UTC" value={formData.timezone} onChange={handleChange}></input>
+                    <input type="text" name="timezone" id="timezone" className="form-control" placeholder="UTC" value={formData.timezone} onChange={handleChange}></input>
                 </div>
                 <div className="form-group col-md-6 mt-3 mb-5">
                     <label htmlFor="gender">Gender Identity:</label>
@@ -211,44 +211,44 @@ const GetInvolvedForm = () => {
                 <h3>Contact Information</h3>
                 <div className="form-group my-3">
                     <label htmlFor="phone">Phone:*</label>
-                    <input type="tel" name="phone" className="form-control" placeholder="555-555-5555" value={formData.phone} required onChange={handleChange}></input>
+                    <input type="tel" name="phone" id="phone" className="form-control" placeholder="555-555-5555" value={formData.phone} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="email">Email:*</label>
-                    <input type="email" name="email" className="form-control" placeholder="hello@email.com" value={formData.email} required onChange={handleChange}></input>
+                    <input type="email" name="email" id="email" className="form-control" placeholder="hello@email.com" value={formData.email} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
-                    <label htmlFor="linkedIn">LinkedIn:*</label>
-                    <input type="url" name="linkedIn" className="form-control" placeholder="https://www.linkedin.com/in/your-profile" value={formData.linkedIn} required onChange={handleChange}></input>
+                    <label htmlFor="linkedin">LinkedIn:*</label>
+                    <input type="url" name="linkedin" id="linkedin" className="form-control" placeholder="https://www.linkedin.com/in/your-profile" value={formData.linkedIn} required onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="github">GitHub:</label>
-                    <input type="url" name="github" className="form-control" placeholder="https://github.com/your-profile" value={formData.github} onChange={handleChange}></input>
+                    <input type="url" name="github" id="github" className="form-control" placeholder="https://github.com/your-profile" value={formData.github} onChange={handleChange}></input>
                 </div>
                 <div className="form-group mt-3 mb-5">
                     <label htmlFor="portfolio">Portfolio:</label>
-                    <input type="url" name="portfolio" className="form-control" placeholder="https://yourprofile.com" value={formData.portfolio} onChange={handleChange}></input>
+                    <input type="url" name="portfolio" id="portfolio" className="form-control" placeholder="https://yourprofile.com" value={formData.portfolio} onChange={handleChange}></input>
                 </div>
                 <h3>Additional Information</h3>
                 <div className="form-group my-3">
                     <label htmlFor="background">Do you have any specific skills, experiences, or education that may apply?* </label>
-                    <textarea name="background" className="form-control" value={formData.background} required onChange={handleChange}></textarea>
+                    <textarea name="background" id="background" className="form-control" value={formData.background} required onChange={handleChange}></textarea>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="skills">What skills are you most interested in learning about / want to develop to achieve your career goals?* </label>
-                    <textarea name="skills" className="form-control" value={formData.skills} required onChange={handleChange}></textarea>
+                    <textarea name="skills" id="skills" className="form-control" value={formData.skills} required onChange={handleChange}></textarea>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="goals">What are your professional goals for the next 1-3 years?* </label>
-                    <textarea name="goals" className="form-control" value={formData.goals} required onChange={handleChange}></textarea>
+                    <textarea name="goals" id="goals" className="form-control" value={formData.goals} required onChange={handleChange}></textarea>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="referral">Who were you referred by?</label>
-                    <input type="text" name="referral" className="form-control" placeholder="(if anyone)" value={formData.referral} onChange={handleChange}></input>
+                    <input type="text" name="referral" id="referral" className="form-control" placeholder="(if anyone)" value={formData.referral} onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="otherCmments">Anything else we should know about you or that you'd like to tell us? </label>
-                    <textarea name="otherComments" className="form-control" value={formData.otherComments} onChange={handleChange}></textarea>
+                    <textarea name="otherComments" id="otherComments" className="form-control" value={formData.otherComments} onChange={handleChange}></textarea>
                 </div>
                 <input type="hidden" name="form-name" value="GetInvolvedForm" />
                 {message && <div className="alert alert-success" role="alert">

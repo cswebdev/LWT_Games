@@ -33,7 +33,7 @@ const HomePage = () => {
                   <img
                      src={homepageOliviaGraphic}
                      loading="lazy"
-                     alt="homepage Left"
+                     alt="purple haired person with headphones and a laptop sitting on the golden gate brdge with a bingo board and confetti"
                      className="homepageOliviaGraphic"
                   ></img>
                </div>
@@ -83,13 +83,13 @@ const HomePage = () => {
                               className="oliviaPortrait z-1"
                               loading="lazy"
                               src={imageAssets.oliviaPortrait}
-                              alt="Olivia Portrait"
+                              alt="black and white headshot of person with curly hair and glasses"
                            />
                         </div>
                         <img
                            src={imageAssets.blueMountain}
                            loading="lazy"
-                           alt="blue mountain graphic"
+                           alt="blue mountain shape"
                            className="blueMountainImg z-2"
                         />
                      </div>
@@ -98,7 +98,7 @@ const HomePage = () => {
                            className="laneDrawing"
                            loading="lazy"
                            src={imageAssets.laneDrawing}
-                           alt="Drawing of Lane"
+                           alt="yellow drawing of person in orange sunglasses"
                         />
                      </div>
                      <div className="col-xl-4 col-lg-12 col-12 whoWeAreFrame">
@@ -106,7 +106,7 @@ const HomePage = () => {
                            className="vestDrawing"
                            loading="lazy"
                            src={imageAssets.vestDrawing}
-                           alt="Drawing of a vest"
+                           alt="drawing of a vest on blue background"
                         />
                      </div>
                   </div>
@@ -156,7 +156,7 @@ const HomePage = () => {
                         src={imageAssets.homepageGraphicLane}
                         className="homepageGraphicLane"
                         loading="lazy"
-                        alt="graphic of Lane"
+                        alt="InCo member Lane drawn in a yellow jacket and a laptop standing against a background of a city and confetti"
                      />
                   </div>
                </div>
@@ -187,7 +187,7 @@ const HomePage = () => {
                      <img
                         src={imageAssets.bubbleGumGraphic}
                         className="bubbleGumGraphic z-1"
-                        alt="rainbow graphic"
+                        alt="bingo cards around a rainbow, including text pride and can you see my sceen"
                      />
                   </div>
                </div>
@@ -197,7 +197,7 @@ const HomePage = () => {
             <img
                className="wave-graphic z-0"
                src={imageAssets.homepageWave}
-               alt="wave graphic"
+               alt="purple wave shape"
             />
          </div>
       </>

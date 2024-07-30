@@ -45,7 +45,7 @@ const BioCard = ({ bio }) => {
                                         : "#FFA629"
                                 }}
                                 src={bio.drawing}
-                                alt={bio.name}
+                                alt={`${bio.name} headshot`}
                             />}
                         <div className={`BioCard-arrow-${bio.color}`}>
                             <ArrowRightShort size={36} />

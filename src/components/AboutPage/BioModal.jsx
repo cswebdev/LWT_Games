@@ -31,7 +31,7 @@ const BioModal = ({ bio, ...props }) => {
       <Modal.Body>
         <div class="BioModal-desktop">
           <div class="BioModal-left">
-            <img width="100%" src={bio.photo} alt={bio.name} />
+            <img width="100%" src={bio.photo} alt={`${bio.name} headshot`} />
             {bio.linkedIn && <div className="btn btn-primary BioModal-social-button"><a href={bio.linkedIn}>LinkedIn</a></div>}
             {bio.portfolio && <div className="btn btn-primary BioModal-social-button"><a href={bio.portfolio}>Portfolio</a></div>}
             {bio.github && <div className="btn btn-primary BioModal-social-button"><a href={bio.github}>GitHub</a></div>}

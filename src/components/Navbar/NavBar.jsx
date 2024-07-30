@@ -28,7 +28,7 @@ const NavBar = () => {
                      <Link to="/">
                         <img
                            src={imageAssets.logo}
-                           alt="InCo logo"
+                           alt="InCo logo with rainbor carabiners interconnected like Olympic rings"
                            className="logo-img"
                         />
                      </Link>

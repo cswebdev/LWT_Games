@@ -49,9 +49,11 @@ const GetInvolvedForm = () => {
     function handleChange(evt) {
         const fieldName = evt.target.name;
         const value = evt.target.value;
+        console.log(fieldName, value);
 
         setFormData((currData) => {
             currData[fieldName] = value;
+            console.log({ currData });
             return { ...currData };
         });
     }
@@ -217,9 +219,13 @@ const GetInvolvedForm = () => {
                     <label htmlFor="email">Email:*</label>
                     <input type="email" name="email" id="email" className="form-control" placeholder="hello@email.com" value={formData.email} required onChange={handleChange}></input>
                 </div>
-                <div className="form-group my-3">
+                {/* <div className="form-group my-3">
                     <label htmlFor="linkedin">LinkedIn:*</label>
                     <input type="url" name="linkedin" id="linkedin" className="form-control" placeholder="https://www.linkedin.com/in/your-profile" value={formData.linkedIn} required onChange={handleChange}></input>
+                </div> */}
+                <div className="form-group my-3">
+                    <label htmlFor="linkedIn">LinkedIn:*</label>
+                    <input type="url" name="linkedIn" id="linkedIn" className="form-control" placeholder="https://linkedin.com/in/your-profile" value={formData.linkedIn} onChange={handleChange}></input>
                 </div>
                 <div className="form-group my-3">
                     <label htmlFor="github">GitHub:</label>

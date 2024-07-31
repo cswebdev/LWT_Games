@@ -49,11 +49,9 @@ const GetInvolvedForm = () => {
     function handleChange(evt) {
         const fieldName = evt.target.name;
         const value = evt.target.value;
-        console.log(fieldName, value);
 
         setFormData((currData) => {
             currData[fieldName] = value;
-            console.log({ currData });
             return { ...currData };
         });
     }

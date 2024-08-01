@@ -4,16 +4,9 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-// import TagManager from 'react-gtm-module'
 import ReactGA from 'react-ga4';
 
 ReactGA.initialize(process.env.REACT_APP_GTAG || "");
-
-// const tagManagerArgs = {
-//    gtmId: process.env.REACT_APP_GTAG || ""
-// }
-
-// TagManager.initialize(tagManagerArgs);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

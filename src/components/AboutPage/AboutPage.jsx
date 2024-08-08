@@ -31,7 +31,7 @@ const AboutPage = () => {
     <div className="AboutPage">
       <div className="AboutPage-desktop">
         <section className="AboutPage-header">
-          <img src={headerBackground} alt="Three InCo members' headshots on an orange background" fetchPriority="high" />
+          <img src={headerBackground} alt="Three InCo members' headshots on an orange background" fetchpriority="high" />
         </section>
         <div className="AboutPage-our-story">
           <div className="AboutPage-content">
@@ -64,7 +64,7 @@ const AboutPage = () => {
         <svg width="430" height="912" viewBox="0 0 430 912" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1227 89.8275C669.039 -120.42 744.533 112.133 277.686 54.8882C-189.162 -2.35701 65.451 588.786 102.401 724C237.677 1219.03 1227 577.901 1227 577.901V89.8275Z" fill="#FFD300" fillOpacity="0.15" />
         </svg>
-        <img className="AboutPage-mobile-juliane" src={julianeHeader} alt="Headshot of InCo member Juliane in black and white" fetchPriority="high" />
+        <img className="AboutPage-mobile-juliane" src={julianeHeader} alt="Headshot of InCo member Juliane in black and white" fetchpriority="high" />
         <div className="AboutPage-mobile-content">
           <p>
             Founder Tegan Barron combined their love of gaming and digital

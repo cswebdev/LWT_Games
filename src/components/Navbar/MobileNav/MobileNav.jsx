@@ -15,7 +15,6 @@ const MobileNav = ({ isOpen, closeMenu }) => {
                      close
                   </span>
                </button>
-               <div className="logo-wrapper"></div>
                <ul>
                   <li className="">
                      <a href="/about" className="mobile-menu-item nav-link">

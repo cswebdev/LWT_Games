@@ -30,6 +30,7 @@ const NavBar = () => {
                            src={imageAssets.logo}
                            alt="InCo logo with rainbow carabiners interconnected like Olympic rings"
                            className="logo-img"
+                           width="390" height="263"
                         />
                      </Link>
                   </div>

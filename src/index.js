@@ -6,7 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import ReactGA from 'react-ga4';
 
-ReactGA.initialize(process.env.REACT_APP_GTAG || "");
+if (process.env.NODE_ENV !== "development") {
+   ReactGA.initialize(process.env.REACT_APP_GTAG);
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

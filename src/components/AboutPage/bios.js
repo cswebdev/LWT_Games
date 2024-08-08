@@ -1,4 +1,4 @@
-import defaultImage from "../../assets/inco_logo.png";
+import defaultImage from "../../assets/incologo.png";
 
 // Team bios: { name, pronouns, role, bio, photo, drawing, portfolio, linkedIn,
 // emoji, reasonForJoining, gainedFromInCo }

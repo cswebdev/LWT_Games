@@ -35,6 +35,7 @@ const BioCard = ({ bio }) => {
                             }}
                             src={bio.photo}
                             alt={bio.name}
+                            loading="lazy"
                         />
                         {bio.drawing &&
                             <img
@@ -46,6 +47,7 @@ const BioCard = ({ bio }) => {
                                 }}
                                 src={bio.drawing}
                                 alt={`${bio.name} headshot`}
+                                loading="lazy"
                             />}
                         <div className={`BioCard-arrow-${bio.color}`}>
                             <ArrowRightShort size={36} />
@@ -61,8 +63,8 @@ const BioCard = ({ bio }) => {
                     </div>
                 </div>
                 : <div className={`BioCard-blank BioCard-graphics ${bio.stylingClass || ""}`} style={{order:bio.mobileOrder}}>
-                    <img className="BioCard-blank-img img-fluid" src={bio.image} alt={bio.alt} />
-                    <img className="BioCard-blank-hover img-fluid" src={bio.hover} alt={bio.alt} />
+                    <img className="BioCard-blank-img img-fluid" src={bio.image} alt={bio.alt} loading="lazy" />
+                    <img className="BioCard-blank-hover img-fluid" src={bio.hover} alt={bio.alt} loading="lazy" />
                 </div>
             }
             <BioModal

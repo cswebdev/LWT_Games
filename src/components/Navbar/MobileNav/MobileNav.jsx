@@ -10,7 +10,7 @@ const MobileNav = ({ isOpen, closeMenu }) => {
             onClick={closeMenu}
          >
             <div className="mobile-menu-container position-relative">
-               <button className="menu-btn" onClick={closeMenu}>
+               <button aria-label="close menu" className="menu-btn" onClick={closeMenu}>
                   <span className="material-symbols-outlined m-0 p-0">
                      <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Menu / Close_MD">

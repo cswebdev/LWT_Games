@@ -57,7 +57,7 @@ const NavBar = () => {
                      PLAY BINGO
                   </button>
                </a>
-               <button className="menu-btn" onClick={toggleMenu}>
+               <button aria-label="open menu" className="menu-btn" onClick={toggleMenu}>
                   <span
                      className="material-symbols-outlined"
                      style={{ fontSize: "1.8rem" }}

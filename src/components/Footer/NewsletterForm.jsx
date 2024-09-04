@@ -19,8 +19,6 @@ const NewsletterForm = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState(null);
 
-    console.log(email);
-
     /** Update form input. */
     function handleChange(evt) {
         setEmail(evt.target.value);

@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="row footer-row">
                <div className="logo-frame">
                   <a href="/" aria-label="Homepage">
-                     <img src={imageAssets.logo} alt="InCo logo with rainbow carabiners interconnected like Olympic rings" className="footer-logo" />
+                     <img src={imageAssets.logo} alt="InCo logo with rainbow carabiners interconnected like Olympic rings" className="footer-logo" loading="lazy" width="390" height="263" />
                   </a>
                </div>
                <div className="col-newsletter">
@@ -53,6 +53,7 @@ const Footer = () => {
                            className="share-logo"
                            src={imageAssets.instagram}
                            alt="instagram logo"
+                           loading="lazy"
                         />
                      </a>
                      <a href="https://www.linkedin.com/company/interconnected-collective/">
@@ -60,6 +61,7 @@ const Footer = () => {
                            className="share-logo"
                            src={imageAssets.linkedin}
                            alt="linkedin logo"
+                           loading="lazy"
                         />
                      </a>
                      <a href="https://www.facebook.com/profile.php?id=61558814939983">
@@ -67,6 +69,7 @@ const Footer = () => {
                            className="share-logo"
                            src={imageAssets.facebook}
                            alt="facebook logo"
+                           loading="lazy"
                         />
                      </a>
                   </div>
@@ -83,7 +86,7 @@ const Footer = () => {
          <div className="Footer-mobile">
             <div className="row footer-row">
                <div className="logo-frame">
-                  <img src={imageAssets.logo} alt="" className="footer-logo" />
+                  <img src={imageAssets.logo} alt="" className="footer-logo" loading="lazy" width="390" height="263" />
                </div>
                <div className="col-newsletter">
                   <NewsletterForm />
@@ -123,6 +126,7 @@ const Footer = () => {
                            className="share-logo"
                            src={imageAssets.instagram}
                            alt="instagram logo"
+                           loading="lazy"
                         />
                      </a>
                      <a href="https://www.linkedin.com/company/interconnected-collective/">
@@ -130,6 +134,7 @@ const Footer = () => {
                            className="share-logo"
                            src={imageAssets.linkedin}
                            alt="linkedin logo"
+                           loading="lazy"
                         />
                      </a>
                      <a href="https://www.facebook.com/profile.php?id=61558814939983">
@@ -137,6 +142,7 @@ const Footer = () => {
                            className="share-logo"
                            src={imageAssets.facebook}
                            alt="facebook logo"
+                           loading="lazy"
                         />
                      </a>
                   </div>

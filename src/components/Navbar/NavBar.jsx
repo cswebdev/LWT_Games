@@ -30,6 +30,7 @@ const NavBar = () => {
                            src={imageAssets.logo}
                            alt="InCo logo with rainbow carabiners interconnected like Olympic rings"
                            className="logo-img"
+                           width="390" height="263"
                         />
                      </Link>
                   </div>
@@ -56,12 +57,16 @@ const NavBar = () => {
                      PLAY BINGO
                   </button>
                </a>
-               <button className="menu-btn" onClick={toggleMenu}>
+               <button aria-label="open menu" className="menu-btn" onClick={toggleMenu}>
                   <span
-                     className={"material-symbols-outlined"}
+                     className="material-symbols-outlined"
                      style={{ fontSize: "1.8rem" }}
                   >
-                     {openMenu ? "close" : "menu"}
+                     <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 18L20 18" stroke="#fff" stroke-width="3" stroke-linecap="round" />
+                        <path d="M4 12L20 12" stroke="#fff" stroke-width="3" stroke-linecap="round" />
+                        <path d="M4 6L20 6" stroke="#fff" stroke-width="3" stroke-linecap="round" />
+                     </svg>
                   </span>
                </button>
             </div>

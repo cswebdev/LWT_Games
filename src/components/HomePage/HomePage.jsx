@@ -2,6 +2,16 @@ import "./HomePage.css";
 import homepageOliviaGraphic from "../../assets/left_mainpage_image.png";
 import imageAssets from "../../utils/Utils";
 
+/** Component for HomePage
+ *
+ * Props:
+ * - none
+ *
+ * State:
+ * - none
+ *
+ * App -> HomePage
+ */
 const HomePage = () => {
    return (
       <>

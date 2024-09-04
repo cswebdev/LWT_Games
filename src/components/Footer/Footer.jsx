@@ -17,8 +17,8 @@ const Footer = () => {
                   <NewsletterForm />
                </div>
                <div className="col">
-                  <div className="Loading">
-                     <div className="Loading-progress"></div>
+                  <div className="Rainbow-lines">
+                     <div className="Rainbow-lines-movement"></div>
                   </div>
                </div>
                <div className="col col-menu">
@@ -41,8 +41,8 @@ const Footer = () => {
                   </ul>
                </div>
                <div className="col">
-                  <div className="Loading">
-                     <div className="Loading-progress"></div>
+                  <div className="Rainbow-lines">
+                     <div className="Rainbow-lines-movement"></div>
                   </div>
                </div>
                <div className="col col-follow">
@@ -91,9 +91,9 @@ const Footer = () => {
                <div className="col-newsletter">
                   <NewsletterForm />
                </div>
-               <div className="col Loading-left">
-                  <div className="Loading">
-                     <div className="Loading-progress"></div>
+               <div className="col Rainbow-lines-left">
+                  <div className="Rainbow-lines">
+                     <div className="Rainbow-lines-movement"></div>
                   </div>
                </div>
                <div className="col col-menu">
@@ -114,8 +114,8 @@ const Footer = () => {
                   </ul>
                </div>
                <div className="col">
-                  <div className="Loading">
-                     <div className="Loading-progress"></div>
+                  <div className="Rainbow-lines">
+                     <div className="Rainbow-lines-movement"></div>
                   </div>
                </div>
                <div className="col col-follow">

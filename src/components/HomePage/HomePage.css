@@ -1257,7 +1257,6 @@ a:active>.summit-button {
     }
 
     .heroGraphic {
-        /* height: 30% !important; */
         position: relative;
         display: block;
     }
@@ -1295,16 +1294,13 @@ a:active>.summit-button {
         letter-spacing: 0.15em;
     }
 
-
     /* blueBlob fixed image */
-
     .blueBlob {
         max-width: 49em;
         top: 105rem;
     }
 
     /* who we are section container */
-
     #root>div>section.container.whatIsInco.position-relative {
         margin: -5em auto 5em auto;
         display: block;
@@ -1335,7 +1331,6 @@ a:active>.summit-button {
         font-weight: 800;
         line-height: 27px;
         letter-spacing: 0.15em;
-
     }
 
     /* Engaging with Lesbians Who Tech  */
@@ -1352,7 +1347,6 @@ a:active>.summit-button {
         margin: auto;
     }
 
-
     /* h2 */
     #root>div>section:nth-child(6)>div>div.col-lg-7.order-2.m-0.p-0.z-1>div>h2 {
         font-size: 24px;
@@ -1360,8 +1354,6 @@ a:active>.summit-button {
         line-height: 30px;
         letter-spacing: 0.03em;
         text-align: left;
-        /* width: 296px; */
-
     }
 
     /* p */
@@ -1517,7 +1509,6 @@ a:active>.summit-button {
     }
 
     /* blueBlob fixed image */
-
     .blueBlob {
         max-width: 49em;
         top: 105rem;

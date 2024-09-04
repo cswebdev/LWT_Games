@@ -5,6 +5,7 @@
   margin-bottom: 1rem;
 }
 
+/* Margins for desktop styling */
 @media screen and (min-width: 800px) {
   .FAQPage {
     margin-left: 162px;
@@ -61,7 +62,6 @@
   animation: horizontalScroll 5s linear infinite;
   filter: blur(.7px);
 }
-
 
 @keyframes horizontalScroll {
   0% {

@@ -10,8 +10,8 @@
 }
 
 .BioList-header p {
-  margin-left: 2.625rem;
-  margin-right: 2.625rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .BioList-bios {
@@ -20,6 +20,7 @@
   justify-content: center;
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-bottom: 4rem;
   column-gap: 2.5rem;
   row-gap: 3.5rem;
 }
@@ -40,5 +41,9 @@
     top: 40%;
     left: 40%;
     z-index: 0;
+  }
+
+  .BioList-header p {
+    width: 50%;
   }
 }

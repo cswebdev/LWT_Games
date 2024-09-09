@@ -1,4 +1,4 @@
-import defaultImage from "../../assets/incologo.png";
+import defaultImage from "../../assets/defaultAboutImage.png";
 
 // Team bios: { name, pronouns, role, bio, photo, drawing, portfolio, linkedIn,
 // emoji, reasonForJoining, gainedFromInCo }
@@ -284,29 +284,63 @@ const JULIE = new Bio(
   "Community and collaboration.",
 );
 
+const BRANDI = new Bio(
+  "Brandi Ude",
+  "She/They",
+  "Frontend Engineer",
+  "NYC based Software Engineer with a background in Theatre Production Management.",
+  defaultImage,
+  "/drawings/brandi_drawing.png",
+  undefined,
+  "https://www.linkedin.com/in/brandiude/",
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  "To be able to create fun projects with like-minded folks. To foster community and help each other grow.",
+  "Community! And experience collaborating with a dev team.",
+);
+
+const MIRANDA = new Bio(
+  "Miranda Sajdak",
+  "She/Her",
+  "Project Manager",
+  "Product Manager, Boston",
+  "/headshots/miranda_headshot.jpg",
+  "/drawings/miranda_drawing.png",
+  undefined,
+  "https://www.linkedin.com/in/mirandasajdak/",
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  "Currently between jobs and really enjoyed playing Bingo at LWT! Wanted to get a chance to contribute to the team.",
+  "Answer coming soon!",
+);
+
 // make colors for border and hover effects orange
-const ORANGE = "orange";
-TEGAN.color = ORANGE;
-KD.color = ORANGE;
-JIMENA.color = ORANGE;
-AMY.color = ORANGE;
+// const ORANGE = "orange";
+// TEGAN.color = ORANGE;
+// KD.color = ORANGE;
+// JIMENA.color = ORANGE;
+// AMY.color = ORANGE;
 
 
 // create order for mobile screens
-TEGAN.mobileOrder = 1;
-LANE.mobileOrder = 2;
-LIZ.mobileOrder = 3;
-LYNDS.mobileOrder = 4;
-OLIVIAS.mobileOrder = 5;
-KD.mobileOrder = 6;
-JULIANE.mobileOrder = 7;
-CHELSEA.mobileOrder = 8;
-WEI.mobileOrder = 10;
-OLIVIAM.mobileOrder = 11;
-JIMENA.mobileOrder = 12;
-ALEX.mobileOrder = 13;
-AMY.mobileOrder = 15;
-JULIE.mobileOrder = 16;
+// TEGAN.mobileOrder = 1;
+// LANE.mobileOrder = 2;
+// LIZ.mobileOrder = 3;
+// LYNDS.mobileOrder = 4;
+// OLIVIAS.mobileOrder = 5;
+// KD.mobileOrder = 6;
+// JULIANE.mobileOrder = 7;
+// CHELSEA.mobileOrder = 8;
+// WEI.mobileOrder = 10;
+// OLIVIAM.mobileOrder = 11;
+// JIMENA.mobileOrder = 12;
+// ALEX.mobileOrder = 13;
+// AMY.mobileOrder = 15;
+// JULIE.mobileOrder = 16;
 
 export const BIOS = [
   TEGAN,
@@ -316,16 +350,18 @@ export const BIOS = [
   OLIVIAS,
   KD,
   JULIANE,
-  CHELSEA,
-  {image: "/headshots/bingo.png", hover: "/headshots/bingo.png", alt: "yellow star shape with text bingo", mobileOrder: 9, stylingClass: "BioCard-bingo"},
-  WEI,
-  OLIVIAM,
-  JIMENA,
-  {image: "/headshots/free_space.png", hover: "/drawings/free_space.png", alt: "purple star shape with text free space", mobileOrder: 14},
   ALEX,
-  {image: "/headshots/surprise.png", hover: "/drawings/surprise.png", alt: "blue star shape with text suprise", mobileOrder: 17, stylingClass: "BioCard-surpirse"},
-  JULIE,
+  JIMENA,
+  BRANDI,
   AMY,
+  MIRANDA,
+];
+
+export const ALUMS = [
+  WEI,
+  CHELSEA,
+  OLIVIAM,
+  JULIE,
 ];
 
 export { Bio };

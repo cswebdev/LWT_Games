@@ -1,6 +1,6 @@
 import GetInvolvedForm from "./GetInvolvedForm";
 import "./GetInvolvedPage.css";
-import desktopHero from "../../assets/inco_joinus_desktop.png";
+import desktopHero from "../../assets/inco_joinus_desktop_new.png";
 import mobileHero from "../../assets/drawings-group-1.png";
 import mobileFooter from "../../assets/drawings-group-2.png";
 

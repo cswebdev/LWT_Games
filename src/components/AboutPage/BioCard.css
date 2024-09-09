@@ -25,33 +25,33 @@
   color: black;
 }
 
-.BioCard-graphics:hover .BioCard-drawing {
+.BioCard-purple:hover .BioCard-drawing {
   opacity: 1;
   cursor: pointer;
 }
 
-.BioCard-graphics:hover .BioCard-blank-hover {
+.BioCard-purple:hover .BioCard-blank-hover {
   opacity: 1;
   cursor: pointer;
 }
 
-.BioCard-graphics:hover .BioCard-blank-img {
+.BioCard-purple:hover .BioCard-blank-img {
   opacity: 0;
 }
 
-.BioCard-graphics:hover .BioCard-arrow-purple {
+.BioCard-purple:hover .BioCard-arrow-purple {
   cursor: pointer;
   background-color: #7030A0;
   color: white;
 }
 
-.BioCard-graphics:hover .BioCard-arrow-orange {
+.BioCard-orange:hover .BioCard-arrow-orange {
   cursor: pointer;
   background-color: #FFA629;
   color: white;
 }
 
-.BioCard-graphics:hover svg {
+.BioCard-purple:hover svg {
   fill: white;
 }
 

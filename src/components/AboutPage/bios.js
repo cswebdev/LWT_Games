@@ -319,7 +319,7 @@ const MIRANDA = new Bio(
 );
 
 // make colors for border and hover effects orange
-const ORANGE = "orange";
+// const ORANGE = "orange";
 // TEGAN.color = ORANGE;
 // KD.color = ORANGE;
 // JIMENA.color = ORANGE;

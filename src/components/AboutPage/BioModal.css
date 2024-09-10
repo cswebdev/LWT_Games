@@ -139,6 +139,7 @@
 .BioModal-right-top {
   display: flex;
   flex-wrap: nowrap;
+  width: 100%;
 }
 
 .BioModal-info {

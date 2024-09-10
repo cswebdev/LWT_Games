@@ -29,8 +29,8 @@ const BioModal = ({ bio, ...props }) => {
       centered
     >
       <Modal.Body>
-        <div class="BioModal-desktop">
-          <div class="BioModal-left">
+        <div className="BioModal-desktop">
+          <div className="BioModal-left">
             <img width="100%" src={bio.photo} alt={`${bio.name} headshot`} />
             {bio.linkedIn && <div className="btn btn-primary BioModal-social-button"><a href={bio.linkedIn}>LinkedIn</a></div>}
             {bio.portfolio && <div className="btn btn-primary BioModal-social-button"><a href={bio.portfolio}>Portfolio</a></div>}
@@ -38,8 +38,8 @@ const BioModal = ({ bio, ...props }) => {
             {bio.behance && <div className="btn btn-primary BioModal-social-button"><a href={bio.behance}>Behance</a></div>}
             {bio.otherSocial && <div className="btn btn-primary BioModal-social-button"><a href={bio.otherSocial}>Social Media</a></div>}
           </div>
-          <div class="BioModal-right">
-            <div class="BioModal-right-top">
+          <div className="BioModal-right">
+            <div className="BioModal-right-top">
               <div className="BioModal-info">
                 <div className="BioModal-name">
                   {bio.name}

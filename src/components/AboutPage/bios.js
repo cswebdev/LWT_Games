@@ -289,7 +289,7 @@ const BRANDI = new Bio(
   "She/They",
   "Frontend Engineer",
   "NYC based Software Engineer with a background in Theatre Production Management.",
-  defaultImage,
+  "/headshots/brandi_headshot.jpg",
   "/drawings/brandi_drawing.png",
   undefined,
   "https://www.linkedin.com/in/brandiude/",
@@ -315,7 +315,7 @@ const MIRANDA = new Bio(
   undefined,
   undefined,
   "Currently between jobs and really enjoyed playing Bingo at LWT! Wanted to get a chance to contribute to the team.",
-  "Answer coming soon!",
+  "",
 );
 
 // make colors for border and hover effects orange

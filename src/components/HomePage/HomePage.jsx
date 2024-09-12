@@ -20,7 +20,7 @@ const HomePage = () => {
                 <div className="HomePage-hero-left">
                     <h1>We Are InCo.</h1>
                     <p className="HomePage-hero-name">[ Interconnected Collective ]</p>
-                    <p className="HomePage-paragraph mb-0 lg:mb-4">
+                    <p className="HomePage-paragraph mb-0 mb-lg-5">
                         Creating community and building<br />
                         connections with bingo!
                     </p>
@@ -37,8 +37,8 @@ const HomePage = () => {
                     ></img>
                 </div>
                 <a href="https://bingo.incocollective.com/" className="btn btn-primary btn-play-bingo HomePage-play-bingo-btn" id="HomePage-hero-mobile-btn">
-                        Play Bingo
-                    </a>
+                    Play Bingo
+                </a>
             </section>
             <section className="HomePage-whats-inco container">
                 <svg
@@ -59,17 +59,23 @@ const HomePage = () => {
                     src={imageAssets.pinkCloud}
                     loading="lazy"
                     alt="tiny solo pink cloud"
-                    className="pinkCloudImg z-2"
+                    className="pinkCloudImg"
                 />
                 <img
                     src={imageAssets.tealAndPurpleCloud}
                     loading="lazy"
-                    alt="teal and purple cloud"
+                    alt="teal and purple clouds"
                     className="tealCloudImg"
+                ></img>
+                <img
+                    src={imageAssets.greenAndPinkCloud}
+                    loading="lazy"
+                    alt="green and pink clouds"
+                    className="greenCloudImg"
                 ></img>
                 <div className="HomePage-whats-inco-text">
                     <h2 className="">What's InCo?</h2>
-                    <p className="">
+                    <p className="HomePage-paragraph">
                         Breaking through digital walls with the power of fun and
                         the <br />
                         passion for people [or gamers]
@@ -78,7 +84,7 @@ const HomePage = () => {
                 <div className="HomePage-whats-inco-images">
                     <div className="HomePage-img-and-mtn">
                         <img
-                            className="oliviaPortrait z-1"
+                            className="HomePage-whats-inco-image oliviaPortrait"
                             loading="lazy"
                             src={imageAssets.oliviaPortrait}
                             alt="black and white headshot of person with curly hair and glasses"
@@ -89,21 +95,23 @@ const HomePage = () => {
                             alt="blue mountain shape"
                             className="blueMountainImg z-2"
                         />
+
+
                     </div>
                     <img
-                        className="laneDrawing"
+                        className="HomePage-whats-inco-image laneDrawing"
                         loading="lazy"
                         src={imageAssets.laneDrawing}
                         alt="yellow drawing of person in orange sunglasses"
                     />
                     <img
-                        className="vestDrawing"
+                        className="HomePage-whats-inco-image vestDrawing"
                         loading="lazy"
                         src={imageAssets.vestDrawing}
                         alt="drawing of a vest on blue background"
                     />
                 </div>
-                <a href="/about" className="btn btn-info">
+                <a href="/about" className="btn btn-info HomePage-whats-inco-btn">
                     Meet the Team
                 </a>
             </section>

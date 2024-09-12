@@ -14,8 +14,6 @@
   -webkit-box-shadow: 0px 7px 7px .01px rgb(195, 145, 251);
   -moz-box-shadow: 0px 7px 7px .01px rgb(195, 145, 251);
   box-shadow: 0px 6px 7px .01px rgb(195, 145, 251);
-  transition-duration: 300ms;
-  transition-timing-function: ease-in;
 }
 
 .HomePage-play-bingo-btn:hover {
@@ -31,6 +29,7 @@
   column-gap: 6rem;
   justify-content: center;
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .HomePage-hero h1 {
@@ -58,6 +57,99 @@
   padding-right: 2rem;
 }
 
+/* Whats Inco styles */
+.HomePage-whats-inco {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.blueBlob {
+  position: absolute;
+  margin-left: -30rem;
+}
+
+.pinkCloudImg {
+  position: absolute;
+  height: 32px;
+  width: 87px;
+  top: 15rem;
+  right: 1rem;
+}
+
+.tealCloudImg {
+  position: absolute;
+  width: 234px;
+  height: 137px;
+  top: 25rem;
+  left: -10rem;
+}
+
+.greenCloudImg {
+  position: absolute;
+  width: 234px;
+  height: 137px;
+  bottom: 15rem;
+  right: -10rem;
+}
+
+.HomePage-whats-inco-text {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  top: 0;
+  width: 85%;
+}
+
+.HomePage-whats-inco-images {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.HomePage-whats-inco-image {
+  height: 200px;
+  width: 200px;
+  border: solid;
+  border-radius: 16px;
+  border-width: 3px;
+}
+
+.HomePage-img-and-mtn {
+  position: relative;
+}
+
+.blueMountainImg {
+  position: absolute;
+  width: 88px;
+  height: 60px;
+  bottom: -.5rem;
+  left: -1rem;
+}
+
+.oliviaPortrait {
+  border-color: #A0CD62;
+}
+
+.laneDrawing {
+  border-color: #E21674;
+}
+
+.vestDrawing {
+  border-color: #7030A0;
+}
+
+.HomePage-whats-inco-btn {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 20;
+}
+
 /* Tablet styling */
 @media screen and (min-width: 600px) {
   .HomePage-paragraph {
@@ -77,6 +169,23 @@
   #HomePage-hero-mobile-btn {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  /* Whats Inco styles */
+  .blueBlob {
+    margin-left: -10rem;
+  }
+
+  .greenCloudImg {
+    bottom: 3rem;
+  }
+
+  .HomePage-whats-inco-text {
+    width: 70%;
+  }
+
+  .HomePage-whats-inco-images {
+    flex-direction: row;
   }
 
 }
@@ -109,9 +218,29 @@
   #HomePage-hero-mobile-btn {
     display: none;
   }
+
+  /* Whats Inco styles */
+  .blueBlob {
+    margin-left: -6rem;
+  }
+
+  .pinkCloudImg {
+    left: 4rem;
+    top: 10rem;
+  }
+
+  .greenCloudImg {
+    bottom: 1rem;
+  }
+
+  .HomePage-whats-inco-images {
+    gap: 8rem;
+  }
+
+  .HomePage-whats-inco-btn {
+    margin-top: 6rem;
+  }
 }
 
 /* Desktop styling */
-@media screen and (min-width: 1400px) {
-
-}
+@media screen and (min-width: 1400px) {}

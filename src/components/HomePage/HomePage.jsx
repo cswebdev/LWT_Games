@@ -120,7 +120,7 @@ const HomePage = () => {
                     <h2>
                         Engaging with the Lesbians Who Tech Pride Summit
                     </h2>
-                    <p className="HomePage-paragraph HomePage-engaging-text">
+                    <p className="HomePage-paragraph">
                         Every single member of Interconnected Collective came
                         together because of this Summit! Lesbians Who Tech is
                         such an inspiring organization that continues striving
@@ -140,19 +140,17 @@ const HomePage = () => {
                     />
                 </div>
             </section>
-            <section className="HomePage-not-grandmas container">
-                <img
-                    className="wave-graphic z-0"
+            <section className="HomePage-not-grandmas">
+                {/* <img
+                    className="HomePage-not-grandmas-wave-graphic z-0"
                     src={imageAssets.homepageWave}
                     alt="purple wave shape"
+                /> */}
+                <img
+                    src={imageAssets.bubbleGumGraphic}
+                    className="bubbleGumGraphic z-1"
+                    alt="bingo cards around a rainbow, including text pride and can you see my sceen"
                 />
-                <div className="HomePage-not-grandmas-left">
-                    <img
-                        src={imageAssets.bubbleGumGraphic}
-                        className="bubbleGumGraphic z-1"
-                        alt="bingo cards around a rainbow, including text pride and can you see my sceen"
-                    />
-                </div>
                 <div className="HomePage-not-grandmas-right">
                     <h2>
                         Not Your Grandma's Bingo!
@@ -163,7 +161,7 @@ const HomePage = () => {
                         attendees throughout the summit.
                     </p>
                     <a
-                        className="btn btn-primary"
+                        className="btn btn-primary HomePage-play-bingo-btn"
                         href="http://bingo.incocollective.com/"
                     >
                         Play Bingo

@@ -202,10 +202,6 @@
         justify-self: center;
         align-items: center;
     }
-
-    #root>div>div.nav-wrapper>div>button.btn-info.nav-play-btn {
-        visibility: hidden;
-    }
 }
 
 @media (max-width: 775px) {
@@ -312,10 +308,6 @@
     }
 
     #root>div>div.nav-wrapper>div>ul {
-        display: none;
-    }
-
-    #root>div>div.nav-wrapper>div>button.btn-info.nav-play-btn {
         display: none;
     }
 }

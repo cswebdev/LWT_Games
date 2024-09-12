@@ -52,10 +52,8 @@ const NavBar = () => {
                      </Link>
                   </li>
                </ul>
-               <a href="http://bingo.incocollective.com">
-                  <button type="button" className="btn-info nav-play-btn">
+               <a href="http://bingo.incocollective.com" className="btn btn-info nav-play-btn">
                      PLAY BINGO
-                  </button>
                </a>
                <button aria-label="open menu" className="menu-btn" onClick={toggleMenu}>
                   <span

@@ -58,7 +58,6 @@ li {
 p {
   font-family: 'new-science-serif', sans-serif;
   font-size: 1.50rem;
-  /* font-size: 24px; */
   line-height: 1.5rem;
 }
 
@@ -87,15 +86,18 @@ Button {
   font-size: 30px;
   font-family: 'Hiragaino Kaku Gothic ProN', sans-serif;
   src: url('../src/assets/Hiragino\ Kaku\ Gothic\ ProN.ttf') format('tff');
-  width: 400px !important;
   height: 70px;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
 }
 
 .btn-primary,
-.btn-primary:active,
-.btn-primary:hover,
 .btn-primary:focus-visible {
   background-color: #7030AD;
+}
+
+.btn-primary:hover {
+  background-color: #710071;
 }
 
 .btn-check:checked+.btn,
@@ -115,8 +117,32 @@ Button {
   color: #ffff;
 }
 
+.btn-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0rem;
+  padding: 2rem 3rem;
+  outline: none;
+  border: 0;
+  max-width: min-content;
+  white-space: nowrap;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: .4rem;
+  text-transform: uppercase;
+  font-family: 'Hiragaino Kaku Gothic ProN', sans-serif;
+  src: url('../src/assets/Hiragino\ Kaku\ Gothic\ ProN.ttf') format('tff');
+  border-radius: 30px;
+  height: 70px;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
 .nav-play-btn {
   width: 264px !important;
+  margin-right: 1rem;
 }
 
 .btn-info:active,
@@ -138,14 +164,15 @@ Button {
 
 .btn-info:hover {
   background-color: #d10060;
+  color: #fff;
 }
 
-.btn-info:active,
+/* .btn-info:active,
 .btn-info:focus,
 .btn-info:focus-visible {
   background-color: #fff !important;
   border: 4px solid #E21674 !important;
-}
+} */
 
 /* Change the color of the text inside the button when active */
 .btn-info:active a,

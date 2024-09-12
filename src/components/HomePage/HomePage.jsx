@@ -95,8 +95,6 @@ const HomePage = () => {
                             alt="blue mountain shape"
                             className="blueMountainImg z-2"
                         />
-
-
                     </div>
                     <img
                         className="HomePage-whats-inco-image laneDrawing"
@@ -111,7 +109,7 @@ const HomePage = () => {
                         alt="drawing of a vest on blue background"
                     />
                 </div>
-                <a href="/about" className="btn btn-info HomePage-whats-inco-btn">
+                <a href="/about" className="btn btn-info HomePage-whats-inco-btn HomePage-pink-btn">
                     Meet the Team
                 </a>
             </section>
@@ -127,7 +125,7 @@ const HomePage = () => {
                         for women, women of color, and nonbinary leaders. We
                         hope to see you there!
                     </p>
-                    <a href="https://lesbianswhotech.org/pridesummit2024/" className="btn btn-info" id="HomePage-engage-join-btn">
+                    <a href="https://lesbianswhotech.org/pridesummit2024/" className="btn btn-info HomePage-pink-btn">
                         Join the Summit
                     </a>
                 </div>
@@ -141,11 +139,6 @@ const HomePage = () => {
                 </div>
             </section>
             <section className="HomePage-not-grandmas">
-                {/* <img
-                    className="HomePage-not-grandmas-wave-graphic z-0"
-                    src={imageAssets.homepageWave}
-                    alt="purple wave shape"
-                /> */}
                 <img
                     src={imageAssets.bubbleGumGraphic}
                     className="bubbleGumGraphic z-1"

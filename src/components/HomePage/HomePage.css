@@ -176,7 +176,7 @@
   width: 90%;
 }
 
-#HomePage-engage-join-btn {
+.HomePage-pink-btn {
   font-size: 1.15rem;
   margin-left: auto;
   margin-right: auto;
@@ -262,7 +262,7 @@
     margin-top: 6rem;
   }
 
-  #HomePage-engage-join-btn {
+  .HomePage-pink-btn {
     font-size: 1.5rem;
   }
 
@@ -362,7 +362,7 @@
     margin: 0;
   }
 
-  #HomePage-engage-join-btn {
+  .HomePage-pink-btn {
     margin-left: 0;
   }
 

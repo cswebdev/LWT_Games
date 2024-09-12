@@ -109,7 +109,7 @@ const HomePage = () => {
                         alt="drawing of a vest on blue background"
                     />
                 </div>
-                <a href="/about" className="btn btn-info HomePage-whats-inco-btn HomePage-pink-btn">
+                <a href="/about" className="btn btn-info HomePage-pink-btn HomePage-whats-inco-btn">
                     Meet the Team
                 </a>
             </section>
@@ -125,7 +125,7 @@ const HomePage = () => {
                         for women, women of color, and nonbinary leaders. We
                         hope to see you there!
                     </p>
-                    <a href="https://lesbianswhotech.org/pridesummit2024/" className="btn btn-info HomePage-pink-btn">
+                    <a href="https://lesbianswhotech.org/pridesummit2024/" className="btn btn-info HomePage-pink-btn HomePage-engage-btn">
                         Join the Summit
                     </a>
                 </div>

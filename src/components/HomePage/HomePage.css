@@ -325,16 +325,16 @@
     gap: 6rem;
   }
 
-  .HomePage-whats-inco-image {
-    height: 293px;
-    width: 293px;
-  }
-
   .blueMountainImg {
     width: 192px;
     height: 131px;
     bottom: -2rem;
     left: -4rem;
+  }
+
+  .HomePage-whats-inco-image {
+    height: 230px;
+    width: 230px;
   }
 
   .HomePage-whats-inco-btn {
@@ -362,7 +362,7 @@
     margin: 0;
   }
 
-  .HomePage-pink-btn {
+  .HomePage-engage-btn {
     margin-left: 0;
   }
 
@@ -390,6 +390,11 @@
   /* Whats Inco styles */
   .blueBlob {
     margin-left: -18rem;
+  }
+
+  .HomePage-whats-inco-image {
+    height: 293px;
+    width: 293px;
   }
 
   /* Not Grandmas styles */

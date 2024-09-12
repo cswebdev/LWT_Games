@@ -255,4 +255,9 @@
 }
 
 /* Desktop styling */
-@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1400px) {
+  /* Whats Inco styles */
+  .blueBlob {
+    margin-left: -18rem;
+  }
+}

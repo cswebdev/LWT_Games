@@ -142,6 +142,7 @@ Button {
 
 .nav-play-btn {
   width: 264px !important;
+  margin-right: 1rem;
 }
 
 .btn-info:active,

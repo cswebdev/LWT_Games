@@ -1,4 +1,10 @@
 /* Page styles */
+.HomePage h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.874rem;
+}
+
 .HomePage-paragraph {
   font-size: 1.125rem;
   line-height: 3.125rem;
@@ -150,8 +156,47 @@
   z-index: 20;
 }
 
+/* Engaging styles */
+.HomePage-engaging {
+  position: relative;
+  z-index: 10;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.homepageGraphicLane {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.HomePage-engaging-left {
+  width: 90%;
+}
+
+.HomePage-engaging-text {
+  line-height: 2rem;
+}
+
+#HomePage-engage-join-btn {
+  font-size: 1.15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /* Tablet styling */
 @media screen and (min-width: 600px) {
+  .HomePage h2 {
+    font-size: 2.875rem;
+    line-height: 4.375rem;
+  }
+
   .HomePage-paragraph {
     font-size: 1.5rem;
   }
@@ -186,6 +231,19 @@
 
   .HomePage-whats-inco-images {
     flex-direction: row;
+  }
+
+  /* Engaging styles */
+  .HomePage-engaging {
+    margin-top: 6rem;
+  }
+
+  .HomePage-engaging-text {
+    line-height: 3.125rem;
+  }
+
+  #HomePage-engage-join-btn {
+    font-size: 1.5rem;
   }
 
 }
@@ -251,6 +309,31 @@
 
   .HomePage-whats-inco-btn {
     margin-top: 6rem;
+  }
+
+  /* Engaging styles */
+  .HomePage-engaging {
+    flex-direction: row;
+    gap: 0rem;
+    margin-top: 7rem;
+    margin-left: auto;
+  }
+
+  .HomePage-engaging-left {
+    width: 55%;
+  }
+
+  .HomePage-engaging-right {
+    width: 45%;
+  }
+
+  .homepageGraphicLane {
+    width: 100%;
+    margin: 0;
+  }
+
+  #HomePage-engage-join-btn {
+    margin-left: 0;
   }
 }
 

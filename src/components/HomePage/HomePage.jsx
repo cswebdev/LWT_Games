@@ -15,7 +15,7 @@ import imageAssets from "../../utils/Utils";
  */
 const HomePage = () => {
     return (
-        <>
+        <div className="HomePage">
             <section className="HomePage-hero container">
                 <div className="HomePage-hero-left">
                     <h1>We Are InCo.</h1>
@@ -115,19 +115,19 @@ const HomePage = () => {
                     Meet the Team
                 </a>
             </section>
-            <section className="HomePage-engaging">
+            <section className="HomePage-engaging container">
                 <div className="HomePage-engaging-left">
-                    <h2 className="">
+                    <h2>
                         Engaging with the Lesbians Who Tech Pride Summit
                     </h2>
-                    <p className="HomePage-paragraph">
+                    <p className="HomePage-paragraph HomePage-engaging-text">
                         Every single member of Interconnected Collective came
                         together because of this Summit! Lesbians Who Tech is
                         such an inspiring organization that continues striving
                         for women, women of color, and nonbinary leaders. We
                         hope to see you there!
                     </p>
-                    <a href="https://lesbianswhotech.org/pridesummit2024/" className="btn btn-info">
+                    <a href="https://lesbianswhotech.org/pridesummit2024/" className="btn btn-info" id="HomePage-engage-join-btn">
                         Join the Summit
                     </a>
                 </div>
@@ -170,7 +170,7 @@ const HomePage = () => {
                     </a>
                 </div>
             </section>
-        </>
+        </div>
     );
 };
 

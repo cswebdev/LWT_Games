@@ -5,11 +5,19 @@
   margin-bottom: 1rem;
 }
 
-/* Margins for desktop styling */
+.FAQPage p {
+  font-size: 1.15rem;
+}
+
+/* Margins and paragraph font size for desktop styling */
 @media screen and (min-width: 800px) {
   .FAQPage {
     margin-left: 162px;
     margin-right: 180px;
+  }
+
+  .FAQPage p {
+    font-size: 1.5rem;
   }
 }
 

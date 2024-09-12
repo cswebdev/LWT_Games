@@ -117,7 +117,8 @@ To set up this repo on your local machine, follow these instructions:
 
 ## Roadmap
 
-- [ ] Complete base sitemap pages
+- [ ] Clean up existing code
+- [ ] Integrate bingo game with website
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

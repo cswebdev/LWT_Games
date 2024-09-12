@@ -45,7 +45,7 @@
 
 .BioModal-mobile-graphics {
   position: relative;
-  margin-top: 3.125rem;
+  margin-top: -3.125rem;
   margin-bottom: 2.18rem;
   background-color: #7030A0;
   width: 100%;
@@ -254,12 +254,12 @@
   }
 
   .BioModal-pronouns {
-    display: inline;
+    display: block;
     font-size: 1rem;
     font-weight: 500;
     color: black;
-    padding-left: 0.938rem;
-    vertical-align: middle;
+    padding-left: 0rem;
+    text-align: left;
   }
 
   .BioModal-role {
@@ -281,6 +281,17 @@
     overflow-y: auto;
     scrollbar-color: #7030A0 #F2E8FD;
     scrollbar-width: thin;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .BioModal-pronouns {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    padding-left: 0.938rem;
+    vertical-align: middle;
   }
 }
 

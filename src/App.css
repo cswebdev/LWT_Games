@@ -58,7 +58,6 @@ li {
 p {
   font-family: 'new-science-serif', sans-serif;
   font-size: 1.50rem;
-  /* font-size: 24px; */
   line-height: 1.5rem;
 }
 
@@ -87,7 +86,6 @@ Button {
   font-size: 30px;
   font-family: 'Hiragaino Kaku Gothic ProN', sans-serif;
   src: url('../src/assets/Hiragino\ Kaku\ Gothic\ ProN.ttf') format('tff');
-  width: 400px !important;
   height: 70px;
 }
 

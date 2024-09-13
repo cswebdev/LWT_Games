@@ -65,7 +65,7 @@ const LIZ = new Bio(
   `UXer with strengths in research, interaction design, and strategy // Lifelong dabbler and lowbrow artist // Unexpected corporate techie​`,
   "/headshots/liz_headshot.jpg",
   "/drawings/liz_drawing.png",
-  "https://liz-baranowicz.notion.site/Liz-Baranowicz-s-Portfolio-71dd0cf1ac864752ac39ebc6b057d522",
+  "https://www.lizbaranowicz.com",
   "https://www.linkedin.com/in/liz-baranowicz/",
   undefined,
   undefined,
@@ -315,7 +315,7 @@ const MIRANDA = new Bio(
   undefined,
   undefined,
   "Currently between jobs and really enjoyed playing Bingo at LWT! Wanted to get a chance to contribute to the team.",
-  "",
+  "A fun community with dedicated collaborators who work hard together to make great projects!",
 );
 
 // make colors for border and hover effects orange

@@ -101,7 +101,7 @@ const TermsOfServicePage = () => {
                 <li>Elements that imply an email address or web address (for example, xyz.com), including but not limited to .com, .net, .org, .edu or any variation of such (for example, _com or -com)</li>
                 <li>Phone numbers (numeric or alphanumeric)</li>
                 <li>An underscore (_), hyphen (-), or period (.) at the beginning of a username (for example, -NopeUsername)</li>
-                <li>The word InCo (Note: only InCo personal can use the word InCo in their usernames)</li>
+                <li>The word InCo (Note: only InCo personnel can use the word InCo in their usernames)</li>
                 <li>The same username as another user or similar to an InCo name</li>
                 <li><b>Personal information</b> such as, but not limited to, full names, addresses, phone numbers, or email addresses to protect user privacy</li>
                 <li><b>Respect all cultures, races, disabilities, genders, sexes, nationalities, gender identities, sexual orientations, etc.</b> and should not contain language or references that could be considered slurs, insensitive or offensive</li>

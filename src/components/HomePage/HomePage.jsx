@@ -116,17 +116,16 @@ const HomePage = () => {
             <section className="HomePage-engaging container">
                 <div className="HomePage-engaging-left">
                     <h2>
-                        Engaging with the Lesbians Who Tech Pride Summit
+                        Engaging with Lesbians Who Tech
                     </h2>
                     <p className="HomePage-paragraph">
-                        Every single member of Interconnected Collective came
-                        together because of this Summit! Lesbians Who Tech is
-                        such an inspiring organization that continues striving
-                        for women, women of color, and nonbinary leaders. We
-                        hope to see you there!
+                        Every single member of Interconnected Collective came together
+                        because of Lesbians Who Tech - an inspiring organization
+                        that continues striving for women, women of color, and
+                        nonbinary leaders. We hope to see you at an event!
                     </p>
-                    <a href="https://lesbianswhotech.org/pridesummit2024/" className="btn btn-info HomePage-pink-btn HomePage-engage-btn">
-                        Join the Summit
+                    <a href="https://lesbianswhotech.org" className="btn btn-info HomePage-pink-btn HomePage-engage-btn">
+                        Learn About LWT
                     </a>
                 </div>
                 <div className="HomePage-engaging-right">
@@ -155,7 +154,7 @@ const HomePage = () => {
                     </p>
                     <a
                         className="btn btn-primary HomePage-play-bingo-btn"
-                        href="http://bingo.incocollective.com/"
+                        href="https://bingo.incocollective.com/"
                     >
                         Play Bingo
                     </a>

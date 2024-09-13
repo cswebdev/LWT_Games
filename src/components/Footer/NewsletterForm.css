@@ -10,6 +10,8 @@
   letter-spacing: .15em;
   font-size: 20px;
   margin: 1em 0;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
 }
 
 .subscribe:hover {

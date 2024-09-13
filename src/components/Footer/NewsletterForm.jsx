@@ -56,7 +56,7 @@ const NewsletterForm = () => {
                 onSubmit={handleSubmit}
             >
                 <input name="email" type="email" onChange={handleChange} placeholder="Enter Email Address"></input>
-                <button type="submit" className="btn btn-info subscribe">
+                <button type="submit" className="btn subscribe">
                     SUBSCRIBE
                 </button>
                 <input type="hidden" name="form-name" value="NewsletterForm" />

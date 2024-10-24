@@ -100,7 +100,7 @@ To set up this repo on your local machine, follow these instructions:
 
 1. Clone the repo
    ```sh
-   git clone [https://github.com/cswebdev/LWT_Games](https://github.com/LWTGames/LWT_Games.git)
+   git clone [https://github.com/LWT_Games/LWT_Games](https://github.com/LWTGames/LWT_Games.git)
    ```
 2. Install dependencies
    ```sh

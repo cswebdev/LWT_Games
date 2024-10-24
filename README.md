@@ -80,7 +80,7 @@ This project began in March 2024 and deployed officially in May 2024. It uses th
 - ![React][React]
 - ![Bootstrap][Bootstrap]
 
-For a full list of dependencies, see the [package.json](https://github.com/cswebdev/LWT_Games/package.json).
+For a full list of dependencies, see the [package.json](https://github.com/LWT_Games/LWT_Games/package.json).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +100,7 @@ To set up this repo on your local machine, follow these instructions:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/cswebdev/LWT_Games
+   git clone [https://github.com/cswebdev/LWT_Games](https://github.com/LWTGames/LWT_Games.git)
    ```
 2. Install dependencies
    ```sh
@@ -135,6 +135,7 @@ The frontend engineers and primary contributors to this website are:
 
 - [Chelsea Snider](https://github.com/cswebdev) -- [LinkedIn](https://www.linkedin.com/in/chelsea-snider/)
 - [Juliane Cassidy](https://github.com/julianecassidy) -- [LinkedIn](https://www.linkedin.com/in/julianemcassidy/)
+- [Ada B](https://github.com/ada-beeeee) -- [LinkedIn](https://www.linkedin.com/in/ada-brewton/)
 
 The UI/UX designers for the website are:
 

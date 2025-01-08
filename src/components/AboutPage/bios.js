@@ -302,20 +302,37 @@ const BRANDI = new Bio(
 );
 
 const MIRANDA = new Bio(
-  "Miranda Sajdak",
-  "She/Her",
-  "Project Manager",
-  "Product Manager, Boston",
-  "/headshots/miranda_headshot.jpg",
-  "/drawings/miranda_drawing.png",
-  undefined,
-  "https://www.linkedin.com/in/mirandasajdak/",
-  undefined,
-  undefined,
-  undefined,
-  undefined,
-  "Currently between jobs and really enjoyed playing Bingo at LWT! Wanted to get a chance to contribute to the team.",
-  "A fun community with dedicated collaborators who work hard together to make great projects!",
+    "Miranda Sajdak",
+    "She/Her",
+    "Project Manager",
+    "Product Manager, Boston",
+    "/headshots/miranda_headshot.jpg",
+    "/drawings/miranda_drawing.png",
+    undefined,
+    "https://www.linkedin.com/in/mirandasajdak/",
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    "Currently between jobs and really enjoyed playing Bingo at LWT! Wanted to get a chance to contribute to the team.",
+    "A fun community with dedicated collaborators who work hard together to make great projects!",
+);
+
+const ADA = new Bio(
+    "Ada Brewton",
+    "They/Them",
+    "Website Accessility",
+    "QA automation engineer and accessibility enthusiast. WA, USA",
+    "/headshots/ada_headshot.jpg",
+    undefined,
+    "https://linktr.ee/ada.beeeee",
+    "https://www.linkedin.com/in/ada-brewton/",
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    "To network and to strengthen my QA and web development skills on an exciting new project.",
+    "A new community!",
 );
 
 // make colors for border and hover effects orange
@@ -346,15 +363,14 @@ export const BIOS = [
   TEGAN,
   LANE,
   LIZ,
-  LYNDS,
   OLIVIAS,
-  KD,
   JULIANE,
   ALEX,
   JIMENA,
   BRANDI,
   AMY,
   MIRANDA,
+  ADA,
 ];
 
 export const ALUMS = [
@@ -362,6 +378,8 @@ export const ALUMS = [
   CHELSEA,
   OLIVIAM,
   JULIE,
+  LYNDS,
+  KD,
 ];
 
 export { Bio };

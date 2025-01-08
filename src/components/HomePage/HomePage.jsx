@@ -32,7 +32,7 @@ const HomePage = () => {
                     <img
                         src={homepageOliviaGraphic}
                         loading="lazy"
-                        alt="purple haired person with headphones and a laptop sitting on the golden gate brdge with a bingo board and confetti"
+                        alt="purple haired person with headphones and a laptop sitting on the golden gate bridge with a bingo board and confetti"
                         className="HomePage-OliviaGraphic"
                     ></img>
                 </div>
